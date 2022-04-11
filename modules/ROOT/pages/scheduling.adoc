@@ -1,0 +1,59 @@
+Teak is very adaptable, whatever your workflow. The more comfortable you get with the toolset, the faster you will settle into a routine. This guide is designed to prepare you for the final step: scheduling your message.
+
+Scheduling is where you’ll bring together the Audience, Message, and how it gets distributed. 
+
+*Schedule Creation*
+
+To Schedule a message, select “Notifications” from the left rail, and in the Schedules tab click the “New Schedule” Button. 
+
+*Naming* +
+Name your Scheduled deployment with a convention in mind. This will help you and all users in your organization.. 
+
+*Example*: Date - Message Name - Audience - Send Time - Currency
+
+*Audiences* +
+All of your created Audiences will be available to you at the time of Scheduling. If you’re in a situation where you need to create an entirely new Audience, you can also start that process during Scheduling. 
+
+”*Who would you like to send the notification to?” * +
+Scroll to find the Audience, begin typing the name, or expand the Audience dropdown and create a new one. You may only send a message to one Audience per Schedule, but you can easily Duplicate the Schedule under the “Schedules” Tab.
+
+*Attaching a Message*
+
+*“What message would you like to send?” * +
+Scroll, type, or create a new Message just as you did with the Audience selection.
+
+After you have selected your Message you will get another chance to review the content and can make edits before sending it out.
+
+*Note*: You will want to set up messaging A/B testing within the message itself; this is not an option at the time of Scheduling.
+
+*Additional Targeting*
+
+Before sending your message, you will be able to choose how you want it delivered. Since a player can play the game on multiple devices and may have a different game version on each device, this is where you can set your delivery preferences. 
+
+*"Per user, what devices would you like to deliver to?" * +
+You may choose to deliver to all devices, most recent, or only to specific devices or game versions. If you choose something that will limit device sends, this will not affect Email or App-to-User Notifications as those do not take the device into account. 
+
+For Game or OS versions you can filter minimum (greater than [or equal to]), maximum (less than [or equal to]), specific (equal to) or a range (between).
+
+*Note*: Teak uses the version metadata specified in the game's Info.plist on iOS and AndroidManifest.xml on Android to determine the game's version. You may need to consult with your dev team to determine how these versions correspond to "marketing" versions.
+
+*Sending*
+
+You have several custom ways to send messages within Teak. You can set up messages triggered based on player behaviors, messages sent at specific times repeated, or ad-hoc messaging that goes out one time. Messages that act as Local Notifications, to be sent after a timed event in the game, will need to be set up by your engineering team.
+
+*Later* +
+You can set a time in the future by selecting a date and time. You may change between your time zone and player specific time zones. 
+
+The option to send to players all at once or over a period of time is useful for ensuring servers are not inundated with large amounts of traffic or used to spread out Email deliveries to preserve reputation. 
+
+If you’re sending a message that is intended to be repeated, you can select to do that daily, weekly, bimonthly, or monthly and set an end date. 
+
+*Now* +
+Sending a message “Now” does exactly this. It sends the message immediately, without delay.
+
+*Triggered*  +
+Messages that are Scheduled as Triggered can be sent when a player enters or leaves the Audience you selected. If this is a temporary trigger, you may also set an end date.
+
+*Local* +
+While these are scheduled within the SDK, the Scheduling option within Teak allows you to edit the content. You can use any Notification capabilities, such as images and formatting, that are available for traditional Push. The Scheduling of Local Notifications is completely controlled by the game client. Your dev team will create triggers that tell Teak to send the notification a specific amount of time after an event is completed. 
+

@@ -1,0 +1,58 @@
+Welcome! We know you’re excited to get started and this guide will assist you as you set up your first campaigns. So, let’s dig in and start setting up links, messages, emails, and more!
+
+*Table of Contents*
+
+* Glossary
+* Reporting
+** Available Metrics
+** Analyzing
+** Exporting
+* Rewards
+** Items and Currency
+** Bundle Creation
+** Audience Controlled Rewarding
+** Verifying Reward Collection
+* Links
+** Link Types
+** Link Creation
+* Audiences
+** Audience Creation by Rules
+** Filters
+** Audiences’ Associated Value
+** Audience Creation by Upload
+** Additional Exploration
+** Exporting Audiences and Linking to Facebook
+* Notifications
+** Push/App-to-User Creation
+** Formatting
+** Approximate Character Counts
+** Using Images
+** Rewards
+** Expiration
+** Advanced
+** Testing
+** Preview
+* Email
+** Email Creation
+** Formatting
+** Using Images
+** Rewards
+** Expiration
+** Testing
+** Advanced
+** Preview
+** Emails that can be replied to
+
+* Custom Tags
+* Scheduling
+** Schedule Creation
+** Attaching a Message
+** Additional Targeting 
+** Sending 
+* Settings
+** Adding Teak Users
+** Player Properties
+** Disabling Notifications
+** Email
+* Helpful Audiences
+* FAQ

@@ -1,0 +1,26 @@
+*Archive*: An option on Audiences, Schedules, Reward Bundles, and Links which removes an item from the primary view but preserves it to be referenced in the future. +
+*Build Environment*: Where the Notifications, Emails, and Links are able to be engaged with. Typical examples include: Production, QA, Dev etc. This can be changed in the left rail. +
+*Channel*: Ways players can interact with Teak. You may not use all of these, but it includes iOS Push, Android Push, Facebook App-to-User Notifications, Email, and Links. +
+*Confirmed Receipt:* A positive confirmation that the player received the notification +
+*Country*: A filter used to designate players’ location. For notifications, location is determined by the IP address of the device. For email opens, this may vary. For instance, Gmail users and players using Apple’s privacy service, may have their location determined by their email provider’s server location. Country is available as a Rule filter within the Audience builder, as well as a way to filter data on the Notifications Dashboard. +
+*Dashboard*: This may refer to the primary dashboard menu item that references current in-game statistics, or the Notifications dashboard that highlights notification specific KPIs +
+*Date Range*: The time frame for reviewing metrics. Specifically accessed from the upper right corner of the dashboard or in the Audience Builder. +
+*Device Manufacturer:* For mobile devices this is the company that created the device. Popular brands may be Apple, Samsung, Huawei, or Motorola.  +
+*Device Model*: This refers to the specific type of device being used. Each manufacturer has many models on the market. For example Apple’s iPhone 13 or a Samsung Galaxy s22. These may appear under alternative names such as MLPH3 or SM-S901U. +
+*Dropdown*: Any menu that reveals several options when activated. +
+*Duplicate*: To create an exact copy of a message, Audience, Link or Schedule. +
+*Event Count:* A filter for an Audience Rule that indicates the number of times a specified action happened in the designated time frame. A player who clicked a notification, with an Event Count of Greater Than 5, indicates that they clicked notifications at least 5 times during the time frame. +
+*Event Days*: A filter for an Audience Rule that indicates the number of days an action occurred. A player who clicked a notification, with the Event Days of Greater than 5, indicates that they clicked notifications on at least 5 separate days during the time frame, regardless of total count. +
+*Export*: The option to download a file of information +
+*Link*: A generated URL that links to the app, and may or may not contain a reward +
+*Message*: iOS / Android Push Notification or Facebook App-to-User Notification. +
+*Navigation*: Menus and options that move you throughout the Teak software +
+*Notification*: Refers to Messages and Emails +
+*Platform*: The designation of where a player engages with your game. This may be on Facebook, iOS, or Android. +
+*Player Properties*: Defined by the code, Player Properties relate to behavior and can be used as either Audience rules, or tags within messages. +
+*Preview*: An option to deliver a notification to a specific device, account, or inbox. Very useful for testing. +
+*Reward*: Anything that can be awarded in the game, and is assigned in the code. Generally currency. +
+*Schedule*: The specific time or trigger that will deploy a notification or email. In the Audience builder this refers to a specific schedule and is used to filter by engagement. +
+*Session* *Source*: In Audience builder this refers to a specific message and is used to filter by engagement. +
+*Settings* *Menu*: Located within the wrench icon on the lower right side of the screen. +
+*Upload*: An option to input information into Teak, generally a .CSV of an audience.

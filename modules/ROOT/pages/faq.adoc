@@ -1,0 +1,65 @@
+*Q: Will Teak only open the game app?* +
+A: This functionality could be developed for email, however please note that if you want the player to receive a reward when tapping on the email, the game must launch. For Notifications, the app stores require that the specific app is opened directly from the notification.
+
+*Q: Does Teak know if a player has deleted, offloaded, or removed the app from their device?* +
+A: Teak does not track install status. A lapsed player audience will contain players who did not launch the game, regardless of if they still have the game installed or not.
+
+*Q: How can I target a push notification to specific countries?* +
+A: When creating an audience, there are several filters that can be added to each rule. With a country filter on an install or play rule which targets those countries. 
+
+When attached to a Play rule this will target players who had a session in any of the selected countries in the rule's time range. When attached to an Install rule this will target players who had their first session in any of the selected countries in the rule's time range.
+
+*Q: I’ve noticed some notifications that are set to very old versions of the game continue to send; how is this possible?* +
+A: Generally, this is seen when messages are Facebook A2U and Email sends, which cannot be restricted by version.
+
+On mobile, Teak may continue to record sends for some schedules targeting very old versions because Teak may see the player as still having a device running that old version. This can happen a player has multiple devices, or if the player uninstalls/reinstalls the game. Teak may continue to see the prior install as a previous device, and will never update its version.
+
+Additionally, there are rare cases where players are able to install old versions of the game through sideloading or jailbreaking.
+
+*Q: How does Teak calculate DAU for its reporting?* +
+A: Teak independently tracks your DAU based on SDK activity. Teak calculates DAU as the unique number of players who made that SDK call during a US west coast day.
+
+Your dev team will be required to set up an SDK call to determine that a game session has started. (https://teak.readthedocs.io/projects/unity/en/latest/unity-editor.html#tell-teak-how-to-identify-the-current-user) 
+
+There are additional nuances if the game is backgrounded for an extended period or players who have a single Facebook ID associated with multiple user IDs.
+
+*Q: What are the requirements for attributing revenue to a Teak message or link?* +
+A: Attributed revenue is calculated after a player enters the game through a notification or link. Any purchases made during this session - or after 24 hours - whichever is less will be part of the calculation. Teak will start a new session if the player backgrounds the game for more than 2 minutes and then comes back. If the player leaves the game backgrounded for less than 2 minutes, Teak will continue with the current session
+
+For purchase attribution Teak will stop attributing purchases after 24 hours have passed. That is, if a player enters through a notification or link, leaves the game open in the foreground for more than 24 hours, and then makes a purchase, Teak would not count that as return value. But if they made a purchase after leaving the game open in the foreground for only 23 hours, Teak would count that purchase as return value for the notification.
+
+*Q: How do players receive emails they can't collect from?* +
+A: Email Rewards are locked to the Player ID the email was intended for. This prevents players from forwarding/ sharing/ other forms of cheating to collect Rewards on an account that they were not intended for. If a player is attempting to claim the reward on an account that is not the one the email was sent to, then they can’t claim the reward. 
+
+You can verify if a player was intended to receive the reward through the following steps.
+
+* Select Audiences on the left rail. 
+* Create a New Audience. 
+* Create a rule for Campaign Engagement. 
+* Choose "where players were sent a notification" and apply an appropriate time frame. 
+* Filter by the email in question.
+* Add an additional rule for Player Properties and the game Player ID for the player in question.
+You will then be able to verify if the messaging player was intended to receive the message. 
+
+If so, you will then want to ensure the Player ID is associated with the email address they player is inquiring about. 
+
+Using the Player ID verified to have been sent the message, select Settings from the left rail. +
+Under the Email tab, scroll midway down the page, and enter the Player ID in the User Subscription Status section. 
+
+If an email address is associated with the Player ID, it will appear here. If it does not match, then it was likely not intended to receive the email.
+
+If the Player ID was in the audience, and the email address is correctly associated, you can see if the reward was in fact applied.
+
+Select Rewards from the left rail +
+Choose the Audit Log tab +
+In the “Clicking User ID” box, enter the Player ID +
+If the email is located in the list, you can see the amount that was applied to the player
+
+Any additional follow-up can be done by your dev team
+
+*Q: How often are audiences updated?* +
+A: Teak loads new data every minute, updates audiences with an audience controlled reward or schedule associated with it approximately every ten minutes, and all other audiences approximately every hour
+
+In the list of audiences you can also click on the current size to get a graph of the audience’s size over time.
+
+

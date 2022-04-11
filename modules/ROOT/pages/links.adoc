@@ -1,0 +1,21 @@
+*Link Types*
+
+When you create a Link, a URL is generated. This URL can have a Reward attached and can be clicked by a max number of players - which you specify.
+
+*Link Creation
+* +
+Links are a straightforward way to bring people into your game. Using Teak Links for existing players provides a great way to track and incentivize them. Creating links with or without Rewards is quick and easy. Plus, you can even use Deep Linking to drop them wherever you want.
+ +
+*Setting Up Links*
+
+. On the left rail select “Links”
+. Click “Create a New Link” 
+. Give the Link a name and an optional description
+. If you want to incentivize the link, add a Reward Bundle (You can see how to create Reward Bundles here)
+
+By default, when a player clicks a link, they will launch your game as if they opened the app or went to the URL directly. After the normal start-up process, they will be Rewarded, if applicable. If you have Deep Linking routes set up, you can work with your engineering team to create paths that allow you to drop players directly into different areas of the game using the “Advanced Options”.
+
+New players who click a link may be able to collect the Reward on desktop, but will be routed to the appropriate App Store to install the app on mobile devices. They should be able to go back and collect the Link Reward after successfully loading into the game.
+
+After creating the Link, you may choose to “Generate Bulk”. This option appears in the Links page to the right of the individual link. From here you may generate a specific amount of individual links to be exported. This is most useful for 1:1 communication with Support, or creating a list to be uploaded into a 3rd party system for distribution. Each unique URL is single use and may only be claimed once. This eliminates the ability for players to share high value links.
+

@@ -1,0 +1,155 @@
+Notifications allow you to reach players in the moment. Push Notifications are available on Amazon, Android, and iOS devices, while App-To-User Notifications are part of the Facebook desktop experience. 
+
+These platforms must be integrated by your development team and the Settings updated in Teak. 
+
+Once these steps are successfully completed, you can begin sending Notifications directly to players. You may create single Messages that can be sent across platforms, while customizing for their unique requirements.
+
+*Push/App-to-User Creation*
+
+. Select “Notifications” on the left rail
+. Under the “Messages” Tab, choose “New Message”
+. Name the Message and select the platforms you want to send to
+.. You will see Email as a platform option. At the time you create your schedule, you will be able to prioritize platforms, however, Email does not use the same logic as Push or A2U and should be scheduled separately.
+. Create your Message(s). You can use Emojis and several Custom Tags which are available by selecting the “@” icon in the text box. There are limited options provided out of the box with Teak. For additional options, use Player Properties.
+. If you’re targeting more than one platform, you can choose to copy the same message across platforms, however platform-specific features and personalizations are covered in the following sections.
+. Review the messages and how they will appear on each platform. As you perfect your brand’s style you will gain confidence in verifying messages at this step. However, using the Preview option on the “Messages” Tab after you save is an easy way to view your work on specific devices and include images or videos.
+
+*Formatting*
+
+All platforms allow for emojis and Custom Tags.
+
+*Facebook* +
+Native support to display and format player names as they appear on the Facebook platform
+
+*Mobile* +
+Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the* {{first_name|default:”Hey Pal”}} *Tag. Simply replace _Hey Pal_ with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
+
+*Android Personalization (Including applicable Amazon devices)* +
+In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The Teak Markup Tag documentation will help you set up messages using this feature. 
+
+*Approximate Character Counts*  
+
+This includes any written characters, including emojis and Tags. Plus, markup on Android
+
+*Facebook Message Body* +
+50 Characters Recommended. 180 Characters Allowed. +
+Facebook will truncate messages that are too long. Previewing messages that go beyond 50 characters will allow you to verify the message displayed.
+
+*iOS Title & Subtitle* +
+20 Characters.  +
+You will be allowed more characters, but they will often be truncated on device.
+
+*iOS Message Body: * +
+128 Characters.
+
+*Android Message Body*: +
+120 Displayed Characters Recommended. 160 Characters Allowed. +
+If you are only utilizing text and emojis, or if your tags greatly extend the length of your message, some Android Operating Systems may still truncate your Message. Since the Markup is included in your Character Limit, feel free to use the full 160 Characters to account for these non-displayed characters.
+
+*Using Images*
+
+*Android* +
+On Android, and applicable Amazon devices, there is an option for a Background Image/Video. This appears as the primary Notification for players, and replaces any standard text. 
+
+*Background Image/Video Size* +
+1,700x300 pixel .jpg, .png, or .mpeg4 with a safe zone of 1100x300px.  +
+Keeping the file size small will ensure a positive player experience and system level delivery. If the image or video is too large, even if is sent by Teak, some Android Operating Systems may not send it on. You can also include a Fallback Message which will be displayed on Android Wear devices.
+
+*Expanded View Size* +
+1,700x850 pixel .jpg, .png, .mpeg4 that will be displayed when the player expands the Notification. The entire area is safe for content. Some Android Operating systems will not display the content if it is too large. You can adjust the size of the media to 850x150 pixels which should eliminate this issue.
+
+*Display Standard View above Expanded View* +
+This ensures the Background Image/Video or standard text is always displayed in addition to the Expanded View. If this remains unchecked some operating systems may elect not to display the Standard View. Ensure you have all relevant information - including app identification - in the Expanded View if you choose not to use this option
+
+*Buttons*  +
+Add a CTA to your message with a Button. These can be excellent engagement tools, but should be previewed and thoroughly tested before any sends, as the experience may vary across devices.
+
+*iOS*
+
+*Expanded View Size* +
+1100x620 pixel .jpg, .png, .mpeg4 that will be displayed when the player expands the Notification. The entire area is safe for content. 
+
+*Loop media until player interacts with notification* +
+This can help to create a gamified feel or be more engaging without adding to the size of a .mpeg4.
+
+*Buttons* +
+In addition to adding CTA Buttons, you can create a more engaging experience with Interactive Buttons. Adding an interactive element allows players to trigger a video experience with each button click.
+
+*Rewards*
+
+Adding a Reward to your Notifications is super simple. Once you’ve created the Bundle, apply it to your message with the “Reward Bundle” dropdown. Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the “X” to the right of the selected Bundle to remove it.
+
+*Expiration*
+
+Setting an Expiration time helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
+
+Messages allow you to set an expiration based in minutes, hours, or days after the send time.
+
+*Advanced*
+
+In addition to sending Notifications, Teak has advanced features that can be enabled by your development team. Each platform has varying capabilities.
+
+*Facebook*
+
+*Link* +
+This option allows you to direct players to a specific location in your game with a Deep Linking route. When this feature is used, players will click the notification and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
+
+*iOS*
+
+*Set Badge* +
+This option will display a 1, sometimes called a pip, overlaying the app icon on the player’s device when the Message is sent. This can be globally enabled or disabled as explained in the section on Settings. The badge will always display “1”, no matter how many Notifications have been received.
+
+*Show in Foreground* +
+Displays the Notification even if players are currently in the game.
+
+*Sound* +
+Adjusting the sound will determine if the player is notified with a noise when the notification is received.
+
+*Deep Link* +
+This is the same principle as the Link option for Facebook. Unlike Facebook, however, an Android or iOS Deep Link can direct to a web URL (e.g. https://example.com/) and the game will open the default device browser to that URL shortly after the game launches and appropriately apply any attached Rewards. These routes are determined by your development team and may differ by platform.
+
+*Android*
+
+*Show App Icon in Notification*  +
+This option will display your icon in the non-expanded view for operating systems below Android 12. For Android 12+, this option has no effect and app icons will always be displayed on notifications to these players.  +
+It is recommended to always have your icon present, you may opt to uncheck this option for players on older Android devices if you’re using a background image that already has the icon baked in.
+
+*Show in Foreground * +
+Displays the Notification even if players are currently in the game. Please note the SDK requirements noted when creating the message.
+
+*Deep Link* +
+This is the same principle as the Link option for Facebook. Unlike Facebook, however, an Android or iOS Deep Link can direct to a web URL (e.g. https://example.com/) and the game will open the default device browser to that URL shortly after the game launches and appropriately apply any attached Rewards. These routes are determined by your development team and may differ by platform.
+
+*Testing*
+
+When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Message creation process, choose the “Create A/B Test” option. You can create dozens of Messages to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options. 
+
+At the time the test is set up, Teak will randomly assign players from the audience to the variants.
+
+When you go back to the specific platform tab, you have more options for your test.  +
+You can: +
+*Select a Winner,* which will disable the other tests and remove them from the UI.  +
+*Configure Test*, giving you the option to choose the weight of each test variable or randomize your audience. If you are running this message as a Recurring message this helps to ensure players are not only getting one variant if they remain in the audience. 
+
+*Note*: You will have to make this adjustment on each platform the test will run on and it will randomize every 24 hours.
+
+*Preview*
+
+Once you have your basic Message created and Bundles added, you can verify it by testing on each Platform.  +
+The easiest way to test is to “Preview” the Message. 
+
+. Select “Notifications” from the left rail
+. Enter the tab for the specific platform you’d like to test
+. Locate the Message
+. Select “Preview” on the right.
+
+*Facebook* +
+Connect to an active Facebook account where you play your game. 
+
+*Mobile* +
+You’ll be asked to enter the ID Teak uses to associate to your player account. It will find your most recently played device on that platform, and you’ll be able to begin Previewing Notifications. 
+
+*Note*: If you receive an error that says 'Device is not registered for push', it means the device is not appropriately opted into push for your app. This determination is made when Teak has attempted to send the Message but the device cannot receive Push Notifications. This may also happen if Teak was unable to get a Push Token from the device due to an SDK integration issue. Follow the directions for your device to ensure Push is enabled, and if it is not resolved, consult your dev team for potential issues with the integration.
+
+
+

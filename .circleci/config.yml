@@ -1,0 +1,48 @@
+version: 2.1
+
+parameters:
+  build_type:
+    type: enum
+    default: "development"
+    enum: ["development", "production"]
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - build_antora_playbook:
+          build_type: << pipeline.parameters.build_type >>
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          context:
+            - Antora
+
+commands:
+  #
+  # Trigger a playbook build
+  #
+  build_antora_playbook:
+    description: "Build Teak Docs"
+    parameters:
+      build_type:
+        type: enum
+        default: "development"
+        enum: ["development", "production"]
+    steps:
+      - run:
+          name: Trigger Antora Playbook Build
+          command: |
+            curl --location --request POST 'https://circleci.com/api/v2/project/github/GoCarrot/antora-ui-teak/pipeline' \
+            --header 'Content-Type: application/json' \
+            -u "${CIRCLE_API_TOKEN}" \
+            -d '{
+              "parameters": {
+                "build_type": "<< parameters.build_type >>"
+              }
+            }'

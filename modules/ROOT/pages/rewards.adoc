@@ -1,0 +1,61 @@
+Rewards can be added to Links and Messages as an incentivization or prize. These may be personalized and customized for specific situations and applied using Audience criteria.
+
+*Items and Currency*
+
+Your engineering team can assign Items and Currency within the code. Once they have released the update, you can begin using these Rewards! You must have the exact name used in the code to set it up.
+ +
+*Setting Up a New Item or Currency*
+
+. On the left rail, select “Rewards”
+. Navigate to the “Items & Currencies” Tab
+. If you do not see what you’re looking for, add it by clicking the “New Item or Currency” Button
+. You can give it a display name, and fill in the Internal ID from the name used in the code
+Now, when you are creating Reward Bundles, it will be updated with this option!
+
+*Bundle Creation*
+
+Rewards are applied as Bundles. This means once you create a specific Reward, you never have to create that same reward again. If you have a currency called _Coins_, and you create a bundle for 1,000,000 - you can use that same bundle any time you want to award 1,000,000 Coins. This means across Messages and Links.
+
+*Setting Up Bundles*
+
+. Select “Rewards” from the left rail. 
+. Choose the “New Reward Bundle” Tab 
+. Give your Reward Bundle a name
+. Then select the type of Reward and value
+You can choose multiple reward types, create a random distribution, segment rewards by tier with Audience Controlled Rewarding, or a combination of these options. 
+
+*Audience Controlled Rewarding*
+
+Audience Controlled Rewarding allows you to micro-segment any targeted Audience by adding additional audience tiers. For example, if you intend to send an email to everyone who has played the game in a specific timeframe, but you want to provide more currency to players who have spent in your game, this feature allows you to do that without creating multiple messages.
+
+*Setting Up Audience Controlled Rewarding*
+
+. Create your Audiences. This will include your broader audience, as well as the tiers you wish you use for rewarding segmentation (You can reference the Audience Creation steps here)
+. Select “Rewards” on the left rail
+. In the “Reward Bundles” Tab click the “New Reward Bundle” Button
+. On the right side, choose “Add Reward Tier”
+. This adds a new option where you can Select An Audience
+. The Audiences added should be tiered in your bundle. Some examples include specific timeframes played, in-game levels, monetization tiers, tenure, or other behavior based activities. 
+. Ensure you’ve covered all of the tiers you wish to reward, with the final segment covering anyone outside of your tiers
+. You can choose to Randomize Rewards for each tier, and weight those amounts as you normally would for a bundle
+
+*Verifying Reward Collection*
+
+There are many scenarios where you may want to verify receipt of a Teak Reward. The Audit Log returns successful responses from your server following the message from Teak to apply a Reward. 
+
+*Audit Log Exploration*
+
+. Select “Rewards” on the left rail
+. Choose the “Audit Log” tab
+. In the “Clicking User ID” Box, enter the unique identifier you use to identify players within Teak
+. Status allows you to select Successes or Failures specifically
+. Set the date timeframe
+. Search!
+. The results will tell you the following
+.. *Time*: When the player initiated receipt of the reward
+.. *Identifier*: The Name of the Message or Link clicked
+.. *Reward*: The Currency and amount
+.. *Server* *Response*: The scripted success or failure response from the server
+
+
+

@@ -1,0 +1,53 @@
+Settings is where your engineering and marketing teams will be able to control many aspects of Teak. There are many things your engineering team will fill in or provide inputs for. This is covered in the technical implementation instructions. Items like IDs, Keys, Secrets, and Certificates will need to be up-to-date in order to successfully send messages and connect to your app.
+
+*Adding Teak Users*
+
+There are many reasons people may need access to Teak. Some may only need it on QA, Staging, or other non-production environments. Others who need to create Messages or Links will need live environment access. Coming up with an internal plan will help determine where to add users so they can successfully do their job, but not provide unnecessary access to production. There are no limits on the number of users you can have, and there are no access tiers, so it’s important to groom the list as user needs change.
+
+*To add a user*
+
+. Select “Settings” on the left rail
+. Within the “General” Tab, you may invite users via Email. 
+
+If they have not used Teak in the past, they’ll be invited to sign up. If they are already a user on any app with the invited email address, then they will simply find a new environment available when they log in.
+
+*Player Properties*
+
+*Accessing Custom Player Properties*
+
+. Select “Settings” on the left rail
+. In the “General” Tab, scroll about halfway down the page. 
+
+Your engineering team can add Player Properties for many aspects of your game. These are separated into Strings (text) or Integers (numbers). 
+
+*Examples of Integers*
+
+* Total number of currency
+* In-game Levels
+* Earned Experience. 
+
+*Examples of Strings *
+
+* Player Nickname
+* Name of the last in-game location visited
+* A Favorite Item.
+
+The name used in the code can be entered here, and then it can be used as an Audience Rule or Tag within a Message.
+
+*Player Profile* +
+The ID you use to identify players within Teak can be entered into the “Find Player Profile” section. This will show you the properties for that specific player. This can be useful to verify information is being sent correctly, or even as a Customer Service tool.
+
+*Disabling Notifications*
+
+In the Notification tabs for iOS, Android, and Facebook you will find the option to Enable Notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages. 
+
+*Email*
+
+The “Email” Tab covers several necessities like Email Footer and CAN-SPAM & GDPR requirements. Filling out these fields will ensure your Emails are compliant with global regulations, while the Footer provides a consistent look and feel with options for your Social Media, as well as game and company logos. 
+
+*Note*: The optimal size of Footer logos is 300 pixel x 100 pixel, but this is flexible. Generally, you should aim for approximately 3x wider than tall, and no taller than 150 pixels.
+
+*User Subscription Status* +
+Is located about halfway down the page and allows you to determine a player’s subscription status by an ID or email address. You can find out if a player has unsubscribed, marked an email as spam, or has another subscribed or unsubscribed status.
+
+
