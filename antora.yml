@@ -3,3 +3,7 @@ title: Usage
 version: ~
 nav:
 - modules/ROOT/nav.adoc
+
+asciidoc:
+  attributes:
+    page-pagination: '' # Enables Next/Previous at the bottom of pages
