@@ -1,18 +1,20 @@
-*Email Creation*
+= Email
+
+== Email Creation
 
 Email follows many of the same principles as the Push and App-to-User Notifications. If you have familiarized yourself with Notifications, you’ll find much of this section repeats, but there are some key differences.
 
-*Formatting*
+=== Formatting
 
 You can use the same tags, emojis, and HTML formatting in Email that you can on Android. You can use the Teak Markup Tag documentation, but any HTML5 is acceptable. 
 
-*Character Count* +
-Subject 50 Characters Recommended. 255 Characters allowed 
+=== Character Count
+Subject:: 50 Characters Recommended. 255 Characters allowed
 
-*Body* +
+Body::
 768 Characters allowed (Keeping a balanced Text to Image ratio and including HTML and Tags)
 
-*Using Images*
+=== Using Images
 
 Emails must have an image uploaded to be sent. The image size is mostly up to you, and will be compressed as needed. When deciding on a standardized Email template, it’s most beneficial to test on different devices and email providers to determine how you would like your messages to appear to players. 
 
@@ -20,19 +22,19 @@ Animated .gif files can be used in your emails, but keep in mind that their larg
 
 In addition to an uploaded image, you may also insert images with HTML, if you are familiar with that process.  
 
-*Rewards*
+== Rewards
 
 As with Notifications, adding Rewards is just a couple of clicks away. Once you’ve created the Bundle, you simply apply it to your message with the “Reward Bundle” dropdown.  Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the “X” to the right of the selected Bundle to remove it.
 
-*Expiration*
+== Expiration
 
 Setting an Expiration time helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
 
 Emails allow you to set an expiration based in minutes, hours, or days after the send time.
 
-*Advanced*
+== Advanced
 
-*Deep Link * +
+Deep Link::
 This option allows you to direct players to a specific location in your game. When this feature is used, players will click the Email and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any rewards will be awarded as normal.
 
 A specific difference If you have both mobile and desktop experiences is that *you will only be able to use a Deep Link for one of these options per Email.* You may set the Deep Link for Mobile OR Desktop. The players who do not open where the Deep Linking is available will have their games opened to the default entry point, and will receive any Rewards as normal. 
@@ -41,20 +43,22 @@ A specific difference If you have both mobile and desktop experiences is that *y
 
 You can try to mitigate this by splitting your Audience by mobile or desktop and send an Email with the corresponding Deep Links. You may still have some players who slip through the cracks.
 
-*Testing*
+== Testing
 
 When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Email creation process, choose the “Create A/B Test” option. You can create dozens of Emails to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options. 
 
 At the time the test is set up, Teak will randomly assign players from the audience to the variants.
 
-When you go back to the Email tab, you have more options for your test.  +
+When you go back to the Email tab, you have more options for your test. +
 You can: +
-*Select a Winner,* which will disable the other tests and remove them from the UI.  +
-*Configure Test*, giving you the option to choose the weight of each test variable or randomize your audience. If you are running this message as a Recurring message this helps to ensure players are not only getting one variant if they remain in the audience. 
 
-*Note*: You will have to make this adjustment on each platform the test will run on and it will randomize every 24 hours.
+Select a Winner:: Disable the other tests and remove them from the UI.
 
-*Preview*
+Configure Test:: Choose the weight of each test variable or randomize your audience. If you are running this message as a Recurring message this helps to ensure players are not only getting one variant if they remain in the audience.
+
+NOTE: You will have to make this adjustment on each platform the test will run on and it will randomize every 24 hours.
+
+== Preview
 
 Once you have your Email message created and bundles added, you can verify it by sending a test message. 
 
@@ -66,18 +70,16 @@ Select “Preview” on the right.
 
 This will send to the Email address associated with your account. Previewing on different platforms and resolutions will help give the most clear picture of how your Email will appear for players.
 
-*Emails That Can Be Replied To*
+== Emails That Can Be Replied To
 
-In Email Settings, create a new Email Credential using the same Sendgrid API Key as your normal Email Credential. 
+In Email Settings, create a new Email Credential using the same Sendgrid API Key as your normal Email Credential.
 
-If, and only if, you have set up the domain of the email address you want replies to go to as an authenticated domain for your SendGrid account, you may set that email address as the From Address. 
+If, and only if, you have set up the domain of the email address you want replies to go to as an authenticated domain for your SendGrid account, you may set that email address as the From Address.
 
-However, if you have not - or cannot do that - use the same From Address as your normal Email Credential. 
+However, if you have not - or cannot do that - use the same From Address as your normal Email Credential.
 
 In this case, set the email address you want replies to go to as the Reply To Address on the Email Credential.
 
-Once this Email Credential is created, you can use it on a Schedule by Schedule basis. To do this, when setting up a Schedule with a Message that has Email content, you will have an option for "Override Email Credential for send". Set this to your newly created Email Credential. 
+Once this Email Credential is created, you can use it on a Schedule by Schedule basis. To do this, when setting up a Schedule with a Message that has Email content, you will have an option for "Override Email Credential for send". Set this to your newly created Email Credential.
 
 Now, when this Schedule is used to send an Email, if a player replies to the Email from their email client, the reply will be sent to the configured "Reply To Address". Schedules which do not have Override Email Credentials for send will continue to use the default From and Reply To Addresses, which are typically "noreply".
-
-

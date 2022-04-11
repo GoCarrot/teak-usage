@@ -9,5 +9,5 @@
 * xref:usage::page$custom-tags.adoc[Custom Tags]
 * xref:usage::page$scheduling.adoc[Scheduling]
 * xref:usage::page$settings.adoc[Settings]
-* Helpful Audiences
+* xref:usage::page$helpful-audiences.adoc[Helpful Audiences]
 * xref:usage::page$faq.adoc[FAQ]
