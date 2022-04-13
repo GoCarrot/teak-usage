@@ -6,7 +6,7 @@ Scheduling is where you’ll bring together the Audience, Message, and how it ge
 
 == Schedule Creation
 
-To Schedule a message, select “Notifications” from the left rail, and in the Schedules tab click the “New Schedule” Button. 
+To Schedule a message, select "Notifications" from the left rail, and in the Schedules tab click the "New Schedule" Button.
 
 === Naming
 Name your Scheduled deployment with a convention in mind. This will help you and all users in your organization.
@@ -18,13 +18,13 @@ Date - Message Name - Audience - Send Time - Currency
 === Audiences
 All of your created Audiences will be available to you at the time of Scheduling. If you’re in a situation where you need to create an entirely new Audience, you can also start that process during Scheduling. 
 
-=== Who would you like to send the notification to?”
+=== Who would you like to send the notification to?"
 
-Scroll to find the Audience, begin typing the name, or expand the Audience dropdown and create a new one. You may only send a message to one Audience per Schedule, but you can easily Duplicate the Schedule under the “Schedules” Tab.
+Scroll to find the Audience, begin typing the name, or expand the Audience dropdown and create a new one. You may only send a message to one Audience per Schedule, but you can easily Duplicate the Schedule under the "Schedules" Tab.
 
 == Attaching a Message
 
-=== “What message would you like to send?”
+=== "What message would you like to send?"
 
 Scroll, type, or create a new Message just as you did with the Audience selection.
 
@@ -57,7 +57,7 @@ If you’re sending a message that is intended to be repeated, you can select to
 
 === Now
 
-Sending a message “Now” does exactly this. It sends the message immediately, without delay.
+Sending a message "Now" does exactly this. It sends the message immediately, without delay.
 
 === Triggered
 

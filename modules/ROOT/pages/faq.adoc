@@ -60,7 +60,7 @@ If the Player ID was in the audience, and the email address is correctly associa
 
 Select Rewards from the left rail +
 Choose the Audit Log tab +
-In the “Clicking User ID” box, enter the Player ID +
+In the "Clicking User ID" box, enter the Player ID +
 If the email is located in the list, you can see the amount that was applied to the player
 
 Any additional follow-up can be done by your dev team

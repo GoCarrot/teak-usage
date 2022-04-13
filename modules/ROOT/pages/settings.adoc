@@ -8,8 +8,8 @@ There are many reasons people may need access to Teak. Some may only need it on 
 
 === To add a user
 
-. Select “Settings” on the left rail
-. Within the “General” Tab, you may invite users via Email. 
+. Select "Settings" on the left rail
+. Within the "General" Tab, you may invite users via Email.
 
 If they have not used Teak in the past, they’ll be invited to sign up. If they are already a user on any app with the invited email address, then they will simply find a new environment available when they log in.
 
@@ -17,8 +17,8 @@ If they have not used Teak in the past, they’ll be invited to sign up. If they
 
 === Accessing Custom Player Properties
 
-. Select “Settings” on the left rail
-. In the “General” Tab, scroll about halfway down the page. 
+. Select "Settings" on the left rail
+. In the "General" Tab, scroll about halfway down the page.
 
 Your engineering team can add Player Properties for many aspects of your game. These are separated into Strings (text) or Integers (numbers). 
 
@@ -37,7 +37,7 @@ Your engineering team can add Player Properties for many aspects of your game. T
 The name used in the code can be entered here, and then it can be used as an Audience Rule or Tag within a Message.
 
 === Player Profile
-The ID you use to identify players within Teak can be entered into the “Find Player Profile” section. This will show you the properties for that specific player. This can be useful to verify information is being sent correctly, or even as a Customer Service tool.
+The ID you use to identify players within Teak can be entered into the "Find Player Profile" section. This will show you the properties for that specific player. This can be useful to verify information is being sent correctly, or even as a Customer Service tool.
 
 == Disabling Notifications
 
@@ -45,7 +45,7 @@ In the Notification tabs for iOS, Android, and Facebook you will find the option
 
 == Email
 
-The “Email” Tab covers several necessities like Email Footer and CAN-SPAM & GDPR requirements. Filling out these fields will ensure your Emails are compliant with global regulations, while the Footer provides a consistent look and feel with options for your Social Media, as well as game and company logos. 
+The "Email" Tab covers several necessities like Email Footer and CAN-SPAM & GDPR requirements. Filling out these fields will ensure your Emails are compliant with global regulations, while the Footer provides a consistent look and feel with options for your Social Media, as well as game and company logos.
 
 NOTE: The optimal size of Footer logos is 300 pixel x 100 pixel, but this is flexible. Generally, you should aim for approximately 3x wider than tall, and no taller than 150 pixels.
 

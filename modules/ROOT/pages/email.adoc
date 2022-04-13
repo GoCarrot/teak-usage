@@ -24,7 +24,7 @@ In addition to an uploaded image, you may also insert images with HTML, if you a
 
 == Rewards
 
-As with Notifications, adding Rewards is just a couple of clicks away. Once you’ve created the Bundle, you simply apply it to your message with the “Reward Bundle” dropdown.  Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the “X” to the right of the selected Bundle to remove it.
+As with Notifications, adding Rewards is just a couple of clicks away. Once you’ve created the Bundle, you simply apply it to your message with the "Reward Bundle" dropdown.  Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the "X" to the right of the selected Bundle to remove it.
 
 == Expiration
 
@@ -45,7 +45,7 @@ You can try to mitigate this by splitting your Audience by mobile or desktop and
 
 == Testing
 
-When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Email creation process, choose the “Create A/B Test” option. You can create dozens of Emails to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options. 
+When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Email creation process, choose the "Create A/B Test" option. You can create dozens of Emails to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options.
 
 At the time the test is set up, Teak will randomly assign players from the audience to the variants.
 
@@ -62,11 +62,11 @@ NOTE: You will have to make this adjustment on each platform the test will run o
 
 Once you have your Email message created and bundles added, you can verify it by sending a test message. 
 
-The easiest way to test is to “Preview” the message.  +
-Select “Notifications” from the left rail +
-Enter the “Email” Tab +
+The easiest way to test is to "Preview" the message.  +
+Select "Notifications" from the left rail +
+Enter the "Email" Tab +
 Locate the Email +
-Select “Preview” on the right.
+Select "Preview" on the right.
 
 This will send to the Email address associated with your account. Previewing on different platforms and resolutions will help give the most clear picture of how your Email will appear for players.
 

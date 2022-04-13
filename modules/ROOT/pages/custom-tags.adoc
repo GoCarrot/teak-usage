@@ -7,7 +7,7 @@ In addition to your Player Properties, you can find a few tags built into Teak b
 == Other customizable Tags
 
 Fallback if Player Name is unavailable::
-``{{first_name|default: ”Hey_Pal”}}`` Replace Hey Pal with a generic phrase or salutation.
+``{{first_name|default: "Hey_Pal"}}`` Replace Hey Pal with a generic phrase or salutation.
 
 Simplify a large complex number::
 ``{{some_number | number_to_human}}`` Replace ``some_number`` with the name of your currency, and it will personalize it.
@@ -15,7 +15,7 @@ Simplify a large complex number::
 .Coins
 [example]
 ====
-If a player has a total of 300,144 Coins, your message could say “Let’s make you a millionaire! Collect 700,000 Coins to add to your balance of 3 Hundred Thousand.“
+If a player has a total of 300,144 Coins, your message could say "Let’s make you a millionaire! Collect 700,000 Coins to add to your balance of 3 Hundred Thousand."
 ====
 
 If you’d rather have more numeric places, you can add a qualifier. For instance ``{{coins| number_to_human: 3}}`` would display their balance as ``300 Thousand``.

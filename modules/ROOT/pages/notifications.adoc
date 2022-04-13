@@ -8,13 +8,13 @@ Once these steps are successfully completed, you can begin sending Notifications
 
 == Push/App-to-User Creation
 
-. Select “Notifications” on the left rail
-. Under the “Messages” Tab, choose “New Message”
+. Select "Notifications" on the left rail
+. Under the "Messages" Tab, choose "New Message"
 . Name the Message and select the platforms you want to send to
 .. You will see Email as a platform option. At the time you create your schedule, you will be able to prioritize platforms, however, Email does not use the same logic as Push or A2U and should be scheduled separately.
-. Create your Message(s). You can use Emojis and several Custom Tags which are available by selecting the “@” icon in the text box. There are limited options provided out of the box with Teak. For additional options, use Player Properties.
+. Create your Message(s). You can use Emojis and several Custom Tags which are available by selecting the "@" icon in the text box. There are limited options provided out of the box with Teak. For additional options, use Player Properties.
 . If you’re targeting more than one platform, you can choose to copy the same message across platforms, however platform-specific features and personalizations are covered in the following sections.
-. Review the messages and how they will appear on each platform. As you perfect your brand’s style you will gain confidence in verifying messages at this step. However, using the Preview option on the “Messages” Tab after you save is an easy way to view your work on specific devices and include images or videos.
+. Review the messages and how they will appear on each platform. As you perfect your brand’s style you will gain confidence in verifying messages at this step. However, using the Preview option on the "Messages" Tab after you save is an easy way to view your work on specific devices and include images or videos.
 
 == Formatting
 
@@ -24,7 +24,7 @@ Facebook::
 Native support to display and format player names as they appear on the Facebook platform
 
 Mobile::
-Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the ``{{first_name|default:”Hey Pal”}}`` Tag. Simply replace ``Hey Pal`` with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
+Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the ``{{first_name|default:"Hey Pal"}}`` Tag. Simply replace ``Hey Pal`` with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
 
 Android Personalization (Including applicable Amazon devices)::
 In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The Teak Markup Tag documentation will help you set up messages using this feature. 
@@ -79,7 +79,7 @@ In addition to adding CTA Buttons, you can create a more engaging experience wit
 
 == Rewards
 
-Adding a Reward to your Notifications is super simple. Once you’ve created the Bundle, apply it to your message with the “Reward Bundle” dropdown. Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the “X” to the right of the selected Bundle to remove it.
+Adding a Reward to your Notifications is super simple. Once you’ve created the Bundle, apply it to your message with the "Reward Bundle" dropdown. Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the "X" to the right of the selected Bundle to remove it.
 
 == Expiration
 
@@ -99,7 +99,7 @@ This option allows you to direct players to a specific location in your game wit
 === iOS
 
 Set Badge::
-This option will display a 1, sometimes called a pip, overlaying the app icon on the player’s device when the Message is sent. This can be globally enabled or disabled as explained in the section on Settings. The badge will always display “1”, no matter how many Notifications have been received.
+This option will display a 1, sometimes called a pip, overlaying the app icon on the player’s device when the Message is sent. This can be globally enabled or disabled as explained in the section on Settings. The badge will always display "1", no matter how many Notifications have been received.
 
 Show in Foreground::
 Displays the Notification even if players are currently in the game.
@@ -124,7 +124,7 @@ This is the same principle as the Link option for Facebook. Unlike Facebook, how
 
 == Testing
 
-When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Message creation process, choose the “Create A/B Test” option. You can create dozens of Messages to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options. 
+When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Message creation process, choose the "Create A/B Test" option. You can create dozens of Messages to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options.
 
 At the time the test is set up, Teak will randomly assign players from the audience to the variants.
 
@@ -140,12 +140,12 @@ NOTE: You will have to make this adjustment on each platform the test will run o
 == Preview
 
 Once you have your basic Message created and Bundles added, you can verify it by testing on each Platform.  +
-The easiest way to test is to “Preview” the Message.
+The easiest way to test is to "Preview" the Message.
 
-. Select “Notifications” from the left rail
+. Select "Notifications" from the left rail
 . Enter the tab for the specific platform you’d like to test
 . Locate the Message
-. Select “Preview” on the right.
+. Select "Preview" on the right.
 
 Facebook::
 Connect to an active Facebook account where you play your game.

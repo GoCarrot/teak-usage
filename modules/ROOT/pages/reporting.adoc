@@ -5,16 +5,16 @@ There are several ways to aggregate information for reporting in Teak.
 == Available Metrics
 
 === Primary Dashboard
-_Accessed by selecting “Dashboard” from the left rail._ +
+_Accessed by selecting "Dashboard" from the left rail._ +
 This covers all game metrics and has many tabs to be explored. You can review the overall health of your app and compare it to campaign performance. There are geo and date filters in the upper right.
 
 === Notification Dashboard
-_Accessed by selecting “Notifications” from the left rail and viewing the “Settings” Tab._ +
+_Accessed by selecting "Notifications" from the left rail and viewing the "Settings" Tab._ +
 This is specific to the results of your Push, App-to-User and Email campaigns. Adjusting the date also adjusts the results on the individual schedules and messages below the dashboard. If you have questions about the definitions of specific items, please review the Glossary for more information.
 
 == Analyzing
 
-Within Notifications, you can do additional analysis. Select the Table view from the options to the left of the Sort button. Now, you may Filter and Sort the data to prepare it for export. Within the tabs for the individual notification platforms, you can choose to show a breakdown of the audience by the reward received. This can be found under Filters and selecting “Show Audience Reward”. 
+Within Notifications, you can do additional analysis. Select the Table view from the options to the left of the Sort button. Now, you may Filter and Sort the data to prepare it for export. Within the tabs for the individual notification platforms, you can choose to show a breakdown of the audience by the reward received. This can be found under Filters and selecting "Show Audience Reward".
 
 == Exporting
 

@@ -8,9 +8,9 @@ Your engineering team can assign Items and Currency within the code. Once they h
 
 === Setting Up a New Item or Currency
 
-. On the left rail, select “Rewards”
-. Navigate to the “Items & Currencies” Tab
-. If you do not see what you’re looking for, add it by clicking the “New Item or Currency” Button
+. On the left rail, select "Rewards"
+. Navigate to the "Items & Currencies" Tab
+. If you do not see what you’re looking for, add it by clicking the "New Item or Currency" Button
 . You can give it a display name, and fill in the Internal ID from the name used in the code
 
 Now, when you are creating Reward Bundles, it will be updated with this option!
@@ -21,8 +21,8 @@ Rewards are applied as Bundles. This means once you create a specific Reward, yo
 
 === Setting Up Bundles
 
-. Select “Rewards” from the left rail.
-. Choose the “New Reward Bundle” Tab
+. Select "Rewards" from the left rail.
+. Choose the "New Reward Bundle" Tab
 . Give your Reward Bundle a name
 . Then select the type of Reward and value
 
@@ -35,9 +35,9 @@ Audience Controlled Rewarding allows you to micro-segment any targeted Audience 
 === Setting Up Audience Controlled Rewarding
 
 . Create your Audiences. This will include your broader audience, as well as the tiers you wish you use for rewarding segmentation (You can reference the Audience Creation steps here)
-. Select “Rewards” on the left rail
-. In the “Reward Bundles” Tab click the “New Reward Bundle” Button
-. On the right side, choose “Add Reward Tier”
+. Select "Rewards" on the left rail
+. In the "Reward Bundles" Tab click the "New Reward Bundle" Button
+. On the right side, choose "Add Reward Tier"
 . This adds a new option where you can Select An Audience
 . The Audiences added should be tiered in your bundle. Some examples include specific timeframes played, in-game levels, monetization tiers, tenure, or other behavior based activities.
 . Ensure you’ve covered all of the tiers you wish to reward, with the final segment covering anyone outside of your tiers
@@ -49,9 +49,9 @@ There are many scenarios where you may want to verify receipt of a Teak Reward. 
 
 === Audit Log Exploration
 
-. Select “Rewards” on the left rail
-. Choose the “Audit Log” tab
-. In the “Clicking User ID” Box, enter the unique identifier you use to identify players within Teak
+. Select "Rewards" on the left rail
+. Choose the "Audit Log" tab
+. In the "Clicking User ID" Box, enter the unique identifier you use to identify players within Teak
 . Status allows you to select Successes or Failures specifically
 . Set the date timeframe
 . Search!

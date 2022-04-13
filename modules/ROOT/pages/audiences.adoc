@@ -4,7 +4,7 @@ Creating Audiences is as simple as designating a single rule or as complex as tr
 
 == Audience Set Up
 
-. Select “Audiences” from the left rail. You’ll start with the “New Audience” button at the top of the page. This brings up the Audience builder. 
+. Select "Audiences" from the left rail. You’ll start with the "New Audience" button at the top of the page. This brings up the Audience builder.
 . Give your audience a name. Much like with messages, it’s suggested that you use a naming convention that you can follow easily. A description is optional, but can also be helpful. 
 
 Now it’s time to set the rules! Some basic rules will be available when Teak is first implemented. Others can be added as Player Properties or Custom Events with your Development Team or the help of the Teak team.
@@ -34,7 +34,7 @@ These are not typically used, but are generally set up in conjunction with the T
 Player Properties::
 These are custom Strings and Integers set up by your dev team. If you choose Player Property as a rule you will see the full list of properties available for segmentation.
 
-You can set as many rules as needed to get to your ideal audience. After the first Rule is set, you can qualify each additional rule with “And” or “And Not” logic. 
+You can set as many rules as needed to get to your ideal audience. After the first Rule is set, you can qualify each additional rule with "And" or "And Not" logic.
 
 *Example*: If you wanted to target players who were active in the last month, but not in the last week, you could set up the following:
 
@@ -65,7 +65,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJIAAAG+CAYAAADIuy71AACAAEl
  
 This ensures you get the players who are _exclusively_ on Android.
  
-The “Notification” Filter::
+The "Notification" Filter::
 This is specific to Campaign Engagement. After selecting how a player may or may not have engaged with a Campaign, you can fine tune your rule with specific messages or links.
 
 Player Property Filters::
@@ -97,7 +97,7 @@ After creating a desired Audience, you can begin to determine its value.
 
 At the bottom of the Audience Builder you will see a breakdown. It defaults to showing the number of players, the average lifetime spend, the total number of players that have spent, and the amount. 
 
-You can further evaluate this information by changing the “Lifetime” value to any of the default date settings, or create your own custom timeframe.
+You can further evaluate this information by changing the "Lifetime" value to any of the default date settings, or create your own custom timeframe.
 
 In addition, you can expand the detailed data. Here you can evaluate the overall value of the Audience, and player spend.
 
@@ -124,7 +124,7 @@ Another valuable Audience creation tool is being able to use any Audience within
 You can use Teak Audiences to target specific players (Retargeting) or create look-alikes of your most valuable players (UA).
 
 * You will likely want to create a specific campaign within Facebook Ads for your Teak Audience Strategy.
-* From “Audiences” on the left rail, find the Audience you would like to use.
+* From "Audiences" on the left rail, find the Audience you would like to use.
 * Click the down arrow on the right to reveal more options.
-* Selecting “Sync to Facebook Ad Account” will allow you to choose an account that has been linked to Teak. If this is your first time, you will need to accept the Terms of Service and link the Facebook account you use to manage ads to Teak.
+* Selecting "Sync to Facebook Ad Account" will allow you to choose an account that has been linked to Teak. If this is your first time, you will need to accept the Terms of Service and link the Facebook account you use to manage ads to Teak.
 * You can choose your campaign and begin uploading your Audience
