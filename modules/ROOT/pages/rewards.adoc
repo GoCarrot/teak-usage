@@ -2,6 +2,8 @@
 
 Rewards can be added to Links and Messages as an incentivization or prize. These may be personalized and customized for specific situations and applied using Audience criteria.
 
+NOTE: Display names not inserted into messaging, they are for your reference only.
+
 == Items and Currency
 
 Your engineering team can assign Items and Currency within the code. Once they have released the update, you can begin using these Rewards! You must have the exact name used in the code to set it up.
@@ -26,7 +28,7 @@ Rewards are applied as Bundles. This means once you create a specific Reward, yo
 . Give your Reward Bundle a name
 . Then select the type of Reward and value
 
-You can choose multiple reward types, create a random distribution, segment rewards by tier with Audience Controlled Rewarding, or a combination of these options. 
+You can choose multiple reward types, create a random distribution, segment rewards by tier with Audience Controlled Rewarding, or a combination of these options.
 
 == Audience Controlled Rewarding
 
@@ -45,7 +47,7 @@ Audience Controlled Rewarding allows you to micro-segment any targeted Audience 
 
 == Verifying Reward Collection
 
-There are many scenarios where you may want to verify receipt of a Teak Reward. The Audit Log returns successful responses from your server following the message from Teak to apply a Reward. 
+There are many scenarios where you may want to verify receipt of a Teak Reward. The Audit Log returns successful responses from your server following the message from Teak to apply a Reward.
 
 === Audit Log Exploration
 
