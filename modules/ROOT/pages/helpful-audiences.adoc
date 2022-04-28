@@ -41,7 +41,7 @@ For a "Welcome Back - Day 2" Audience, you could look at players who were sent "
 
 == Players who clicked on any of a set of specified Schedules
 
-Start by creating an Audience with a "Campaign Engagement" Rule. The action should be "Clicked on a Notification" and add a "Schedule" Filter to it.
+Start by creating an Audience with a "Campaign Engagement" Rule. The action should be "nlicked on a notification" and add a "schedule" Filter to it.
 
 If you want players who clicked on ANY Schedule, it would look like this
 

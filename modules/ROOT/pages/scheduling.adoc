@@ -2,7 +2,7 @@
 
 Teak is very adaptable, whatever your workflow. The more comfortable you get with the toolset, the faster you will settle into a routine. This guide is designed to prepare you for the final step: scheduling your message.
 
-Scheduling is where you’ll bring together the Audience, Message, and how it gets distributed. 
+Scheduling is where you’ll bring together the Audience, Message, and how it gets distributed.
 
 == Schedule Creation
 
@@ -16,7 +16,7 @@ Name your Scheduled deployment with a convention in mind. This will help you and
 Date - Message Name - Audience - Send Time - Currency
 
 === Audiences
-All of your created Audiences will be available to you at the time of Scheduling. If you’re in a situation where you need to create an entirely new Audience, you can also start that process during Scheduling. 
+All of your created Audiences will be available to you at the time of Scheduling. If you’re in a situation where you need to create an entirely new Audience, you can also start that process during Scheduling.
 
 === Who would you like to send the notification to?"
 
@@ -34,10 +34,10 @@ NOTE: You will want to set up messaging A/B testing within the message itself; t
 
 == Additional Targeting
 
-Before sending your message, you will be able to choose how you want it delivered. Since a player can play the game on multiple devices and may have a different game version on each device, this is where you can set your delivery preferences. 
+Before sending your message, you will be able to choose how you want it delivered. Since a player can play the game on multiple devices and may have a different game version on each device, this is where you can set your delivery preferences.
 
 === "Per user, what devices would you like to deliver to?"
-You may choose to deliver to all devices, most recent, or only to specific devices or game versions. If you choose something that will limit device sends, this will not affect Email or App-to-User Notifications as those do not take the device into account. 
+You may choose to deliver to all devices, most recent, or only to specific devices or game versions. If you choose something that will limit device sends, this will not affect Email or App-to-User Notifications as those do not take the device into account.
 
 For Game or OS versions you can filter minimum (greater than [or equal to]), maximum (less than [or equal to]), specific (equal to) or a range (between).
 
@@ -49,11 +49,11 @@ You have several custom ways to send messages within Teak. You can set up messag
 
 === Later
 
-You can set a time in the future by selecting a date and time. You may change between your time zone and player specific time zones. 
+You can set a time in the future by selecting a date and time. You may change between your time zone and player specific time zones.
 
-The option to send to players all at once or over a period of time is useful for ensuring servers are not inundated with large amounts of traffic or used to spread out Email deliveries to preserve reputation. 
+The option to send to players all at once or over a period of time is useful for ensuring servers are not inundated with large amounts of traffic or used to spread out Email deliveries to preserve reputation.
 
-If you’re sending a message that is intended to be repeated, you can select to do that daily, weekly, bimonthly, or monthly and set an end date. 
+If you’re sending a message that is intended to be repeated, you can select to do that daily, weekly, bimonthly, or monthly and set an end date.
 
 === Now
 
@@ -66,3 +66,5 @@ Messages that are Scheduled as Triggered can be sent when a player enters or lea
 === Local
 
 While these are scheduled within the SDK, the Scheduling option within Teak allows you to edit the content. You can use any Notification capabilities, such as images and formatting, that are available for traditional Push. The Scheduling of Local Notifications is completely controlled by the game client. Your dev team will create triggers that tell Teak to send the notification a specific amount of time after an event is completed.
+
+(See <<TeakNotification.ScheduleNotification(string,string,long,Reply)>>)

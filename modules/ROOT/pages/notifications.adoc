@@ -1,8 +1,8 @@
 = Notifications
 
-Notifications allow you to reach players in the moment. Push Notifications are available on Amazon, Android, and iOS devices, while App-To-User Notifications are part of the Facebook desktop experience. 
+Notifications allow you to reach players in the moment. Push Notifications are available on Amazon, Android, and iOS devices, while App-To-User Notifications are part of the Facebook desktop experience.
 
-These platforms must be integrated by your development team and the Settings updated in Teak. 
+These platforms must be integrated by your development team and the Settings updated in Teak.
 
 Once these steps are successfully completed, you can begin sending Notifications directly to players. You may create single Messages that can be sent across platforms, while customizing for their unique requirements.
 
@@ -26,8 +26,8 @@ Native support to display and format player names as they appear on the Facebook
 Mobile::
 Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the ``{{first_name|default:"Hey Pal"}}`` Tag. Simply replace ``Hey Pal`` with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
 
-Android Personalization (Including applicable Amazon devices)::
-In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The Teak Markup Tag documentation will help you set up messages using this feature. 
+Android Text Formatting (Including applicable Amazon devices)::
+In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The xref:sdk-reference:android:page$markup.adoc[Teak Markup Tag documentation] will help you set up messages using this feature.
 
 == Approximate Character Counts
 
@@ -48,10 +48,10 @@ Android Message Body::
 120 Displayed Characters Recommended. 160 Characters Allowed. +
 If you are only utilizing text and emojis, or if your tags greatly extend the length of your message, some Android Operating Systems may still truncate your Message. Since the Markup is included in your Character Limit, feel free to use the full 160 Characters to account for these non-displayed characters.
 
-== Using Images
+== Rich Push
 
 === Android
-On Android, and applicable Amazon devices, there is an option for a Background Image/Video. This appears as the primary Notification for players, and replaces any standard text. 
+On Android, and applicable Amazon devices, there is an option for a Background Image/Video. This appears as the primary Notification for players, and replaces any standard text.
 
 Background Image/Video Size::
 1,700x300 pixel .jpg, .png, or .mpeg4 with a safe zone of 1100x300px.  +
@@ -68,8 +68,11 @@ Add a CTA to your message with a Button. These can be excellent engagement tools
 
 === iOS
 
+Animated Gifs::
+Animated gif images will play, and loop, automatically.
+
 Expanded View Size::
-1100x620 pixel .jpg, .png, .mpeg4 that will be displayed when the player expands the Notification. The entire area is safe for content. 
+1100x620 pixel .jpg, .png, .mpeg4 that will be displayed when the player expands the Notification. The entire area is safe for content.
 
 Loop media until player interacts with notification::
 This can help to create a gamified feel or be more engaging without adding to the size of a .mpeg4.
@@ -124,7 +127,9 @@ This is the same principle as the Link option for Facebook. Unlike Facebook, how
 
 == Testing
 
-When optimizing Messages, Teak makes performing A/B and Multivariate tests easy. During the Message creation process, choose the "Create A/B Test" option. You can create dozens of Messages to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options.
+Teak makes performing A/B and Multivariate tests easy to help you optimize your Messages.
+
+During the Message creation process, choose the "Create A/B Test" option. You can create dozens of Messages to be distributed. From here you can change the content or the incentives as well as the Reward expiration and Advanced options.
 
 At the time the test is set up, Teak will randomly assign players from the audience to the variants.
 
@@ -152,5 +157,7 @@ Connect to an active Facebook account where you play your game.
 
 Mobile::
 You’ll be asked to enter the ID Teak uses to associate to your player account. It will find your most recently played device on that platform, and you’ll be able to begin Previewing Notifications.
++
+Teak will list all known devices for your user, select the one to preview to. If you regularly uninstall and reinstall you may have many devices in which case you should select the most recently used one.
 
 NOTE: If you receive an error that says 'Device is not registered for push', it means the device is not appropriately opted into push for your app. This determination is made when Teak has attempted to send the Message but the device cannot receive Push Notifications. This may also happen if Teak was unable to get a Push Token from the device due to an SDK integration issue. Follow the directions for your device to ensure Push is enabled, and if it is not resolved, consult your dev team for potential issues with the integration.
