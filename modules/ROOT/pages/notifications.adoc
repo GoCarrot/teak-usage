@@ -139,7 +139,7 @@ You can: +
 Select a Winner:: Disable the other tests and remove them from the UI.
 
 Configure Test:: Choose the weight of each test variable or randomize your audience. If you are running this message as a Recurring message this helps to ensure players are not only getting one variant if they remain in the audience.
-
++
 NOTE: You will have to make this adjustment on each platform the test will run on and it will randomize every 24 hours.
 
 == Preview
@@ -158,6 +158,8 @@ Connect to an active Facebook account where you play your game.
 Mobile::
 You’ll be asked to enter the ID Teak uses to associate to your player account. It will find your most recently played device on that platform, and you’ll be able to begin Previewing Notifications.
 +
+--
 Teak will list all known devices for your user, select the one to preview to. If you regularly uninstall and reinstall you may have many devices in which case you should select the most recently used one.
 
 NOTE: If you receive an error that says 'Device is not registered for push', it means the device is not appropriately opted into push for your app. This determination is made when Teak has attempted to send the Message but the device cannot receive Push Notifications. This may also happen if Teak was unable to get a Push Token from the device due to an SDK integration issue. Follow the directions for your device to ensure Push is enabled, and if it is not resolved, consult your dev team for potential issues with the integration.
+--

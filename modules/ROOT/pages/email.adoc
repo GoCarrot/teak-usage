@@ -6,7 +6,7 @@ Email follows many of the same principles as the Push and App-to-User Notificati
 
 === Formatting
 
-You can use the same tags, emojis, and HTML formatting in Email that you can on Android. You can use the Teak Markup Tag documentation, but any HTML5 is acceptable. 
+You can use the same tags, emojis, and HTML formatting in Email that you can on Android. You can use the Teak Markup Tag documentation, but any HTML5 is acceptable.
 
 === Character Count
 Subject:: 50 Characters Recommended. 255 Characters allowed
@@ -16,11 +16,11 @@ Body::
 
 === Using Images
 
-Emails must have an image uploaded to be sent. The image size is mostly up to you, and will be compressed as needed. When deciding on a standardized Email template, it’s most beneficial to test on different devices and email providers to determine how you would like your messages to appear to players. 
+Emails must have an image uploaded to be sent. The image size is mostly up to you, and will be compressed as needed. When deciding on a standardized Email template, it’s most beneficial to test on different devices and email providers to determine how you would like your messages to appear to players.
 
 Animated .gif files can be used in your emails, but keep in mind that their large size may cause loading issues if displayed on older devices or slow connections. Additionally, they won’t be displayed at all to players using Outlook as their email client. These can be highly engaging, but should be tested thoroughly on your app’s min spec devices.
 
-In addition to an uploaded image, you may also insert images with HTML, if you are familiar with that process.  
+In addition to an uploaded image, you may also insert images with HTML, if you are familiar with that process.
 
 == Rewards
 
@@ -37,7 +37,7 @@ Emails allow you to set an expiration based in minutes, hours, or days after the
 Deep Link::
 This option allows you to direct players to a specific location in your game. When this feature is used, players will click the Email and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any rewards will be awarded as normal.
 
-A specific difference If you have both mobile and desktop experiences is that *you will only be able to use a Deep Link for one of these options per Email.* You may set the Deep Link for Mobile OR Desktop. The players who do not open where the Deep Linking is available will have their games opened to the default entry point, and will receive any Rewards as normal. 
+A specific difference If you have both mobile and desktop experiences is that *you will only be able to use a Deep Link for one of these options per Email.* You may set the Deep Link for Mobile OR Desktop. The players who do not open where the Deep Linking is available will have their games opened to the default entry point, and will receive any Rewards as normal.
 
 *Example*: If the Deep Link is routed for mobile, but the message is opened on desktop, it will not go to the routed entry point, but will open as if there were no Deep Link, and apply the Rewards.
 
@@ -60,13 +60,13 @@ NOTE: You will have to make this adjustment on each platform the test will run o
 
 == Preview
 
-Once you have your Email message created and bundles added, you can verify it by sending a test message. 
+Once you have your Email message created and bundles added, you can verify it by sending a test message.
 
-The easiest way to test is to "Preview" the message.  +
-Select "Notifications" from the left rail +
-Enter the "Email" Tab +
-Locate the Email +
-Select "Preview" on the right.
+. The easiest way to test is to "Preview" the message.
+. Select "Notifications" from the left rail
+. Enter the "Email" Tab
+. Locate the Email
+. Select "Preview" on the right.
 
 This will send to the Email address associated with your account. Previewing on different platforms and resolutions will help give the most clear picture of how your Email will appear for players.
 

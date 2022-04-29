@@ -1,6 +1,6 @@
 = Frequently Asked Questions
 
-== Will Teak only open the game app?
+== Can Teak skip opening the app and take the player directly to a different destination?
 
 This functionality could be developed for email, however please note that if you want the player to receive a reward when tapping on the email, the game must launch. For Notifications, the app stores require that the specific app is opened directly from the notification.
 
@@ -31,7 +31,7 @@ There are additional nuances if the game is backgrounded for an extended period 
 
 == What are the requirements for attributing revenue to a Teak message or link?
 
-Attributed revenue is calculated after a player enters the game through a notification or link. Any purchases made during this session - or after 24 hours - whichever is less will be part of the calculation. Teak will start a new session if the player backgrounds the game for more than 2 minutes and then comes back. If the player leaves the game backgrounded for less than 2 minutes, Teak will continue with the current session
+Attributed revenue is calculated after a player enters the game through a notification or link. Any purchases made within 24 hours of starting the current session will be part of the calculation. Teak will start a new session if the player backgrounds the game for more than 2 minutes and then comes back. If the player leaves the game backgrounded for less than 2 minutes, Teak will continue with the current session
 
 For purchase attribution Teak will stop attributing purchases after 24 hours have passed. That is, if a player enters through a notification or link, leaves the game open in the foreground for more than 24 hours, and then makes a purchase, Teak would not count that as return value. But if they made a purchase after leaving the game open in the foreground for only 23 hours, Teak would count that purchase as return value for the notification.
 
