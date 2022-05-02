@@ -26,11 +26,11 @@ In addition to an uploaded image, you may also insert images with HTML, if you a
 
 As with Notifications, adding Rewards is just a couple of clicks away. Once you’ve created the Bundle, you simply apply it to your message with the "Reward Bundle" dropdown.  Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the "X" to the right of the selected Bundle to remove it.
 
-== Expiration
+=== Expiration
 
-Setting an Expiration time helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
+Setting an Expiration time on rewards helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
 
-Emails allow you to set an expiration based in minutes, hours, or days after the send time.
+Email rewards allow you to set an expiration based in minutes, hours, or days after the send time.
 
 == Advanced
 
@@ -69,6 +69,8 @@ Once you have your Email message created and bundles added, you can verify it by
 . Select "Preview" on the right.
 
 This will send to the Email address associated with your account. Previewing on different platforms and resolutions will help give the most clear picture of how your Email will appear for players.
+
+NOTE: This requires a player to be registered with the email address where you want to receive the test message.
 
 == Emails That Can Be Replied To
 

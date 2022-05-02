@@ -1,6 +1,6 @@
 = Custom Tags
 
-Tags are engaging personalization features that can be applied to all Message types. As you add Player Properties these become Audience Filter Options, as well as Tag options in your Messages. 
+Tags are engaging personalization features that can be applied to all Message types. As you add Player Properties these become Audience Filter Options, as well as Tag options in your Messages.
 
 In addition to your Player Properties, you can find a few tags built into Teak by selecting the ``@`` icon when creating Messages.
 
@@ -10,7 +10,7 @@ Fallback if Player Name is unavailable::
 ``{{first_name|default: "Hey_Pal"}}`` Replace Hey Pal with a generic phrase or salutation.
 
 Simplify a large complex number::
-``{{some_number | number_to_human}}`` Replace ``some_number`` with the name of your currency, and it will personalize it.
+``{{some_number | number_to_human}}`` If there is a player property called ``some_number``, this will simplify that value to something you would say in conversation.
 
 .Coins
 [example]
@@ -21,4 +21,3 @@ If a player has a total of 300,144 Coins, your message could say "Let’s make y
 If you’d rather have more numeric places, you can add a qualifier. For instance ``{{coins| number_to_human: 3}}`` would display their balance as ``300 Thousand``.
 
 If you prefer the complex number: ``{{some_number}}`` will do the trick in the above example it would output ``300,144``. And if you want to get rid of the comma, use ``{{some_number | unfancy}}`` to display ``300144``.
-
