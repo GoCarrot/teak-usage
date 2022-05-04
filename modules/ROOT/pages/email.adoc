@@ -62,7 +62,8 @@ NOTE: You will have to make this adjustment on each platform the test will run o
 
 Once you have your Email message created and bundles added, you can verify it by sending a test message.
 
-. The easiest way to test is to "Preview" the message.
+.Previewing an Email
+
 . Select "Notifications" from the left rail
 . Enter the "Email" Tab
 . Locate the Email
