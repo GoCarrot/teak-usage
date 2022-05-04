@@ -84,11 +84,11 @@ In addition to adding CTA Buttons, you can create a more engaging experience wit
 
 Adding a Reward to your Notifications is super simple. Once you’ve created the Bundle, apply it to your message with the "Reward Bundle" dropdown. Bundles are reusable, so you only have to set each distribution once, and you can use it on any Message, Email, or Link. If you choose not to incentivize your message, do not choose an option, or click the "X" to the right of the selected Bundle to remove it.
 
-== Expiration
+=== Expiration
 
-Setting an Expiration time helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
+Setting an Expiration time on a reward helps to ensure an economic balance in your game. Knowing how many Links, Messages, and Emails are active at any given time can help your team estimate how much free currency will be available, and prevent players from mass collections.
 
-Messages allow you to set an expiration based in minutes, hours, or days after the send time.
+Notifications allow you to set an expiration based in minutes, hours, or days after the send time.
 
 == Advanced
 

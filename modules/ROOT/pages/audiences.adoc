@@ -113,13 +113,13 @@ After the upload, save your Audience, and an email will be sent with the details
 
 Beyond creating Audiences for Messaging, the Audience Builder can be a valuable analytical tool. For instance, if you are doing exploratory research on a new campaign, want to gain an understanding of how people are interacting with your game, or need to review some deeper analytics on your Messages, Audience Builder might be able to help. There are a few helpful Audience examples for inspiration.
 
-=== Example Use Cases:
+=== Example Use Cases
 
 * New Players who run out of currency in the first 12 hours, and don’t purchase
 * Players who do not live in the US, and logged in for 3 consecutive days then not the last 3
 * Players who have entered the game through Emails, but not other Messages or Links, between January 1, 2022 and January 31, 2022
 
-== Exporting Audiences and Linking to Facebook
+== Using Teak Audiences in Facebook Ad Campaigns
 
 Another valuable Audience creation tool is being able to use any Audience within your Facebook advertising. Of course, there are privacy limitations to consider, but there are still ways to get a lot of value from this option in your UA or Reactivation strategy.
 
