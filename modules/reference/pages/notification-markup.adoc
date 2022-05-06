@@ -1,0 +1,44 @@
+= Markup Tags for Android Notification Text
+
+HTML-lite tags are available in Android notification text.
+
+== Supported Tags
+
+The following tags are supported:
+
+[horizontal]
+``<b>``:: bold
+
+``<i>``:: italic
+
+``<tt>``:: monospace
+
+``<u>``:: underline
+
+``<strike>``:: strikethrough
+
+``<font color="...">``:: change text color
+
+== Supported Colors
+
+image::android-html-colors.png[title=These are how the colors look on a Google Pixel, width=320, role=right]
+
+The following colors are supported:
+
+* black
+* darkgray
+* gray
+* lightgray
+* white
+* red
+* green
+* blue
+* yellow
+* cyan
+* magenta
+* maroon
+* navy
+* olive
+* purple
+* silver
+* teal

@@ -11,3 +11,9 @@
 * xref:usage::page$settings.adoc[Settings]
 * xref:usage::page$helpful-audiences.adoc[Helpful Audiences]
 * xref:usage::page$faq.adoc[FAQ]
+
+* Reference
+** xref:usage:reference:page$notification-metrics.adoc[Notification Metrics]
+** xref:usage:reference:page$notification-content.adoc[Notification Content]
+** xref:usage:reference:page$notification-markup.adoc[Android Notification Text Markup]
+** xref:usage:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
