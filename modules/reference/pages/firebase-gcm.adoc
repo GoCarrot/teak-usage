@@ -1,0 +1,15 @@
+= Finding your Android Push Credentials on Firebase
+
+To find the credentials for Android push configuration when using Firebase, go to your Firebase Dashboard and click the gear icon in the upper left corner, and click **Project settings**.
+
+image::firebase-dashboard.png[]
+
+Now click on **Cloud Messaging**.
+
+image::firebase-notification-settings.png[]
+
+The value in `Sender ID` is used for your `GCM Sender ID` in the Teak Dashboard and in the Teak SDK (xref:sdk-reference:unity:page$android.adoc#_configure_credentials[Unity, window=_blank], xref:sdk-reference:android:page$integration.adoc#_edit_teak_xml[Android, window=_blank]).
+
+The value in `Server key` is used as your `GCM Api Key` in the Teak Dashboard
+
+image::teak-android-gcm-settings.png[]

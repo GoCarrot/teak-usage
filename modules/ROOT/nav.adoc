@@ -16,4 +16,11 @@
 ** xref:usage:reference:page$notification-metrics.adoc[Notification Metrics]
 ** xref:usage:reference:page$notification-content.adoc[Notification Content]
 ** xref:usage:reference:page$notification-markup.adoc[Android Notification Text Markup]
+** xref:usage:reference:page$ios-12-notifications.adoc[iOS 12 Notifications]
 ** xref:usage:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
+** xref:usage:reference:page$data-sync.adoc[Data Sync]
+
+* Push Configuration
+** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service Certificates]
+** xref:usage:reference:page$firebase-gcm.adoc[Finding your Android Push Credentials on Firebase]
+** xref:usage:reference:page$firebase-appid.adoc[Finding your Firebase App Id]
