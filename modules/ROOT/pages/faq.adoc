@@ -25,7 +25,7 @@ Additionally, there are rare cases where players are able to install old version
 
 Teak independently tracks your DAU based on SDK activity. Teak calculates DAU as the unique number of players who made that SDK call during a US west coast day.
 
-Your dev team will be required to set up an SDK call to determine that a game session has started. (xref:sdk-reference:unity:page$unity-editor.adoc#_tell_teak_how_to_identify_the_current_user[Identify the Current User])
+Your dev team will be required to set up an SDK call to determine that a game session has started. (xref:unity::page$unity-editor.adoc#_tell_teak_how_to_identify_the_current_user[Identify the Current User])
 
 There are additional nuances if the game is backgrounded for an extended period or players who have a single Facebook ID associated with multiple user IDs.
 

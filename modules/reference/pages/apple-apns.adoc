@@ -1,6 +1,6 @@
 = Creating and Uploading your Apple Push Notification Service (APNS) Certificates
 
-= Before you Begin
+== Before you Begin
 
 Before you begin, you will need the following
 
@@ -8,7 +8,7 @@ Before you begin, you will need the following
 * An account on the https://developers.apple.com[Apple Developer Site, window=_blank] with access to your game
 * An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
 
-= Navigating the Apple Developer Site
+== Navigating the Apple Developer Site
 
 To create or update your APNS Certificates/p12 start by logging in to the https://developers.apple.com[Apple Developer Site, window=_blank] and navigating to **Certificates, IDs & Profiles**
 
