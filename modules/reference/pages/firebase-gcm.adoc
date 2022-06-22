@@ -2,14 +2,18 @@
 
 To find the credentials for Android push configuration when using Firebase, go to your Firebase Dashboard and click the gear icon in the upper left corner, and click **Project settings**.
 
-image::firebase-dashboard.png[]
+image::firebase-setup/firebase-dashboard.png[]
 
 Now click on **Cloud Messaging**.
 
-image::firebase-notification-settings.png[]
+image::firebase-setup/firebase-notification-settings.png[]
 
-The value in `Sender ID` is used for your `GCM Sender ID` in the Teak Dashboard and in the Teak SDK (xref:unity::page$android.adoc#_configure_credentials[Unity, window=_blank], xref:android::page$integration.adoc#_edit_teak_xml[Android, window=_blank]).
+IMPORTANT: Make sure that **Cloud Messaging API (Legacy)** is enabled; those are the settings that Teak uses.
 
-The value in `Server key` is used as your `GCM Api Key` in the Teak Dashboard
+The value in `Sender ID` is used for your `FCM Sender ID` in the Teak Dashboard.
 
-image::teak-android-gcm-settings.png[]
+The value in `Server key` is used as your `FCM Api Key` in the Teak Dashboard.
+
+NOTE: Be sure to click `Save` after you are finished updating the settings for your game in the Teak Dashboard.
+
+image::firebase-setup/teak-android-gcm-settings.png[]
