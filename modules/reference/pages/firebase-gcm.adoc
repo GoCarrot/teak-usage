@@ -1,5 +1,14 @@
 = Finding your Android Push Credentials on Firebase
 
+== Before you Begin
+
+Before you begin, you will need the following
+
+* An account on the https://console.firebase.google.com/[Firebase Console, window=_blank] with access to your game
+* An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
+
+== Navigating the Firebase Console
+
 To find the credentials for Android push configuration when using Firebase, go to your Firebase Dashboard and click the gear icon in the upper left corner, and click **Project settings**.
 
 image::firebase-setup/firebase-dashboard.png[]
