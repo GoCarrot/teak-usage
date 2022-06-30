@@ -1,0 +1,42 @@
+= Finding your Amazon Device Messaging Credentials
+
+== Before you Begin
+
+Before you begin, you will need the following
+
+* An account on the https://developer.amazon.com/home.html[Amazon Developer Console, window=_blank] with access to your game
+* An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
+
+== Navigating the Amazon Developer Console
+
+Select menu:Apps & Services[My Apps]
+
+image::adm-setup/amazon-dashboard.png[]
+
+Select your app from the list, and then select menu:App Services[]
+
+Then select menu:Device Messaging[Attached security profile and related details > View Security Profile]
+
+image::adm-setup/app-services.png[]
+
+=== Client ID/Secret for the Teak Dashboard
+
+To get the values you need in order for the Teak server to send notifications to your app, select menu:Web Settings[Show Secret]
+
+image::adm-setup/client-id-secret.png[]
+
+Copy the value in the Amazon security profile for `Client ID` into the Teak Mobile
+Settings for your app for `ADM Client ID`.
+
+Copy the value in the Amazon security profile for `Client Secret` into the Teak Mobile
+Settings for your app for `ADM Client Secret`.
+
+=== API Key for the Game Client
+
+image::adm-setup/security-profiles.png[]
+
+Select menu:Android/Kindle Settings[] then select menu:Show[] for your app to view the API Key.
+
+image::adm-setup/api-key.png[]
+
+These values will be used for xref:unity::page$amazon.adoc[Amazon configuration of the game client].

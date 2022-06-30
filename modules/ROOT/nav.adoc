@@ -23,3 +23,4 @@
 * Push Configuration
 ** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service Certificates]
 ** xref:usage:reference:page$firebase-gcm.adoc[Finding your Android Push Credentials on Firebase]
+** xref:usage:reference:page$amazon-device-messaging.adoc[Finding your Amazon Device Messaging Credentials]
