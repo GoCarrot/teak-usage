@@ -1,0 +1,120 @@
+== Creating a single Schedule with varied content
+
+By default, when you set up an A/B test in Teak each player will be exposed to a single variant for the duration of the test. However, Teak has the option to randomize the variant each player will be exposed to every 24 hours. As you create more advanced strategies, you can use this robust tool to send recurring messages and randomly select the content each player will see for each send.
+
+
+
+For example, if you’d like a notification to send daily for active players, but want to have variety in your messaging, using the A/B tool with Randomized Groups is the perfect solution.
+
+=== Audience Creation
+
+First, you’ll want to define the overall target audience. Here you’ll want to take into consideration who you’re targeting and who you’re _not_ targeting. This Audience is targeting anyone who has played in the last day, but not as recently as 2 hours ago. It also excludes anyone who was sent a notification in the last 3 hours to avoid over-sending.
+
+The example audience looks like this:
+
+image::randomtests/img_0.png[]
+
+=== Reward Creation
+
+
+
+You can use any Reward Bundle with this type of message. You can even apply different Reward Bundles to each variant. Another option is to Randomize the Reward as well.
+
+
+
+To create a Randomized Reward, select Rewards from the menu on the left, and create a New Reward Bundle.
+
+
+
+Directly under the name of the Reward Bundle, check the box that will allow you to Randomize Rewards.
+
+
+
+You can make this simple or complex. If you want to divide the audience you created into smaller segments, perhaps by tenure, you can create a reward tier that offers a higher chance of getting more of a single currency to your longest retained users. You can dig more into the Audience Controlled Rewarding feature, and if you decide to use Randomized Rewards, you can add additional Items or Currencies and weight those to 100% for each audience.
+
+More simplistically, you can randomize a single set of rewards for the entire audience. After you select an Item or Currency, you’ll fill in the reward amount, and give it a weight. You can add as many options as you’d like, as long as it adds up to 100%.
+
+
+
+
+After you save the Randomized Reward, you can see the average reward based on the weighted amounts.
+
+image::randomtests/img_1.png[]
+
+=== Message Creation
+
+To start, you’ll create a randomized message like any other A/B test. Select Notifications from the menu on the left, choose a platform tab, and Create Message. After you name your message and choose your platforms, proceed to the next screen to create your copy and add media.
+
+
+
+You can use all of the rich message creation features like personalization, images, video, markup and anything you would use in any other campaign type. After you have finished your first message, choose "Add Variant" at the bottom to create as many additional options as you would like, selecting a Reward Bundle and expiration for each.
+
+
+
+If you have a Random Reward Bundle, you can apply that to all messages, and it will automatically send Rewards with your weighting.
+
+After completing the messages, Review and save.
+
+
+
+
+If you are setting up a Randomized campaign on multiple platforms, you will need to do the following step on each platform where it will be active.
+
+
+
+After saving the messages, you will automatically return to the Notifications menu. Your message will have a large orange "Choose Winner" button. If you are running this as a test, this is where you will easily pick a winning variant, which will stop all of the others from triggering on that platform. To randomize your messages, select the down arrow next to "Choose Winner", and from that menu you’ll enter the "Configure Test" settings.
+
+image::randomtests/img_2.png[]
+
+
+
+If you would prefer to weight one message for more sends you can apply that here. By default, the weights will be evenly distributed. Below the weighting options, you will see the "Randomize Group every 24 hours" option. Check this box to enable the Randomized Groups feature.
+
+image::randomtests/img_3.png[]
+
+If you schedule this Message to be sent multiple times in a 24 hour period, any user will receive the same variant during that time frame. You can avoid this by creating separate Randomized Messages.
+
+
+
+After going through each active Platform tab and applying Randomization, it’s time to schedule your message!
+
+
+
+=== Scheduling
+
+
+
+As you would for any message, you can set up sends in the Notifications menu by selecting New Schedule button. Here you’ll set everything up as you would for any campaign.
+
+
+
+You’ll notice the Messages preview with the number of variants. You can scroll through each variant to review.
+
+
+
+The campaign that is being put together for this example is to be sent at 6pm each day in the Player’s local timezone. To use this feature with a recurring campaign, you will set up the message as if you were scheduling a one-time send. Select the date and time in the context of when you’d like to begin the campaign. Where you see the default timezone, activate the dropdown for "Player’s Local Time".
+
+Now, select how often you would like the message to repeat. For weekly, biweekly, and monthly the relative corresponding dates will be used to create the cadence.
+
+
+
+
+image::randomtests/img_4.png[]
+
+
+
+Save your Schedule, and now you have a Randomized recurring campaign!
+
+
+
+If you ever want to add more possible variants, you can easily update your messages directly from the Schedules tab in the Notifications menu. In the dropdown next to the "Edit Schedule" button, choose the "Edit Message" option. This will open up the message creation tool where you can edit existing variants, or add or remove variants as your strategy evolves.
+
+
+
+=== Conclusion
+
+By following this guide you will have created a recurring notification which targets recently active but not recently notified players and offers them a random incentive. By using the "Randomize Group every 24 hours" option on an A/B test, you can mix up the content players see each time they're sent this notification, keeping it fresh and engaging without the hassle of setting up multiple Schedules or creating new content every day.
+
+
+
+This technique is effective for increasing player engagement, especially on days where you're sending fewer than two push notifications.
