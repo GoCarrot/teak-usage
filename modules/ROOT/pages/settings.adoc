@@ -52,4 +52,8 @@ NOTE: The optimal size of Footer logos is 300 pixel x 100 pixel, but this is fle
 === User Subscription Status
 Is located about halfway down the page and allows you to determine a player’s subscription status by an ID or email address. You can find out if a player has unsubscribed, marked an email as spam, or has another subscribed or unsubscribed status.
 
+=== Unsubscribe & Opt-out
 
+The messaging shown to players on the email opt-out page can be customized here. Unsubscribe Text will be seen by players who are currently subscribed and may unsubscribe from the page. Subscribe Text will be seen by players who are currently unsubscribed and may resubscribe from the page.
+
+The logo provided for Game Logo in Footer Logos, above this section, will be displayed on the email opt-out page as well.
