@@ -62,10 +62,10 @@ image::rewards/notif_template.jpg[]
 
 We recommend templating the reward amount into all notifications which use an ACR Bundle. Testing has shown that informing a player of the specifics of the reward they will receive (e.g. Click me for 50,000 FREE COINS! vs. Click me for tons of FREE COINS!) increases click through rate by 10-15% relative to baseline.
 
-After a notification with an ACR Bundle has been sent you can view all :doc:`notification metrics <notification-metrics>` broken out by the selected reward tier. To do so, in a notification content tab, switch to table view and then select "Show Audience Rewards (Table View Only)" from the filter dropdown.
+After a notification with an ACR Bundle has been sent you can view all xref:usage:reference:page$notification-metrics.adoc[window=_blank] broken out by the selected reward tier. To do so, in a notification content tab, switch to table view and then select "Show Audience Rewards (Table View Only)" from the filter dropdown.
 
 .Viewing per-audience metrics for a notification using an ACR Bundle.
-image::rewards/notif_metrics.gif
+image::rewards/notif_metrics.gif[]
 
 == Using With Links
 To use an ACR Bundle with a Link, simply create a Link and select an ACR Bundle as its Reward Bundle.
