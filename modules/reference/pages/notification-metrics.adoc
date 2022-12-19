@@ -97,10 +97,10 @@ Confirmed Receipts::
 A Confirmed Receipt is tracked when a notification is received and displayed by a device.
 
 Clicks::
-A click is tracked when a player enters the game through an iOS Push notification. Note that the game must get through complete Teak SDK initialization before a click event will be tracked.
+A click is tracked when a player enters the game through an Android Push notification. Note that the game must get through complete Teak SDK initialization before a click event will be tracked.
 
 CTR::
-iOS Push CTR is clicks / sends as a percentage.
+Android Push CTR is clicks / sends as a percentage.
 
 Con. Receipt CTR::
 Confirmed Receipt CTR is clicks / confirmed receipts as a percentage.
@@ -162,7 +162,7 @@ Return Spenders::
 Return Spenders is the count of distinct players each day who made an in-app purchase during a session started from the notification. Note that if you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on the same notification on Jul 16 and Jul 17 and made an in-app purchase in both sessions on both days, they will be counted as two returning spenders for the overall metric.
 
 Impact::
-Impact is Returning Users for the notification divided by the sum of all sends for all iOS Push notifications.
+Impact is Returning Users for the notification divided by the sum of all sends for all Emails.
 
 Bounces::
 A bounce is tracked when email delivery fails for a permanent reason, e.g. the email address is invalid or has been deleted.
