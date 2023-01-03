@@ -92,7 +92,7 @@ You’ll notice the Messages preview with the number of variants. You can scroll
 
 
 
-The campaign that is being put together for this example is to be sent at 6pm each day in the Player’s local timezone. To use this feature with a recurring campaign, you will set up the message as if you were scheduling a one-time send. Select the date and time in the context of when you’d like to begin the campaign. Where you see the default timezone, activate the dropdown for "Player’s Local Time".
+This example schedule will send at 6pm each day in the Player's local time zone. To use this feature with a recurring campaign, you will set up the message as if you were scheduling a one-time send. Select the date and time in the context of when you’d like to begin the campaign. Where you see the default timezone, activate the dropdown for "Player’s Local Time".
 
 Now, select how often you would like the message to repeat. For weekly, biweekly, and monthly the relative corresponding dates will be used to create the cadence.
 
