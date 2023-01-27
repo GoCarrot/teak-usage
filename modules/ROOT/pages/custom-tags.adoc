@@ -4,6 +4,28 @@ Tags are engaging personalization features that can be applied to all Message ty
 
 In addition to your Player Properties, you can find a few tags built into Teak by selecting the ``@`` icon when creating Messages.
 
+== Facebook Tags
+
+If your game has integrated the Facebook SDK, and provides Teak with Facebook App Scoped User IDs through xref:unity::page$unity-editor.adoc#_tell_teak_how_to_identify_the_current_user[IdentifyUser, window=_blank] then you can use these builtin Facebook tags to personalize message content with the player's real name.
+
+`{{first_name}}`:: Insert the player's first name
+`{{last_name}}`:: Insert the player's last name
+`{{full_name}}`:: Inser the player's full name
+
+Teak will replace these tags with an empty string for any players who have not connected with Facebook. We highly recommend using these tags with the <<_filter_default,`default`>> filter to provide a fallback name for players who are not Facebook connected.
+
+== Email Tags
+
+Teak provides a set of email specific tags for use in email message content.
+
+`{{email.link}}`:: Insert Teak's generated tracking/reward URL for the email. Note that in Teak's provided email template, the image already links to the generated tracking/reward URL for the email.
+`{{email.unsubscribe}}`:: Insert the URL to the player's subscription management page for email. Note that in Teak's provided email template, the unsubscirbe link is already included in the email footer.
+`{{email.footer}}`:: Insert the default email footer into the email. Note that the footer is already included in Teak's provided email template.
+`{{email.send_id}}`:: Insert Teak's unique id for the specific email send. This may be useful to correlate clicks on other links with events reported to your internal analytics tooling through Teak's xref:usage:reference:page$data-sync.adoc[window=_blank].
+`{{email.to_address}}`:: Insert the email address the email is being sent to.
+
+If you are inserting _any_ tags into a link in an email, be sure to use the <<_filter_url_encode,`url_encode`>> filter to properly escape the text so the link will function correctly.
+
 == Other customizable Tags
 
 Fallback if Player Name is unavailable::
@@ -29,7 +51,7 @@ Filters modify the result of an output statement. Teak supports the following ht
 `capitalize`:: capitalize words in the input sentence
 `ceil`:: rounds a number up to the nearest integer, *e.g.* `{{ 4.6 | ceil }} #\=> 5`
 `date`:: reformat a date (http://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date[syntax reference])
-`default`:: returns the given variable unless it is null or the empty string, when it will return the given value, *e.g.* `{{ undefined_variable | default: "Default value" }} #\=> "Default value"`
+[[_filter_default]]`default`:: returns the given variable unless it is null or the empty string, when it will return the given value, *e.g.* `{{ undefined_variable | default: "Default value" }} #\=> "Default value"`
 `divided_by`:: integer division *e.g.* `{{ 10 | divided_by:3 }} #\=> 3`
 `downcase`:: convert an input string to lowercase
 `escape_once`:: returns an escaped version of html without affecting existing escaped entities
@@ -64,4 +86,4 @@ Filters modify the result of an output statement. Teak supports the following ht
 `truncatewords`:: truncate a string down to x words
 //`uniq`:: removed duplicate elements from an array, optionally using a given property to test for uniqueness
 `upcase`:: convert an input string to uppercase
-* `url_encode`:: url encode a string
+[[_filter_url_encode]]`url_encode`:: url encode a string
