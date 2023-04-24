@@ -1,0 +1,56 @@
+= Setting up SendGrid for Email Sending from Teak
+
+== Before you Begin
+
+Before you begin, you will need the following
+
+* An account on https://sendgrid.com/[SendGrid, window=_blank]. Teak can work with any pricing tier, including free.
+* An https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication[Authenticated Domain, window=_blank] on SendGrid.
+* An account on https://app.teak.io/login[Teak, window=_blank] with access to your game.
+
+== Creating a SendGrid API Key
+
+NOTE: If you are using a https://docs.sendgrid.com/ui/account-and-settings/subusers[SendGrid Subuser, window=_blank] be sure to follow all of these steps in the subuser account.
+
+Teak requires a https://docs.sendgrid.com/ui/account-and-settings/api-keys[SendGrid API Key, window=_blank] in order to interface with SendGrid.
+
+To create an API Key for Teak, start by https://app.sendgrid.com/login[logging in, window=_blank] to SendGrid, then navigating to https://app.sendgrid.com/settings/api_keys[Settings -> API Keys, window=_blank].
+
+Click "Create API Key" in the top right of this screen. Give the API Key a name that will help you recall what it is used for in the future. We recommend "Teak Send Key".
+
+As a best practice you should give the API Key the minimum necessary permissions. Teak requires the following
+
+- Mail Send -> Mail Send, Full Access
+- Mail Settings -> Event Notification, Full Access
+- Stats, Full Access
+- Suppressions, Full Access
+
+Your API Key settings should look like this
+
+image::sendgrid-setup/api-key-settings.jpg[]
+
+Click "Create and View" to create the API Key. On the screen that follows, immediately copy the displayed API Key. Once this page is dismissed you can **never** view the API Key on SendGrid again.
+
+== Adding the SendGrid API Key to Teak
+
+From your Teak Dashboard, navigate to Settings -> Email for your game. Click "New Email Credential" in the top left under "Sendgrid Settings".
+
+image::sendgrid-setup/new-email-credential-button.png[]
+
+In the Sendgrid Credential modal, enter a name -- we recommend "Default" -- and then the API Key you created in the previous step.
+
+For From Address, enter an email address at your Authenticated Domain on SendGrid. We recommend using a noreply address. For example, if you authenticated example.com, you would enter noreply@example.com as the From Address.
+
+For From Name, enter a friendly user facing name that emails should be sent from. We recommend using the name of your game.
+
+If you want to allow players to reply to your emails, you may enter a Reply To Address. This does not need to be on your authenticated domain. When a player replies to any of your emails in their mail client, the reply will be directed to the entered Reply To Address by default. If this field is left blank, replies will go to the configured From Address by default.
+
+If you have entered a Reply To Address you may want to enter a separate Reply To Name, to clarify to players that they are replying to a different person or entity when replying to an email. For example, you may want to enter the name of your game plus "Support" as the Reply To Name, if you choose to direct replies immediately to your support team.
+
+Below is an example of a fully configured credential, with a custom Reply To Address and Name
+
+image::sendgrid-setup/sendgrid-credential.png[]
+
+You may edit the From Address, From Name, Reply To Address, and Reply To Name at any time, so don't worry too much about getting everything exactly right to start! However, the API Key cannot be viewed or edited after saving, so double check it before clicking 'Save'.
+
+Once your credential is saved, contact mailto:support@teak.io[support@teak.io] to coordinate any required IP warmup process to ensure you have maximum deliverability for your emails.

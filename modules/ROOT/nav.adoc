@@ -24,6 +24,7 @@
 ** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service Certificates]
 ** xref:usage:reference:page$firebase-gcm.adoc[Finding your Android Push Credentials on Firebase]
 ** xref:usage:reference:page$amazon-device-messaging.adoc[Finding your Amazon Device Messaging Credentials]
+** xref:usage:reference:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
 
 * Guides
 ** xref:usage:guides:page$tests.adoc[Creating a single Schedule with varied content]
