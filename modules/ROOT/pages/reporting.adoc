@@ -1,6 +1,6 @@
 = Reporting
 
-There are several ways to aggregate information for reporting in Teak. 
+There are several ways to aggregate information for reporting in Teak.
 
 == Available Metrics
 
@@ -16,6 +16,30 @@ This is specific to the results of your Push, App-to-User and Email campaigns. A
 
 Within Notifications, you can do additional analysis. Select the Table view from the options to the left of the Sort button. Now, you may Filter and Sort the data to prepare it for export. Within the tabs for the individual notification platforms, you can choose to show a breakdown of the audience by the reward received. This can be found under Filters and selecting "Show Audience Reward".
 
+=== Selecting a Date Range
+
+The date range of metrics in Teak are controlled by the date picker in the top bar. By default, this is set to the last 14 days.
+
+Changing the date range will update all metrics in the dashboard to only include data from the selected time period. This is useful for reporting data for a particular month or quarter.
+
+=== Filtering
+
+All data lists in Teak have a filter dropdown. This can be useful for narrowing down the data you are pulling for a report.
+
+Since metrics are only shown for the current time range, older notifications will be shown as having zero data. *Hide Zero Clicks* is useful for hiding those entries when pulling data for a report.
+
+If you want to know how your automated campaigns are doing, select *Repeating* from the filter dropdown to only see data for those notifications.
+
+
+=== Searching
+
+All data lists have a search field. The search terms are separated by a space, but can also be enclosed in double quotes for exact phrase searching.
+
+Searching for, _Lucky Slots_, will find anything with _Lucky_, *AND* _Slots_. While searching for, _"Lucky Slots"_, will only find items with the whole phrase, _Lucky Slots_.
+
+Planning your names and descriptions to be search friendly can save you time when reporting. We recommend using the *YYYY.MM.DD* format for dates included in names. This will make searching and sorting easier for future you.
+
 == Exporting
 
-While in Table view, you may choose to download a .CSV of the visible data. There is a Download button to the left of the first column header. The data can then be aggregated further in your spreadsheet software of choice. 
+While in Table view, you may choose to download a .CSV of the visible data. There is a Download button to the left of the first column header. The data can then be aggregated further in your spreadsheet software of choice.
+
