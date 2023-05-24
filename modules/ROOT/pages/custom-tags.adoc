@@ -8,9 +8,9 @@ In addition to your Player Properties, you can find a few tags built into Teak b
 
 If your game has integrated the Facebook SDK, and provides Teak with Facebook App Scoped User IDs through xref:unity::page$unity-editor.adoc#_tell_teak_how_to_identify_the_current_user[IdentifyUser, window=_blank] then you can use these builtin Facebook tags to personalize message content with the player's real name.
 
-`{{first_name}}`:: Insert the player's first name
-`{{last_name}}`:: Insert the player's last name
-`{{full_name}}`:: Inser the player's full name
+`{\{first_name}}`:: Insert the player's first name
+`{\{last_name}}`:: Insert the player's last name
+`{\{full_name}}`:: Inser the player's full name
 
 Teak will replace these tags with an empty string for any players who have not connected with Facebook. We highly recommend using these tags with the <<_filter_default,`default`>> filter to provide a fallback name for players who are not Facebook connected.
 
@@ -18,21 +18,21 @@ Teak will replace these tags with an empty string for any players who have not c
 
 Teak provides a set of email specific tags for use in email message content.
 
-`{{email.link}}`:: Insert Teak's generated tracking/reward URL for the email. Note that in Teak's provided email template, the image already links to the generated tracking/reward URL for the email.
-`{{email.unsubscribe}}`:: Insert the URL to the player's subscription management page for email. Note that in Teak's provided email template, the unsubscirbe link is already included in the email footer.
-`{{email.footer}}`:: Insert the default email footer into the email. Note that the footer is already included in Teak's provided email template.
-`{{email.send_id}}`:: Insert Teak's unique id for the specific email send. This may be useful to correlate clicks on other links with events reported to your internal analytics tooling through Teak's xref:usage:reference:page$data-sync.adoc[window=_blank].
-`{{email.to_address}}`:: Insert the email address the email is being sent to.
+`{\{email.link}}`:: Insert Teak's generated tracking/reward URL for the email. Note that in Teak's provided email template, the image already links to the generated tracking/reward URL for the email.
+`{\{email.unsubscribe}}`:: Insert the URL to the player's subscription management page for email. Note that in Teak's provided email template, the unsubscirbe link is already included in the email footer.
+`{\{email.footer}}`:: Insert the default email footer into the email. Note that the footer is already included in Teak's provided email template.
+`{\{email.send_id}}`:: Insert Teak's unique id for the specific email send. This may be useful to correlate clicks on other links with events reported to your internal analytics tooling through Teak's xref:usage:reference:page$data-sync.adoc[window=_blank].
+`{\{email.to_address}}`:: Insert the email address the email is being sent to.
 
 If you are inserting _any_ tags into a link in an email, be sure to use the <<_filter_url_encode,`url_encode`>> filter to properly escape the text so the link will function correctly.
 
 == Other customizable Tags
 
 Fallback if Player Name is unavailable::
-``{{first_name|default: "Hey_Pal"}}`` Replace Hey Pal with a generic phrase or salutation.
+``{\{first_name|default: "Hey_Pal"}}`` Replace Hey Pal with a generic phrase or salutation.
 
 Simplify a large complex number::
-``{{some_number | number_to_human}}`` If there is a player property called ``some_number``, the ``number_to_human`` filter will simplify that value to something you would say in conversation.
+``{\{some_number | number_to_human}}`` If there is a player property called ``some_number``, the ``number_to_human`` filter will simplify that value to something you would say in conversation.
 
 .Coins
 [example]
@@ -40,49 +40,49 @@ Simplify a large complex number::
 If a player has a total of 300,144 Coins, your message could say "Let’s make you a millionaire! Collect 700,000 Coins to add to your balance of 3 Hundred Thousand."
 ====
 
-If you’d rather have more numeric places, you can add a qualifier. For instance ``{{coins| number_to_human: 3}}`` would display their balance as ``300 Thousand``.
+If you’d rather have more numeric places, you can add a qualifier. For instance ``{\{coins| number_to_human: 3}}`` would display their balance as ``300 Thousand``.
 
-If you prefer the complex number: ``{{some_number}}`` will do the trick in the above example it would output ``300,144``. And if you want to get rid of the comma, use ``{{some_number | unfancy}}`` to display ``300144``.
+If you prefer the complex number: ``{\{some_number}}`` will do the trick in the above example it would output ``300,144``. And if you want to get rid of the comma, use ``{\{some_number | unfancy}}`` to display ``300144``.
 
 == Standard Filters
 Filters modify the result of an output statement. Teak supports the following https://shopify.dev/api/liquid/filters[Liquid Filters]:
 
-`append`:: append a string *e.g.* `{{ 'foo' | append:'bar' }} #\=> 'foobar'`
+`append`:: append a string *e.g.* `{\{ 'foo' | append:'bar' }} #\=> 'foobar'`
 `capitalize`:: capitalize words in the input sentence
-`ceil`:: rounds a number up to the nearest integer, *e.g.* `{{ 4.6 | ceil }} #\=> 5`
+`ceil`:: rounds a number up to the nearest integer, *e.g.* `{\{ 4.6 | ceil }} #\=> 5`
 `date`:: reformat a date (http://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date[syntax reference])
-[[_filter_default]]`default`:: returns the given variable unless it is null or the empty string, when it will return the given value, *e.g.* `{{ undefined_variable | default: "Default value" }} #\=> "Default value"`
-`divided_by`:: integer division *e.g.* `{{ 10 | divided_by:3 }} #\=> 3`
+[[_filter_default]]`default`:: returns the given variable unless it is null or the empty string, when it will return the given value, *e.g.* `{\{ undefined_variable | default: "Default value" }} #\=> "Default value"`
+`divided_by`:: integer division *e.g.* `{\{ 10 | divided_by:3 }} #\=> 3`
 `downcase`:: convert an input string to lowercase
 `escape_once`:: returns an escaped version of html without affecting existing escaped entities
 `escape`:: html escape a string
 //`first`:: get the first element of the passed in array
-`floor`:: rounds a number down to the nearest integer, *e.g.* `{{ 4.6 | floor }} #\=> 4`
+`floor`:: rounds a number down to the nearest integer, *e.g.* `{\{ 4.6 | floor }} #\=> 4`
 //`join`:: join elements of the array with certain character between them
 //`last`:: get the last element of the passed in array
 `lstrip`:: strips all whitespace from the beginning of a string
 //`map`:: map/collect an array on a given property
-`minus`:: subtraction *e.g.*  `{{ 4 | minus:2 }} #\=> 2`
-`modulo`:: remainder, *e.g.* `{{ 3 | modulo:2 }} #\=> 1`
+`minus`:: subtraction *e.g.*  `{\{ 4 | minus:2 }} #\=> 2`
+`modulo`:: remainder, *e.g.* `{\{ 3 | modulo:2 }} #\=> 1`
 `newline_to_br`:: replace each newline (\n) with html break
-`plus`:: addition *e.g.*  `{{ '1' | plus:'1' }} #\=> 2`, `{{ 1 | plus:1 }} #\=> 2`
-`prepend`:: prepend a string *e.g.* `{{ 'bar' | prepend:'foo' }} #\=> 'foobar'`
-`remove_first`:: remove the first occurrence *e.g.* `{{ 'barbar' | remove_first:'bar' }} #\=> 'bar'`
-`remove`:: remove each occurrence *e.g.* `{{ 'foobarfoobar' | remove:'foo' }} #\=> 'barbar'`
-`replace_first`:: replace the first occurrence *e.g.* `{{ 'barbar' | replace_first:'bar','foo' }} #\=> 'foobar'`
-`replace`:: replace each occurrence *e.g.* `{{ 'foofoo' | replace:'foo','bar' }} #\=> 'barbar'`
+`plus`:: addition *e.g.*  `{\{ '1' | plus:'1' }} #\=> 2`, `{\{ 1 | plus:1 }} #\=> 2`
+`prepend`:: prepend a string *e.g.* `{\{ 'bar' | prepend:'foo' }} #\=> 'foobar'`
+`remove_first`:: remove the first occurrence *e.g.* `{\{ 'barbar' | remove_first:'bar' }} #\=> 'bar'`
+`remove`:: remove each occurrence *e.g.* `{\{ 'foobarfoobar' | remove:'foo' }} #\=> 'barbar'`
+`replace_first`:: replace the first occurrence *e.g.* `{\{ 'barbar' | replace_first:'bar','foo' }} #\=> 'foobar'`
+`replace`:: replace each occurrence *e.g.* `{\{ 'foofoo' | replace:'foo','bar' }} #\=> 'barbar'`
 //`reverse`:: reverses the passed in array
-`round`:: rounds input to the nearest integer or specified number of decimals *e.g.* `{{ 4.5612 | round: 2 }} #\=> 4.56`
+`round`:: rounds input to the nearest integer or specified number of decimals *e.g.* `{\{ 4.5612 | round: 2 }} #\=> 4.56`
 `rstrip`:: strips all whitespace from the end of a string
 `size`:: return the size of an array or string
-`slice`:: slice a string. Takes an offset and length, *e.g.* `{{ "hello" | slice: -3, 3 }} #\=> llo`
+`slice`:: slice a string. Takes an offset and length, *e.g.* `{\{ "hello" | slice: -3, 3 }} #\=> llo`
 //`sort`:: sort elements of the array
-`split`:: split a string on a matching pattern *e.g.* `{{ "a~b" | split:"~" }} #\=> ['a','b']`
+`split`:: split a string on a matching pattern *e.g.* `{\{ "a~b" | split:"~" }} #\=> ['a','b']`
 `strip_html`:: strip html from string
 `strip_newlines`:: strip all newlines (\n) from string
 `strip`:: strips all whitespace from both ends of the string
-`times`:: multiplication  *e.g* `{{ 5 | times:4 }} #\=> 20`
-`truncate`:: truncate a string down to x characters. It also accepts a second parameter that will append to the string *e.g.* `{{ 'foobarfoobar' | truncate: 5, '.' }} #\=> 'foob.'`
+`times`:: multiplication  *e.g* `{\{ 5 | times:4 }} #\=> 20`
+`truncate`:: truncate a string down to x characters. It also accepts a second parameter that will append to the string *e.g.* `{\{ 'foobarfoobar' | truncate: 5, '.' }} #\=> 'foob.'`
 `truncatewords`:: truncate a string down to x words
 //`uniq`:: removed duplicate elements from an array, optionally using a given property to test for uniqueness
 `upcase`:: convert an input string to uppercase
