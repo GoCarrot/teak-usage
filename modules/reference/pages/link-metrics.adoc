@@ -1,4 +1,5 @@
 = Link Metrics
+
 These are the metrics Teak tracks for links with a description of what causes Teak to track each given metric.
 
 :channel: link
