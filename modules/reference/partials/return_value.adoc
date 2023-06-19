@@ -1,0 +1,1 @@
+Return value is the sum of USD revenue from in-app purchases made during sessions which started because of a click on the {channel}. If a player exits the game for longer than two minutes after the click or force closes the game and then relaunches it before making a purchase, that purchase will be considered part of a new session and will not be counted as Return Value.

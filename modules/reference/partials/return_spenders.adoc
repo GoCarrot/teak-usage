@@ -1,0 +1,3 @@
+Return Spenders is the count of distinct players each day who made an in-app purchase during a session started from the {channel}.
+
+NOTE: If you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on the same notification on Jul 16 and Jul 17 and made an in-app purchase in both sessions on both days, they will be counted as two returning spenders for the overall metric.
