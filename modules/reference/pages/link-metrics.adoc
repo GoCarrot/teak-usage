@@ -26,4 +26,4 @@ New Users::
 New Users is the count of players that Teak saw for the first time in a session attributed to the {channel}. Seeing a player for the first time means that Teak has never previously seen the game assigned player id for the game or the associated Facebook App Scoped ID if provided.
 
 Install Value::
-Install Value is the sum of revenue from _all_ New Users from this {channel} during the currently selected time frame. E.g. If the currently selected time frame is Jul 16, 2021 - Jul 29, 2021, then a player counted as a New User for the {channel} on January 1, 2019 who spent $9.99 on July 17, 2021 would be counted as Install Value in the display.
+Install Value is the sum of revenue during the currently selected time frame from _all_ New Users from links regardless of time frame. E.g. If the currently selected time frame is Jul 16, 2021 - Jul 29, 2021, then a player counted as a New User for the {channel} on January 1, 2019 who spent $9.99 on July 17, 2021 would be counted as Install Value in the display.
