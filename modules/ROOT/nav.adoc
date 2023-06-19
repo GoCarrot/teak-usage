@@ -13,6 +13,7 @@
 * xref:usage::page$faq.adoc[FAQ]
 
 * Reference
+** xref:usage:reference:page$dashboard-metrics.adoc[Dashboard Metrics]
 ** xref:usage:reference:page$link-metrics.adoc[Link Metrics]
 ** xref:usage:reference:page$notification-metrics.adoc[Notification Metrics]
 ** xref:usage:reference:page$notification-content.adoc[Notification Content]
