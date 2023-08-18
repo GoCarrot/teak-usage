@@ -1,0 +1,59 @@
+= Copy your Firebase Cloud Messaging (FCM) Credentials to Teak
+:page-aliases: ../firebase-gcm.adoc
+
+In order to send notifications to your game on Android, Teak needs your Firebase Cloud Messaging (FCM) credentials. These can be found on the Firebase console. 
+
+We will be copying the values from the Firebase Console and pasting them in the Teak Dashboard. 
+
+**You will need the following accounts to complete this step:**
+
+* [*] An account on the https://console.firebase.google.com/[Firebase Console, window=_blank] with an Editor or Owner role and access to your game
+* [*] An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
+
+== Find your Android Push Credentials on Firebase
+
+. Go to your https://console.firebase.google.com/[Firebase Console, window=_blank] and **open the project** for your game. 
+
+. Click the **gear icon** in the upper left corner, and click **Project settings**.
++
+image::usage:reference:firebase-setup/firebase-dashboard.png[]
+
+. Now click on **Cloud Messaging**.
+
+. Make sure that **Cloud Messaging API (Legacy)** is enabled; those are the settings that Teak uses.
++
+[TIP]
+.Enabling Cloud Messaging API (Legacy)
+====
+If the legacy API isn't enabled, proceed with these steps to activate it.
+
+.. In the **Cloud Messaging API (Legacy)** section, click on the **3 vertical dots**. &vellip;
+
+.. Click **Manage API in Google Cloud Console**.
+
+.. In the new tab that opens, click **Enable**. 
+
+.. This will load the __API/Service Details__ page. After the page has loaded, **close this tab.**
+
+.. Return to the **Firebase Console** page and **refresh** the page.
+
+.. **Cloud Messaging API (Legacy)** should now be **enabled**. 
+====
++
+image::usage:reference:firebase-setup/firebase-notification-settings.png[]
+
+. Locate the `Sender ID` and `Server Key` values.
+
+== Copy the __Sender ID__ and __Server Key__ to Teak 
+
+[start=6]
+. In the **https://app.teak.io[Teak Dashboard, window=_blank]** for your game, navigate to menu:Settings[Android].
+
+. Copy **`Sender ID`** from Firebase to the **`FCM Sender ID`** in the Teak Dashboard.
+
+. Copy **`Server key`** from Firebase to the **`FCM Api Key`** in the Teak Dashboard.
++
+image::usage:reference:firebase-setup/teak-android-gcm-settings.png[]
+
+. Click **Save** to confirm your changes.
+
