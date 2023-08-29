@@ -65,6 +65,8 @@ Messages that are Scheduled as Triggered can be sent when a player enters or lea
 
 === Local
 
-While these are scheduled within the SDK, the Scheduling option within Teak allows you to edit the content. You can use any Notification capabilities, such as images and formatting, that are available for traditional Push. The Scheduling of Local Notifications is completely controlled by the game client. Your dev team will create triggers that tell Teak to send the notification a specific amount of time after an event is completed.
+A Local Schedule is a Schedule set to "Local" which will be sent based on calls made to Teak by your dev team (See <<Teak.Notification.Schedule(string,long,Dictionary<string, object>,Reply)>>). Local Schedules are typically used for extremely personalized or frequent in game events, for example a player's hourly bonus being available or a tournament ending.
 
-(See <<TeakNotification.ScheduleNotification(string,string,long,Reply)>>)
+You will need to set up the Message and Schedule before your dev team can send the notification. Your dev team will need the Name of the Schedule in order to make the appropriate calls on their end, and because the Name will be referenced by code in your game client or server you should avoid changing it after creating a Local Schedule.
+
+You can use the same Message features, like images, formatting, and rewards, with a Local Schedule. Additionally, a Message associated with a Local Schedule can template in custom per send tags provided by the game when it makes the appropriate call to send the notification (See xref:usage::custom-tags.adoc#_local_notification_tags[Local Notification Tags, _window=blank]). You will need to coordinate with your dev team to determine what additional data is available.

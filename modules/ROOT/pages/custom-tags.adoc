@@ -26,6 +26,12 @@ Teak provides a set of email specific tags for use in email message content.
 
 If you are inserting _any_ tags into a link in an email, be sure to use the <<_filter_url_encode,`url_encode`>> filter to properly escape the text so the link will function correctly.
 
+== Local Notification Tags
+
+When a Message is associated with a xref:usage::page$scheduling.adoc#_local[Local Schedule, window=_blank] you can use custom tags from data passed in by the game as `personalizationData` when it makes the Teak SDK call to send the notification (See <<Teak.Notification.Schedule(string,long,Dictionary<string, object>,Reply)>>). All of the data passed in as `personalizationData` will be available under `local`. Ask your dev team what data they are passing in as `personalizationData`. In particular, you will need to know the name of the "keys" that the dev team is using, since you will need to know the name of the "key" to template data into the message. For example, if the call provides data in a key named `level`, you can template the data into the Message with the tag ``{{local['level']}}``.
+
+We highly recommend using xref:usage::page$custom-tags.adoc#_filter_default[a default filter] on all tags using `local` to provide a fallback in case the `personalizationData` in the Teak SDK call does not include the appropriate key. Ask your dev team if this can happen, and consider what would be appropriate to show to the player if the relevant data is not provided.
+
 == Other customizable Tags
 
 Fallback if Player Name is unavailable::
