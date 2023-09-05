@@ -110,7 +110,7 @@ Displays the Notification even if players are currently in the game.
 Sound::
 Adjusting the sound will determine if the player is notified with a noise when the notification is received.
 
-Deep Link::
+[[_ios_deep_link]]Deep Link::
 This is the same principle as the Link option for Facebook. Unlike Facebook, however, an Android or iOS Deep Link can direct to a web URL (e.g. https://example.com/) and the game will open the default device browser to that URL shortly after the game launches and appropriately apply any attached Rewards. These routes are determined by your development team and may differ by platform.
 
 === Android
