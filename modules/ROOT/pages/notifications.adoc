@@ -145,7 +145,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
 
 __Out of Game URLs are not supported on Facebook canvas.__
 
@@ -155,7 +155,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
 
 Out of Game URL::
 	With Notifications on Android or iOS, the game will open the default device browser to the URL shortly after the game launches. Attached Rewards will be granted to the player.
@@ -168,7 +168,7 @@ Game Launch::
 	If an email is opened on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
 
 Out of Game URL::
 	On email, by default, the game will launch and rewards will be granted, then the game will open the URL in the deafult browser. This behavior can be overridden with Skip Game Launch.
