@@ -90,14 +90,99 @@ Setting an Expiration time on a reward helps to ensure an economic balance in yo
 
 Notifications allow you to set an expiration based in minutes, hours, or days after the send time.
 
+
+== Link Destination
+
+Control where the player is taken after a click or tap. By default, clicks will open the game. 
+
+=== Game Launch
+
+For notifications on Facebook, iOS, and Android, all taps and clicks will launch the game, and any associated rewards will be granted.  
+
+Email can be opened on different devices, so the behavior is more complex.
+
+If an email link is tapped on a mobile device, the game will launch if it is installed on the device. If the game is not installed, the player will be taken to the game listing in the appropriate app store for that device. (The app listing is based on the iTunes Product ID and Android Package Name configured in the game settings.) 
+
+If an email is opened on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
+
+=== Game Deep Link
+
+This option allows you to direct players to a specific location in your game with a Deep Linking route. When this feature is used, players will click the notification and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
+
+In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::page$teak-unity-features.html#_deep_links[Deep Linking, target=_blank], and what routes and values are available for use.
+
+
+=== Out of Game URL
+
+If you need to link to an out of game destination, you can use the Out of Game URL option. Enter a web URL (e.g. https&#58;//example.com/) into the field. 
+
+With Notifications on Android or iOS, the game will open the default device browser to the URL shortly after the game launches. Any attached Rewards will be granted to the player. 
+
+Out of Game URLs are __not supported__ on Facebook canvas.
+
+On email, by default, the game will open and rewards will be granted, then the game will open the default device browser to the URL. This behavior can be overridden with Skip Game Launch.
+
+==== Skip Game Launch
+
+For email only, there is an additional option to **Skip Game Launch**. When this option is enabled, the game will not be launched when the link is tapped in an email, instead the player will be taken directly to the configured URL. When this option is enabled, Rewards cannot be granted, and metrics for clicks will be tracked differently. 
+
+
+
+
+== Link Destination (Alternate)
+ 
+Control where the player is taken after a click or tap. By default, on all platforms, clicks and taps will launch the game. 
+
+Optionally, you can link to a specific part of your game with a Game Deep Link. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
+
+In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::page$teak-unity-features.html#_deep_links[Deep Linking, target=_blank], and what routes and values are available for use.
+
+If you need to link to an out of game destination, you can use the Out of Game URL option. Enter a web URL (e.g. https&#58;//example.com/) into the field. 
+
+=== Facebook Canvas
+
+Game Launch::
+	Clicks will launch the game, and any associated rewards will be granted.
+
+Game Deep Link::
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+
+__Out of Game URLs are not supported on Facebook canvas.__
+
+=== iOS & Android
+
+Game Launch::
+	Clicks will launch the game, and any associated rewards will be granted.
+
+Game Deep Link::
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+
+Out of Game URL::
+	With Notifications on Android or iOS, the game will open the default device browser to the URL shortly after the game launches. Attached Rewards will be granted to the player.
+
+=== Email 
+
+Game Launch::
+	If an email link is tapped on a mobile device, the game will launch if it is installed on the device. If the game is not installed, the player will be taken to the game listing in the appropriate app store for that device. (The app listing is based on the iTunes Product ID and Android Package Name configured in the game settings.) 
+	+
+	If an email is opened on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
+
+Game Deep Link::
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.html#_deep_links[Deep Link Route, target=_blank].
+
+Out of Game URL::
+	On email, by default, the game will launch and rewards will be granted, then the game will open the URL in the deafult browser. This behavior can be overridden with Skip Game Launch.
+
+Skip Game Launch:: 	
+	When this option is enabled, the game will not be launched when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. 
+	+
+	When this option is enabled, Rewards cannot be granted, and metrics for clicks will be tracked differently. 
+	
+
 == Advanced
 
 In addition to sending Notifications, Teak has advanced features that can be enabled by your development team. Each platform has varying capabilities.
 
-=== Facebook
-
-Link::
-This option allows you to direct players to a specific location in your game with a Deep Linking route. When this feature is used, players will click the notification and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 
 === iOS
 
@@ -110,9 +195,6 @@ Displays the Notification even if players are currently in the game.
 Sound::
 Adjusting the sound will determine if the player is notified with a noise when the notification is received.
 
-[[_ios_deep_link]]Deep Link::
-This is the same principle as the Link option for Facebook. Unlike Facebook, however, an Android or iOS Deep Link can direct to a web URL (e.g. https://example.com/) and the game will open the default device browser to that URL shortly after the game launches and appropriately apply any attached Rewards. These routes are determined by your development team and may differ by platform.
-
 === Android
 
 Show App Icon in Notification::
@@ -122,8 +204,6 @@ It is recommended to always have your icon present, you may opt to uncheck this 
 Show in Foreground::
 Displays the Notification even if players are currently in the game. Please note the SDK requirements noted when creating the message.
 
-Deep Link::
-This is the same principle as the Link option for Facebook. Unlike Facebook, however, an Android or iOS Deep Link can direct to a web URL (e.g. https://example.com/) and the game will open the default device browser to that URL shortly after the game launches and appropriately apply any attached Rewards. These routes are determined by your development team and may differ by platform.
 
 == Testing
 
