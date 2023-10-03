@@ -32,6 +32,38 @@ Setting an Expiration time on rewards helps to ensure an economic balance in you
 
 Email rewards allow you to set an expiration based in minutes, hours, or days after the send time.
 
+== Link Destination
+
+Control where the player is taken after a click or tap on an email link. 
+
+Game Launch::
+Taps and clicks on the email link will attempt to launch the game, and any associated rewards will be granted.
++
+On mobile devices, if the game is not installed, the player will be taken to the game listing in the appropriate app store for that device. (The app store link is based on the iTunes Product ID or Android Package Name configured in the game settings.)
++
+If an email link is clicked on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
+
+Game Deep Link::
+Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, target=_blank] route. 
++
+When the player taps the notification, the game will launch if it is installed on the device. But, instead of beginning at the default screen, players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
++
+In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
+
+Out of Game URL::
+Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).
++
+By default, when the player taps the email link on **Android** or **iOS**, the game will launch, and then open the URL the device's default browser. Any attached Rewards will be granted to the player.
++
+This behavior can be overridden with Skip Game Launch.
+
+=== Skip Game Launch
+
+For email only, there is an option to skip the game launch when opening an Out of Game URL. 
+
+When this option is enabled, the game will not be launched when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game is skipped, and metrics for clicks will be tracked differently.
+
+////
 == Advanced
 
 Deep Link::
@@ -42,6 +74,7 @@ A specific difference If you have both mobile and desktop experiences is that *y
 *Example*: If the Deep Link is routed for mobile, but the message is opened on desktop, it will not go to the routed entry point, but will open as if there were no Deep Link, and apply the Rewards.
 
 You can try to mitigate this by splitting your Audience by mobile or desktop and send an Email with the corresponding Deep Links. You may still have some players who slip through the cracks.
+////
 
 == Testing
 
