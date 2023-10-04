@@ -98,18 +98,18 @@ Game Launch::
 Taps and clicks will launch the game, and any associated rewards will be granted. This is the default behavior.
 
 Game Deep Link::
-Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route. 
+Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route.
 +
-When the player taps the notification, the game will launch, but instead of beginning at the default screen, players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
+Taps and clicks will launch the game, but instead of beginning at the default screen, players start their session in another location, such as their inbox, a store, or a specific moment in their progression, and any associated rewards will be granted.
 +
-In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
+To use Deep Links, your team needs to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available.
 
 Out of Game URL::
-Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).
+Link to an out of game destination with a web URL (e.g., `https&#58;//example.com/`).
 +
-When the player taps the notification on **Android** or **iOS**, the game will launch, and then open the URL the device's default browser. Any attached Rewards will be granted to the player.
+When the player taps the notification on **Android** or **iOS**, the game will launch and then open the default browser to the URL. Any associated rewards will be granted before the browser is opened.
 +
-__Out of Game URLs are not supported on Facebook canvas.__
+__Out of Game URLs are not supported on Facebook Canvas.__
 
 ////
 
