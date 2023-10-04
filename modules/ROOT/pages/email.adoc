@@ -44,11 +44,11 @@ On mobile devices, if the game is not installed, the player will be taken to the
 If an email link is clicked on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
 
 Game Deep Link::
-Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, target=_blank] route. 
+Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route. 
 +
 When the player taps the notification, the game will launch if it is installed on the device. But, instead of beginning at the default screen, players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 +
-In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
+In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
 
 Out of Game URL::
 Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).

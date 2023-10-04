@@ -98,11 +98,11 @@ Game Launch::
 Taps and clicks will launch the game, and any associated rewards will be granted. This is the default behavior.
 
 Game Deep Link::
-Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, target=_blank] route. 
+Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route. 
 +
 When the player taps the notification, the game will launch, but instead of beginning at the default screen, players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 +
-In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
+In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
 
 Out of Game URL::
 Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).
@@ -131,7 +131,7 @@ If an email is opened on a desktop device, the player will be taken to the Deskt
 
 This option allows you to direct players to a specific location in your game with a Deep Linking route. When this feature is used, players will click the notification and the game will launch. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 
-In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank], and what routes and values are available for use.
+In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank], and what routes and values are available for use.
 
 === Out of Game URL
 
@@ -153,7 +153,7 @@ Control where the player is taken after a click or tap. By default, on all platf
 
 Optionally, you can link to a specific part of your game with a Game Deep Link. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 
-In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank], and what routes and values are available for use.
+In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank], and what routes and values are available for use.
 
 If you need to link to an out of game destination, you can use the Out of Game URL option. Enter a web URL (e.g. https&#58;//example.com/) into the field.
 
@@ -163,7 +163,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, window=_blank].
 
 __Out of Game URLs are not supported on Facebook canvas.__
 
@@ -173,7 +173,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, window=_blank].
 
 Out of Game URL::
 	With Notifications on Android or iOS, the game will open the default device browser to the URL shortly after the game launches. Attached Rewards will be granted to the player.
@@ -186,7 +186,7 @@ Game Launch::
 	If an email is opened on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, window=_blank].
 
 Out of Game URL::
 	On email, by default, the game will launch and rewards will be granted, then the game will open the URL in the deafult browser. This behavior can be overridden with Skip Game Launch.
@@ -202,7 +202,7 @@ Control where the player is taken after a click or tap. By default, clicks and t
 
 Optionally, you can link to a specific part of your game with a Game Deep Link. Instead of beginning at the default screen, you can have players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
 
-In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, target=_blank], and what routes and values are available for use.
+In order to use Deep Links, ask your team if they have integrated Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank], and what routes and values are available for use.
 
 If you need to link to an out of game destination, you can use the Out of Game URL option. Enter a web URL (e.g. https&#58;//example.com/) into the field.
 
@@ -212,7 +212,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, window=_blank].
 
 __Out of Game URLs are not supported on Facebook canvas.__
 
@@ -222,7 +222,7 @@ Game Launch::
 	Clicks will launch the game, and any associated rewards will be granted.
 
 Game Deep Link::
-	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, target=_blank].
+	Clicks will launch the game, any associated rewards will be granted, and the player will be taken to a specific section of the game. defained by a xref:unity::page$teak-unity-features.adoc#_deep_links[Deep Link Route, window=_blank].
 
 Out of Game URL::
 	With Notifications on Android or iOS, the game will open the default device browser to the URL shortly after the game launches. Attached Rewards will be granted to the player.
