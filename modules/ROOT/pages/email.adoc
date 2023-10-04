@@ -34,34 +34,34 @@ Email rewards allow you to set an expiration based in minutes, hours, or days af
 
 == Link Destination
 
-Control where the player is taken after a click or tap on an email link. 
+Control where the player is taken after a click or tap on an email link.
 
 Game Launch::
 Taps and clicks on the email link will attempt to launch the game, and any associated rewards will be granted.
 +
-On mobile devices, if the game is not installed, the player will be taken to the game listing in the appropriate app store for that device. (The app store link is based on the iTunes Product ID or Android Package Name configured in the game settings.)
+If the game is not installed on mobile devices, the player will be taken to the game listing in the appropriate app store for that device. (The app store link is based on the iTunes Product ID or Android Package Name configured in the game settings.)
 +
 If an email link is clicked on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
 
 Game Deep Link::
-Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route. 
+Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route.
 +
-When the player taps the notification, the game will launch if it is installed on the device. But, instead of beginning at the default screen, players begin their session in another location in the game, such as their inbox, a store, or a specific moment in their progression. Any Rewards will be applied as normal.
+When the player taps the notification, the game will launch if it is installed on the device. But, instead of beginning at the default screen, players start their session in another location in the game, such as their inbox, a store, or a specific moment in their progression, and any associated rewards will be granted.
 +
-In order to use Deep Links, your team will need to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available for use.
+To use Deep Links, your team needs to integrate Teak's xref:unity::teak-unity-features.adoc#_deep_links[Deep Linking, window=_blank]. It's best practice to confirm with a developer what routes and values are available.
 
 Out of Game URL::
 Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).
 +
-By default, when the player taps the email link on **Android** or **iOS**, the game will launch, and then open the URL the device's default browser. Any attached Rewards will be granted to the player.
+When the player taps the email link on **Android** or **iOS**, the game will launch and then open the default browser to the URL. Any associated rewards will be granted before the browser is opened. When the player taps the email link on **Desktop** the game will launch, but the player will __not__ be redirected to the Out of Game URL due to browser security restrictions.
 +
 This behavior can be overridden with Skip Game Launch.
 
 === Skip Game Launch
 
-For email only, there is an option to skip the game launch when opening an Out of Game URL. 
+For email only, there is an option to skip the game launch when opening an Out of Game URL.
 
-When this option is enabled, the game will not be launched when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game is skipped, and metrics for clicks will be tracked differently.
+When this option is enabled, the game will not be launched when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game launch is skipped. Clicks will be tracked, and if a player enters the game on the same device within an hour of click, they will be tracked as a xref:usage:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
 
 ////
 == Advanced

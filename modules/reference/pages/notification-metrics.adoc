@@ -147,7 +147,7 @@ Click to Open Rate is returning users / unique opens as a percentage.
 Con. Receipt CTR::
 Confirmed Receipt CTR is clicks / confirmed receipts as a percentage.
 
-Returning Users::
+[[_email_returning_user]]Returning Users::
 include::partial$returning_users.adoc[]
 
 Return Rate::
