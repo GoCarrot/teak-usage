@@ -142,7 +142,7 @@ CTR::
 Email CTR is clicks / sends as a percentage.
 
 Click to Open Rate::
-Click to Open Rate is returning users / unique opens as a percentage.
+Click to Open Rate is unique clicks / unique opens as a percentage.
 
 Con. Receipt CTR::
 Confirmed Receipt CTR is clicks / confirmed receipts as a percentage.
