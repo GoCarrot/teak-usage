@@ -1,4 +1,4 @@
-= Teak Usage
+= Teak User Guide
 
 Welcome! We know you’re excited to get started and this guide will assist you as you set up your first campaigns. So, let’s dig in and start setting up links, messages, emails, and more!
 ////
