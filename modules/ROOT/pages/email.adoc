@@ -53,15 +53,15 @@ To use Deep Links, your team needs to integrate Teak's xref:unity::teak-unity-fe
 Out of Game URL::
 Link to an out of game destination with a web URL (e.g. `https&#58;//example.com/`).
 +
-When the player taps the email link on **Android** or **iOS**, the game will launch and then open the default browser to the URL. Any associated rewards will be granted before the browser is opened. When the player taps the email link on **Desktop** the game will launch, but the player will __not__ be redirected to the Out of Game URL due to browser security restrictions.
+When the player taps the email link on **Android** or **iOS**, the game will launch and then open the default browser to the URL. Any associated rewards will be granted before the browser is opened. When the player clicks the email link on **Desktop** the game will launch, but the player will __not__ be redirected to the Out of Game URL due to browser security restrictions.
 +
-This behavior can be overridden with Skip Game Launch.
+This behavior can be overridden with Skip Game Open.
 
-=== Skip Game Launch
+=== Skip Game Open
 
-For email only, there is an option to skip the game launch when opening an Out of Game URL.
+For email only, there is an option to skip the game open when opening an Out of Game URL.
 
-When this option is enabled, the game will not be launched when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game launch is skipped. Clicks will be tracked, and if a player enters the game on the same device within an hour of click, they will be tracked as a xref:usage:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
+When this option is enabled, the game will not be opened when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:usage:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
 
 ////
 == Advanced

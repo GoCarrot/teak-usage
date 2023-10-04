@@ -148,7 +148,10 @@ Con. Receipt CTR::
 Confirmed Receipt CTR is clicks / confirmed receipts as a percentage.
 
 [[_email_returning_user]]Returning Users::
-include::partial$returning_users.adoc[]
+Returning Users is the count of distinct players each day who entered the game either directly through the email, or within an hour of clicking on the link in an email with the xref:usage::page$email.adoc#_skip_game_open[Skip Game Open, window=_blank] option enabled. +
+
+NOTE: If you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on the same {channel} on Jul 16 and Jul 17, they will be counted as two returning users for the overall metric.
+
 
 Return Rate::
 Return Rate is returning users / confirmed receipts.
