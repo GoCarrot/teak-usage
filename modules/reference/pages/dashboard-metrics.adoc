@@ -27,12 +27,22 @@ Average revenue per payer is revenue / payers. For display in the dashboard this
 total payers::
 Total payers is the count of unique users who made a purchase during a day. For display in the dashboard this value is averaged over the currently selected time frame.
 
+avg. daily play time::
+The average amount of session time per player per day. +
+_(Only available with SDK 4.3 and above.)_
+
+average revenue per play hour::
+Revenue divided by hours of total session time. +
+_(Only available with SDK 4.3 and above.)_
+
+
 === Notifications
 Percent(%) of DAU::
 The percentage of the daily players that started a session from a notification. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
 
-Avg Session Time::
-The average number of minutes spent per day in sessions which started from a click on a notification per player who clicked. 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on a notification per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 Returning Users::
 Returning Users is the count of distinct players each day who clicked on a Facebook A2U, mobile push notification, or email. +
@@ -49,8 +59,9 @@ Return Value per Sessions is Return Value from notifications / total notificatio
 Percent(%) of DAU::
 The percentage of the daily players that started a session from a link. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
 
-Avg Session Time::
-The average number of minutes spent per day in sessions which started from a click on a link per player who clicked. 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on a link per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 Returning Users::
 Returning Users is the count of distinct players each day who clicked on a Link +
@@ -73,8 +84,9 @@ Install Value is the sum of revenue during the currently selected time frame fro
 Percent(%) of DAU::
 The percentage of the daily players that start a session not attributable to another source. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
 
-Avg Session Time::
-The average number of minutes spent per day in sessions which started, from a non-attributable source, per player who clicked. 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started, from a non-attributable source, per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 Returning Users::
 Returning Users is the count of distinct players each day who entered the game without an attributed session.
