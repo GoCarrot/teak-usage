@@ -10,7 +10,7 @@ If the link has a reward bundle associated, this will be the count of times the 
 Clicks::
 A click is tracked when a player enters the game through the link. Note that the game must get through complete Teak SDK initialization before a click event will be tracked.
 
-Returning Users::
+[[_returning_user]]Returning Users::
 include::partial$returning_users.adoc[]
 
 Return Value::
