@@ -2,6 +2,8 @@
 
 These are the metrics Teak tracks for links with a description of what causes Teak to track each given metric.
 
+TIP: Not every metric is visible by default. Change to Compact or Table View to see all available metrics.
+
 :channel: link
 
 Rewards Claimed::
