@@ -38,7 +38,7 @@ _(Only available with SDK 4.3 and above.)_
 
 === Notifications
 Percent(%) of DAU::
-The percentage of the daily players that started a session from a notification. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+The percentage of the daily players that started a session from a notification. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%.
 
 Avg. Daily Play Time::
 The average amount of time spent per day in sessions which started from a click on a notification per player who clicked. +
@@ -57,7 +57,7 @@ Return Value per Sessions is Return Value from notifications / total notificatio
 
 === Links
 Percent(%) of DAU::
-The percentage of the daily players that started a session from a link. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+The percentage of the daily players that started a session from a link. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%.
 
 Avg. Daily Play Time::
 The average amount of time spent per day in sessions which started from a click on a link per player who clicked. +
@@ -82,10 +82,10 @@ Install Value is the sum of revenue during the currently selected time frame fro
 
 === Other
 Percent(%) of DAU::
-The percentage of the daily players that start a session not attributable to another source. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+The percentage of the daily players that start a session not attributable to another source. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%.
 
 Avg. Daily Play Time::
-The average amount of time spent per day in sessions which started, from a non-attributable source, per player who clicked. +
+The average amount of time spent per day in sessions not attributable to another source per player who has at least one session not attributable to another source. +
 _(Only available with SDK 4.3 and above.)_
 
 Returning Users::
