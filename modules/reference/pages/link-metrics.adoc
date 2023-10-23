@@ -19,6 +19,10 @@ include::partial$return_value.adoc[]
 Return Spenders::
 include::partial$return_spenders.adoc[]
 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this link per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
+
 Return Value per Spender::
 Return Value per Spender is return value / return spenders.
 

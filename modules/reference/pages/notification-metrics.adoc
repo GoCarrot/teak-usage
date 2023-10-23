@@ -27,6 +27,10 @@ include::partial$return_spenders.adoc[]
 Return Value per Spender::
 Return Value per Spender is Return Value / Return Spenders.
 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this notification per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
+
 == Facebook A2U
 
 Sends::
@@ -49,6 +53,10 @@ include::partial$return_spenders.adoc[]
 
 Impact::
 Impact is Returning Users for the notification divided by the sum of all sends for all Facebook A2U notifications.
+
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this notification per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 == iOS Push
 
@@ -85,6 +93,10 @@ include::partial$return_spenders.adoc[]
 Impact::
 Impact is Returning Users for the notification divided by the sum of all sends for all iOS Push notifications.
 
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this notification per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
+
 == Android Push
 
 Sends::
@@ -116,6 +128,10 @@ include::partial$return_spenders.adoc[]
 
 Impact::
 Impact is Returning Users for the notification divided by the sum of all sends for all Android Push notifications.
+
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this notification per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 == Email
 :channel: email
@@ -164,6 +180,10 @@ include::partial$return_spenders.adoc[]
 
 Impact::
 Impact is Returning Users for the notification divided by the sum of all sends for all Emails.
+
+Avg. Daily Play Time::
+The average amount of time spent per day in sessions which started from a click on this email per player who clicked. +
+_(Only available with SDK 4.3 and above.)_
 
 Bounces::
 A bounce is tracked when email delivery fails for a permanent reason, e.g. the email address is invalid or has been deleted.
