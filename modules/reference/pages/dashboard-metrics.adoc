@@ -1,19 +1,19 @@
 = Dashboard Metrics
 
-These are the metrics Teak displayes in the main Dashboard, with a description of how Teak calculates the metric.
+These are the metrics Teak displays in the main Dashboard, with a description of how Teak calculates the metric.
 
 == General
 average daily active users::
 Each unique game assigned player id or Facebook App Scoped ID Teak sees in a day is counted as a daily active user. For display in the dashboard this value is averaged over the currently selected time frame.
 
 5 minute active users::
-5 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding five minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+5 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding five minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
 
 total revenue::
 Total revenue is the sum of the USD value of all in-app purchases made in the currently selected time frame.
 
-average % of DAU Paying::
-% of DAU Paying is the precentage of daily active users who made at least one purchase in a given day. For display in the dashboard this value is averaged over the currently selected time frame.
+average percent(%) of DAU Paying::
+Percent of DAU Paying is the percentage of daily active users who made at least one purchase in a given day. For display in the dashboard this value is averaged over the currently selected time frame.
 
 average arpdau::
 ARPDAU is revenue / daily active users. For display in the dashboard this value is averaged over the currently selected time frame.
@@ -25,19 +25,19 @@ average average revenue per payer::
 Average revenue per payer is revenue / payers. For display in the dashboard this value is averaged over the currently selected time frame.
 
 total payers::
-Total payers is the count of unique users who made a purchase during a day. For display in the dasboard this value is averaged over the currently selected time frame.
+Total payers is the count of unique users who made a purchase during a day. For display in the dashboard this value is averaged over the currently selected time frame.
 
 === Notifications
-Average CTR::
-Notification CTR is clicks / sends from all Facebook A2U, mobile push notifications, and emails as a percentage.
+Percent(%) of DAU::
+The percentage of the daily players that started a session from a notification. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+
+Avg Session Time::
+The average number of minutes spent per day in sessions which started from a click on a notification per player who clicked. 
 
 Returning Users::
-Returning Users is the count of distinct players each day who clicked on a Facebok A2U, mobile push notification, or email. +
+Returning Users is the count of distinct players each day who clicked on a Facebook A2U, mobile push notification, or email. +
 
 NOTE: If you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on a Facebook A2U, mobile push notification, or email on Jul 16 and Jul 17, they will be counted as two returning users for the overall metric.
-
-% of DAU from Notification::
-% of DAU from Notifications is Returning Users from Notifications / Daily Active Users, as a percentage. Note that players may also have entered the game through other sources in the same day, and would also be tracked as % of DAU for that source as well.
 
 Return Value::
 Return Value is the sum of USD revenue from in-app purchases made during sessions which started because of a click on a Facebook A2U, mobile push notification, or email. If a player exits the game for longer than two minutes after the click or force closes the game and then relaunches it before making a purchase, that purchase will be considered part of a new session and will not be counted as Return Value.
@@ -46,13 +46,16 @@ Return Value per Session::
 Return Value per Sessions is Return Value from notifications / total notification clicks.
 
 === Links
+Percent(%) of DAU::
+The percentage of the daily players that started a session from a link. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+
+Avg Session Time::
+The average number of minutes spent per day in sessions which started from a click on a link per player who clicked. 
+
 Returning Users::
 Returning Users is the count of distinct players each day who clicked on a Link +
 
 NOTE: If you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on a Facebook A2U, mobile push notification, or email on Jul 16 and Jul 17, they will be counted as two returning users for the overall metric.
-
-% of DAU from Link::
-% of DAU from Link is Returning Users from Link / Daily Active Users, as a percentage. Note that players may also have entered the game through other sources in the same day, and would also be tracked as % of DAU for that source as well.
 
 Return Value::
 Return Value is the sum of USD revenue from in-app purchases made during sessions which started because of a click on a link. If a player exits the game for longer than two minutes after the click or force closes the game and then relaunches it before making a purchase, that purchase will be considered part of a new session and will not be counted as Return Value.
@@ -67,11 +70,14 @@ Install Value::
 Install Value is the sum of revenue during the currently selected time frame from _all_ New Users from links regardless of time frame. E.g. If the currently selected time frame is Jul 16, 2021 - Jul 29, 2021, then a player counted as a New User for the {channel} on January 1, 2019 who spent $9.99 on July 17, 2021 would be counted as Install Value in the display.
 
 === Other
+Percent(%) of DAU::
+The percentage of the daily players that start a session not attributable to another source. A single player can interact with multiple channels in a single day, so the total percentages from all channels may add up to more than 100%. 
+
+Avg Session Time::
+The average number of minutes spent per day in sessions which started, from a non-attributable source, per player who clicked. 
+
 Returning Users::
 Returning Users is the count of distinct players each day who entered the game without an attributed session.
-
-% of DAU from Other::
-% of DAU from Other is Returning Users from Other / Daily Active Users, as a percentage. Note that palersy may also have entered the game through an attributed source in the same day, and would also be tracked as % of DAU for that source as well.
 
 Return Value::
 Return Value is the sum of USD revenue from in-app purchases made during sessions which are unattributed.
@@ -86,14 +92,14 @@ Install Value is the sum of revenue during the currently selected time frame fro
 Revenue::
 Revenue is the sum of USD revenue from in-app purchases made in sessions on the corresponding platform in the corresponding country.
 
-% of Revenue::
-% of Revenue for a Geo/Platform is Revenue from the Geo/Platform / Total revenue for the game.
+Percent(%) of Revenue::
+Percent of Revenue for a Geo/Platform is Revenue from the Geo/Platform / Total revenue for the game.
 
 DAU::
 DAU for a Geo/Platform is the count of unique game assigned player id or Facebook App Scoped ID Teak sees in a day for the corresponding platform in the corresponding country. Note that if a player plays on multiple platforms or in multiple countries on the same day they will be counted as a DAU For each Geo/Platform that they played in that day.
 
-% of DAU::
-% of DAU for a Geo/Platform is DAU for the Geo/Platform / Total DAU for the game.
+Percent(%) of DAU::
+Percent of DAU for a Geo/Platform is DAU for the Geo/Platform / Total DAU for the game.
 
 ARPDAU::
 ARPDAU for a Geo/Platform is Revenue from the Geo/Platform / DAU from the Geo/Platform.
@@ -115,10 +121,10 @@ average arpu::
 ARPU is revenue / payers. For display in the dashboard this value is averaged over the currently selected time frame.
 
 total payers::
-Total payers is the count of unique users who made a purchase during a day. For display in the dasboard this value is averaged over the currently selected time frame.
+Total payers is the count of unique users who made a purchase during a day. For display in the dashboard this value is averaged over the currently selected time frame.
 
-average % of DAU paying::
-% of DAU Paying is the precentage of daily active users who made at least one purchase in a given day. For display in the dashboard this value is averaged over the currently selected time frame.
+average percent(%) of DAU paying::
+Percent of DAU Paying is the percentage of daily active users who made at least one purchase in a given day. For display in the dashboard this value is averaged over the currently selected time frame.
 
 average conversion rate::
 Conversion Rate is the percentage of new users from 14 to 21 days prior to the current date who made a purchase within 14 days of their first session.
@@ -127,10 +133,10 @@ average median time to convert::
 Time to convert is the number of days between first session and first purchase for players who made a purchase within 14 days of their first session. Median time to convert is the number of days by which 50% of players who did convert within 14 days of their first session had converted.
 
 average median player age::
-Player age is the number of days since first session for players who had a session today. 50% of players who had a session today will have a player agen less than the median player age, and 50% of players who had a session today will have a player age greater than the median player age.
+Player age is the number of days since first session for players who had a session today. 50% of players who had a session today will have a player age less than the median player age, and 50% of players who had a session today will have a player age greater than the median player age.
 
 average median payer age::
-Payer age is the number of days since first session for players who made a purchase today. 50% of players who made a purchase today will have a payer agen less than the median payer age, and 50% of players who made a purchase today will have a payer age greater than the median payer age.
+Payer age is the number of days since first session for players who made a purchase today. 50% of players who made a purchase today will have a payer age less than the median payer age, and 50% of players who made a purchase today will have a payer age greater than the median payer age.
 
 average sessions per player::
 Average sessions per player is sessions / daily active users. A session is tracked each time the game is launched through a distinct Teak tracked source, such as a notification, email, or link, or if the game has been backgrounded for longer than two minutes and then brought back to the foreground. For display in the dashboard this value is averaged over the currently selected time frame.
@@ -143,16 +149,16 @@ Analytics is the count of custom events reported to Teak through the relevant Te
 
 == Active Users
 1 minute active users::
-1 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding minute. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+1 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding minute. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
 
 5 minute active users::
-5 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding five minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+5 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding five minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
 
 15 minute active users::
-15 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding 15 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+15 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding 15 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
 
 60 minute active users::
-60 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding 60 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+60 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding 60 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
 
 180 minute active users::
-180 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceeding 180 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
+180 minute active users is the count of unique game assigned player ids that Teak knows have had the game open in the preceding 180 minutes. This is tracked through a regular ping made by the Teak SDK while a game is in the foreground.
