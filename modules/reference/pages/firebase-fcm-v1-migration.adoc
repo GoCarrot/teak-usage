@@ -74,7 +74,7 @@ image::usage:reference:firebase-setup/firebase-notification-settings.png[]
 
 == Copy the __Sender ID__ to Teak 
 
-[start=5]
+[start=6]
 . Confirm that the `Sender ID` from Firebase matches the existing `FCM Sender ID` in Teak. 
 
 . If the IDs match, copy **`Sender ID`** from Firebase to the **`FCM Sender ID`** field in the setup modal.
@@ -83,7 +83,7 @@ Leave the modal open for the next step.
 
 == Generate a __Service Account Key__ in Firebase
 
-[start=7]
+[start=8]
 . Back in the Firebase dashboard, click the **Service accounts** tab.
 +
 image::usage:reference:firebase-setup/firebase-service-accounts.png[]
@@ -111,7 +111,7 @@ For Production environments, we want to make sure the new credentials are workin
 
 After you save, you will see that 
 
-[start=13]
+[start=14]
 . In a new tab, send yourself a **Preview Notification** to your Android device. 
 +
 See xref:unity::page$quickstart/hello-world.adoc[Sending Your First Notification, window=_blank] for directions on setting up and sending previews notifications.
@@ -131,7 +131,7 @@ If things are not sending properly, the most likely cause downloading a key from
 
 === Begin Rollout
 
-[start=15]
+[start=16]
 . With the Preview send confirmed, it's time to click **Begin Rollout**. 
 +
 The modal outlines the process: 
@@ -148,7 +148,7 @@ The modal outlines the process:
 
 __... FOUR DAYS LATER...__
 
-[start=17]
+[start=18]
 . In the **https://app.teak.io[Teak Dashboard, window=_blank]** again, navigate to menu:Settings[Android]. The progress bar will be gone when it's all done.
 
 . **Congratulations**, you did the thing that Google is making us all do. Rest easy when you get the ominous warning emails about FCM (Legacy) being discontinued. Hooray.
