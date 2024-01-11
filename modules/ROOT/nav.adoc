@@ -22,11 +22,13 @@
 ** xref:usage:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
 ** xref:usage:reference:page$data-sync.adoc[Data Sync]
 
-* Push Configuration
-** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service Certificates]
-** xref:usage:reference:page$firebase-fcm.adoc[Finding your Android Push Credentials on Firebase]
-** xref:usage:reference:page$amazon-device-messaging.adoc[Finding your Amazon Device Messaging Credentials]
-** xref:usage:reference:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
-
 * Guides
 ** xref:usage:guides:page$tests.adoc[Creating a single Schedule with varied content]
+
+* 3rd Party Configuration
+** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service Certificate Guide]
+** xref:usage:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1) Credential Guide]
+** xref:usage:reference:page$firebase-fcm-v1-migration.adoc[Migrate to Firebase Cloud Messaging (v1)]
+** xref:usage:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging Credential Guide]
+** xref:usage:reference:page$sendgrid-setup.adoc[Connect SendGrid and Teak]
+
