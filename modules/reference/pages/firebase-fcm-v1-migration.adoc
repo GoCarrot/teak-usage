@@ -11,14 +11,14 @@ On June 20th, 2024, Google will discontinue support for Cloud Messaging API (Leg
 
 This guide will help you seemlessly transition to the (v1) credentials with no disruption to your push notification sends on Android.
 
-The required steps can be done in the Teak and Firebase dashboards. No client update it required.  
+The required steps can be done in the Teak and Firebase dashboards. No client update is required.
 
 **You will need the following to complete this step:**
 
 * [*] A game with **Firebase Cloud Messaging API (Legacy)** setup in Teak. 
 * [*] An account on the https://console.firebase.google.com/[Firebase Console, window=_blank] with an Editor or Owner role and access to your game
 * [*] An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
-* [*] An Android test device that can recieve push notifications for you game
+* [*] An Android test device that can recieve push notifications for your game
 
 [NOTE]
 ====
