@@ -151,4 +151,4 @@ __... FOUR DAYS LATER...__
 [start=18]
 . In the **https://app.teak.io[Teak Dashboard, window=_blank]** again, navigate to menu:Settings[Android]. The progress bar will be gone when it's all done.
 
-. **Congratulations**, you did the thing that Google is making us all do. Rest easy when you get the ominous warning emails about FCM (Legacy) being discontinued. Hooray.
+. **Congratulations**, you did the thing that Google is making us all do. Rest easy when you get the ominous warning emails about FCM (Legacy) being discontinued. Hooray!
