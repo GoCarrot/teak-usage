@@ -1,6 +1,6 @@
 = Audiences
 
-Creating Audiences is as simple as designating a single rule or as complex as triggering on specific behaviors to move players through a marketing funnel.
+Creating Audiences is as simple as designating a single rule or as complex as triggering on specific behaviors to move players through a marketing funnel. You can create Audiences to distribute Messages to qualified players, to trigger specific Messages, or as segmentation for Audience Controlled Rewarding.
 
 == Audience Set Up
 
@@ -13,25 +13,38 @@ Now it’s time to set the rules! Some basic rules will be available when Teak i
 
 Creating your own Rules offers the opportunity for dynamic Audiences. To get started with Rules, you’ll always begin with one of the following options:
 
-* Play
-* Purchase
-* Install
-* Campaign Engagement
-* Custom Events
-* Player Properties
+* <<Played>>
+* <<Purchased>>
+* <<Installed>>
+* <<Campaign Engagement>>
+* <<Custom Events>>
+* <<Player Properties>>
+* <<Audiences>>
 
-You can create Audiences to distribute Messages to qualified players, to trigger specific Messages, or as segmentation for Audience Controlled Rewarding.
+=== Played
 
-Play, Purchase, and Install::
-Set timeframes by Hours, Days, Weeks, Months, Quarters, or Years relative to the player’s completion of the action.
+This rule selects players based on when they had a session. _All_ players who had a session within the timeframe will be matched by this rule.
 
-Campaign Engagement::
-Select specific actions around your previously sent Messages. (The definitions of these options are clarified in the Glossary)
+NOTE: This is not "last played". If the timeframe is "between 2 days and 3 days ago", then all players who had a session between 2 days and 3 days ago will be matched, _even if_ they have played more recently.
 
-Custom Events::
+=== Purchased
+
+This rule selects players based on when they made an in-app purchase.
+
+=== Installed
+
+This rule selects players based on when they had their first session in your game.
+
+NOTE: It is not possible to target players who have downloaded your game from the store but have never launched it.
+
+=== Campaign Engagement
+
+This rule allows targeting players based on how they have engaged with your push notifications, emails, or shared Links.
+
+=== Custom Events
 These are not typically used, but are generally set up in conjunction with the Teak team for a customized solution. (See: <<Teak.TrackEvent(string,string,string)>>, and <<Teak.IncrementEvent(string,string,string,long)>>)
 
-Player Properties::
+=== Player Properties
 These are custom Strings and Integers set up by your dev team. If you choose Player Property as a rule you will see the full list of properties available for segmentation. (See: <<Teak.SetNumericAttribute(string,double)>>, and <<Teak.SetStringAttribute(string,string)>>)
 
 NOTE: Numeric properties are represented by 8-byte floats.
@@ -44,6 +57,11 @@ You can set as many rules as needed to get to your ideal audience. After the fir
 [example]
 image::audiences/audience_last_month_but_not_week.png[]
 
+=== Audiences
+
+This rule selects players based on their inclusion in other Audiences. You may select any number of Audiences and a player who is in any of them will be matched by this rule. You can select both other rule based Audiences or Audiences made by uploading a list.
+
+NOTE: This rule updates like any other rule. If a player later leaves all selected Audiences then they will no longer be matched by this rule in the current Audience either.
 
 == Filters
 
