@@ -27,7 +27,7 @@ _Recommended between 30 to 100 characters._
 
 This text appears in the inbox preview of the email client, but not in the body of the email. Typically, this is displayed right under the subject line and slightly grayed out. Different email clients display this differently. 
 
-This is also called a "hidden preheader," by some vendors because of how it's implemented. 
+This may also be referred to as a “preheader” or “hidden preheader” in other email systems. 
 
 
 === Message
@@ -39,7 +39,7 @@ You can use the same tags, emojis, and HTML formatting in Email that you can on 
 
 === Image
 
-The _Large Image Click_ template requires an image to be sent. The image size is mostly up to you, and will be compressed as needed. It’s beneficial to test on different devices and email providers to determine the ideal resolution for your images.
+The _Large Image Click_ template requires an image to be sent. We recommend _800x800 px_ images as a starting point, but the image size is mostly up to you, and will be compressed as needed. It’s beneficial to test on different devices and email providers to determine the ideal resolution for your images.
 
 Animated .gif files can be used in your emails, but keep in mind that their large size may cause loading issues if displayed on older devices or slow connections. Additionally, they won’t be displayed at all to players using Outlook as their email client. These can be highly engaging, but should be tested thoroughly on your app's min spec devices.
 
