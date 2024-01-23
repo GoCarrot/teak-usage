@@ -1,26 +1,51 @@
 = Email
 
-== Email Creation
+Email is set up in the same flow as Push Notifications. Click menu:Notifications[Email Tab, New Message] to create a new message. Make sure the *Email* option is checked. 
 
-Email follows many of the same principles as the Push and App-to-User Notifications. If you have familiarized yourself with Notifications, you’ll find much of this section repeats, but there are some key differences.
+== Templates 
 
-=== Formatting
+There are currently 2 ways to build an email on Teak. You can find these options in the *Templates* dropdown. 
+
+Large Image Click:: 
+This is the default template. This template prioritizes having a large image that players tap to launch the game. 
+
+Custom HTML::
+For advanced users to create their own email layouts.
+
+== Using _"Large Image Click"_
+
+Teak's default template is optimized to get players in the game. It features a small text area, followed by a large clickable image that launches the game. This image can be incentivized using the Rewards system. 
+
+=== Subject
+_50 Characters Recommended. 255 Characters allowed._
+
+The subject line of the email. This is the first thing a player will see, so getting this right is key to good Open rates and CTR.
+
+
+=== Preview Text
+_Recommended between 30 to 100 characters._
+
+This text appears in the inbox preview of the email client, but not in the body of the email. Typically, this is displayed right under the subject line and slightly grayed out. Different email clients display this differently. 
+
+This is also called a "hidden preheader," by some vendors because of how it's implemented. 
+
+
+=== Message
+_768 Characters allowed (Keeping a balanced Text to Image ratio and including HTML and Tags)_
+
+This text appears at the top of the email above the big image. 
 
 You can use the same tags, emojis, and HTML formatting in Email that you can on Android. You can use the Teak Markup Tag documentation, but any HTML5 is acceptable.
 
-=== Character Count
-Subject:: 50 Characters Recommended. 255 Characters allowed
+=== Image
 
-Body::
-768 Characters allowed (Keeping a balanced Text to Image ratio and including HTML and Tags)
+The _Large Image Click_ template requires an image to be sent. The image size is mostly up to you, and will be compressed as needed. It’s beneficial to test on different devices and email providers to determine the ideal resolution for your images.
 
-=== Using Images
+Animated .gif files can be used in your emails, but keep in mind that their large size may cause loading issues if displayed on older devices or slow connections. Additionally, they won’t be displayed at all to players using Outlook as their email client. These can be highly engaging, but should be tested thoroughly on your app's min spec devices.
 
-Emails must have an image uploaded to be sent. The image size is mostly up to you, and will be compressed as needed. When deciding on a standardized Email template, it’s most beneficial to test on different devices and email providers to determine how you would like your messages to appear to players.
+==== Image Alt-Text
 
-Animated .gif files can be used in your emails, but keep in mind that their large size may cause loading issues if displayed on older devices or slow connections. Additionally, they won’t be displayed at all to players using Outlook as their email client. These can be highly engaging, but should be tested thoroughly on your app’s min spec devices.
-
-In addition to an uploaded image, you may also insert images with HTML, if you are familiar with that process.
+Many email clients hide images by default, so make sure to include alt-text for the image, to give players a reason to tap, even if they don't have images turned on.
 
 == Rewards
 
