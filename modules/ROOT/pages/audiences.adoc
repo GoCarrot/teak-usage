@@ -127,6 +127,15 @@ Uploading a .CSV or .XLSX file is a great way to ensure a very specific set of p
 
 After the upload, save your Audience, and an email will be sent with the details on your list.
 
+== Audience Creation by Segmenting
+
+You can create a new Audience targeting players in an existing Audience with additional criteria using the "Segment" option in the dropdown for an Audience. Unlike duplicating an existing Audience, using "Segment" will update your new Audience if the definition of the Audience you are segmenting is updated.
+
+Segmenting is useful for
+* Targeting players from an uploaded list who recently played, purchased, or tapped on a notification, message, or link.
+* Targeting purchasers who are also in an existing lapsed player Audience
+* Targeting lapsed players who are also in an existing VIP Audience
+
 == Additional Exploration
 
 Beyond creating Audiences for Messaging, the Audience Builder can be a valuable analytical tool. For instance, if you are doing exploratory research on a new campaign, want to gain an understanding of how people are interacting with your game, or need to review some deeper analytics on your Messages, Audience Builder might be able to help. There are a few helpful Audience examples for inspiration.
