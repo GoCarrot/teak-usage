@@ -129,9 +129,15 @@ After the upload, save your Audience, and an email will be sent with the details
 
 == Audience Creation by Segmenting
 
-You can create a new Audience targeting players in an existing Audience with additional criteria using the "Segment" option in the dropdown for an Audience. Unlike duplicating an existing Audience, using "Segment" will update your new Audience if the definition of the Audience you are segmenting is updated.
+The **Segment** option is a helpful shortcut to create a new audience based on an existing audience. 
 
-Segmenting is useful for
+In the Audience list, you can find **Segment** in the dropdown for existing audiences. When creating a new Schedule, the Segment option appears next to the selected audience.
+
+**Segment** creates a new Rule Based Audience with "Players whose _Audiences_ are any of..." prefilled with the audience you are segmenting. Add additional rules to refine which players you want to reach with your new audience.  
+
+A segmented audience will update if the definition of the original audience is updated. 
+
+Segmenting is useful for::
 * Targeting players from an uploaded list who recently played, purchased, or tapped on a notification, message, or link.
 * Targeting purchasers who are also in an existing lapsed player Audience
 * Targeting lapsed players who are also in an existing VIP Audience
