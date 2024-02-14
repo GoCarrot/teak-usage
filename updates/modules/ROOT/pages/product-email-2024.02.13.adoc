@@ -2,9 +2,7 @@
 :page-no-nav: true
 :noindex:
 
-*Teak Product Updates - February 13th, 2024*
-
-''''
+*February 13th, 2024 &mdash; Teak Product Updates*
 
 === Hello,
 
@@ -22,7 +20,7 @@ Teak just needs new credentials uploaded for your Firebase project.
 
 A team member with access to your game's Firebase project will need to do a few steps to start the rollover process. Your challenge is to figure out who that person is! Go! 
 
-Once this task has been delegated, we've put together a step by step xref:usage:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions. 
+Once this task has been delegated, we've put together a step by step xref:usage:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*, window=_blank] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions. 
 
 == Email Preview Text 
 
@@ -59,7 +57,7 @@ Custom HTML email templates are now generally available for all games. Anyone ca
 
 When creating email content in Teak, change the *Template* to *Custom HTML* and paste the HTML for your custom email into the *Email HTML* field. We strongly recommend previewing any Custom HTML emails before sending them to ensure they look good in inboxes! 
 
-== Combine Audiences 
+== Combining Audiences 
 
 This one is great for simplifying complex targeting. You can now mixin or exclude existing audiences in a new audience you're setting up. 
 
