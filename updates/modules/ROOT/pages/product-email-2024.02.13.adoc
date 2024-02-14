@@ -1,32 +1,30 @@
 = Firebase Migration, Email Preview Text, & Putting Audiences in Audiences
-:page-no-nav: true
-:noindex:
 
 *February 13th, 2024 &mdash; Teak Product Updates*
 
 === Hello,
 
-We hope your 2024 is getting off to a good start! Thanks to our users' requests, we have some new product updates to share: Better customization of emails and targeting! 😄 
-And no thanks to Google, we have a mandatory update that must be done by June 20th, 2024.😑 
+We hope your 2024 is getting off to a good start! Thanks to our users' requests, we have some new product updates to share: Better customization of emails and targeting! 😄
+And no thanks to Google, we have a mandatory update that must be done by June 20th, 2024.😑
 
-== Firebase Cloud Messaging v1 Migration 
+== Firebase Cloud Messaging v1 Migration
 
-Google says that everyone has to use Firebase Messaging (v1) now. They will discontinue support for FCM Legacy on June 20th, 2024. 
+Google says that everyone has to use Firebase Messaging (v1) now. They will discontinue support for FCM Legacy on June 20th, 2024.
 
 _The bad news:_ All games sending push notifications to Android devices must migrate to FCM v1. +
-_The good news:_ No client update is required. 
+_The good news:_ No client update is required.
 
-Teak just needs new credentials uploaded for your Firebase project.  
+Teak just needs new credentials uploaded for your Firebase project.
 
-A team member with access to your game's Firebase project will need to do a few steps to start the rollover process. Your challenge is to figure out who that person is! Go! 
+A team member with access to your game's Firebase project will need to do a few steps to start the rollover process. Your challenge is to figure out who that person is! Go!
 
-Once this task has been delegated, we've put together a step by step xref:usage:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*, window=_blank] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions. 
+Once this task has been delegated, we've put together a step by step xref:usage:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*, window=_blank] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions.
 
-== Email Preview Text 
+== Email Preview Text
 
-We hope this one will increase your email open rates. 
+We hope this one will increase your email open rates.
 
-Email clients show a snippet of text under the subject line with a preview of the contents of the email. Usually in gray. You know the one. 
+Email clients show a snippet of text under the subject line with a preview of the contents of the email. Usually in gray. You know the one.
 
 [cols="2*", frame="none", grid="none"]
 |===
@@ -42,33 +40,33 @@ image::preview-text-gmail-push.jpeg[Gmail Push Notification]
 
 |===
 
-You now have the option to control that preview text in Teak. Look for the aptly named Preview Text field when creating an email. 
+You now have the option to control that preview text in Teak. Look for the aptly named Preview Text field when creating an email.
 
-This creates a great creative opportunity, acting like an extension of the subject line. What words or short sentence could you put here to further interest a player? Maybe there is a fun way to play on the subject line. Or you could entice players with a short preview of a possible reward. 
+This creates a great creative opportunity, acting like an extension of the subject line. What words or short sentence could you put here to further interest a player? Maybe there is a fun way to play on the subject line. Or you could entice players with a short preview of a possible reward.
 
-More tips from us on this soon. 
+More tips from us on this soon.
 
 [.newsletter-img]
 image::preview-text-edit.png[Preview Text Edit]
 
-== HTML Email Enabled for All 
+== HTML Email Enabled for All
 
-Custom HTML email templates are now generally available for all games. Anyone can now import a custom created email. Build an email in your favorite email creation tool and then import it, fully ready to go, into the Teak Dashboard. 
+Custom HTML email templates are now generally available for all games. Anyone can now import a custom created email. Build an email in your favorite email creation tool and then import it, fully ready to go, into the Teak Dashboard.
 
-When creating email content in Teak, change the *Template* to *Custom HTML* and paste the HTML for your custom email into the *Email HTML* field. We strongly recommend previewing any Custom HTML emails before sending them to ensure they look good in inboxes! 
+When creating email content in Teak, change the *Template* to *Custom HTML* and paste the HTML for your custom email into the *Email HTML* field. We strongly recommend previewing any Custom HTML emails before sending them to ensure they look good in inboxes!
 
-== Combining Audiences 
+== Combining Audiences
 
-This one is great for simplifying complex targeting. You can now mixin or exclude existing audiences in a new audience you're setting up. 
+This one is great for simplifying complex targeting. You can now mixin or exclude existing audiences in a new audience you're setting up.
 
-For example, you always could upload a list of players to target them specifically, like a list of VIPs. Now, you can create an audience of players who have played in the last few days but exclude your uploaded list of VIPs to save them for a different VIP promotion. 
+For example, you always could upload a list of players to target them specifically, like a list of VIPs. Now, you can create an audience of players who have played in the last few days but exclude your uploaded list of VIPs to save them for a different VIP promotion.
 
 [.newsletter-img]
 image::audience-exclude.png[Audience Builder with an audience being excluded.]
 
 Look for the *Audiences* rule when building an audience. Lets us know what creative uses you unlock with this new ability.
 
-Finally, we'd like to give a big thank you to the lovely users who requested these features! And a much smaller, more sarcastic thank you to GOOGLE, who MANDATED their update. 
+Finally, we'd like to give a big thank you to the lovely users who requested these features! And a much smaller, more sarcastic thank you to GOOGLE, who MANDATED their update.
 
 Cheers, +
 **Mark McCoy** +

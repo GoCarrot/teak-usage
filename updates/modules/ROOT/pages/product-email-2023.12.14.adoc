@@ -1,6 +1,4 @@
 = QR Codes, New Metrics & more
-:page-no-nav: true
-:noindex:
 
 *December 14th, 2023 &mdash; Teak Product Updates*
 

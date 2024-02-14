@@ -8,3 +8,5 @@ nav:
 asciidoc:
   attributes:
     page-pagination: '' # Enables Next/Previous at the bottom of pages
+    noindex: '@'
+    page-no-nav: true
