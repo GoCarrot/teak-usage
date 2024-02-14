@@ -1,6 +1,6 @@
 = Linking out of Game, Deep Link UI, Opt-Out & more
 
-November 3rd, 2023 &mdash; Teak Product Updates
+*November 3rd, 2023 &mdash; Teak Product Updates*
 
 === Hello,
 
