@@ -33,10 +33,12 @@ Email clients show a snippet of text under the subject line with a preview of th
 |===
 a|
 
+[.newsletter-img]
 image::preview-text-gmail-inbox.jpeg[Gmail Inbox Preview]
 
 a|
 
+[.newsletter-img]
 image::preview-text-gmail-push.jpeg[Gmail Push Notification]
 
 |===
@@ -47,6 +49,7 @@ This creates a great creative opportunity, acting like an extension of the subje
 
 More tips from us on this soon. 
 
+[.newsletter-img]
 image::preview-text-edit.png[Preview Text Edit]
 
 == HTML Email Enabled for All 
@@ -61,6 +64,7 @@ This one is great for simplifying complex targeting. You can now mixin or exclud
 
 For example, you always could upload a list of players to target them specifically, like a list of VIPs. Now, you can create an audience of players who have played in the last few days but exclude your uploaded list of VIPs to save them for a different VIP promotion. 
 
+[.newsletter-img]
 image::audience-exclude.png[Audience Builder with an audience being excluded.]
 
 Look for the *Audiences* rule when building an audience. Lets us know what creative uses you unlock with this new ability.
