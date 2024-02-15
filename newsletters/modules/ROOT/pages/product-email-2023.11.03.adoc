@@ -2,7 +2,7 @@
 :page-no-nav: true
 :noindex:
 
-November 3rd, 2023 &mdash; Teak Product Updates
+*November 3rd, 2023 &mdash; Teak Product Updates*
 
 === Hello,
 
