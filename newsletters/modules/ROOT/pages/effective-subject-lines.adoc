@@ -2,7 +2,7 @@
 :page-no-nav: true
 :noindex:
 
-*February 16th, 2024 — Teak Tips*
+*February 16th, 2024 &mdash; Teak Tips*
 
 === Hello,
 
@@ -54,7 +54,7 @@ Lastly, we wanted to highlight something you might notice when composing a new e
 [.newsletter-img]
 image::preview-text-edit.png[Preview Text Edit]
 
-*Preview Text* text appears in the preview of the email but not in the email itself. A player will see it right next to the subject line in their inbox, but that is the only place it will appear.
+*Preview Text* appears in the preview of the email but not in the email itself. A player will see it right next to the subject line in their inbox, but that is the only place it will appear.
 
 This acts as an extension of the subject line, giving you a great creative opportunity: What words or short sentence could you put here to further interest a player? Maybe there is a fun way to play on the subject line. Or you could entice players with a short preview of a possible reward.
 
