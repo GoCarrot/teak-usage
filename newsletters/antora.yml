@@ -1,7 +1,7 @@
 name: newsletters
 title: Newsletters
 version: ~
-start_page: product-email-2024.02.13.adoc
+start_page: effective-subject-lines.adoc
 nav:
 - modules/ROOT/nav.adoc
 

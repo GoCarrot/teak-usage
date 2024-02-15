@@ -1,6 +1,6 @@
 = Firebase Migration, Email Preview Text, & Putting Audiences in Audiences
-:page-aliases: ROOT:updates:product-email-2024.02.13.adoc
 :page-no-nav: true
+:page-aliases: ROOT:updates:product-email-2024.02.13.adoc
 :noindex:
 
 *February 13th, 2024 &mdash; Teak Product Updates*

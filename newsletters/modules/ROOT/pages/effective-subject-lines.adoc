@@ -1,0 +1,64 @@
+= What Goes Into an Effective Email Subject Line?
+:page-no-nav: true
+:noindex:
+
+*February 16th, 2024 — Teak Tips*
+
+=== Hello,
+
+Email subject lines are extremely important in our industry - they can be the sole deciding factor on whether a player opens an email...or not. 
+
+Today, we thought we'd share some of our learnings on what we've seen work well and not well in subject lines - what gets people to click? What makes them instantly delete? What grabs their attention in a busy inbox?
+
+== First up, the big do's of email subject lines
+
+* *DO keep it simple and clear.* +
+Subject lines are short, and you don't have much room to play with. Make sure your message is easy to quickly digest.
+* *DO create a sense of urgency.* +
+You want players to feel that opening it in a timely manner will benefit them. 
+* *DO target high value players in special email blasts.* +
+The subject line is a great place to call out that they are appreciated and show them that they are seen and heard.
+* *DO tell them what they'll get when they open the email.* +
+Let them know what's waiting for them on the other side of the email - reward? Extra bonus coins?
+* *DO have a call to action.* +
+The reader of your email should easily understand what actions they need to take to get the reward or engage with what you are offering. Review the email before you send and ask yourself, have I explicitly told them what they need to do?
+
+== And some things to keep in mind?
+
+* *TRY not to use too many emojis.* +
+Many email filters will flag an email with too many in the subject line as spam. However, a well placed emoji or two works great to stand out and draw players in.
+* *BE PERSONAL, but not too personal.* +
+With the vast amount of junk emails trying to target players today, an overly personal email might come across as spammy. Using someone's name might be okay sometimes, but other personal data appearing in the email might come across as too much.
+* *DON'T withhold information or mislead.* +
+If someone opens an email and it's not what they expected, it could lead to them not wanting to open any emails from you in the future.
+
+== Examples &#128293; &#128293; &#128293;
+
+Here are some examples of email subject lines we think hit on all the points above:
+
+[.newsletter-example]
+====
+
+[no-bullet]
+* We have X million FREE COINS, just for you! &#128176;
+* Claim before it expires: your free X million coin offer
+* Collect free chips and keep spinning &#129297;
+* A gift for {{first_name   default: "you"}} is inside!
+
+====
+
+== The subject line does not live alone
+
+Lastly, we wanted to highlight something you might notice when composing a new email in the Teak Dashboard. It's a recently introduced field labeled *Preview Text*. 
+
+[.newsletter-img]
+image::preview-text-edit.png[Preview Text Edit]
+
+*Preview Text* text appears in the preview of the email but not in the email itself. A player will see it right next to the subject line in their inbox, but that is the only place it will appear.
+
+This acts as an extension of the subject line, giving you a great creative opportunity: What words or short sentence could you put here to further interest a player? Maybe there is a fun way to play on the subject line. Or you could entice players with a short preview of a possible reward.
+
+As always, we would love to hear how you are using these features - let us know! We're here to help, and we love to brainstorm.
+
+Until next time, +
+*Teak Team*

@@ -1,3 +1,4 @@
+* xref:newsletters::page$effective-subject-lines.adoc[Teak Tips: What Goes Into an Effective Email Subject Line?]
 * xref:newsletters::page$product-email-2024.02.13.adoc[Product Updates: Firebase Migration, Email Preview Text, & Putting Audiences in Audiences]
 * xref:newsletters::page$product-email-2023.12.14.adoc[Product Updates: QR Codes, New Metrics & more]
 * xref:newsletters::page$product-email-2023.11.03.adoc[Product Updates: Linking out of Game, Deep Link UI, Opt-Out & more]
