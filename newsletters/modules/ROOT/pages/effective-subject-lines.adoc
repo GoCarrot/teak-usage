@@ -43,7 +43,7 @@ Here are some examples of email subject lines we think hit on all the points abo
 * We have X million FREE COINS, just for you! &#128176;
 * Claim before it expires: your free X million coin offer
 * Collect free chips and keep spinning &#129297;
-* A gift for {{first_name   default: "you"}} is inside!
+* A gift for {{first_name | default: "you"}} is inside!
 
 ====
 
