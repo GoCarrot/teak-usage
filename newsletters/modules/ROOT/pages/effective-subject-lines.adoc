@@ -1,26 +1,26 @@
-= What Goes Into an Effective Email Subject Line?
+= What Goes Into Effective Email Subject Lines?
 :page-no-nav: true
 :noindex:
 
-*February 16th, 2024 &mdash; Teak Tips*
+*February 16th, 2024 &mdash; Tips & Tricks*
 
-=== Hello,
+=== Hello CRMs,
 
 Email subject lines are extremely important in our industry - they can be the sole deciding factor on whether a player opens an email...or not. 
 
 Today, we thought we'd share some of our learnings on what we've seen work well and not well in subject lines - what gets people to click? What makes them instantly delete? What grabs their attention in a busy inbox?
 
-== First up, the big do's of email subject lines
+== First up, the big DO's of email subject lines
 
-* *DO keep it simple and clear.* +
+* [*] *DO keep it simple and clear.* +
 Subject lines are short, and you don't have much room to play with. Make sure your message is easy to quickly digest.
-* *DO create a sense of urgency.* +
+* [*] *DO create a sense of urgency.* +
 You want players to feel that opening it in a timely manner will benefit them. 
-* *DO target high value players in special email blasts.* +
+* [*] *DO target high value players in special email blasts.* +
 The subject line is a great place to call out that they are appreciated and show them that they are seen and heard.
-* *DO tell them what they'll get when they open the email.* +
+* [*] *DO tell them what they'll get when they open the email.* +
 Let them know what's waiting for them on the other side of the email - reward? Extra bonus coins?
-* *DO have a call to action.* +
+* [*] *DO have a call to action.* +
 The reader of your email should easily understand what actions they need to take to get the reward or engage with what you are offering. Review the email before you send and ask yourself, have I explicitly told them what they need to do?
 
 == And some things to keep in mind?
