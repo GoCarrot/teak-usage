@@ -10,7 +10,7 @@ Email subject lines are extremely important in gaming - they can be the sole dec
 
 Today, we thought we'd share some of our learnings on what we've seen work well and not well in subject lines - what gets people to click? What makes them instantly delete? What grabs their attention in a busy inbox?
 
-== First up, the big DO's of email subject lines
+== First up, the DO's of email subject lines
 
 * [*] *DO keep it simple and clear.* +
 Subject lines are short, and you don't have much room to play with. Make sure your message is easy to quickly digest.
