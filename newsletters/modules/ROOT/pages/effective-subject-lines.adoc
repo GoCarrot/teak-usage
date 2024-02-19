@@ -23,7 +23,7 @@ Let them know what's waiting for them on the other side of the email - reward? E
 * [*] *DO have a call to action.* +
 The reader of your email should easily understand what actions they need to take to get the reward or engage with what you are offering. Review the email before you send and ask yourself, have I explicitly told them what they need to do?
 
-== And some things to keep in mind?
+== And some things to keep in mind
 
 * *TRY not to use too many emojis.* +
 Many email filters will flag an email with too many in the subject line as spam. However, a well placed emoji or two works great to stand out and draw players in.
@@ -47,9 +47,9 @@ Here are some examples of email subject lines we think hit on all the points abo
 
 ====
 
-== The subject line does not live alone
+== Lastly, the subject line does not live alone
 
-Email inboxes show additional text with the subject line. You can now edit this text in the Teak Dashboard. Look for the field labeled Preview Text.
+Email inboxes show additional text with the subject line. You can now edit this text in the Teak Dashboard. Look for the field labeled *Preview Text*.
 
 [.newsletter-img]
 image::preview-text-edit.png[Preview Text Edit]
