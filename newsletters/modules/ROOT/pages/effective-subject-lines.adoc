@@ -6,7 +6,7 @@
 
 === Hello CRMs,
 
-Email subject lines are extremely important in our industry - they can be the sole deciding factor on whether a player opens an email...or not. 
+Email subject lines are extremely important in gaming - they can be the sole deciding factor on whether a player opens an email...or not. 
 
 Today, we thought we'd share some of our learnings on what we've seen work well and not well in subject lines - what gets people to click? What makes them instantly delete? What grabs their attention in a busy inbox?
 
@@ -49,12 +49,12 @@ Here are some examples of email subject lines we think hit on all the points abo
 
 == The subject line does not live alone
 
-Lastly, we wanted to highlight something you might notice when composing a new email in the Teak Dashboard. It's a recently introduced field labeled *Preview Text*. 
+Email inboxes show additional text with the subject line. You can now edit this text in the Teak Dashboard. Look for the field labeled Preview Text.
 
 [.newsletter-img]
 image::preview-text-edit.png[Preview Text Edit]
 
-*Preview Text* appears in the preview of the email but not in the email itself. A player will see it right next to the subject line in their inbox, but that is the only place it will appear.
+The *Preview Text* will appear in the inbox preview but not in the email itself. A player will see it right next to the subject line in their inbox, but that is the only place it will appear.
 
 This acts as an extension of the subject line, giving you a great creative opportunity: What words or short sentence could you put here to further interest a player? Maybe there is a fun way to play on the subject line. Or you could entice players with a short preview of a possible reward.
 
