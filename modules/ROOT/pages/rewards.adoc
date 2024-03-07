@@ -2,8 +2,6 @@
 
 Rewards can be added to Links and Messages as an incentivization or prize. These may be personalized and customized for specific situations and applied using Audience criteria.
 
-NOTE: Display names not inserted into messaging, they are for your reference only.
-
 == Items and Currency
 
 Your engineering team can assign Items and Currency within the code. Once they have released the update, you can begin using these Rewards! You must have the exact name used in the code to set it up.
@@ -16,6 +14,8 @@ Your engineering team can assign Items and Currency within the code. Once they h
 . You can give it a display name, and fill in the Internal ID from the name used in the code
 
 Now, when you are creating Reward Bundles, it will be updated with this option!
+
+NOTE: Display names not inserted into messaging, they are for your reference only.
 
 == Bundle Creation
 
