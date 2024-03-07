@@ -57,8 +57,11 @@ When this option is enabled, the game will not be opened when the shared link is
 All Links created in Teak come with QR codes for you to share. Depending on the configuration of the Link, Teak will provide two or three different QR code variants.
 
 [[_qr_standard]]`Standard`:: A QR code ready to share!
+image::links/standard_qr.png[Standard QR Code,120,120,role=img-left]
 [[_qr_frame]]`Frame`:: A QR code with the center cut out. You can insert any custom images or branding into the center cutout, and the QR code will still be scannable.
+image::links/frame_qr.png[Frame QR Code,120,120,role=img-left]
 [[_qr_coin]]`Coin`:: A QR code with a pixel art coin inserted into the center cut out. Teak only creates this variant for Links with an attached Reward Bundle. This is an example of what you can do using the center cutout.
+image::links/coin_qr.png[Coin QR Code,120,120,role=img-left]
 
 You can view the QR codes for a Link after it is created or by selecting *View URL* from the dropdown by the Link. From the *View URL* modal you can click the *Download QR Codes* button to download full resolution versions of the QR codes. Or you can right click the displayed QR code and select *Save Image As...* to download that specific variant in full resolution.
 
