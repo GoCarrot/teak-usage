@@ -51,3 +51,15 @@ This behavior can be overridden with Skip Game Open.
 There is an option to skip the game open when opening an Out of Game URL.
 
 When this option is enabled, the game will not be opened when the shared link is tapped or clicked on any platform. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:usage:reference:page$link-metrics.adoc#_returning_user[Returning User, window=_blank] for the Link.
+
+=== QR Codes
+
+All Links created in Teak come with QR codes for you to share. Depending on the configuration of the Link, Teak will provide two or three different QR code variants.
+
+`Standard`:: A QR code ready to share!
+`Frame`:: A QR code with the center cut out. You can insert any custom images or branding into the center cutout, and the QR code will still be scannable.
+`Coin`:: A QR code with a pixel art coin inserted into the center cut out. Teak only creates this variant for Links with an attached Reward Bundle. This is an example of what you can do using the center cutout.
+
+You can view the QR codes for a Link after it is created or by selecting *View URL* from the dropdown by the Link. From the *View URL* modal you can click the *Download QR Codes* button to download full resolution versions of the QR codes. Or you can right click the displayed QR code and select *Save Image As...* to download that specific variant in full resolution.
+
+You can also download full resolution versions of the QR codes for a Link by selecting *Download QR Codes* from the dropdown menu by the Link.
