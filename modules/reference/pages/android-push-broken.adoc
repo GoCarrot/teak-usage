@@ -8,7 +8,7 @@ To identify if your game incorrectly includes the Firebase Messaging SDK service
 
 If your AndroidManifest.xml contains an entry that looks like
 
-```
+```[source,xml]
 <service android:exported="false" android:name="com.google.firebase.messaging.cpp.ListenerService">
   <intent-filter>
     <action android:name="com.google.firebase.MESSAGING_EVENT"/>
@@ -26,7 +26,7 @@ If you do not have an existing link:https://docs.unity3d.com/Manual/overriding-a
 
 In your Custom Main Manfiest file add
 
-```
+```[source.xml]
 <service android:name="com.google.firebase.messaging.cpp.ListenerService" tools:node="remove" />
 ```
 
