@@ -31,4 +31,3 @@
 ** xref:usage:reference:page$firebase-fcm-v1-migration.adoc[Migrate to Firebase Cloud Messaging (v1)]
 ** xref:usage:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging Credential Guide]
 ** xref:usage:reference:page$sendgrid-setup.adoc[Connect SendGrid and Teak]
-
