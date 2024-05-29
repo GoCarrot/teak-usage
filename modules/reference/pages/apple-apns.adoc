@@ -4,7 +4,6 @@ In order to send notifications to your game on iOS, Teak a Key from your Apple D
 
 **You will need:**
 
-* [x] A Mac
 * [x] An account on the Apple Developer Site with Administrator permissions
 * [x] An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
 
