@@ -1,52 +1,36 @@
-= Create and Upload your Apple Push Notification Service (APNS) Certificates
+= Create and Upload your Apple Developer Team Key
 
-In order to send notifications to your game on iOS, Teak needs APNS certificates generated for your game's App ID. Teak uses Apple's .p12 files for this purpose. This guide will walk through creating, and uploading, .p12 files to Teak.
+In order to send notifications to your game on iOS, Teak a Key from your Apple Developer Team with Apple Push Notification service (APNs) enabled. This guide will walk through creating, and uploading, an Apple Developer Team key to Teak.
 
 **You will need:**
 
-* [*] A Mac
-* [*] An account on the Apple Developer Site with Administrator permissions for your game
-* [*] An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
+* [x] A Mac
+* [x] An account on the Apple Developer Site with Administrator permissions
+* [x] An account on https://app.teak.io/login[Teak, window=_blank] with access to your game
 
-We'll be going back and forth between the Keychain Access app and the Apple developer site to get this done.
+[IMPORTANT]
+====
+**Each Apple Developer Team may only have two Keys with Apple Push Notification service (APNs) enabled**
 
-== Create a Certificate Signing Request (CSR)
-
-. Launch **Keychain Access** on your Mac. (It comes preinstalled.)
-
-. In Keychain Access menu bar, select menu:Keychain Access[Certificate Assitant > Request a Certificate From a Certificate Authority...]. 
-+
-image::usage:reference:apns-setup/keychain-access-menu.png[role="thumb"]
-+
-This will launch the **Certificate Assitant** modal.
-
-. Fill out the details in the Certificate Assistant modal.
-+
-Enter your work email address for **User Email Address**. Enter an easy to identify unique name for **Common Name**. This name is how Keychain Access will display your private key in its lists. This name is not used for any other purposes. Leave **CA Email Address** blank. 
-
-. Select **Request is: Saved to disk** and then click **Continue**. 
-+
-image::usage:reference:apns-setup/csr-info.png[role="thumb"]
-+
-You will be prompted to select somewhere to save the CSR. We're going to be uploading the file in a minute, so choose somewhere easy to find!
-
+You may use the same Key for multiple games and push notification providers. Do not revoke existing
+Keys in your account unless you can confirm that they are not in active use.
+====
 
 == Find or Create an App ID
 
 NOTE: You will need administrator permissions on your Apple Developer account to complete this section.
 
-[start=5]
-. Navigate to the https://developer.apple.com/account/resources/identifiers/list/bundleId["Certificates, Identifiers & Profiles", window=_blank] list on your https://developer.apple.com/account/resources/identifiers/list/bundleId[Apple Developer account, window=_blank]. 
+. Navigate to the https://developer.apple.com/account/resources/identifiers/list/bundleId["Certificates, Identifiers & Profiles", window=_blank] list on your https://developer.apple.com/account/resources/identifiers/list/bundleId[Apple Developer account, window=_blank].
 +
 Make sure **Identifiers** is selected on the left, and **App IDs** is selected in the dropdown in the upper right.
-+ 
++
 image::usage:reference:apns-setup/app-ids-landing.png[]
 
 . Find the application you need to create or update certificates for.
 +
-The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id. 
+The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id.
 +
-If you don't already have a bundle ID you can create one here. 
+If you don't already have a bundle ID you can create one here.
 
 . **Click on the App ID** to bring up the configuration page.
 
@@ -54,88 +38,56 @@ If you don't already have a bundle ID you can create one here.
 
 On the configuration page for the App ID:
 
-[start=8]
+[start=4]
 . Ensure that **Associated Domains** are enabled by checking the box in the left column. This is required to enable Teak Links.
 +
 image::usage:reference:apns-setup/enable-associated-domains.png[Associated Domains, 550, role="related"]
 
-. Scroll down to **Push Notifications** and ensure they are **enabled** by checking the box. 
+. Scroll down to **Push Notifications** and ensure they are **enabled** by checking the box.
 +
 image::usage:reference:apns-setup/push-notif-config.png[]
 
-. If you checked any boxes, click **Save** in the top right corner before proceeding. If you create a certificate without clicking **Save** the changes to enable Push Notifications or Associated Domains will not be saved!
+. If you checked any boxes, click **Save** in the top right corner before proceeding.
 
-== Create the Certificate
+== Create the Key
 
-[start=11]
-. In the **Push Notification** section, click the button to **Edit** or **Configure**.
+[start=7]
+. Navigate to the https://developer.apple.com/account/resources/authkeys/list["Keys", window=_blank] list on your https://developer.apple.com/account/resources/authkeys/list[Apple Developer account, window=_blank].
+. Click the plus sign next to "Keys" to bring up new key registration.
+. Give your new Key a name to indicate how it is being used, for example `TeakPushKey`
+. Check the box to enable Apple Push Notifications service (APNs)
++
+image::usage:reference:apns-setup/new-key.png[]
++
+NOTE: If the Apple Developer Team already has two Keys with Apple Push Notification service (APNs) enabled, you will be unable to create a new key. You must consult with your team and existing uses of Apple Developer Team keys to either use an existing Key with Teak or to identify a Key that may be revoked so that you can create a new Key.
+. **Click on Continue** to verify key settings.
+. On the confirmation page confirm that the Key Name is correct and that Apple Push Notification service (APNs) is enabled.
+. **Click on Register** to create the key.
++
+image::usage:reference:apns-setup/confirm-key.png[]
 
-. In the Apple Push Notification service SSL Certificates modal, click **Create Certificate** for either Development SSL Certificate or Production SSL Certificate, depending on which you need to update. 
+. **Click on Download** to download the key.
 +
-I've found that it's best to update both at the same time. This keeps expiration times consistent and means you only have to do this once per year instead of twice.
+IMPORTANT: You may only download the key _once_. If you are not prepared to save the key in a safe location or upload it to Teak, stop here. You may ask a different team member to download the key.
+. Save the key to a location where other members of your or company team may access it.
 +
-image::usage:reference:apns-setup/create-certificate.png[]
-
-. Click **Create Certificate**. 
-
-. Upload the *CSR file* you created earlier. Click **Continue** after uploading the CSR.
-+
-image::usage:reference:apns-setup/csr-upload.png[]
-
-. After uploading the CSR, the Apple Developer Site will create the certificate and prompt you to download it. **Download the certificate.** 
-+
-We're about to open it, so be sure to save it somewhere you can easily navigate to!
-+
-image::usage:reference:apns-setup/csr-download.png[]
-
-== Exporting the p12
-
-[start=16]
-. In the Finder, navigate to the SSL certficate you just downloaded and double click to **open it in Keychain Access**.
-+
-image::usage:reference:apns-setup/open-in-finder.png[]
-
-. You will be prompted to add the certificate to a keychain. Add it to the default **login** keychain, and click **Add** to continue.
-+
-image::usage:reference:apns-setup/add-to-keychain.png[]
-
-. After adding the certificate, in Keychain Access navigate to **My Certificates** at the top, and find the certificate you just added. 
-+
-It will be named with the bundle id of the application you created the certificate for.
-+
-image::usage:reference:apns-setup/select-certificate.png[]
-
-. Select the certificate and go to menu:File[Export Items...] in the main menu. Ensure that you only selected one certificate!
-+
-image::usage:reference:apns-setup/export-menu.png[Keychain Export Menu, 500]
-
-. You will be prompted to save the certificate. Ensure that the **File Format** is **Personal Information Exchange (.p12)**. No other file format is acceptable. 
-+
-Save it to somewhere you can easily navigate to, because we will be uploading it to Teak shortly (you're almost done!)
-+
-image::usage:reference:apns-setup/export-settings.png[]
-
-. You will be prompted to add an optional password to the exported items. I suggest leaving this blank. If you do enter a password, you will later have to enter the same password into Teak.
-+
-image::usage:reference:apns-setup/password.png[]
+NOTE: If you have multiple games in a single Apple Developer Team, each game will need a copy of the key you just created. Ensure that the key is saved to a location where developers on other games may access it.
 
 == Uploading to Teak
 
-Now that the p12 is saved, we just have to add it to Teak! 
+Now that the Apple Developer Team key is saved, we just have to add it to Teak!
 
-[start=22]
-. In the https://app.teak.io[Teak Dashboard, window=_blank], navigate to menu:Settings[iOS] for your game, and click **Manage APNS Certificates**.
+[start=16]
+. In the https://app.teak.io[Teak Dashboard, window=_blank], navigate to menu:Settings[iOS] for your game, and click **Setup .p8 Key Authentication**.
 +
-image::usage:reference:apns-setup/teak-settings.png[]
+image::usage:reference:apns-setup/new-teak-settings.png[]
 
-. In the modal that appears, click **Choose p12 File** and select the p12 file you just exported. If you set a password for the p12 file, enter the password in the **Password (Optional)** field after selecting the p12.
+. In the modal that appears, click **Select .p8 Key File** and select the .p8 file you just downloaded.
 +
-image::usage:reference:apns-setup/teak-upload.png[]
 
-. Teak will show you information about the p12 you are adding. Confirm that the bundle id matches the bundle id for your game, and that the expiration date is in the future. If everything looks good, click **Save** to upload and use the p12.
+. Enter the https://developer.apple.com/help/account/manage-keys/get-a-key-identifier[Key ID, window=_blank] for the key and https://developer.apple.com/help/account/manage-your-team/locate-your-team-id[Team ID, window=_blank] for your Apple Developer Team.
+. Enter the Bundle ID for your game.
 +
-image::usage:reference:apns-setup/teak-upload-done.png[]
-
-. **You're done!** I suggest repeating this process for the other environment (Sandbox or Production) now, while it's fresh in your mind. Note that you can upload as many certificates to a single Teak game as you need to, and you can upload the same certificate to multiple Teak games as well.
-
-TIP: Next year, when you create a new certificate to replace the expiring certificate, upload it before the other expires. You can have multiple certificates at the same time, so overlapping times will be fine.
+NOTE: Teak cannot verify the accuracy of your Bundle ID. Please ensure that the Bundle ID is entered exactly as it appears in Xcode or in the Identifer column in the https://developer.apple.com/account/resources/identifiers/list/bundleId["Certificates, Identifiers & Profiles", window=_blank] list on your https://developer.apple.com/account/resources/identifiers/list/bundleId[Apple Developer account, window=_blank].
+. Click **Save** to upload your Apple Developer Team Key to Teak.
+. **You're done!** Remember to save the Apple Developer Team Key to a place where you and other team members will be able to locate it easily if you need to set up other games or environments connecte dot the same Apple Developer Team.
