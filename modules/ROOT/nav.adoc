@@ -27,6 +27,7 @@
 
 * 3rd Party Configuration
 ** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service (APNs) Guide]
+** xref:usage:reference:page$apple-apns-p8-migration.adoc[Migrate to APNs Key Auth]
 ** xref:usage:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1) Credential Guide]
 ** xref:usage:reference:page$firebase-fcm-v1-migration.adoc[Migrate to Firebase Cloud Messaging (v1)]
 ** xref:usage:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging Credential Guide]
