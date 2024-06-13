@@ -1,4 +1,4 @@
-= Migrate to Apple APNs Key Based (.p8) Authentication
+= Migrate to .p8 Key Based Authentication for Apple Push Notification Service (APNs)
 
 If you have previously integrated Teak on iOS, you most likely use Apple APNs Certificate Based (.p12) Authentication which must be renewed annually. This guide will walk you through switching to Apple APNs Key Based (.p8) Authentication which does not need to be renewed.
 
@@ -13,10 +13,11 @@ The required steps can be done in the Teak and Apple Developer dashboards. No cl
 
 [IMPORTANT]
 ====
-**Each Apple Developer Team may only have two Keys with Apple Push Notification service (APNs) enabled**
+**Two Key Limit**
 
-You may use the same Key for multiple games and push notification providers. Do not revoke existing
-Keys in your account unless you can confirm that they are not in active use.
+Each Apple Developer Team may only have two Keys with Apple Push Notification service (APNs) enabled. You may use the same Key for multiple games and push notification providers. 
+
+**Do not revoke existing keys** in your account unless you can confirm that they are not in active use.
 ====
 
 == Create the Key
@@ -37,10 +38,18 @@ image::usage:reference:apns-setup/confirm-key.png[]
 
 . **Click on Download** to download the key.
 +
-IMPORTANT: You may only download the key _once_. If you are not prepared to save the key in a safe location or upload it to Teak, stop here. You may ask a different team member to download the key.
-. Save the key to a location where other members of your or company team may access it.
+[IMPORTANT] 
+====
+**Your Team may only download the key _once_.**
+
+If you are not prepared to save the key in a safe location or upload it to Teak, stop here. Coordinate with your team to store the key for future use.
+
+**If you have multiple games** in a single Apple Developer Team, each game will need a copy of the key you just created. 
+====
 +
-NOTE: If you have multiple games in a single Apple Developer Team, each game will need a copy of the key you just created. Ensure that the key is saved to a location where developers on other games may access it.
+. *Save the key to a location where other members of your or company team may access it.*
++
+This key can be used for other games, so ensure that the key is saved to a location where developers on other games may access it.
 
 == Uploading to Teak
 
