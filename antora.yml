@@ -6,4 +6,4 @@ nav:
 
 asciidoc:
   attributes:
-    page-pagination: '' # Enables Next/Previous at the bottom of pages
+    page-pagination: '@' # Enables Next/Previous at the bottom of pages

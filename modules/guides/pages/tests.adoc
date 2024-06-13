@@ -1,4 +1,5 @@
 = Creating a single Schedule with varied content
+:!page-pagination:
 
 By default, when you set up an A/B test in Teak each player will be exposed to a single variant for the duration of the test. However, Teak has the option to randomize the variant each player will be exposed to every 24 hours. As you create more advanced strategies, you can use this robust tool to send recurring messages and randomly select the content each player will see for each send.
 

@@ -1,4 +1,5 @@
 = Setting up SendGrid for Email Sending from Teak
+:!page-pagination:
 
 == Before you Begin
 

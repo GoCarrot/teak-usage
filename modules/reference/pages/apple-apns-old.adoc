@@ -1,4 +1,5 @@
 = Create and Upload your Apple Developer Account Key
+:!page-pagination:
 
 In order to send notifications to your game on iOS, Teak a Key from your Apple Developer Account with Apple Push Notification service (APNs) enabled. This guide will walk through creating, and uploading, an Apple Developer Account key to Teak.
 

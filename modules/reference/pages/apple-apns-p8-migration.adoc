@@ -1,4 +1,5 @@
 = Migrate to .p8 Key Based Authentication for Apple Push Notification Service (APNs)
+:!page-pagination:
 
 If you have previously integrated Teak on iOS, you most likely use Apple APNs Certificate Based (.p12) Authentication which must be renewed annually. This guide will walk you through switching to Apple APNs Key Based (.p8) Authentication which does not need to be renewed.
 

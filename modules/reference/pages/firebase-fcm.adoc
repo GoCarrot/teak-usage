@@ -1,5 +1,6 @@
 = Firebase Cloud Messaging (v1) Credentials Guide
 :page-aliases: ../firebase-gcm.adoc
+:!page-pagination:
 
 In order to send notifications to your game on Android, Teak needs your Firebase Cloud Messaging (FCM V1) credentials.  
 

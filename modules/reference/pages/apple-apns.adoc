@@ -1,4 +1,5 @@
 = Apple Push Notification Service (APNs) Guide
+:!page-pagination:
 
 In order to send notifications to your game on iOS, Teak needs a .p8 Key from your Apple Developer Team with Apple Push Notification service (APNs) enabled. This guide will walk through creating, and uploading, an Apple Developer Team key to Teak.
 

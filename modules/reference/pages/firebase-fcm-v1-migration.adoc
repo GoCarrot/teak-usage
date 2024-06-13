@@ -1,4 +1,5 @@
 = Migrate to Firebase Cloud Messaging (v1) from FCM (Legacy)
+:!page-pagination:
 
 If you have previously integrated Teak on Android, you most likely have FCM (Legacy) credentials set up. To continue using push on Android, we now need to setup Firebase Cloud Messaging (v1). 
 

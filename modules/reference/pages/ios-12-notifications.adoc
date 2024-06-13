@@ -1,4 +1,5 @@
 = iOS 12 Notification Features
+:!page-pagination:
 
 iOS 12 brings several new features to Local and Push Notifications.
 
