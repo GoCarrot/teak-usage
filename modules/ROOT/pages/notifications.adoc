@@ -51,17 +51,17 @@ If you are only utilizing text and emojis, or if your tags greatly extend the le
 == Rich Push
 
 === Android
-On Android, and applicable Amazon devices, there is an option for a Background Image/Video. This appears as the primary Notification for players, and replaces any standard text.
+On Android, and applicable Amazon devices, there is an option for a Background Image. This appears as the primary Notification for players, and replaces any standard text.
 
-Background Image/Video Size::
-1,700x300 pixel .jpg, .png, or .mpeg4 with a safe zone of 1100x300px.  +
-Keeping the file size small will ensure a positive player experience and system level delivery. If the image or video is too large, even if is sent by Teak, some Android Operating Systems may not send it on. You can also include a Fallback Message which will be displayed on Android Wear devices.
+Background Image Size::
+1,700x300 pixel .jpg or .png, with a safe zone of 1100x300px.  +
+Keeping the file size small will ensure a positive player experience and system level delivery. If the image is too large, even if is sent by Teak, some Android Operating Systems may not send it on. You can also include a Fallback Message which will be displayed on Android Wear devices.
 
 Expanded View Size::
-1,700x850 pixel .jpg, .png, .mpeg4 that will be displayed when the player expands the Notification. The entire area is safe for content. Some Android Operating systems will not display the content if it is too large. You can adjust the size of the media to 850x150 pixels which should eliminate this issue.
+1,700x850 pixel .jpg or .png that will be displayed when the player expands the Notification. The entire area is safe for content. Some Android Operating systems will not display the content if it is too large. You can adjust the size of the media to 850x150 pixels which should eliminate this issue.
 
 Display Standard View above Expanded View::
-This ensures the Background Image/Video or standard text is always displayed in addition to the Expanded View. If this remains unchecked some operating systems may elect not to display the Standard View. Ensure you have all relevant information - including app identification - in the Expanded View if you choose not to use this option
+This ensures the Background Image or standard text is always displayed in addition to the Expanded View. If this remains unchecked some operating systems may elect not to display the Standard View. Ensure you have all relevant information - including app identification - in the Expanded View if you choose not to use this option
 
 Buttons::
 Add a CTA to your message with a Button. These can be excellent engagement tools, but should be previewed and thoroughly tested before any sends, as the experience may vary across devices.
