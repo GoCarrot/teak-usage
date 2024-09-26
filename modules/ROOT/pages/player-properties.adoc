@@ -1,0 +1,47 @@
+= Player Properties
+
+Player Properties are strings or numbers associated with each player of your game in Teak. Player Properties have several uses, including
+
+* Targeting players for a send by using the player properties xref:usage::audiences.adoc#_player_properties[Audience rule, window=_blank]
+* Personalizing push notification content using xref:usage::custom-tags.adoc[custom tags, window=_blank]
+* Personalizing email content using xref:usage::custom-tags.adoc[custom tags, window=_blank]
+* Personalizing deep links from Links, push notifications, and emails to take players to a meaningful location in your game
+
+Every player has the same set of Player Properties. Teak lets you create up to 256 Player Properties, of which 128 can be numbers, and 128 can be strings. Think of Player Properties like adding a column to an Excel worksheet to have additional information for each player of your game.
+
+Player Properties must be xref:usage::settings.adoc#_player_properties[configured on the Teak dashboard, window=_blank] before they can be updated or used. When you configure a Player Property you give it a name, which is how it will be identified in Audience rules, custom tags, and by your client and server integration. The name cannot be changed after the Player Property is created, so choose wisely. You can also give your Player Property a description, which is shown in the Dashboard to help you and your team recall additional details about the Player Property. You may update the description at any time. For each Player Property, you will need to select if it is being set by your client integration, through our xref:unity::teak-unity-features.adoc#_player_properties[SDK, window=_blank] or xref:server-api::other/v2_player_properties.adoc[Server API, window=_blank]. You should consult with your engineering teams to determine what makes sense for the Player Property and your integration, but don't worry, you can change your mind about this later! Finally, you will need to choose if the Player Property is a number or a string. This cannot be changed after creating the Player Property, so make sure you choose the right option!
+
+Player Properties do have some limits, but they're so large that they are unlikely to come up
+
+* Number Player Properties can store values between -999999999999999999999999999.999999999 and 999999999999999999999999999.999999999.
+* String Player Properties can store up to 16,384 unicode characters (including emoji)
+
+Some values we suggest storing as player properties include
+
+* The last screen a player was on in your game (e.g. lobby, a slot machine, a zone in an MMO)
+* What game feature the player interacts with the most (e.g. their favorite slot machine)
+* Information about the players inventory (e.g. how much currency they have for each currency type in your game)
+* The player's current level
+* The player's progress to their next level
+* Whether or not the player is considered a VIP and what their VIP tier is
+
+Some values are available in Teak through other more powerful mechanisms and should _not_ be stored as Player Properties. These include
+
+* The date a player installed the game
+* The last date a player played the game
+* How many purchases a player has made
+* The player's lifetime value
+* If the player is a spender
+* How many days it has been since the player last played
+* How many days it has been since the player last made a purchase
+* How many days it has been since the player installed
+* How many sessions a player has had
+* The player's facebook id
+* The player's language
+* The player's timezone
+* The player's email address
+* The player's phone number
+* ID for Advertising
+* ID for Vendors
+
+In general, we also advise against storing any personally identifiable information (PII) as a Player Property.

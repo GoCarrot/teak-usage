@@ -3,6 +3,7 @@
 * xref:usage::page$reporting.adoc[Reporting]
 * xref:usage::page$rewards.adoc[Rewards]
 * xref:usage::page$links.adoc[Links]
+* xref:usage::page$player-properties.adoc[Player Properties]
 * xref:usage::page$audiences.adoc[Audiences]
 * xref:usage::page$notifications.adoc[Notifications]
 * xref:usage::page$email.adoc[Email]
