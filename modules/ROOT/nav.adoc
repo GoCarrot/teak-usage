@@ -18,7 +18,7 @@
 ** xref:usage:reference:page$link-metrics.adoc[Link Metrics]
 ** xref:usage:reference:page$notification-metrics.adoc[Notification Metrics]
 ** xref:usage:reference:page$notification-content.adoc[Notification Content]
-** xref:usage:reference:page$notification-markup.adoc[Android Notification Text Markup]
+** xref:usage:reference:page$notification-markup.adoc[]
 ** xref:usage:reference:page$ios-12-notifications.adoc[iOS 12 Notifications]
 ** xref:usage:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
 ** xref:usage:reference:page$data-sync.adoc[Data Sync]

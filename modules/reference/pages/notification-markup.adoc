@@ -1,8 +1,14 @@
-= Markup Tags for Android Notification Text
+= Making Notification Text 🅵🅰🅽🅲🆈
 
-HTML-lite tags are available in Android notification text.
+== iOS
 
-== Supported Tags
+On iOS you can use 𝕦𝕟𝕚𝕔𝕠𝕕𝕖 𝖙𝖗𝖎𝖈𝖐𝖘 to add stylized text to your notifications. We suggest using https://texteditor.com/font-converter/[TextEditor] to stylize your text, which can then be pasted into Teak's message editor.
+
+== Android
+
+In addition to text from https://texteditor.com/font-converter/[TextEditor], Android supports HTML-lite tags in notification text, which can be used to apply formatting and color to your messages.
+
+=== Supported Tags
 
 The following tags are supported:
 
@@ -19,7 +25,7 @@ The following tags are supported:
 
 ``<font color="...">``:: change text color
 
-== Supported Colors
+=== Supported Colors
 
 image::android-html-colors.png[title=These are how the colors look on a Google Pixel, width=320, role=right]
 
