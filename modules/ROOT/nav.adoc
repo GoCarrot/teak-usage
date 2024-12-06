@@ -1,70 +1,71 @@
 * xref:index.adoc[Overview]
 
-* Working with Teak
-** Intro to Games CRM
-** Lifecycle Strategies
-** Daily Mystery Bonus
-** Helpful Audiences
-** Creating Effective Campaigns
-** Managing Rewards
-** Analyzing Player Data
-
-// * User Guide
-// ** xref:user-guide:page$glossary.adoc[Glossary]
-// ** xref:user-guide:page$reporting.adoc[Reporting]
-// ** xref:user-guide:page$rewards.adoc[Rewards]
-// ** xref:user-guide:page$links.adoc[Links]
-// ** xref:user-guide:page$audiences.adoc[Audiences]
-// ** xref:user-guide:page$notifications.adoc[Notifications]
-// ** xref:user-guide:page$email.adoc[Email]
-// ** xref:user-guide:page$custom-tags.adoc[Custom Tags]
-// ** xref:user-guide:page$scheduling.adoc[Scheduling]
-// ** xref:user-guide:page$settings.adoc[Settings]
-// ** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
-// ** xref:user-guide:page$faq.adoc[FAQ]
+// * Working with Teak
+// ** Feature Overview
+// ** Intro to Games CRM
+// ** Lifecycle Strategies
+// ** Daily Mystery Bonus
+// ** Helpful Audiences
+// ** Creating Effective Campaigns
+// ** Managing Rewards
+// ** Analyzing Player Data
 
 * User Guide
-** Quickstart
-** xref:user-guide:page$audiences.adoc[Audiences]
-*** xref:user-guide:page$audiences.adoc[Overview]
-*** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
-** xref:user-guide:page$scheduling.adoc[Schedules]
-** xref:user-guide:page$notifications.adoc[Push Notifications]
-*** xref:user-guide:page$notifications.adoc[Overview]
-*** Local Notifications
-*** Content Guidelines
-*** xref:reference:page$notification-markup.adoc[Text Markup]
-** Web Push
-*** Overview
-*** Local Notifications
-*** iOS Content Guidelines
-*** Text Markup
-** xref:user-guide:page$email.adoc[Email]
-*** Overview
-*** Templating
-*** Text Markup
-** xref:user-guide:page$links.adoc[Reward Links]
-*** Overview
-*** Link Metrics
-*** QR Codes
-** xref:user-guide:page$rewards.adoc[Rewards]
-*** Overview
-*** Tiered Rewards
-*** Randomized Rewards
-** xref:user-guide:page$custom-tags.adoc[Custom Tags]
-** A/B Testing
-*** Push Content
-*** Email Content
-** xref:user-guide:page$reporting.adoc[Reporting]
-*** Dashboard Metrics
-*** Data Sync
-** xref:user-guide:page$settings.adoc[Settings]
 ** xref:user-guide:page$glossary.adoc[Glossary]
-** xref:user-guide:page$faq.adoc[Dashboard FAQ]
+** xref:user-guide:page$reporting.adoc[Reporting]
+** xref:user-guide:page$rewards.adoc[Rewards]
+** xref:user-guide:page$links.adoc[Universal Links]
+** xref:user-guide:page$audiences.adoc[Audiences]
+** xref:user-guide:page$notifications.adoc[Notifications]
+** xref:user-guide:page$email.adoc[Email]
+** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+** xref:user-guide:page$scheduling.adoc[Scheduling]
+** xref:user-guide:page$settings.adoc[Settings]
+** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
+** xref:user-guide:page$faq.adoc[FAQ]
+
+// * User Guide
+// ** Quickstart
+// ** xref:user-guide:page$audiences.adoc[Audiences]
+// *** xref:user-guide:page$audiences.adoc[Overview]
+// *** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
+// ** xref:user-guide:page$scheduling.adoc[Schedules]
+// ** xref:user-guide:page$notifications.adoc[Push Notifications]
+// *** xref:user-guide:page$notifications.adoc[Overview]
+// *** Local Notifications
+// *** Content Guidelines
+// *** xref:reference:page$notification-markup.adoc[Text Markup]
+// ** Web Push
+// *** Overview
+// *** Local Notifications
+// *** iOS Content Guidelines
+// *** Text Markup
+// ** xref:user-guide:page$email.adoc[Email]
+// *** Overview
+// *** Templating
+// *** Text Markup
+// ** xref:user-guide:page$links.adoc[Universal Links]
+// *** Overview
+// *** Rewarded Links
+// *** Link Metrics
+// *** QR Codes
+// ** xref:user-guide:page$rewards.adoc[Rewards]
+// *** Overview
+// *** Tiered Rewards
+// *** Randomized Rewards
+// ** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+// ** A/B Testing
+// *** Push Content
+// *** Email Content
+// ** xref:user-guide:page$reporting.adoc[Reporting]
+// *** Dashboard Metrics
+// *** Data Sync
+// ** xref:user-guide:page$settings.adoc[Settings]
+// ** xref:user-guide:page$glossary.adoc[Glossary]
+// ** xref:user-guide:page$faq.adoc[Dashboard FAQ]
 
 * Developer Guides
-** Integration Quickstart
-** Technical Overview
+** Integration Overview
 
 include::unity::partial$nav-unity.adoc[]
 include::ios::partial$nav-ios.adoc[]
