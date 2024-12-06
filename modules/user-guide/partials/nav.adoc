@@ -1,0 +1,35 @@
+
+DEPRECIATED
+
+** xref:user-guide:page$glossary.adoc[Glossary]
+** xref:user-guide:page$reporting.adoc[Reporting]
+** xref:user-guide:page$rewards.adoc[Rewards]
+** xref:user-guide:page$links.adoc[Links]
+** xref:user-guide:page$audiences.adoc[Audiences]
+** xref:user-guide:page$notifications.adoc[Notifications]
+** xref:user-guide:page$email.adoc[Email]
+** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+** xref:user-guide:page$scheduling.adoc[Scheduling]
+** xref:user-guide:page$settings.adoc[Settings]
+** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
+** xref:user-guide:page$faq.adoc[FAQ]
+
+* Reference
+** xref:reference:page$dashboard-metrics.adoc[Dashboard Metrics]
+** xref:reference:page$link-metrics.adoc[Link Metrics]
+** xref:reference:page$notification-metrics.adoc[Notification Metrics]
+** xref:reference:page$notification-content.adoc[Notification Content]
+** xref:reference:page$notification-markup.adoc[Android Notification Text Markup]
+** xref:reference:page$ios-12-notifications.adoc[iOS 12 Notifications]
+** xref:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
+** xref:reference:page$data-sync.adoc[Data Sync]
+
+* Guides
+** xref:guides:page$tests.adoc[Creating a single Schedule with varied content]
+
+* 3rd Party Configuration
+** xref:reference:page$apple-apns.adoc[Apple Push Notification Service (APNs) .p8 Key Guide]
+** xref:reference:page$apple-apns-p8-migration.adoc[Migrate to .p8 Key for APNs Auth]
+** xref:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1) Credential Guide]
+** xref:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging Credential Guide]
+** xref:reference:page$sendgrid-setup.adoc[Connect SendGrid and Teak]

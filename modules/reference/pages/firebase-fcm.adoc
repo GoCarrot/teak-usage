@@ -2,14 +2,9 @@
 :page-aliases: ../firebase-gcm.adoc
 :!page-pagination:
 
-In order to send notifications to your game on Android, Teak needs your Firebase Cloud Messaging (FCM V1) credentials.  
+In order to send notifications to your game on Android, Teak needs your Firebase Cloud Messaging (FCM V1) credentials.
 
-In this guide, we'll download a Service Account Key (in JSON format), and copy the Sender ID value from your Firebase console, and input those into Teak. 
-
-[NOTE]
-====
-If you already have FCM (Legacy) setup with Teak, please see our xref:usage:reference:page$firebase-fcm-v1-migration.adoc[Firebase (v1) Migration guide] for instructions on ensuring a smooth rollover from Legacy credentials to v1 credentials.
-====
+In this guide, we'll download a Service Account Key (in JSON format), and copy the Sender ID value from your Firebase console, and input those into Teak.
 
 **You will need the following accounts to complete this step:**
 
@@ -18,7 +13,7 @@ If you already have FCM (Legacy) setup with Teak, please see our xref:usage:refe
 
 == Open menu:Project Settings[Cloud Messaging] in your Firebase project.
 
-. Go to your https://console.firebase.google.com/[Firebase Console, window=_blank] and **open the project** for your game. This must be the same project that you are using to authenticate the Firebase SDK in your game. 
+. Go to your https://console.firebase.google.com/[Firebase Console, window=_blank] and **open the project** for your game. This must be the same project that you are using to authenticate the Firebase SDK in your game.
 +
 [IMPORTANT]
 ====
@@ -34,7 +29,7 @@ image::usage:reference:firebase-setup/firebase-dashboard.png[]
 == Enable Firebase Cloud Messaging API (V1), (if it isn't already enabled).
 
 [start=4]
-. Make sure that **Firebase Cloud Messaging API (V1)** is enabled. Support for FCM (Legacy) will be discontinued by Google on June 20th, 2024. 
+. Make sure that **Firebase Cloud Messaging API (V1)** is enabled. Support for FCM (Legacy) will be discontinued by Google on June 20th, 2024.
 +
 [TIP]
 .Enabling Firebase Cloud Messaging API (V1)
@@ -45,28 +40,23 @@ If the V1 API isn't enabled, proceed with these steps to activate it.
 
 .. Click **Manage API in Google Cloud Console**.
 
-.. In the new tab that opens, click **Enable**. 
+.. In the new tab that opens, click **Enable**.
 
 .. This will load the __API/Service Details__ page. After the page has loaded, **close this tab.**
 
 .. Return to the **Firebase Console** page and **refresh** the page.
 
-.. **Firebase Cloud Messaging API (V1)** should now be **enabled**. 
+.. **Firebase Cloud Messaging API (V1)** should now be **enabled**.
 ====
 +
 image::usage:reference:firebase-setup/firebase-notification-settings.png[]
 
-== Copy the __Sender ID__ to Teak 
+== Copy the __Sender ID__ to Teak
 
 [start=5]
 . In the **https://app.teak.io[Teak Dashboard, window=_blank]** for your game, navigate to menu:Settings[Android].
-+
-[IMPORTANT]
-====
-If you already have FCM (Legacy) setup with Teak, please see our xref:usage:reference:page$firebase-fcm-v1-migration.adoc[Firebase (v1) Migration guide] for instructions on ensuring a smooth rollover from Legacy credentials to v1 credentials.
-====
 
-. Click **Setup Firebase Cloud Messaging (V1)** to open the FCM setup modal. 
+. Click **Setup Firebase Cloud Messaging (V1)** to open the FCM setup modal.
 
 . Copy **`Sender ID`** from Firebase to the **`FCM Sender ID`** field in the setup modal for Teak.
 
@@ -79,19 +69,18 @@ Leave this modal open for the next step.
 +
 image::usage:reference:firebase-setup/firebase-service-accounts.png[]
 
-. By default, the **Firebase Admin SDK** service account will be selected. This is fine for most cases. 
+. By default, the **Firebase Admin SDK** service account will be selected. This is fine for most cases.
 
-. Click the **Generate new private key** button and confirm you want to **Generate key** in the popup. This will download a `private key` as a `JSON` file. 
+. Click the **Generate new private key** button and confirm you want to **Generate key** in the popup. This will download a `private key` as a `JSON` file.
 
-== Upload the __Service account private key__ to Teak 
+== Upload the __Service account private key__ to Teak
 
 [start=11]
 . Return to the Teak dashboard. The FCM setup modal should still be open.
 
-. Click the **Select private key file (JSON)** and locate the private key 
+. Click the **Select private key file (JSON)** and locate the private key
 
 . Click **Save** to confirm your changes.
 
 // +
 // image::usage:reference:firebase-setup/teak-android-gcm-settings.png[]
-

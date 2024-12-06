@@ -1,9 +1,16 @@
-name: usage
-title: User Guide
+name: ROOT
+title: Documentation
 version: ~
 nav:
 - modules/ROOT/nav.adoc
+- modules/user-guide/nav.adoc
 
-asciidoc:
-  attributes:
-    page-pagination: '@' # Enables Next/Previous at the bottom of pages
+# name: usage
+# title: User Guide
+# version: ~
+# nav:
+# - modules/ROOT/nav.adoc
+
+# asciidoc:
+#   attributes:
+#     page-pagination: '@' # Enables Next/Previous at the bottom of pages

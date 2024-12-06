@@ -1,61 +1,89 @@
-= Teak User Guide
+= Welcome
+:page-aliases: /home/index.adoc
+:page-no-toc: true
 
-Welcome! We know you’re excited to get started and this guide will assist you as you set up your first campaigns. So, let’s dig in and start setting up links, messages, emails, and more!
-////
-*Table of Contents*
+Teak is the CRM that understands free-to-play games. We give your team easy-to-use push notifications, effective emails, and shareable links that can all be rewarded. All this to give your players what they want the most: more playtime.
 
-* Glossary
-* Reporting
-** Available Metrics
-** Analyzing
-** Exporting
-* Rewards
-** Items and Currency
-** Bundle Creation
-** Audience Controlled Rewarding
-** Verifying Reward Collection
-* Links
-** Link Types
-** Link Creation
-* Audiences
-** Audience Creation by Rules
-** Filters
-** Audiences’ Associated Value
-** Audience Creation by Upload
-** Additional Exploration
-** Exporting Audiences and Linking to Facebook
-* Notifications
-** Push/App-to-User Creation
-** Formatting
-** Approximate Character Counts
-** Using Images
-** Rewards
-** Expiration
-** Advanced
-** Testing
-** Preview
-* Email
-** Email Creation
-** Formatting
-** Using Images
-** Rewards
-** Expiration
-** Testing
-** Advanced
-** Preview
-** Emails that can be replied to
+== Getting Started
 
-* Custom Tags
-* Scheduling
-** Schedule Creation
-** Attaching a Message
-** Additional Targeting 
-** Sending 
-* Settings
-** Adding Teak Users
-** Player Properties
-** Disabling Notifications
-** Email
-* Helpful Audiences
-* FAQ
-////
+[cols="2", role="nav-table", frame="none", grid="none"]
+|===
+a|
+
+[.sidebarlink]
+****
+Setup and use the Teak Dashboard
+
+xref:usage::page$index.adoc[*User Guide*]
+****
+
+a|
+
+
+[.sidebarlink]
+****
+Integrate the Teak SDKs
+
+xref:developers.adoc[*Developer Guide*]
+****
+
+a|
+
+[.sidebarlink]
+****
+Frequently Asked Questions
+
+xref:developers.adoc[*FAQ*]
+****
+
+a|
+
+[.sidebarlink]
+****
+Your First Push
+
+xref:developers.adoc[*Push Guide*]
+****
+
+|===
+
+== Developer Quickstart
+Integrate the Teak SDKs
+
+[cols="4", role="nav-table", frame="none", grid="none"]
+|===
+a|
+
+[.sidebarlink]
+****
+
+xref:developers.adoc[*Unity SDK*]
+****
+
+a|
+
+[.sidebarlink]
+****
+
+xref:developers.adoc[*iOS SDK*]
+****
+
+a|
+
+[.sidebarlink]
+****
+
+xref:developers.adoc[*Android SDK*]
+****
+
+a|
+
+[.sidebarlink]
+****
+
+xref:developers.adoc[*Javascript SDK*]
+****
+
+|===
+
+Last modified: **{docdatetime}**

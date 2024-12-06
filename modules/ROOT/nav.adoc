@@ -1,34 +1,96 @@
+* xref:index.adoc[Overview]
 
-* xref:usage::page$glossary.adoc[Glossary]
-* xref:usage::page$reporting.adoc[Reporting]
-* xref:usage::page$rewards.adoc[Rewards]
-* xref:usage::page$links.adoc[Links]
-* xref:usage::page$player-properties.adoc[Player Properties]
-* xref:usage::page$audiences.adoc[Audiences]
-* xref:usage::page$notifications.adoc[Notifications]
-* xref:usage::page$email.adoc[Email]
-* xref:usage::page$custom-tags.adoc[Custom Tags]
-* xref:usage::page$scheduling.adoc[Scheduling]
-* xref:usage::page$settings.adoc[Settings]
-* xref:usage::page$helpful-audiences.adoc[Helpful Audiences]
-* xref:usage::page$faq.adoc[FAQ]
+* Working with Teak
+** Intro to Games CRM
+** Lifecycle Strategies
+** Daily Mystery Bonus
+** Helpful Audiences
+** Creating Effective Campaigns
+** Managing Rewards
+** Analyzing Player Data
 
-* Reference
-** xref:usage:reference:page$dashboard-metrics.adoc[Dashboard Metrics]
-** xref:usage:reference:page$link-metrics.adoc[Link Metrics]
-** xref:usage:reference:page$notification-metrics.adoc[Notification Metrics]
-** xref:usage:reference:page$notification-content.adoc[Notification Content]
-** xref:usage:reference:page$notification-markup.adoc[]
-** xref:usage:reference:page$ios-12-notifications.adoc[iOS 12 Notifications]
-** xref:usage:reference:page$audience-controlled-rewards.adoc[Audience Controlled Rewards]
-** xref:usage:reference:page$data-sync.adoc[Data Sync]
+// * User Guide
+// ** xref:user-guide:page$glossary.adoc[Glossary]
+// ** xref:user-guide:page$reporting.adoc[Reporting]
+// ** xref:user-guide:page$rewards.adoc[Rewards]
+// ** xref:user-guide:page$links.adoc[Links]
+// ** xref:user-guide:page$audiences.adoc[Audiences]
+// ** xref:user-guide:page$notifications.adoc[Notifications]
+// ** xref:user-guide:page$email.adoc[Email]
+// ** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+// ** xref:user-guide:page$scheduling.adoc[Scheduling]
+// ** xref:user-guide:page$settings.adoc[Settings]
+// ** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
+// ** xref:user-guide:page$faq.adoc[FAQ]
 
-* Guides
-** xref:usage:guides:page$tests.adoc[Creating a single Schedule with varied content]
+* User Guide
+** Quickstart
+** xref:user-guide:page$audiences.adoc[Audiences]
+*** xref:user-guide:page$audiences.adoc[Overview]
+*** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
+** xref:user-guide:page$scheduling.adoc[Schedules]
+** xref:user-guide:page$notifications.adoc[Push Notifications]
+*** xref:user-guide:page$notifications.adoc[Overview]
+*** Local Notifications
+*** Content Guidelines
+*** xref:reference:page$notification-markup.adoc[Text Markup]
+** Web Push
+*** Overview
+*** Local Notifications
+*** iOS Content Guidelines
+*** Text Markup
+** xref:user-guide:page$email.adoc[Email]
+*** Overview
+*** Templating
+*** Text Markup
+** xref:user-guide:page$links.adoc[Reward Links]
+*** Overview
+*** Link Metrics
+*** QR Codes
+** xref:user-guide:page$rewards.adoc[Rewards]
+*** Overview
+*** Tiered Rewards
+*** Randomized Rewards
+** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+** A/B Testing
+*** Push Content
+*** Email Content
+** xref:user-guide:page$reporting.adoc[Reporting]
+*** Dashboard Metrics
+*** Data Sync
+** xref:user-guide:page$settings.adoc[Settings]
+** xref:user-guide:page$glossary.adoc[Glossary]
+** xref:user-guide:page$faq.adoc[Dashboard FAQ]
 
-* 3rd Party Configuration
-** xref:usage:reference:page$apple-apns.adoc[Apple Push Notification Service (APNs) .p8 Key Guide]
-** xref:usage:reference:page$apple-apns-p8-migration.adoc[Migrate to .p8 Key for APNs Auth]
-** xref:usage:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1) Credential Guide]
-** xref:usage:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging Credential Guide]
-** xref:usage:reference:page$sendgrid-setup.adoc[Connect SendGrid and Teak]
+* Developer Guides
+** Integration Quickstart
+** Technical Overview
+
+include::unity::partial$nav-unity.adoc[]
+include::ios::partial$nav-ios.adoc[]
+include::android::partial$nav-android.adoc[]
+
+** Javascript SDK
+*** Getting Started with Javascript
+*** Features
+*** Advanced Setup
+*** SDK5 Preview
+*** Changelog
+
+include::server-api::partial$nav-server-api.adoc[]
+
+* SDK & API Reference
+** Unity SDK Reference
+** iOS Native SDK Reference
+** Android Native SDK Reference
+** Server API Reference
+
+* 3rd Party Integrations
+** xref:reference:page$apple-apns.adoc[Apple Push Notifications (APNs)]
+*** xref:reference:page$apple-apns-p8-migration.adoc[Migrate to APNs .p8]
+** xref:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1)]
+** xref:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging]
+** xref:reference:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
+
+* FAQ
+* Support
