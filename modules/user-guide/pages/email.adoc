@@ -1,20 +1,20 @@
 = Email
 
-Email is set up in the same flow as Push Notifications. Click menu:Notifications[Email Tab, New Message] to create a new message. Make sure the *Email* option is checked. 
+Email is set up in the same flow as Push Notifications. Click menu:Notifications[Email Tab, New Message] to create a new message. Make sure the *Email* option is checked.
 
-== Templates 
+== Templates
 
-There are currently 2 ways to build an email on Teak. You can find these options in the *Templates* dropdown. 
+There are currently 2 ways to build an email on Teak. You can find these options in the *Templates* dropdown.
 
-Large Image Click:: 
-This is the default template. This template prioritizes having a large image that players tap to launch the game. 
+Large Image Click::
+This is the default template. This template prioritizes having a large image that players tap to launch the game.
 
 Custom HTML::
 For advanced users to create their own email layouts.
 
 == Using _"Large Image Click"_
 
-Teak's default template is optimized to get players in the game. It features a small text area, followed by a large clickable image that launches the game. This image can be incentivized using the Rewards system. 
+Teak's default template is optimized to get players in the game. It features a small text area, followed by a large clickable image that launches the game. This image can be incentivized using the Rewards system.
 
 === Subject
 _50 Characters Recommended. 255 Characters allowed._
@@ -25,21 +25,21 @@ The subject line of the email. This is the first thing a player will see, so get
 === Preview Text
 _Recommended between 30 to 100 characters._
 
-This text appears in the inbox preview of the email client, but not in the body of the email. Typically, this is displayed right under the subject line and slightly grayed out. Different email clients display this differently. 
+This text appears in the inbox preview of the email client, but not in the body of the email. Typically, this is displayed right under the subject line and slightly grayed out. Different email clients display this differently.
 
-This may also be referred to as a "preheader" or "hidden preheader" in other email systems. 
+This may also be referred to as a "preheader" or "hidden preheader" in other email systems.
 
 
 === Message
 _768 Characters allowed (Keeping a balanced Text to Image ratio and including HTML and Tags)_
 
-This text appears at the top of the email above the big image. 
+This text appears at the top of the email above the big image.
 
 You can use the same tags, emojis, and HTML formatting in Email that you can on Android. You can use the Teak Markup Tag documentation, but any HTML5 is acceptable.
 
 === Image
 
-The _Large Image Click_ template requires an image to be sent. 
+The _Large Image Click_ template requires an image to be sent.
 
 We recommend _800x800 px_ images as a starting point, but the image size is mostly up to you, and will be compressed as needed. It’s beneficial to test on different devices and email providers to determine the ideal resolution for your images.
 
@@ -88,7 +88,7 @@ This behavior can be overridden with Skip Game Open.
 
 For email only, there is an option to skip the game open when opening an Out of Game URL.
 
-When this option is enabled, the game will not be opened when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:usage:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
+When this option is enabled, the game will not be opened when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:user-guide:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
 
 ////
 == Advanced

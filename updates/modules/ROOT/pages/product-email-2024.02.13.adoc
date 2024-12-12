@@ -18,7 +18,7 @@ Teak just needs new credentials uploaded for your Firebase project.
 
 A team member with access to your game's Firebase project will need to do a few steps to start the rollover process. Your challenge is to figure out who that person is! Go!
 
-Once this task has been delegated, we've put together a step by step xref:usage:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*, window=_blank] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions.
+Once this task has been delegated, we've put together a step by step xref:user-guide:reference:page$firebase-fcm-v1-migration.adoc[*Firebase Cloud Messaging Migration Guide*, window=_blank] to make it easy for them. The process is designed to make sure there are no interruptions to your Android notification sends. Reach out to mailto:team@teak.io[*team@teak.io*,role=email] with any questions.
 
 == Email Preview Text
 
