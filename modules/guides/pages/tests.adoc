@@ -31,7 +31,7 @@ Directly under the name of the Reward Bundle, check the box that will allow you 
 
 
 
-You can make this simple or complex. If you want to divide the audience you created into smaller segments, perhaps by tenure, you can create a reward tier that offers a higher chance of getting more of a single currency to your longest retained users. You can dig more into the xref:user-guide:reference:page$audience-controlled-rewards.adoc[window=_blank] feature, and if you decide to use Randomized Rewards, you can add additional Items or Currencies and weight those to 100% for each audience.
+You can make this simple or complex. If you want to divide the audience you created into smaller segments, perhaps by tenure, you can create a reward tier that offers a higher chance of getting more of a single currency to your longest retained users. You can dig more into the xref:user-guide:reference:page$tiered-rewards.adoc[window=_blank] feature, and if you decide to use Randomized Rewards, you can add additional Items or Currencies and weight those to 100% for each audience.
 
 More simplistically, you can randomize a single set of rewards for the entire audience. After you select an Item or Currency, you’ll fill in the reward amount, and give it a weight. You can add as many options as you’d like, as long as it adds up to 100%.
 
