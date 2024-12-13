@@ -12,7 +12,7 @@ Welcome! We know you’re excited to get started and this guide will assist you 
 * Rewards
 ** Items and Currency
 ** Bundle Creation
-** Audience Controlled Rewarding
+** Tiered Rewarding
 ** Verifying Reward Collection
 * Links
 ** Link Types
@@ -49,8 +49,8 @@ Welcome! We know you’re excited to get started and this guide will assist you 
 * Scheduling
 ** Schedule Creation
 ** Attaching a Message
-** Additional Targeting 
-** Sending 
+** Additional Targeting
+** Sending
 * Settings
 ** Adding Teak Users
 ** Player Properties

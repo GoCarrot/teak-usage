@@ -28,13 +28,13 @@ Rewards are applied as Bundles. This means once you create a specific Reward, yo
 . Give your Reward Bundle a name
 . Then select the type of Reward and value
 
-You can choose multiple reward types, create a random distribution, segment rewards by tier with Audience Controlled Rewarding, or a combination of these options.
+You can choose multiple reward types, create a random distribution, segment rewards by audience with Tiered Rewarding, or a combination of these options.
 
-== Audience Controlled Rewarding
+== Tiered Rewarding
 
-Audience Controlled Rewarding allows you to micro-segment any targeted Audience by adding additional audience tiers. For example, if you intend to send an email to everyone who has played the game in a specific timeframe, but you want to provide more currency to players who have spent in your game, this feature allows you to do that without creating multiple messages.
+Tiered Rewarding allows you to micro-segment any targeted Audience by adding additional audience tiers. For example, if you intend to send an email to everyone who has played the game in a specific timeframe, but you want to provide more currency to players who have spent in your game, this feature allows you to do that without creating multiple messages.
 
-=== Setting Up Audience Controlled Rewarding
+=== Setting Up Tiered Rewarding
 
 . Create your Audiences. This will include your broader audience, as well as the tiers you wish you use for rewarding segmentation (You can reference the Audience Creation steps here)
 . Select "Rewards" on the left rail

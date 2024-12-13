@@ -1,6 +1,6 @@
 = Audiences
 
-Creating Audiences is as simple as designating a single rule or as complex as triggering on specific behaviors to move players through a marketing funnel. You can create Audiences to distribute Messages to qualified players, to trigger specific Messages, or as segmentation for Audience Controlled Rewarding.
+Creating Audiences is as simple as designating a single rule or as complex as triggering on specific behaviors to move players through a marketing funnel. You can create Audiences to distribute Messages to qualified players, to trigger specific Messages, or as segmentation for Tiered Rewarding.
 
 == Audience Set Up
 
@@ -107,7 +107,7 @@ Integers let you filter by the greater than or less than properties.
 Audience Sizes::
 As you begin to implement Rules, the Audience sizes will update on the right side of the Audience Builder, and the total size will update in the Audience list. Teak loads new data every minute.
 
-For Audiences with Audience Controlled Rewards or associated Scheduled Messages, Teak will update approximately every ten minutes; all other Audiences update approximately every hour.
+For Audiences with Tiered Rewards or associated Scheduled Messages, Teak will update approximately every ten minutes; all other Audiences update approximately every hour.
 
 On the Audience list you can also click on the current total to view a graph of the Audience’s size over time
 
@@ -129,13 +129,13 @@ After the upload, save your Audience, and an email will be sent with the details
 
 == Audience Creation by Segmenting
 
-The **Segment** option is a helpful shortcut to create a new audience based on an existing audience. 
+The **Segment** option is a helpful shortcut to create a new audience based on an existing audience.
 
 In the Audience list, you can find **Segment** in the dropdown for existing audiences. When creating a new Schedule, the Segment option appears next to the selected audience.
 
-**Segment** creates a new Rule Based Audience with "Players whose _Audiences_ are any of..." prefilled with the audience you are segmenting. Add additional rules to refine which players you want to reach with your new audience.  
+**Segment** creates a new Rule Based Audience with "Players whose _Audiences_ are any of..." prefilled with the audience you are segmenting. Add additional rules to refine which players you want to reach with your new audience.
 
-A segmented audience will update if the definition of the original audience is updated. 
+A segmented audience will update if the definition of the original audience is updated.
 
 Segmenting is useful for::
 * Targeting players from an uploaded list who recently played, purchased, or tapped on a notification, message, or link.
