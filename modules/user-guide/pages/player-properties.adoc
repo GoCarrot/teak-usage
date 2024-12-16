@@ -1,4 +1,5 @@
 = Player Properties
+:page-aliases: usage:player-properties.adoc
 
 Player Properties are strings or numbers associated with each player of your game in Teak. Player Properties have several uses, including
 

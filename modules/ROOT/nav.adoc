@@ -10,21 +10,30 @@
 // ** Managing Rewards
 // ** Analyzing Player Data
 
-* User Guide
+* [.default-open]#User Guide#
 ** xref:user-guide:page$glossary.adoc[Glossary]
 ** xref:user-guide:page$reporting.adoc[Reporting]
+*** xref:user-guide:page$dashboard-metrics.adoc[Dashboard Metrics]
+*** xref:user-guide:page$link-metrics.adoc[Link Metrics]
+*** xref:user-guide:page$notification-metrics.adoc[Notification Metrics]
+*** xref:user-guide:page$data-sync.adoc[Data Sync]
 ** xref:user-guide:page$rewards.adoc[Rewards]
+*** xref:user-guide:page$tiered-rewards.adoc[Tiered Rewards]
 ** xref:user-guide:page$links.adoc[Universal Links]
 ** xref:user-guide:page$audiences.adoc[Audiences]
+*** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
 ** xref:user-guide:page$notifications.adoc[Notifications]
+*** xref:user-guide:page$notification-content.adoc[Notification Content]
+*** xref:user-guide:page$ios-12-notifications.adoc[iOS 12 Notifications]
+*** xref:user-guide:page$notification-markup.adoc[Notification Text Markup]
 ** xref:user-guide:page$email.adoc[Email]
 ** xref:user-guide:page$custom-tags.adoc[Custom Tags]
+** xref:user-guide:page$player-properties.adoc[Player Properties]
 ** xref:user-guide:page$scheduling.adoc[Scheduling]
+*** xref:user-guide:page$varied-recurring-messages.adoc[Creating a single Schedule with varied content]
 ** xref:user-guide:page$settings.adoc[Settings]
-** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
-** xref:user-guide:page$faq.adoc[FAQ]
 
-// * User Guide
+// * [.default-open]#User Guide#
 // ** Quickstart
 // ** xref:user-guide:page$audiences.adoc[Audiences]
 // *** xref:user-guide:page$audiences.adoc[Overview]
@@ -64,34 +73,33 @@
 // ** xref:user-guide:page$glossary.adoc[Glossary]
 // ** xref:user-guide:page$faq.adoc[Dashboard FAQ]
 
-* Developer Guides
-** Integration Overview
+// * [.default-open]#Developer Guides#
+// ** Integration Overview
+// include::unity::partial$nav-unity.adoc[]
+// include::ios::partial$nav-ios.adoc[]
+// include::android::partial$nav-android.adoc[]
+// ** Javascript SDK
+// *** Getting Started with Javascript
+// *** Features
+// *** Advanced Setup
+// *** SDK5 Preview
+// *** Changelog
 
+* [.default-open]#Developer Guides#
 include::unity::partial$nav-unity.adoc[]
-include::ios::partial$nav-ios.adoc[]
-include::android::partial$nav-android.adoc[]
-
-** Javascript SDK
-*** Getting Started with Javascript
-*** Features
-*** Advanced Setup
-*** SDK5 Preview
-*** Changelog
-
 include::server-api::partial$nav-server-api.adoc[]
 
 * SDK & API Reference
-** Unity SDK Reference
-** iOS Native SDK Reference
-** Android Native SDK Reference
-** Server API Reference
+** xref:unity:api:page$index.adoc[Unity SDK Reference]
+** xref:ios:api:page$index.adoc[iOS Native SDK Reference]
+** xref:android:api:page$index.adoc[Android Native SDK Reference]
 
 * 3rd Party Integrations
 ** xref:reference:page$apple-apns.adoc[Apple Push Notifications (APNs)]
-*** xref:reference:page$apple-apns-p8-migration.adoc[Migrate to APNs .p8]
+*** xref:reference:page$apple-apns-p8-migration.adoc[Migrating to APNs .p8]
 ** xref:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1)]
 ** xref:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging]
 ** xref:reference:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
 
-* FAQ
+* xref::page$faq.adoc[FAQ]
 * Support

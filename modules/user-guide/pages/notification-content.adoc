@@ -1,4 +1,5 @@
 = Notification Content Guidelines
+:page-aliases: usage:reference:notification-content.adoc
 
 These are the notification content guidelines that we have established by using test pattern images and pixel grids on numerous different Android devices to establish image sizes that will maintain aspect ratio, and "safe areas" inside those sizes in which the content will always be displayed.
 
@@ -23,10 +24,10 @@ The banner view of an Android Notification is used in both the toast view, and t
 [.float-group]
 --
 [.left]
-image::android-banner-sm-g920t.png[title=Android Banner View on Lock Screen, width=320]
+image::notifications/android-banner-sm-g920t.png[title=Android Banner View on Lock Screen, width=320]
 
-[.right]
-image::android-banner-notification-center-sm-g920t.png[title=Android Banner View in Notification Tray, width=320]
+[.left]
+image::notifications/android-banner-notification-center-sm-g920t.png[title=Android Banner View in Notification Tray, width=320]
 --
 
 ==== Content
@@ -42,7 +43,7 @@ The recommended size guarantees native resolution display on xxxhdpi screens, if
 
 The expanded view of an Android notification is used in the notification center.
 
-image::android-expanded-sm-g920t.png[title=Android Expanded View, width=320]
+image::notifications/android-expanded-sm-g920t.png[title=Android Expanded View, width=320]
 
 ==== Content
 :note-caption: Expanded View Content
@@ -59,7 +60,7 @@ The recommended size guarantees native resolution display on xxxhdpi screens, if
 
 The expanded view of an iOS notification is used when the user force-touches on a notification.
 
-image::ios-expanded-iphone-6s.jpeg[title=iOS Expanded View, width=320]
+image::notifications/ios-expanded-iphone-6s.jpeg[title=iOS Expanded View, width=320]
 
 ==== Content
 :note-caption: Expanded View Content

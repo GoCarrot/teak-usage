@@ -1,4 +1,5 @@
 = Data Syncing
+:page-aliases: usage:reference:data-sync.adoc
 
 Teak can provide raw row level data in CSVs in an S3 bucket in near real time for you to consume into your own analytics pipeline. For more information please mailto:team@teak.io[contact support].
 

@@ -1,5 +1,5 @@
 = Tiered Rewards
-:page-aliases: usage/reference/audience-controlled-rewards.adoc
+:page-aliases: usage:reference:audience-controlled-rewards.adoc
 
 It's common to want to use the same messaging strategy for a large group of players but offer a different reward to different players based on their past activity. For example, you may want to send a push notification to all players who are at risk of churning, but give more free in-game currency to players who have previously purchased than to players who have never purchased.
 

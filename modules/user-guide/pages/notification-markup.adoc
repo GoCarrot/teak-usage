@@ -1,4 +1,5 @@
 = Making Notification Text 🅵🅰🅽🅲🆈
+:page-aliases: usage:reference:notification-markup.adoc
 
 == iOS
 
@@ -27,7 +28,7 @@ The following tags are supported:
 
 === Supported Colors
 
-image::android-html-colors.png[title=These are how the colors look on a Google Pixel, width=320, role=right]
+image::notifications/android-html-colors.png[title=These are how the colors look on a Google Pixel, width=320, role=right]
 
 The following colors are supported:
 

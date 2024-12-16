@@ -1,4 +1,5 @@
 = Notification Metrics
+:page-aliases: usage:reference:notification-metrics.adoc
 
 These are the metrics Teak tracks for notifications with a description of what causes Teak to track each given metric.
 

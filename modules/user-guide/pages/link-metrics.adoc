@@ -1,4 +1,5 @@
 = Link Metrics
+:page-aliases: usage:reference:link-metrics.adoc
 
 These are the metrics Teak tracks for links with a description of what causes Teak to track each given metric.
 

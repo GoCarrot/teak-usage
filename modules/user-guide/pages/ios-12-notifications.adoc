@@ -1,4 +1,5 @@
 = iOS 12 Notification Features
+:page-aliases: usage:reference:ios-12-notifications.adoc
 :!page-pagination:
 
 iOS 12 brings several new features to Local and Push Notifications.
@@ -9,7 +10,7 @@ One of the most exciting new features of iOS 12 is the ability to send notificat
 
 Provisional push notifications **do not require you to request permissions from the user**!
 
-image::ios-12-notification-center.png[title=A Provisional Push Notification, width=320]
+image::notifications/ios-12-notification-center.png[title=A Provisional Push Notification, width=320]
 
 Provisional notifications are shown only in the Notification Center, but not on the Lock Screen. They also offer the user the opportunity to turn off notifications from the app, or change the notifications to be delivered prominently.
 
@@ -17,8 +18,8 @@ The user will be prompted to confirm their choice if they press either button.
 
 [.float-group]
 --
-image::ios-12-keep.png[title=Confirming 'Keep...', width=320, float="left"]
-image::ios-12-turn-off.png[title=Confirming 'Turn Off...', width=320, float="right"]
+image::notifications/ios-12-keep.png[title=Confirming 'Keep...', width=320, float="left"]
+image::notifications/ios-12-turn-off.png[title=Confirming 'Turn Off...', width=320, float="left"]
 --
 
 NOTE: If you have any questions about Provisional Push Notifications, contact your Teak account rep.
@@ -31,7 +32,7 @@ In other words, it will work exactly like push notifications have worked before 
 
 This is what the Settings look like for notifications delivered prominently.
 
-image::ios-12-prominent.png[title=Deliver Prominently, width=320]
+image::notifications/ios-12-prominent.png[title=Deliver Prominently, width=320]
 
 === What Does 'Deliver Quietly' Mean?
 
@@ -41,13 +42,13 @@ In other words, it will work just like a Provisional Notification, except it won
 
 This is what the Settings look like for a notification delivered quietly. The differences between 'Deliver Quietly' and 'Deliver Prominently' are circled.
 
-image::ios-12-quiet.jpg[title=Deliver Quietly, width=320]
+image::notifications/ios-12-quiet.jpg[title=Deliver Quietly, width=320]
 
 === Interesting Observed Behaviors
 
 If a user is prompted to explicitly authorize notifications, and they are sent a notification while they still have a provisional notification, both notifications will display in the Notification Center, and the notifications sent with provisional authorization will still display the buttons prompting the user.
 
-image::ios-12-provisional-and-authorized.png[width=320]
+image::notifications/ios-12-provisional-and-authorized.png[width=320]
 
 These buttons will perform the described actions if pressed, overwriting the current (authorized) status.
 
@@ -72,8 +73,8 @@ This is an example of how they will look, both stacked and expanded.
 
 [.float-group]
 --
-image::ios-12-stacked.png[title=Stacked, width=320, float="left"]
-image::ios-12-expanded.png[title=Expanded, width=320, float="right"]
+image::notifications/ios-12-stacked.png[title=Stacked, width=320, float="left"]
+image::notifications/ios-12-expanded.png[title=Expanded, width=320, float="left"]
 --
 
 NOTE: Provisional notifications also use this behavior, with only the final item displayed in the list showing the prompt buttons.
