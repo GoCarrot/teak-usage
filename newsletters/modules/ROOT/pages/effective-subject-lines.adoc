@@ -4,9 +4,9 @@
 
 *February 19th, 2024 &mdash; Tips & Tricks*
 
-=== Hello CRMs,
+*Hello CRMs,*
 
-Email subject lines are extremely important in gaming - they can be the sole deciding factor on whether a player opens an email...or not. 
+Email subject lines are extremely important in gaming - they can be the sole deciding factor on whether a player opens an email...or not.
 
 Today, we thought we'd share some of our learnings on what we've seen work well and not well in subject lines - what gets people to click? What makes them instantly delete? What grabs their attention in a busy inbox?
 
@@ -15,7 +15,7 @@ Today, we thought we'd share some of our learnings on what we've seen work well 
 * [*] *DO keep it simple and clear.* +
 Subject lines are short, and you don't have much room to play with. Make sure your message is easy to quickly digest.
 * [*] *DO create a sense of urgency.* +
-You want players to feel that opening it in a timely manner will benefit them. 
+You want players to feel that opening it in a timely manner will benefit them.
 * [*] *DO target high value players in special email blasts.* +
 The subject line is a great place to call out that they are appreciated and show them that they are seen and heard.
 * [*] *DO tell them what they'll get when they open the email.* +

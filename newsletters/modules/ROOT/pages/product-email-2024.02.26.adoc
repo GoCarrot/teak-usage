@@ -4,7 +4,7 @@
 
 *February 26th, 2024 &mdash; Teak Product Updates*
 
-=== Hello,
+*Hello,*
 
 Once again, we have a round-up of Dashboard improvements, thanks to the valuable feedback you continue to give us. We've added Segment Audiences, action buttons in the Table View, and perhaps most excitingly, a blank canvas in the QR codes for you to customize! More below.
 

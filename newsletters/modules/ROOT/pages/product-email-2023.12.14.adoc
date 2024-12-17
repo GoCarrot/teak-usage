@@ -4,7 +4,7 @@
 
 *December 14th, 2023 &mdash; Teak Product Updates*
 
-=== Hello,
+*Hello,*
 
 Thanks to requests from our users, we have some new product updates to share. This time, we've added QR codes to Links, some new metrics, and a handy quality-of-life improvement. Thanks for sharing your ideas to make your work easier. Keep those requests coming!
 
