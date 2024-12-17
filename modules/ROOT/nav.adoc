@@ -10,7 +10,8 @@
 // ** Managing Rewards
 // ** Analyzing Player Data
 
-* xref:ROOT:user-guide:page$index.adoc[[.default-open]#User Guide#]
+// * xref:ROOT:user-guide:page$index.adoc[[.default-open]#User Guide#]
+* [.default-open]#User Guide#
 ** xref:user-guide:page$glossary.adoc[Glossary]
 ** xref:user-guide:page$reporting.adoc[Reporting]
 *** xref:user-guide:page$dashboard-metrics.adoc[Dashboard Metrics]
