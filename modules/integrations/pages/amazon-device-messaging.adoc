@@ -1,4 +1,5 @@
 = Finding your Amazon Device Messaging Credentials
+:page-aliases: usage:reference:amazon-device-messaging.adoc
 :!page-pagination:
 
 == Before you Begin

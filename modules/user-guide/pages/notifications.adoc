@@ -27,7 +27,7 @@ Mobile::
 Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the ``{{first_name|default:"Hey Pal"}}`` Tag. Simply replace ``Hey Pal`` with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
 
 Android Text Formatting (Including applicable Amazon devices)::
-In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The xref:user-guide:reference:page$notification-markup.adoc[Android Notification Text Markup documentation] will help you set up messages using this feature.
+In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The xref:user-guide:page$notification-markup.adoc[Android Notification Text Markup documentation] will help you set up messages using this feature.
 
 == Approximate Character Counts
 

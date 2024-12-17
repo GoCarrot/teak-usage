@@ -21,7 +21,7 @@ Teak provides a set of email specific tags for use in email message content.
 `{{email.link}}`:: Insert Teak's generated tracking/reward URL for the email. Note that in Teak's provided email template, the image already links to the generated tracking/reward URL for the email.
 `{{email.unsubscribe}}`:: Insert the URL to the player's subscription management page for email. Note that in Teak's provided email template, the unsubscirbe link is already included in the email footer.
 `{{email.footer}}`:: Insert the default email footer into the email. Note that the footer is already included in Teak's provided email template.
-`{{email.send_id}}`:: Insert Teak's unique id for the specific email send. This may be useful to correlate clicks on other links with events reported to your internal analytics tooling through Teak's xref:user-guide:reference:page$data-sync.adoc[window=_blank].
+`{{email.send_id}}`:: Insert Teak's unique id for the specific email send. This may be useful to correlate clicks on other links with events reported to your internal analytics tooling through Teak's xref:user-guide:page$data-sync.adoc[window=_blank].
 `{{email.to_address}}`:: Insert the email address the email is being sent to.
 
 If you are inserting _any_ tags into a link in an email, be sure to use the <<_filter_url_encode,`url_encode`>> filter to properly escape the text so the link will function correctly.

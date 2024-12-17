@@ -1,7 +1,8 @@
-= Migrate to .p8 Key Based Authentication for Apple Push Notification Service (APNs)
+= Migrate from .p12 certificates to .p8 Key Based Authentication for APNs
+:page-aliases: usage:reference:apple-apns-p8-migration.adoc
 :!page-pagination:
 
-If you have previously integrated Teak on iOS, you most likely use Apple APNs Certificate Based (.p12) Authentication which must be renewed annually. This guide will walk you through switching to Apple APNs Key Based (.p8) Authentication which does not need to be renewed.
+If you have previously integrated Teak on iOS, you most likely use Apple APNs Certificate Based **(.p12)** Authentication which must be renewed annually. This guide will walk you through switching to Apple APNs Key Based (.p8) Authentication which does not need to be renewed.
 
 The required steps can be done in the Teak and Apple Developer dashboards. No client update is required.
 
@@ -16,7 +17,7 @@ The required steps can be done in the Teak and Apple Developer dashboards. No cl
 ====
 **Two Key Limit**
 
-Each Apple Developer Team may only have two Keys with Apple Push Notification service (APNs) enabled. You may use the same Key for multiple games and push notification providers. 
+Each Apple Developer Team may only have two Keys with Apple Push Notification service (APNs) enabled. You may use the same Key for multiple games and push notification providers.
 
 **Do not revoke existing keys** in your account unless you can confirm that they are not in active use.
 ====
@@ -28,24 +29,24 @@ Each Apple Developer Team may only have two Keys with Apple Push Notification se
 . Give your new Key a name to indicate how it is being used, for example `TeakPushKey`
 . Check the box to enable Apple Push Notifications service (APNs)
 +
-image::usage:reference:apns-setup/new-key.png[]
+image:ROOT:integrations:apns-setup/new-key.png[]
 +
 NOTE: If the Apple Developer Team already has two Keys with Apple Push Notification service (APNs) enabled, you will be unable to create a new key. You must consult with your team and existing uses of Apple Developer Team keys to either use an existing Key with Teak or to identify a Key that may be revoked so that you can create a new Key.
 . **Click on Continue** to verify key settings.
 . On the confirmation page confirm that the Key Name is correct and that Apple Push Notification service (APNs) is enabled.
 . **Click on Register** to create the key.
 +
-image::usage:reference:apns-setup/confirm-key.png[]
+image:ROOT:integrations:apns-setup/confirm-key.png[]
 
 . **Click on Download** to download the key.
 +
-[IMPORTANT] 
+[IMPORTANT]
 ====
 **Your Team may only download the key _once_.**
 
 If you are not prepared to save the key in a safe location or upload it to Teak, stop here. Coordinate with your team to store the key for future use.
 
-**If you have multiple games** in a single Apple Developer Team, each game will need a copy of the key you just created. 
+**If you have multiple games** in a single Apple Developer Team, each game will need a copy of the key you just created.
 ====
 +
 . *Save the key to a location where other members of your or company team may access it.*
@@ -59,7 +60,7 @@ Now that the Apple Developer Team key is saved, we just have to add it to Teak!
 [start=10]
 . In the https://app.teak.io[Teak Dashboard, window=_blank], navigate to menu:Settings[iOS] for your game, and click **Setup .p8 Key Authentication**.
 +
-image::usage:reference:apns-setup/new-teak-settings.png[]
+image:ROOT:integrations:apns-setup/new-teak-settings.png[]
 
 . In the modal that appears, click **Select .p8 Key File** and select the .p8 file you just downloaded.
 +

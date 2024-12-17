@@ -1,7 +1,7 @@
 = Create and Upload your Apple Developer Account Key
 :!page-pagination:
 
-In order to send notifications to your game on iOS, Teak a Key from your Apple Developer Account with Apple Push Notification service (APNs) enabled. This guide will walk through creating, and uploading, an Apple Developer Account key to Teak.
+In order to send notifications to your game on iOS, Teak a Key from your Apple Developer Account with Apple Push Notification service (APNs) enabled. This guide will walk through creating, and uploading, an Apple Developer Account key (.p12) to Teak.
 
 **You will need:**
 
@@ -17,7 +17,7 @@ We'll be going back and forth between the Keychain Access app and the Apple deve
 
 . In Keychain Access menu bar, select menu:Keychain Access[Certificate Assitant > Request a Certificate From a Certificate Authority...].
 +
-image::usage:reference:apns-setup/keychain-access-menu.png[role="thumb"]
+image:ROOT:integrations:apns-setup/keychain-access-menu.png[role="thumb"]
 +
 This will launch the **Certificate Assitant** modal.
 
@@ -27,7 +27,7 @@ Enter your work email address for **User Email Address**. Enter an easy to ident
 
 . Select **Request is: Saved to disk** and then click **Continue**.
 +
-image::usage:reference:apns-setup/csr-info.png[role="thumb"]
+image:ROOT:integrations:apns-setup/csr-info.png[role="thumb"]
 +
 You will be prompted to select somewhere to save the CSR. We're going to be uploading the file in a minute, so choose somewhere easy to find!
 
@@ -41,7 +41,7 @@ NOTE: You will need administrator permissions on your Apple Developer account to
 +
 Make sure **Identifiers** is selected on the left, and **App IDs** is selected in the dropdown in the upper right.
 +
-image::usage:reference:apns-setup/app-ids-landing.png[]
+image:ROOT:integrations:apns-setup/app-ids-landing.png[]
 
 . Find the application you need to create or update certificates for.
 +
@@ -58,11 +58,11 @@ On the configuration page for the App ID:
 [start=8]
 . Ensure that **Associated Domains** are enabled by checking the box in the left column. This is required to enable Teak Links.
 +
-image::usage:reference:apns-setup/enable-associated-domains.png[Associated Domains, 550, role="related"]
+image:ROOT:integrations:apns-setup/enable-associated-domains.png[Associated Domains, 550, role="related"]
 
 . Scroll down to **Push Notifications** and ensure they are **enabled** by checking the box.
 +
-image::usage:reference:apns-setup/push-notif-config.png[]
+image:ROOT:integrations:apns-setup/push-notif-config.png[]
 
 . If you checked any boxes, click **Save** in the top right corner before proceeding. If you create a certificate without clicking **Save** the changes to enable Push Notifications or Associated Domains will not be saved!
 
@@ -75,50 +75,50 @@ image::usage:reference:apns-setup/push-notif-config.png[]
 +
 I've found that it's best to update both at the same time. This keeps expiration times consistent and means you only have to do this once per year instead of twice.
 +
-image::usage:reference:apns-setup/create-certificate.png[]
+image:ROOT:integrations:apns-setup/create-certificate.png[]
 
 . Click **Create Certificate**.
 
 . Upload the *CSR file* you created earlier. Click **Continue** after uploading the CSR.
 +
-image::usage:reference:apns-setup/csr-upload.png[]
+image:ROOT:integrations:apns-setup/csr-upload.png[]
 
 . After uploading the CSR, the Apple Developer Site will create the certificate and prompt you to download it. **Download the certificate.**
 +
 We're about to open it, so be sure to save it somewhere you can easily navigate to!
 +
-image::usage:reference:apns-setup/csr-download.png[]
+image:ROOT:integrations:apns-setup/csr-download.png[]
 
 == Exporting the p12
 
 [start=16]
 . In the Finder, navigate to the SSL certficate you just downloaded and double click to **open it in Keychain Access**.
 +
-image::usage:reference:apns-setup/open-in-finder.png[]
+image:ROOT:integrations:apns-setup/open-in-finder.png[]
 
 . You will be prompted to add the certificate to a keychain. Add it to the default **login** keychain, and click **Add** to continue.
 +
-image::usage:reference:apns-setup/add-to-keychain.png[]
+image:ROOT:integrations:apns-setup/add-to-keychain.png[]
 
 . After adding the certificate, in Keychain Access navigate to **My Certificates** at the top, and find the certificate you just added.
 +
 It will be named with the bundle id of the application you created the certificate for.
 +
-image::usage:reference:apns-setup/select-certificate.png[]
+image:ROOT:integrations:apns-setup/select-certificate.png[]
 
 . Select the certificate and go to menu:File[Export Items...] in the main menu. Ensure that you only selected one certificate!
 +
-image::usage:reference:apns-setup/export-menu.png[Keychain Export Menu, 500]
+image:ROOT:integrations:apns-setup/export-menu.png[Keychain Export Menu, 500]
 
 . You will be prompted to save the certificate. Ensure that the **File Format** is **Personal Information Exchange (.p12)**. No other file format is acceptable.
 +
 Save it to somewhere you can easily navigate to, because we will be uploading it to Teak shortly (you're almost done!)
 +
-image::usage:reference:apns-setup/export-settings.png[]
+image:ROOT:integrations:apns-setup/export-settings.png[]
 
 . You will be prompted to add an optional password to the exported items. I suggest leaving this blank. If you do enter a password, you will later have to enter the same password into Teak.
 +
-image::usage:reference:apns-setup/password.png[]
+image:ROOT:integrations:apns-setup/password.png[]
 
 == Uploading to Teak
 
@@ -127,15 +127,15 @@ Now that the p12 is saved, we just have to add it to Teak!
 [start=22]
 . In the https://app.teak.io[Teak Dashboard, window=_blank], navigate to menu:Settings[iOS] for your game, and click **Manage APNS Certificates**.
 +
-image::usage:reference:apns-setup/teak-settings.png[]
+image:ROOT:integrations:apns-setup/teak-settings.png[]
 
 . In the modal that appears, click **Choose p12 File** and select the p12 file you just exported. If you set a password for the p12 file, enter the password in the **Password (Optional)** field after selecting the p12.
 +
-image::usage:reference:apns-setup/teak-upload.png[]
+image:ROOT:integrations:apns-setup/teak-upload.png[]
 
 . Teak will show you information about the p12 you are adding. Confirm that the bundle id matches the bundle id for your game, and that the expiration date is in the future. If everything looks good, click **Save** to upload and use the p12.
 +
-image::usage:reference:apns-setup/teak-upload-done.png[]
+image:ROOT:integrations:apns-setup/teak-upload-done.png[]
 
 . **You're done!** I suggest repeating this process for the other environment (Sandbox or Production) now, while it's fresh in your mind. Note that you can upload as many certificates to a single Teak game as you need to, and you can upload the same certificate to multiple Teak games as well.
 

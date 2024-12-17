@@ -1,4 +1,6 @@
 = Frequently Asked Questions
+:page-aliases: usage:faq.adoc
+
 
 == Can Teak skip opening the app and take the player directly to a different destination?
 

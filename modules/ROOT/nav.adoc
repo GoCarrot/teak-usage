@@ -43,7 +43,7 @@
 // *** xref:user-guide:page$notifications.adoc[Overview]
 // *** Local Notifications
 // *** Content Guidelines
-// *** xref:reference:page$notification-markup.adoc[Text Markup]
+// *** xref:user-guide:page$notification-markup.adoc[Text Markup]
 // ** Web Push
 // *** Overview
 // *** Local Notifications
@@ -95,11 +95,11 @@ include::server-api::partial$nav-server-api.adoc[]
 ** xref:android:api:page$index.adoc[Android Native SDK Reference]
 
 * 3rd Party Integrations
-** xref:reference:page$apple-apns.adoc[Apple Push Notifications (APNs)]
-*** xref:reference:page$apple-apns-p8-migration.adoc[Migrating to APNs .p8]
-** xref:reference:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1)]
-** xref:reference:page$amazon-device-messaging.adoc[Amazon Device Messaging]
-** xref:reference:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
+** xref:integrations:page$apple-apns.adoc[Apple Push Notifications (APNs)]
+*** xref:integrations:page$apple-apns-p8-migration.adoc[Migrating to APNs .p8]
+** xref:integrations:page$firebase-fcm.adoc[Firebase Cloud Messaging (v1)]
+** xref:integrations:page$amazon-device-messaging.adoc[Amazon Device Messaging]
+** xref:integrations:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
 
 * xref::page$faq.adoc[FAQ]
 * Support

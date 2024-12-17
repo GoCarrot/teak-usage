@@ -88,7 +88,7 @@ This behavior can be overridden with Skip Game Open.
 
 For email only, there is an option to skip the game open when opening an Out of Game URL.
 
-When this option is enabled, the game will not be opened when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:user-guide:reference:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
+When this option is enabled, the game will not be opened when the link is tapped in an email. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:user-guide:page$notification-metrics.adoc#_email_returning_user[Returning User, window=_blank] for the email.
 
 ////
 == Advanced
