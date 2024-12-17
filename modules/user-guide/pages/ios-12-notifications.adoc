@@ -2,7 +2,7 @@
 :page-aliases: usage:reference:ios-12-notifications.adoc
 :!page-pagination:
 
-iOS 12 brings several new features to Local and Push Notifications.
+iOS 12 brought several new features to Local and Push Notifications.
 
 == Provisional Push Notifications
 

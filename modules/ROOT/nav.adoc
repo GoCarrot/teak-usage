@@ -24,13 +24,12 @@
 *** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
 ** xref:user-guide:page$notifications.adoc[Notifications]
 *** xref:user-guide:page$notification-content.adoc[Notification Content]
-*** xref:user-guide:page$ios-12-notifications.adoc[iOS 12 Notifications]
 *** xref:user-guide:page$notification-markup.adoc[Notification Text Markup]
 ** xref:user-guide:page$email.adoc[Email]
 ** xref:user-guide:page$custom-tags.adoc[Custom Tags]
 ** xref:user-guide:page$player-properties.adoc[Player Properties]
 ** xref:user-guide:page$scheduling.adoc[Scheduling]
-*** xref:user-guide:page$varied-recurring-messages.adoc[Creating a single Schedule with varied content]
+*** xref:user-guide:page$varied-recurring-messages.adoc[Varying Content in a Single Schedule]
 ** xref:user-guide:page$settings.adoc[Settings]
 
 // * [.default-open]#User Guide#
