@@ -1,4 +1,5 @@
 = Scheduling
+:page-aliases: usage:scheduling.adoc
 
 Teak is very adaptable, whatever your workflow. The more comfortable you get with the toolset, the faster you will settle into a routine. This guide is designed to prepare you for the final step: scheduling your message.
 

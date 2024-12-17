@@ -1,4 +1,5 @@
 = Settings
+:page-aliases: usage:settings.adoc
 
 Settings is where your engineering and marketing teams will be able to control many aspects of Teak. There are many things your engineering team will fill in or provide inputs for. This is covered in the technical implementation instructions. Items like IDs, Keys, Secrets, and Certificates will need to be up-to-date in order to successfully send messages and connect to your app.
 
@@ -20,13 +21,13 @@ If they have not used Teak in the past, they’ll be invited to sign up. If they
 . Select "Settings" on the left rail
 . In the "General" Tab, scroll about halfway down the page.
 
-Your engineering team can add Player Properties for many aspects of your game. These are separated into Strings (text) or Integers (numbers). 
+Your engineering team can add Player Properties for many aspects of your game. These are separated into Strings (text) or Integers (numbers).
 
 === Examples of Integers
 
 * Total number of currency
 * In-game Levels
-* Earned Experience. 
+* Earned Experience.
 
 === Examples of Strings
 
@@ -41,7 +42,7 @@ The ID you use to identify players within Teak can be entered into the "Find Pla
 
 == Disabling Notifications
 
-In the Notification tabs for iOS, Android, and Facebook you will find the option to Enable Notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages. 
+In the Notification tabs for iOS, Android, and Facebook you will find the option to Enable Notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages.
 
 == Email
 

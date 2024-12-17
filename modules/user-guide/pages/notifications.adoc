@@ -1,4 +1,5 @@
 = Notifications
+:page-aliases: usage:notifications.adoc
 
 Notifications allow you to reach players in the moment. Push Notifications are available on Amazon, Android, and iOS devices, while App-To-User Notifications are part of the Facebook desktop experience.
 

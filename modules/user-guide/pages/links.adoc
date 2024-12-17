@@ -1,4 +1,5 @@
 = Universal Links
+:page-aliases: usage:links.adoc
 
 Teak's Universal Links are URLs that take players to the game. They can launch the game on mobile devices and can have attached rewards for the player. These are useful for community building, social posts, customer support, and more.
 

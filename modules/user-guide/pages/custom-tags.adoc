@@ -1,4 +1,5 @@
 = Custom Tags
+:page-aliases: usage:custom-tags.adoc
 
 Tags are engaging personalization features that can be applied to all Message types. As you add Player Properties these become Audience Filter Options, as well as Tag options in your Messages.
 

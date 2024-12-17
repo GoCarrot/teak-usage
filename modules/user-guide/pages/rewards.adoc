@@ -1,4 +1,5 @@
 = Rewards
+:page-aliases: usage:rewards.adoc
 
 Rewards can be added to Links and Messages as an incentivization or prize. These may be personalized and customized for specific situations and applied using Audience criteria.
 

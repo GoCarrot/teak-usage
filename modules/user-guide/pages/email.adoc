@@ -1,4 +1,5 @@
 = Email
+:page-aliases: usage:email.adoc
 
 Email is set up in the same flow as Push Notifications. Click menu:Notifications[Email Tab, New Message] to create a new message. Make sure the *Email* option is checked.
 

@@ -1,4 +1,5 @@
 = Glossary
+:page-aliases: usage:glossary.adoc
 
 == Common Terms
 

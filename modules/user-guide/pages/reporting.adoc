@@ -1,4 +1,5 @@
 = Reporting
+:page-aliases: usage:reporting.adoc
 
 There are several ways to aggregate information for reporting in Teak.
 
@@ -42,4 +43,3 @@ Planning your names and descriptions to be search friendly can save you time whe
 == Exporting
 
 While in Table view, you may choose to download a .CSV of the visible data. There is a Download button to the left of the first column header. The data can then be aggregated further in your spreadsheet software of choice.
-

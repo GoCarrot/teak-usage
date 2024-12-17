@@ -1,4 +1,5 @@
 = Audiences
+:page-aliases: usage:audiences.adoc
 
 Creating Audiences is as simple as designating a single rule or as complex as triggering on specific behaviors to move players through a marketing funnel. You can create Audiences to distribute Messages to qualified players, to trigger specific Messages, or as segmentation for Tiered Rewarding.
 

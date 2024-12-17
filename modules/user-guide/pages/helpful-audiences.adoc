@@ -1,4 +1,5 @@
 = Helpful Audiences
+:page-aliases: usage:helpful-audiences.adoc
 
 There are many useful Audiences to get started. As you expand your marketing plan, here are some Audiences to provide some inspiration!
 
