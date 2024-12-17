@@ -155,7 +155,7 @@ Open Rate::
 Open Rate is opens / sends as a percentage.
 
 Clicks::
-A click is tracked when a player enters the game through a link in an email or clicks on the link in an email using an Out of Game URL with the xref:user-guide::page$email.adoc#_skip_game_open[Skip Game Open, window=_blank] option enabled.
+A click is tracked when a player enters the game through a link in an email or clicks on the link in an email using an Out of Game URL with the xref:ROOT:user-guide:page$email.adoc#_skip_game_open[Skip Game Open, window=_blank] option enabled.
 
 CTR::
 Email CTR is clicks / sends as a percentage.
@@ -167,7 +167,7 @@ Con. Receipt CTR::
 Confirmed Receipt CTR is clicks / confirmed receipts as a percentage.
 
 [[_email_returning_user]]Returning Users::
-Returning Users is the count of distinct players each day who entered the game either directly through the email, or within an hour of clicking on the link in an email with the xref:user-guide::page$email.adoc#_skip_game_open[Skip Game Open, window=_blank] option enabled. +
+Returning Users is the count of distinct players each day who entered the game either directly through the email, or within an hour of clicking on the link in an email with the xref:ROOT:user-guide:page$email.adoc#_skip_game_open[Skip Game Open, window=_blank] option enabled. +
 
 NOTE: If you are looking at a time period of, e.g. Jul 16, 2021 - Jul 29, 2021, and the same player clicked on the same {channel} on Jul 16 and Jul 17, they will be counted as two returning users for the overall metric.
 

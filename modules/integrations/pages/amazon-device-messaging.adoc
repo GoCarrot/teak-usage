@@ -41,4 +41,4 @@ Select menu:Android/Kindle Settings[] then select menu:Show[] for your app to vi
 
 image::adm-setup/api-key.png[]
 
-These values will be used for xref:unity::page$quickstart/unity-amazon-fire.adoc[Amazon configuration of the game client].
+These values will be used for xref:unity::page$unity-amazon-fire.adoc[Amazon configuration of the game client].
