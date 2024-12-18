@@ -1,3 +1,0 @@
-* xref:updates::page$product-email-2023.11.03.adoc[November: Linking out of Game, Deep Link UI, Opt-Out & more]
-* xref:updates::page$product-email-2023.12.14.adoc[December: QR Codes, New Metrics & more]
-* xref:updates::page$product-email-2024.02.13.adoc[February: Firebase Migration, Email Preview Text, & Putting Audiences in Audiences]
