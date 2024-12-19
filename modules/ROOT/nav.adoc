@@ -10,8 +10,7 @@
 // ** Managing Rewards
 // ** Analyzing Player Data
 
-// * xref:ROOT:user-guide:page$index.adoc[[.default-open]#User Guide#]
-* [.default-open]#User Guide#
+* xref:ROOT:user-guide:page$index.adoc[[.default-open]#User Guide#]
 ** xref:user-guide:page$glossary.adoc[Glossary]
 ** xref:user-guide:page$reporting.adoc[Reporting]
 *** xref:user-guide:page$dashboard-metrics.adoc[Dashboard Metrics]
@@ -33,7 +32,7 @@
 *** xref:user-guide:page$varied-recurring-messages.adoc[Varying Content in a Single Schedule]
 ** xref:user-guide:page$settings.adoc[Settings]
 
-// * [.default-open]#User Guide#
+// * User Guide
 // ** Quickstart
 // ** xref:user-guide:page$audiences.adoc[Audiences]
 // *** xref:user-guide:page$audiences.adoc[Overview]
@@ -90,9 +89,9 @@ include::unity::partial$nav-unity.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
 * SDK & API Reference
-** xref:unity:api:page$index.adoc[Unity SDK Reference]
-** xref:ios:api:page$index.adoc[iOS Native SDK Reference]
-** xref:android:api:page$index.adoc[Android Native SDK Reference]
+** xref:unity:api:page$class_teak.adoc[Unity SDK Reference]
+** xref:ios:api:page$interface_teak.adoc[iOS Native SDK Reference]
+** xref:android:api:page$classio_1_1teak_1_1sdk_1_1_teak.adoc[Android Native SDK Reference]
 
 * 3rd Party Integrations
 ** xref:integrations:page$apple-apns.adoc[Apple Push Notifications (APNs)]
