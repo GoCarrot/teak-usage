@@ -22,7 +22,7 @@ a|
 
 [.sidebarlink]
 ****
-xref:developers.adoc[*Developer Guide*] +
+xref:developer-quickstart.adoc[*Developer Guide*] +
 Integrate the Teak SDKs
 ****
 
@@ -30,7 +30,7 @@ a|
 
 [.sidebarlink]
 ****
-xref:developers.adoc[*Push Notification Quickstart*] +
+xref:unity::quickstart/hello-world.adoc[*Push Notification Quickstart*] +
 Creating and sending your first Push
 ****
 

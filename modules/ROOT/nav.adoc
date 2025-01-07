@@ -84,7 +84,7 @@
 // *** SDK5 Preview
 // *** Changelog
 
-* xref::page$developers.adoc[[.default-open]#Developer Guides#]
+* xref::page$developer-quickstart.adoc[[.default-open]#Developer Guides#]
 include::unity::partial$nav-unity.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
