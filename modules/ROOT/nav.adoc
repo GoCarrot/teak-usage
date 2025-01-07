@@ -22,7 +22,7 @@
 ** xref:user-guide:page$links.adoc[Universal Links]
 ** xref:user-guide:page$audiences.adoc[Audiences]
 *** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
-** xref:user-guide:page$notifications.adoc[Notifications]
+** xref:user-guide:page$notifications.adoc[Notifications & Messages]
 *** xref:user-guide:page$notification-content.adoc[Notification Content]
 *** xref:user-guide:page$notification-markup.adoc[Notification Text Markup]
 ** xref:user-guide:page$email.adoc[Email]
@@ -84,7 +84,7 @@
 // *** SDK5 Preview
 // *** Changelog
 
-* [.default-open]#Developer Guides#
+* xref::page$developers.adoc[[.default-open]#Developer Guides#]
 include::unity::partial$nav-unity.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
@@ -101,4 +101,4 @@ include::server-api::partial$nav-server-api.adoc[]
 ** xref:integrations:page$sendgrid-setup.adoc[Connecting SendGrid and Teak]
 
 * xref::page$faq.adoc[FAQ]
-* Support
+* xref::page$support.adoc[Support]

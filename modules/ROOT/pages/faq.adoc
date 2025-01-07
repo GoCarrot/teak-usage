@@ -2,6 +2,12 @@
 :page-aliases: usage:faq.adoc
 
 
+== How do I get access to an existing game?
+
+To access an existing game, first consult your internal team to ensure you’ve been granted access. If you don’t already have a Teak account, https://app.teak.io/login[*sign up*] using the company email address that was invited. Finally, if you’ve been invited but still don’t see the game, try refreshing your page.
+
+If you need to invite a team member, refer to xref:index.adoc[how to add users to a game].
+
 == Can Teak skip opening the app and take the player directly to a different destination?
 
 This functionality could be developed for email, however please note that if you want the player to receive a reward when tapping on the email, the game must launch. For Notifications, the app stores require that the specific app is opened directly from the notification.

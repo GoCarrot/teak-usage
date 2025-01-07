@@ -1,0 +1,46 @@
+= Support
+:!page-pagination:
+
+We’re committed to your success. The next sections explain how to get support and what to expect from our team.
+
+== Getting Help
+
+==== 1. *Check Documentation*
+
+Before reaching out, we recommend checking our documentation for answers to common questions. Please let us know
+
+==== 2. *Email Us*
+
+If you can’t find the answer you need in our documentation, feel free to reach out via email at mailto:team@teak.io[**team@teak.io**].
+
+To speed up the process, be sure to include:
+
+* A clear subject line summarizing your question or issue.
+* A detailed description of the problem you’re facing or the question you have.
+* Any relevant screenshots or error messages, as applicable.
+
+==== 3. *Response Time*
+
+* Expect an initial reply within 24 hours (Mon–Fri).
+* Our team is located in Pacific Time (GMT-8/-7).
+
+== Resources
+
+* *Company Slack Channel*
++
+You can request access to a shared Slack channel for your company where you and your team can reach out for support.
+
+* *Blog*
++
+Check https://teak.io/blog/[our blog] for updates, announcements, and best practices.
+
+* *Changelogs* +
+Keep track of updates and fixes.
+
+** xref:unity:changelog:page$changelog.adoc[Unity SDK Changelog]
+** xref:ios:changelog:page$changelog.adoc[iOS Native SDK Changelog]
+** xref:android:changelog:page$changelog.adoc[Android Native SDK Changelog]
+
+== We’re Here to Help
+
+If you’re stuck, or have feature requests, please contact mailto:team@teak.io[team@teak.io]. We appreciate your trust and look forward to assisting you.

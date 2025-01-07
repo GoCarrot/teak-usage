@@ -1,61 +1,19 @@
 = Teak User Guide
 
 Welcome! We know you’re excited to get started and this guide will assist you as you set up your first campaigns. So, let’s dig in and start setting up links, messages, emails, and more!
-////
-*Table of Contents*
 
-* Glossary
-* Reporting
-** Available Metrics
-** Analyzing
-** Exporting
-* Rewards
-** Items and Currency
-** Bundle Creation
-** Tiered Rewarding
-** Verifying Reward Collection
-* Links
-** Link Types
-** Link Creation
-* Audiences
-** Audience Creation by Rules
-** Filters
-** Audiences’ Associated Value
-** Audience Creation by Upload
-** Additional Exploration
-** Exporting Audiences and Linking to Facebook
-* Notifications
-** Push/App-to-User Creation
-** Formatting
-** Approximate Character Counts
-** Using Images
-** Rewards
-** Expiration
-** Advanced
-** Testing
-** Preview
-* Email
-** Email Creation
-** Formatting
-** Using Images
-** Rewards
-** Expiration
-** Testing
-** Advanced
-** Preview
-** Emails that can be replied to
+== Overview
 
-* Custom Tags
-* Scheduling
-** Schedule Creation
-** Attaching a Message
-** Additional Targeting
-** Sending
-* Settings
-** Adding Teak Users
-** Player Properties
-** Disabling Notifications
-** Email
-* Helpful Audiences
-* FAQ
-////
+Campaigns in Teak are structured around several key elements—*Schedules*, *Messages*, *Audiences*, *Rewards*, and *Universal Links*. These parts work together to build up complex campaigns and strategies:
+
+- xref:user-guide:page$scheduling.adoc[*Schedules*] define *when* and *how often* Messages go out. You can set one-time schedules for special events or recurring schedules for ongoing communication.
+
+- xref:user-guide:page$audiences.adoc[*Audience*] is the group of users targeted by each message. You can segment your audience to ensure the right people get the right messages.
+
+- xref:user-guide:page$notifications.adoc[*Messages*] are what your users receive. They can be sent via xref:user-guide:page$email.adoc[*Email*] or as *Push Notifications* on *Android*, *iOS*, *Web*, or *Facebook*.
+
+- xref:user-guide:page$rewards.adoc[*Rewards*] add extra value to Messages. Offering coins, exclusive content, or other perks can incentivize engagement and build loyalty.
+
+- xref:user-guide:page$links.adoc[*Universal Links*] can be created and shared on social media or in other online communities, helping you extend your reach and guide users directly to relevant content.
+
+This guide is structured to help you understand each of the pieces and how they fit together. When you combine these elements, you can create automated communication flows that reach the right players, at the right time, with the right incentives.

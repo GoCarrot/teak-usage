@@ -1,6 +1,7 @@
-= Welcome
+= Welcome!
 :page-aliases: /home/index.adoc
 :page-no-toc: true
+:!page-pagination:
 
 Teak is the CRM that understands free-to-play games. We give your team easy-to-use push notifications, effective emails, and shareable links that can all be rewarded. All this to give your players what they want the most: more playtime.
 
@@ -12,9 +13,8 @@ a|
 
 [.sidebarlink]
 ****
+xref:ROOT:user-guide:page$index.adoc[*User Guide*] +
 Setup and use the Teak Dashboard
-
-xref:ROOT:user-guide:page$index.adoc[*User Guide*]
 ****
 
 a|
@@ -22,68 +22,63 @@ a|
 
 [.sidebarlink]
 ****
+xref:developers.adoc[*Developer Guide*] +
 Integrate the Teak SDKs
-
-xref:developers.adoc[*Developer Guide*]
 ****
 
 a|
 
 [.sidebarlink]
 ****
+xref:developers.adoc[*Push Notification Quickstart*] +
+Creating and sending your first Push
+****
+
+a|
+
+[.sidebarlink]
+****
+xref:faq.adoc[*FAQ*] +
 Frequently Asked Questions
-
-xref:developers.adoc[*FAQ*]
-****
-
-a|
-
-[.sidebarlink]
-****
-Your First Push
-
-xref:developers.adoc[*Push Guide*]
 ****
 
 |===
 
 == Developer Quickstart
-Integrate the Teak SDKs
+Integrate the Teak SDK
 
-[cols="4", role="nav-table", frame="none", grid="none"]
+[cols="3", role="nav-table", frame="none", grid="none"]
 |===
 a|
 
-[.sidebarlink]
-****
+[.iconblock]
+====
+image::unity.svg[Unity Logo,50,xref=unity::page$quickstart/index.adoc]
 
-xref:developers.adoc[*Unity SDK*]
-****
-
-a|
-
-[.sidebarlink]
-****
-
-xref:developers.adoc[*iOS SDK*]
-****
+xref:unity::page$quickstart/index.adoc[*Unity SDK Quickstart*] +
+====
 
 a|
 
-[.sidebarlink]
-****
+[.iconblock]
+====
+image::terminal.svg[Server API Icon,50,xref=server-api::page$index.adoc]
 
-xref:developers.adoc[*Android SDK*]
-****
+xref:server-api::page$index.adoc[*Server API*]
+====
 
 a|
 
-[.sidebarlink]
-****
+[.iconblock]
+====
+image::support.svg[Server API Icon,50,xref=support.adoc]
 
-xref:developers.adoc[*Javascript SDK*]
-****
+xref::page$support.adoc[*Support*]
+====
 
 |===
+
+
+'''
 
 Last modified: **{docdatetime}**

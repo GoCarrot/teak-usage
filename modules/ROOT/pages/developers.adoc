@@ -1,95 +1,104 @@
-= Teak for Developers
+= Developer Quick Start
 :page-aliases: /home/developers.adoc
+:!page-pagination:
 
-== Quick Start
+If you just want to jump straight to the essentials, the links you need are all here.
 
-If you know where you're going already, and want to jump right in, here's your links.
+== Client SDKs
 
-=== Client Developers
+[cols="3", role="nav-table", frame="none", grid="none"]
+|===
+a|
 
-* xref:android::page$integration.adoc[Native Android]
-* xref:ios::page$integration.adoc[Native iOS]
-* xref:unity::page$quickstart/index.adoc[Unity]
+[.iconblock]
+====
+image::unity.svg[Unity Logo,50,xref=unity::page$quickstart/index.adoc]
 
-=== Server Developers
+xref:unity::page$quickstart/index.adoc[*Unity SDK Quickstart*] +
+====
 
-If you're a server developer that needs to implement the reward endpoint, here's what you need:
+a|
 
-* xref:server-api::page$rewards/endpoint.adoc[Reward Endpoint]
+[.iconblock]
+====
+image::appstore.svg[iOS Logo,50,xref=ios::page$integration.adoc]
+
+xref:ios::page$integration.adoc[*iOS Native SDK*]
+====
+
+a|
+
+[.iconblock]
+====
+image::android.svg[Android Logo,50,xref=android::page$integration.adoc]
+
+xref:android::page$integration.adoc[*Android Native SDK*]
+====
+
+|===
+
+
+== Server API
+While most Teak features are handled by the client, some features require server integrations. We recommend starting with the xref:server-api::page$rewards/endpoint.adoc[*Reward Endpoint*] (because players love free coins), and then exploring the xref:server-api::page$index.adoc[*Server API Overview*] for a complete look at all backend offerings.
 
 == Before You Start
 
-Before you start working with Teak there's a few things you'll want to have ready to streamline the process.
+Before you begin integrating Teak into your project, make sure you have:
 
-== Your Game
+1. **A game project** (iOS, Android, or Facebook).
+2. **The ability to test new builds** on devices or simulators/emulators.
+3. **Access to logs** (device console or Unity console) so you can review Teak debugging output.
 
-You'll need a game to integrate, on iOS, Android or Facebook and a way to test new builds of it. A great deal of debugging information is written to the log window, so you'll want to make sure you can look at the device log.
+== Preparing Your Game
 
-=== Unity Pre-Requisites
+Depending on your platform and tooling, here are some key setup points before diving into Teak-specific integrations.
 
-If you build your game using Unity you will need to be able to do a few things for Android projects.
+=== If You Use Unity
 
-NOTE: If your Unity-based game is iOS only you can safely skip this section.
+* You only need the *Unity SDK*
+* Start with xref:unity::page$quickstart/index.adoc[Getting Started with Teak in Unity]
+* Or jump straight to the installation steps: xref:unity::quickstart/install-sdk.adoc[Install the Teak SDK in Unity]
 
-==== Android
+=== If You Use Native iOS
 
-If your game is available on Android, you will need some way to add things to an Android Manifest. This is frequently done in one of two ways:
+* Be prepared to modify your `Info.plist`.
+* Know how to add dependencies (frameworks, libraries) in Xcode.
+* Download the latest iOS Native SDK
+** http://sdks.teakcdn.com/ios/Teak.framework.zip
+** http://sdks.teakcdn.com/ios/TeakResources.bundle.zip
+* For full setup details, see xref:ios::page$integration.adoc[Integrating Teak on Native iOS].
 
-* A manifest that is located at `Assets/Plugins/Android/AndroidManifest.xml`
-* A manifest that is merged in by a custom Gradle build
+=== If You Use Native Android
 
-You will also need a way to add dependencies to your project. This is frequently done in one of two ways:
-
-* Using the  xref:unity::page$play-services-resolver.adoc[External Dependency Manager for Unity, window=_blank]
-* A custom Gradle build that contains dependencies in the project's Gradle file.
-
-=== Unity Integration
-
-Finally, here's everything you need for xref:unity::page$quickstart/index.adoc[Teak Integration in the Unity Editor].
-
-=== Native iOS
-
-If you are building a native iOS game, you will need to be able to:
-
-* Add things to your `Info.plist`
-* Add dependencies to your project
-
-Both of these are easily accomplished inside Xcode.
-
-Here's the rest of what you need for xref:ios::page$integration.adoc[Integrating Teak on Native iOS].
-
-=== Native Android
-
-If you are building a native Android game, you will need to be able to:
-
-* Add things to your `AndroidManifest.xml`
-* Add dependencies to your `build.gradle`
-
-Both of these are easily accomplished via Android Studio or a text editor.
-
-Here's the rest of what you need for xref:android::page$integration.adoc[Integrating Teak on Native Android].
+* Be prepared to modify your `AndroidManifest.xml`.
+* Know how to add dependencies to your `build.gradle`.
+* Download the latest Android Native SDK
+** http://sdks.teakcdn.com/android/teak.aar
+* For full setup details, see xref:android::page$integration.adoc[Integrating Teak on Native Android].
 
 == Push Credentials
 
-Push notifications are a core part of Teak's functionality. In order to streamline testing push notifications, there are a few things that you can collect ahead of time.
+Push notifications are a core part of Teak. Collecting the following credentials in advance will streamline your integration and testing.
 
 === iOS
-
-On iOS you will need the following:
-
-* A Mac
-* An account on the https://developers.apple.com[Apple Developer Site, window=_blank] with access to your game
-
-Follow these instructions to get the credentials for sending push notifications on iOS devices: xref:ROOT:integrations:page$apple-apns.adoc[Apple Push Notification Service Certificates].
+- A Mac and an Apple Developer account.
+- Follow xref:ROOT:integrations:page$apple-apns.adoc[Apple Push Notification Service Certificates] to gather the required credentials.
 
 === Android
-
-On Android you will need an account on the https://console.firebase.google.com/[Firebase Console, window=_blank] with access to your game.
-
-Follow these instructions to get the credentials for sending push notifications on Android devices xref:ROOT:integrations:page$firebase-fcm.adoc[Finding your Android Push Credentials on Firebase]
+- Access to your game in the https://console.firebase.google.com/[Firebase Console, window=_blank].
+- Follow xref:ROOT:integrations:page$firebase-fcm.adoc[Finding your Android Push Credentials on Firebase] to retrieve the required configuration for FCM.
 
 === Amazon Devices
+- Access to your game in the https://developer.amazon.com/home.html[Amazon Developer Console, window=_blank].
+- Follow the xref:ROOT:integrations:page$amazon-device-messaging.adoc[Finding your Amazon Device Messaging Credentials] to set up the required credentials.
 
-On Amazon you will need an account on the https://developer.amazon.com/home.html[Amazon Developer Console, window=_blank] with access to your game.
+== Next Steps
 
-Follow these instructions to get the credentials for sending push notifications on Anazon devices xref:ROOT:integrations:page$amazon-device-messaging.adoc[Finding your Amazon Device Messaging Credentials]
+Here’s a quick recap:
+
+1. **Pick Your Platform** and follow the relevant integration guide:
+   - Unity → xref:unity::page$quickstart/index.adoc[]
+   - Native iOS → xref:ios::page$integration.adoc[iOS Native Integration]
+   - Native Android → xref:android::page$integration.adoc[iOS Native Integration]
+2. **Secure Your Push Credentials** for iOS, Android, and/or Amazon devices.
+3. **Implement Reward Endpoint** if you are responsible for server-side integrations.
