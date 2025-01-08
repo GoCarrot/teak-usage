@@ -7,11 +7,11 @@ We’re committed to your success. The next sections explain how to get support 
 
 ==== 1. *Check Documentation*
 
-Before reaching out, we recommend checking our documentation for answers to common questions. Please let us know
+Before reaching out, we recommend checking our documentation for answers to common questions.
 
 ==== 2. *Email Us*
 
-If you can’t find the answer you need in our documentation, feel free to reach out via email at mailto:team@teak.io[**team@teak.io**].
+If you can’t find the answer you need, feel free to reach out via email at mailto:team@teak.io[**team@teak.io**].
 
 To speed up the process, be sure to include:
 
