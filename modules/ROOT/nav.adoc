@@ -89,9 +89,9 @@ include::unity::partial$nav-unity.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
 * SDK & API Reference
-** xref:unity:api:page$class_teak.adoc[Unity SDK Reference]
-** xref:ios:api:page$interface_teak.adoc[iOS Native SDK Reference]
-** xref:android:api:page$classio_1_1teak_1_1sdk_1_1_teak.adoc[Android Native SDK Reference]
+** xref:unity:api:page$classTeak.adoc[Unity SDK Reference]
+** xref:ios:api:page$interfaceTeak.adoc[iOS Native SDK Reference]
+** xref:android:api:page$classio_1_1teak_1_1sdk_1_1Teak.adoc[Android Native SDK Reference]
 
 * 3rd Party Integrations
 ** xref:integrations:page$apple-apns.adoc[Apple Push Notifications (APNs)]
