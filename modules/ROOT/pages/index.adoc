@@ -11,36 +11,44 @@ Teak is the CRM that understands free-to-play games. We give your team easy-to-u
 |===
 a|
 
-[.sidebarlink]
-****
+[.iconblock]
+====
+image::book.svg[Guide Icon,50,xref=ROOT:user-guide:page$index.adoc]
+
 xref:ROOT:user-guide:page$index.adoc[*User Guide*] +
 Setup and use the Teak Dashboard
-****
+====
 
 a|
 
 
-[.sidebarlink]
-****
+[.iconblock]
+====
+image::piratebook.svg[Dev Guide Icon,50,xref=developer-quickstart.adoc]
+
 xref:developer-quickstart.adoc[*Developer Guide*] +
 Integrate the Teak SDKs
-****
+====
 
 a|
 
-[.sidebarlink]
-****
-xref:unity::quickstart/hello-world.adoc[*Push Notification Quickstart*] +
-Creating and sending your first Push
-****
+[.iconblock]
+====
+image::question.svg[FAQ Icon,50,xref=faq.adoc]
 
-a|
-
-[.sidebarlink]
-****
-xref:faq.adoc[*FAQ*] +
+xref:ROOT::faq.adoc[*FAQ*] +
 Frequently Asked Questions
-****
+====
+
+a|
+
+[.iconblock]
+====
+image::medic.svg[Support Icon,50,xref=support.adoc]
+
+xref:ROOT::support.adoc[*Support*] +
+Get help from the Teak team
+====
 
 |===
 
@@ -71,9 +79,9 @@ a|
 
 [.iconblock]
 ====
-image::support.svg[Server API Icon,50,xref=support.adoc]
+image::tools.svg[Tool Icon,50,xref=developer-quickstart.adoc#_client_sdks]
 
-xref::page$support.adoc[*Support*]
+xref:ROOT::page$developer-quickstart.adoc#_client_sdks[*Other SDKs*]
 ====
 
 |===
