@@ -47,7 +47,7 @@ a|
 image::medic.svg[Support Icon,50,xref=support.adoc]
 
 xref:ROOT::support.adoc[*Support*] +
-Get help from the Teak team
+Get help from the Teak Team
 ====
 
 |===
@@ -89,4 +89,5 @@ xref:ROOT::page$developer-quickstart.adoc#_client_sdks[*Other SDKs*]
 
 '''
 
-Last modified: **{docdatetime}**
+[.align-center]
+©{docyear} Teak.io
