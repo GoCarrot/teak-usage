@@ -10,7 +10,7 @@ Once these steps are successfully completed, you can begin sending Notifications
 == Push/App-to-User Creation
 
 . Select "Notifications" on the left rail
-. Under the "Messages" Tab, choose "New Message"
+. Select one of the platform Tabs and choose "New Message"
 . Name the Message and select the platforms you want to send to
 .. You will see Email as a platform option. At the time you create your schedule, you will be able to prioritize platforms, however, Email does not use the same logic as Push or A2U and should be scheduled separately.
 . Create your Message(s). You can use Emojis and several Custom Tags which are available by selecting the "@" icon in the text box. There are limited options provided out of the box with Teak. For additional options, use Player Properties.
