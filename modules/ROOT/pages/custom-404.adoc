@@ -1,0 +1,6 @@
+= Oh No!
+:page-no-toc: true
+
+The page you’re looking for does not exist. It may have been moved. You can return to the xref:index.adoc[start page], or follow one of the links in the navigation to the left.
+
+If you arrived on this page by clicking on a link, please mailto:team@teak.io[let us know] that the link is broken. If you typed the URL of this page manually, please double check that you entered the address correctly.
