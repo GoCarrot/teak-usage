@@ -1,0 +1,15 @@
+= Newsletters
+:page-no-toc: true
+:page-aliases: newsletters:effective-subject-lines.adoc, newsletters:product-email-2023.11.03.adoc, newsletters:product-email-2023.12.14.adoc, newsletters:product-email-2024.02.13.adoc, newsletters:product-email-2024.02.26.adoc
+
+== Newsletters and Product Updates have moved.
+
+If you are seeing this, you're probably trying to find one of these articles that used to live here:
+
+* https://teak.io/blog/2024/02/26/product-update/[Segmenting, Table View Updates, and a Pixel Art Coin]
+* https://teak.io/blog/2024/02/19/engaging-email-subject-lines/[What Goes Into an Effective Email Subject Line?]
+* https://teak.io/blog/2024/01/29/firebase-migration-email-preview-text-putting-audiences-in-audiences-january-product-update/[Firebase Migration, Email Preview Text, & Putting Audiences in Audiences]
+* https://teak.io/blog/2023/12/14/teak-product-updates-qr-codes-new-metrics-more-december-product-updates/[Teak Product Updates: QR Codes, New Metrics & more]
+* https://teak.io/blog/2023/11/03/linking-out-of-game-deep-link-ui-opt-out-more-november-product-updates/[Linking out of Game, Deep Link UI, Opt-Out & more.]
+
+You can subscribe to the newsletter and find tips, tricks, and product updates on the https://teak.io/blog[**Teak Blog**].
