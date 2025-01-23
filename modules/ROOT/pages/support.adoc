@@ -5,11 +5,11 @@ We’re committed to your success. The next sections explain how to get support 
 
 == Getting Help
 
-==== 1. *Check Documentation*
+=== 1. *Check Documentation*
 
 Before reaching out, we recommend checking our documentation for answers to common questions.
 
-==== 2. *Email Us*
+=== 2. *Email Us*
 
 If you can’t find the answer you need, feel free to reach out via email at mailto:team@teak.io[**team@teak.io**].
 
@@ -19,7 +19,7 @@ To speed up the process, be sure to include:
 * A detailed description of the problem you’re facing or the question you have.
 * Any relevant screenshots or error messages, as applicable.
 
-==== 3. *Response Time*
+=== 3. *Response Time*
 
 * Expect an initial reply within 24 hours (Mon–Fri).
 * Our team is located in Pacific Time (GMT-8/-7).
