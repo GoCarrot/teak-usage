@@ -1,6 +1,12 @@
-= Oh No!
+= Oh No!  .( •᷄ࡇ•᷅ ;)
 :page-no-toc: true
 
-The page you’re looking for does not exist. It may have been moved. You can return to the xref:index.adoc[start page], or follow one of the links in the navigation to the left.
+== Page Not Found (404)
 
-If you arrived on this page by clicking on a link, please mailto:team@teak.io[let us know] that the link is broken. If you typed the URL of this page manually, please double check that you entered the address correctly.
+The page you’re looking for is not here anymore. Maybe it used to be, though.
+
+* If you arrived on this page by clicking on a link, please mailto:team@teak.io[**let us know**] that the link is broken.
+* If you typed the URL of this page manually, please double check that you entered the address correctly.
+* Maybe you can find it in the nav on the left? ¯\\_(ツ)_/¯
+
+If all else fails, return to the xref:index.adoc[**start page**] or xref:support.adoc[**contact support**].
