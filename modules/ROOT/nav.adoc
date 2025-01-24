@@ -86,12 +86,14 @@
 
 * xref::page$developer-quickstart.adoc[[.default-open]#Developer Guides#]
 include::unity::partial$nav-unity.adoc[]
+include::javascript::partial$nav-javascript.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
 * SDK & API Reference
 ** xref:unity:api:page$class_teak.adoc[Unity SDK Reference]
 ** xref:ios:api:page$interface_teak.adoc[iOS Native SDK Reference]
 ** xref:android:api:page$classio_1_1teak_1_1sdk_1_1_teak.adoc[Android Native SDK Reference]
+** xref:javascript:reference:page$class_teak.adoc[JavaScript SDK Reference]
 
 * 3rd Party Integrations
 ** xref:integrations:page$apple-apns.adoc[Apple Push Notifications (APNs)]
