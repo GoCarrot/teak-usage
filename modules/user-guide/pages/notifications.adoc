@@ -74,6 +74,7 @@ image::notifications/anatomy/annotated/android-ios-style-message.png[]
 .A large/expanded Android iOS Style notification
 image::notifications/anatomy/annotated/android-ios-style-expanded.png[]
 
+[[android_web_push_style]]
 ==== Web Push Style
 
 1. Title
