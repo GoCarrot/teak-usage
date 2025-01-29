@@ -70,7 +70,7 @@ The Desktop Links panel is where you configure a URL you want the browser to ope
 
 === Web Push Configuration
 
-The Web Push Configuration panel is where you configure details specific to Web Push. Here you can upload an image to be used as the xref:ROOT:user-guide:page$notifications.adoc#android_web_push_style[badge] for Web Push notifications sent to Android devices. An image for a badge should be a single-color PNG with transparency (alpha channel). The recommended size is 96x96 pixels.
+The Web Push Configuration panel is where you configure details specific to Web Push. Here you can upload an image to be used as the xref:ROOT:user-guide:page$notification-content.adoc#android_web_push_style[badge] for Web Push notifications sent to Android devices. An image for a badge should be a single-color PNG with transparency (alpha channel). The recommended size is 96x96 pixels.
 
 == iOS
 
