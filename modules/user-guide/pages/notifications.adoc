@@ -7,6 +7,8 @@ These platforms must be integrated by your development team and the Settings upd
 
 Once these steps are successfully completed, you can begin sending Notifications directly to players. You may create single Messages that can be sent across platforms, while customizing for their unique requirements.
 
+TIP: For a comprehensive look at *how notifications are displayed on different platforms*, see our xref:ROOT:user-guide:page$notification-content.adoc[*Notification Content Guidelines*].
+
 == Push/App-to-User Creation
 
 . Select "Notifications" on the left rail
@@ -19,7 +21,9 @@ Once these steps are successfully completed, you can begin sending Notifications
 
 == Formatting
 
-All platforms allow for emojis and Custom Tags.
+All platforms allow for emojis, Custom Tags, and stylized Unicode text. We suggest using https://texteditor.com/font-converter/[TextEditor] to stylize your text, which can then be pasted into Teak's message editor.
+
+Each platform also has certain platform specific formatting options.
 
 Facebook::
 Native support to display and format player names as they appear on the Facebook platform
@@ -28,7 +32,7 @@ Mobile::
 Any players who have their Facebook account linked to your game can use the same native naming personalizations as the Facebook platform. You may also supply data from other 3rd party connections that Teak can ingest. However, in the event that up you do not have information on the player, a personalized name will not be displayed. This can be solved by using the ``{{first_name|default:"Hey Pal"}}`` Tag. Simply replace ``Hey Pal`` with the default text you wish to appear. Some other helpful tags are outlined in the Custom Tags section.
 
 Android Text Formatting (Including applicable Amazon devices)::
-In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The xref:user-guide:page$notification-markup.adoc[Android Notification Text Markup documentation] will help you set up messages using this feature.
+In addition to tags and emojis, native Android supports additional formatting using HTML Lite. The xref:user-guide:page$notification-markup.adoc#_android[Android Notification Text Markup documentation] will help you set up messages using this feature.
 
 == Approximate Character Counts
 
@@ -48,6 +52,13 @@ iOS Message Body::
 Android Message Body::
 120 Displayed Characters Recommended. 160 Characters Allowed. +
 If you are only utilizing text and emojis, or if your tags greatly extend the length of your message, some Android Operating Systems may still truncate your Message. Since the Markup is included in your Character Limit, feel free to use the full 160 Characters to account for these non-displayed characters.
+
+Web Push Title::
+26 Characters on most platforms. 12 characters on Android.
+
+Web Push Message::
+86 Characters on most platforms. 26 characters on Android, 32 characters on Windows.
+
 
 == Rich Push
 
@@ -69,6 +80,9 @@ Add a CTA to your message with a Button. These can be excellent engagement tools
 
 === iOS
 
+Thumbnail Icon Size::
+96x96 pixel or larger square .jpg or .png. Transparency in PNGs will be respected. All players will see this image on the notification, and we recommend making it a clear call to action.
+
 Animated Gifs::
 Animated gif images will play, and loop, automatically.
 
@@ -80,6 +94,15 @@ This can help to create a gamified feel or be more engaging without adding to th
 
 Buttons::
 In addition to adding CTA Buttons, you can create a more engaging experience with Interactive Buttons. Adding an interactive element allows players to trigger a video experience with each button click.
+
+=== Web Push
+With Web Push you can include a thumbnail icon shown on the right of the notification for macOS, Windows, and Android. Android additionally supports an Expanded View image. Due to OS limitations, rich media is not supported when using Web Push with iOS devices.
+
+Thumbnail Icon Size::
+132x132 pixel .jpg or .png. Transparency in PNGs will be respected. On most platforms all players will see this image on the notification, and we recommend making it a clear call to action.
+
+Expanded View Size::
+1,700x850 pixel .jpg or .png that will be displayed when the player expands the Notification. The entire area is safe for content. Some Android Operating systems will not display the content if it is too large. You can adjust the size of the media to 850x150 pixels which should eliminate this issue.
 
 == Rewards
 

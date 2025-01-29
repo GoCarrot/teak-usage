@@ -6,7 +6,7 @@ If you just want to jump straight to the essentials, the links you need are all 
 
 == Client SDKs
 
-[cols="3", role="nav-table", frame="none", grid="none"]
+[cols="2", role="nav-table", frame="none", grid="none"]
 |===
 a|
 
@@ -15,6 +15,15 @@ a|
 image::unity.svg[Unity Logo,50,xref=unity::page$quickstart/index.adoc]
 
 xref:unity::page$quickstart/index.adoc[*Unity SDK Quickstart*] +
+====
+
+a|
+
+[.iconblock]
+====
+image::javascript.svg[Javascript Logo,50,xref=javascript::page$quickstart/index.adoc]
+
+xref:javascript::page$quickstart/index.adoc[*Javascript SDK Quickstart*]
 ====
 
 a|
@@ -98,6 +107,7 @@ Here’s a quick recap:
 
 1. **Pick Your Platform** and follow the relevant integration guide:
    - Unity → xref:unity::page$quickstart/index.adoc[]
+   - Javascript → xref:javascript::page$quickstart/index.adoc[]
    - Native iOS → xref:ios::page$integration.adoc[iOS Native Integration]
    - Native Android → xref:android::page$integration.adoc[iOS Native Integration]
 2. **Secure Your Push Credentials** for iOS, Android, and/or Amazon devices.

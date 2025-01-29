@@ -3,33 +3,41 @@
 
 Settings is where your engineering and marketing teams will be able to control many aspects of Teak. There are many things your engineering team will fill in or provide inputs for. This is covered in the technical implementation instructions. Items like IDs, Keys, Secrets, and Certificates will need to be up-to-date in order to successfully send messages and connect to your app.
 
-== Adding Teak Users
+== General
+
+=== Team
+
+The Team panel is where you manage which members of your team have access to Teak for the current game.
+
+==== Adding Teak Users
 
 There are many reasons people may need access to Teak. Some may only need it on QA, Staging, or other non-production environments. Others who need to create Messages or Links will need live environment access. Coming up with an internal plan will help determine where to add users so they can successfully do their job, but not provide unnecessary access to production. There are no limits on the number of users you can have, and there are no access tiers, so it’s important to groom the list as user needs change.
 
-=== To add a user
+==== To add a user
 
 . Select "Settings" on the left rail
 . Within the "General" Tab, you may invite users via Email.
 
 If they have not used Teak in the past, they’ll be invited to sign up. If they are already a user on any app with the invited email address, then they will simply find a new environment available when they log in.
 
-== Player Properties
+=== Custom Player Properties
 
-=== Accessing Custom Player Properties
+The Custom Player Properties panel is where you manage the xref:ROOT:user-guide:page$player-properties.adoc[player properties] reported by your game, and can look up the currently set player property values for a player.
+
+==== Accessing Custom Player Properties
 
 . Select "Settings" on the left rail
 . In the "General" Tab, scroll about halfway down the page.
 
 Your engineering team can add Player Properties for many aspects of your game. These are separated into Strings (text) or Integers (numbers).
 
-=== Examples of Integers
+==== Examples of Integers
 
 * Total number of currency
 * In-game Levels
 * Earned Experience.
 
-=== Examples of Strings
+==== Examples of Strings
 
 * Player Nickname
 * Name of the last in-game location visited
@@ -37,12 +45,77 @@ Your engineering team can add Player Properties for many aspects of your game. T
 
 The name used in the code can be entered here, and then it can be used as an Audience Rule or Tag within a Message.
 
-=== Player Profile
+==== Find Player Profile
 The ID you use to identify players within Teak can be entered into the "Find Player Profile" section. This will show you the properties for that specific player. This can be useful to verify information is being sent correctly, or even as a Customer Service tool.
 
-== Disabling Notifications
+== Facebook & Desktop Web
 
-In the Notification tabs for iOS, Android, and Facebook you will find the option to Enable Notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages.
+The Facebook & Desktop Web section is where you manage settings for:
+
+- Facebook Canvas A2U Notifications
+- Personalization for Facebook connected players
+- The destination for xref:ROOT:user-guide:page$links.adoc[Links] which are clicked by players on desktop
+- The destination for Web Push notifications sent on all platforms
+- The Web Push badge which is used when a Web Push is sent to an Android device
+
+=== Facebook App
+
+The Facebook App panel is where you can control if Facebook Canvas A2U Notification should be sent, and configure your Facebook application for sending Facebook Canvas A2U notifications and personalizing notification and email content for Facebook connected players.
+
+If you have a Facebook application and your game allows players to connect with Facebook, enter the Facebook App ID and Facebook App Secret for your application and save your settings. This will allow Teak to use xref:ROOT:user-guide:page$custom-tags.adoc#_facebook_tags[Facebook Personalization Tags] in notification and email content.
+
+=== Desktop Links
+
+The Desktop Links panel is where you configure a URL you want the browser to open when your links are clicked on desktop computers or when a Web Push is clicked on any platform. An entry is required for Facebook notifications, xref:ROOT:user-guide:page$links.adoc[Links], xref:ROOT:user-guide:page$email.adoc[Email], and Web Push.
+
+=== Web Push Configuration
+
+The Web Push Configuration panel is where you configure details specific to Web Push. Here you can upload an image to be used as the xref:ROOT:user-guide:page$notification-content.adoc#android_web_push_style[badge] for Web Push notifications sent to Android devices. An image for a badge should be a single-color PNG with transparency (alpha channel). The recommended size is 96x96 pixels.
+
+== iOS
+
+The iOS section is were you manage settings for:
+
+- Sending iOS Push Notifications
+- Which App Store page to take players to when they click on a xref:ROOT:user-guide:page$links.adoc[Link] on an iOS device and do not have the game installed
+
+=== General
+
+In the General panel you can enable or disable iOS notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages.
+
+=== Apple Push Notification service (APNs)
+
+In this section you can configure the required xref:ROOT:integrations:page$apple-apns.adoc[Apple Push Notification service credential] for sending iOS Push notifications.
+
+=== Universal Links
+
+In this section you can configure the iTunes Product ID for your application on iOS. When a player taps on a Link on an iOS device and does not have your application installed, they will be taken to the store page for the configured iTunes Product ID.
+
+== Android
+
+The Android section is were you manage settings for:
+
+- Sending Android Push Notifications
+- Sending Amazon Fire Notifications
+- Which Play Store page to take players to when they click on a xref:ROOT:user-guide:page$links.adoc[Link] on an Android device and do not have the game installed
+
+=== General
+
+In the General panel you can enable or disable Android notifications. Unchecking this box will stop all messaging from that channel from being sent. This can be helpful if there are outages or issues and is an alternative to canceling or pausing individual messages.
+
+=== Firebase Cloud Messaging (FCM)
+
+In this section you can configure the required xref:ROOT:integrations:page$firebase-fcm.adoc[Firebase Cloud Messaging] for sending Android Push notifications.
+
+=== Android App Links
+
+In this section you can configure the Android Package Name for your application on Android. When a player taps on a Link on an Android device and does not have your application installed, they will be taken to the store page for the configured Android Package Name.
+
+In this section you can also configure your Android Certificate Fingerprints. These are values retrieved from the certificate used to sign your APK before submitting it to the play store, and are required to enable Universal Linking on Android.
+
+=== Amazon Fire
+
+In this section you can configure the required xref:ROOT:integrations:page$amazon-device-messaging.adoc[Amazon Device Messaging] for sending push notifications to Amazon Fire devices.
 
 == Email
 
