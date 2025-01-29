@@ -175,7 +175,7 @@ image::notifications/anatomy/annotated/macos-web.png[]
 
 === Chrome on Windows
 
-Chrome for Windows supports an expanded view. The expanded view will be expanded on delivery.
+Chrome for Windows supports an expanded view. The expanded view will be shown on delivery.
 
 [cols="a"]
 |===
