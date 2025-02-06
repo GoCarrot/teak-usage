@@ -4,6 +4,7 @@
 
 Navigating cross platform messaging is not a easy task. Each platform supports different fields and different display formats. This guide will show you examples of how notifications are displayed on the most common platforms, so you can understand what works and what to expect on each.
 
+[[anatomy]]
 == Anatomy of a Notification
 
 Teak provides a distinct editor for each platform, allowing you to adjust content based on platform-specific requirements. We'll cover the different fields used by each platform, such as title, message, image, and action buttons, and explain how each is displayed in the notification.
@@ -41,6 +42,7 @@ On iOS, there are two views, default and expanded. All notifications are intiall
 
 On Android, Teak offers 2 different layouts: Default and 'iOS Style'. Each of these has a standard view and an expanded view as well.
 
+[[anatomy_android_default]]
 === Default Android Layout
 
 On Android, default notifications can be text, or a full width image.
@@ -69,6 +71,7 @@ image::notifications/anatomy/annotated/android-banner.png[]
 |===
 
 
+[[anatomy_android_ios]]
 === Android 'iOS Style' Layout
 
 Teak also offers a custom Android notifications layout that is designed to look like the iOS notification with a thumbnail. This is useful when you want to reuse the same art assets across both platforms.
