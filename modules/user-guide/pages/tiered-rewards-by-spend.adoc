@@ -1,0 +1,89 @@
+= How to Tier Rewards by Spend
+
+Personalizing rewards is a powerful way to increase click through rates and engagement for your most valuable players. This guide will walk you through modifying a push notification or email in order to give a larger reward to players who spend more. We'll additionally set this up as an A/B test, so that you can measure and validate the lift from personalization rewards.
+
+== Prerequisites
+
+* [x] A push notification or email which gives the player a reward
+
+== Creating a Tiered Reward Bundle
+
+We'll start by duplicating and modifying the Reward Bundle currently attached to the push notification.
+
+[TIP]
+.You can quickly duplicate the Reward Bundle by clicking the icon next it it in the selector.
+====
+[.newsletter-img]
+image::tiered-rewards-by-spend/dup-bundle-cropped.png[]
+====
+
+All Reward Bundles are automatically tiered. Initially, the bundle only contains a single audience tier, the default "All claimants" audience which will match all players who did not match any other audience.
+
+To add another reward tier to the bundle, click "Add Reward Tier". This will add a new section to the Bundle which allows you to select an Audience and modify the reward for claimants in that audience.
+
+First, we'll create an audience that targets players who have spent at least $100 in the past 30 days.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/30d_gt_100.png[]
+
+After saving this audience, we can change how many coins players in that audience should receive when they claim this reward. Since these are significant spenders, let's give them a 10x larger reward.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/bundle-two-tier.png[]
+
+Now, let's add another reward tier for players who spent at all. Click "Add Reward Tier" again, and this time create an audience which targets players who have made any purchase in the past 30 days.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/any-purchase.png[]
+
+Again let's adjust how many coins these players will get. In this case, let's give them a 2x larger reward.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/bundle-3-tier.png[]
+
+[TIP]
+.Reward Tiers are checked in order
+====
+When deciding what reward a player should get, Teak will evaluate each tier in order. Here, this means that players who spent more than $100 will receive 50,000,000 coins. Only players who haven't spent more than $100 will be checked for the second reward tier of 10,000,000 coins. This is why the second audience does not need to specify that it is for players who spent less than $100.
+====
+
+== Personalizing the Message Content
+
+A tiered reward won't do you any good if the player doesn't know that they're getting a bigger reward! We can use xref:custom-tags.adoc[a custom tag] to template how many coins the player will get directly into the notification.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/template-reward-cropped.png[]
+
+[IMPORTANT]
+.Always Tell the Player Exactly What They'll Get
+====
+Remember, if you don't tell the player that they get a reward for tapping, and what that reward is, they won't know! We've seen that telling a player that they will get a reward for tapping can increase click through rates by up to 50%, and telling the player exactly what the reward is can increase click through rates by another 20%.
+====
+
+== A/B Testing the Reward
+
+We can measure what kind of uplift tiering our rewards gets by running an A/B test. To configure this Message as an A/B test, click the "Create A/B Test" button. Teak will automatically copy the current configuration into a new variant for adjustment.
+
+In this case, we only want to test if offering spenders a larger reward increases their CTR. To test that, we want to reconfigure the B variant to use a tiered reward bundle with the same tiers, but giving every tier the same reward.
+
+This can be set up quickly by duplicating the Rewawrd Bundle and adjusting the reward amounts to be the same for each tier.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/control-bundle.png[]
+
+[NOTE]
+.Why do we need a tiered reward bundle that gives the same reward for each tier?
+====
+When a tiered reward bundle is used with a Message, Teak provides metrics for each tier. If we used a Reward Bundle that was not tiered for our B variant, Teak would only show overall performance for the B notification, not performance split out by players who spend >$100, players who spent, and everyone else. By using this control bundle we tell Teak that we want metrics split out by our tiers. This will let us compare the results of this test for the audiences that we are offering larger rewards to.
+====
+
+== Checking Results
+
+After the Message has been sent, you can review the results of the A/B test. To do this, go to the appropriate Message tab, change to Table View, and in the Filter Menu select "Show Audience Rewards (Table View Only)". Teak will now display all metrics for both variants of the Message broken out by the reward tier audience.
+
+[.newsletter-img]
+image::tiered-rewards-by-spend/ab-test-results.png[]
+
+In our example, increasing the reward for players who spent more than $100 increased their click through rate by 57%, and increasing the reward for players who spent at all increased their click through rate by 42%! These means that our message is now driving considerably more high value players into the game.
+
+Now that we know this, we can choose the variant using our tiered reward as the winner, and reuse the tiered reward bundle in other Messages to increase how many hgih value players we're bringing into the game.
