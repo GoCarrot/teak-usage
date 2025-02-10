@@ -19,7 +19,7 @@
 *** xref:user-guide:page$data-sync.adoc[Data Sync]
 ** xref:user-guide:page$rewards.adoc[Rewards]
 *** xref:user-guide:page$tiered-rewards.adoc[Tiered Rewards]
-*** xref:user-guide:page$tiered-rewards-by-spend.adoc[GUIDE: Tiered Rewards by Spend]
+*** xref:user-guide:page$tiered-rewards-by-spend.adoc[How to Tier Rewards by Spend]
 ** xref:user-guide:page$links.adoc[Universal Links]
 ** xref:user-guide:page$audiences.adoc[Audiences]
 *** xref:user-guide:page$helpful-audiences.adoc[Helpful Audiences]
