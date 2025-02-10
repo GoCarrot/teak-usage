@@ -1,9 +1,9 @@
 = Custom Tags
 :page-aliases: usage:custom-tags.adoc
 
-Tags are engaging personalization features that can be applied to all Message types. As you add Player Properties these become Audience Filter Options, as well as Tag options in your Messages.
+Tags are engaging personalization features that can be applied to all Message types. In addition to all of your xref:player-properties.adoc[Player Properties], Teak provides other builtin tags for data from Facebook, email, local notifications, and rewards.
 
-In addition to your Player Properties, you can find a few tags built into Teak by selecting the ``@`` icon when creating Messages.
+You can see all of the available tags by selecting the ``@`` icon when creating Messages.
 
 == Facebook Tags
 
@@ -35,10 +35,15 @@ Ask your dev team what data they are passing in as `personalizationData`. In par
 
 We highly recommend using xref:ROOT:user-guide:page$custom-tags.adoc#_filter_default[a default filter] on all tags using `local` to provide a fallback in case the `personalizationData` in the Teak SDK call does not include the appropriate key. Ask your dev team if this can happen, and consider what would be appropriate to show to the player if the relevant data is not provided.
 
-== Other customizable Tags
+== Providing a Fallback
 
-Fallback if Player Name is unavailable::
-``{{first_name|default: "Hey_Pal"}}`` Replace Hey Pal with a generic phrase or salutation.
+Sometimes a tag might not be available for a player. For example, not all players will be Facebook connected, so the `{\{first_name}}` tag will not always have content. You can provide fallback content using the xref:ROOT:user-guide:page$custom-tags.adoc#_filter_default[default filter].
+
+For example, ``{{first_name|default: "Hey Pal"}}`` will template `Hey Pal` into the notification if the player is not Facebook connected.
+
+The default filter can be used with _any_ tag. Because it is so important, you can directly insert it into your message content from the ``@`` icon menu by clicking the ``{{x|y}}`` button by any tag.
+
+== Other customizable Tags
 
 Simplify a large complex number::
 ``{{some_number | number_to_human}}`` If there is a player property called ``some_number``, the ``number_to_human`` filter will simplify that value to something you would say in conversation.
