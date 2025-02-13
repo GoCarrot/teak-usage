@@ -31,6 +31,32 @@ Rewards are applied as Bundles. This means once you create a specific Reward, yo
 
 You can choose multiple reward types, create a random distribution, segment rewards by audience with Tiered Rewarding, or a combination of these options.
 
+[[randomized]]
+== Randomized Rewards
+
+You can choose to have a Bundle randomly select from a list of potential rewards. This can be used to offer players a chance at receiving a particularly valuable reward without endangering your game economy. This is also a useful way to add a dynamic element to your messaging, encourging players to continue engaging to see what they've won.
+
+To configure a Bundle that randomly selects a reward:
+
+. Check the "Randomize Rewards" checkbox
+. Add an entry for each potential reward. For example, to create a Bundle that selects from giving players 10k, 50k, or 100k coins, add three "Coins" entries and enter the respective amounts
+. Assign the odds of winning to each entry. The odds must sum to 100%. For example, the Bundle could have a 60% chance of giving 10k coins, a 30% chance of giving 50k coins, and a 10% chance of giving 100k coins
+
+[TIP]
+.Average Claim Amount
+====
+Teak will calculate the "average" amount each claim is worth. This can be used to guage the impact of the Bundle on your game's economy. In the example above, each claim is worth on averge 31k coins. No player will receive exactly 31k coins, but if 10 players claim the reward from this Bundle you will give out approximately 310k coins total.
+====
+
+[TIP]
+.Personalization
+====
+When using a Bundle with randomized rewards you can template the minimum or maximum reward amount into notification or email text with a xref:page$custom-tags.adoc[Custom Tag].
+====
+
+NOTE: A randomized Bundle can only give a single item or currency when claimed.
+
+[[tiered]]
 == Tiered Rewarding
 
 Tiered Rewarding allows you to micro-segment any targeted Audience by adding additional audience tiers. For example, if you intend to send an email to everyone who has played the game in a specific timeframe, but you want to provide more currency to players who have spent in your game, this feature allows you to do that without creating multiple messages.
@@ -45,6 +71,12 @@ Tiered Rewarding allows you to micro-segment any targeted Audience by adding add
 . The Audiences added should be tiered in your bundle. Some examples include specific timeframes played, in-game levels, monetization tiers, tenure, or other behavior based activities.
 . Ensure you’ve covered all of the tiers you wish to reward, with the final segment covering anyone outside of your tiers
 . You can choose to Randomize Rewards for each tier, and weight those amounts as you normally would for a bundle
+
+[TIP]
+.Tiered Randomized Rewards
+====
+You can use Tiered Rewarding with Randomized Rewards. Each tier can be given its own set of rewards to choose from and odds that the player will receive that reward. This can be used to offer your VIPs better minimum and maximum rewards when using randomized rewards, for example.
+====
 
 == Verifying Reward Collection
 

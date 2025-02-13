@@ -35,6 +35,14 @@ Ask your dev team what data they are passing in as `personalizationData`. In par
 
 We highly recommend using xref:ROOT:user-guide:page$custom-tags.adoc#_filter_default[a default filter] on all tags using `local` to provide a fallback in case the `personalizationData` in the Teak SDK call does not include the appropriate key. Ask your dev team if this can happen, and consider what would be appropriate to show to the player if the relevant data is not provided.
 
+== Reward Tags
+
+When a Message has an attached xref:page$rewards.adoc[Reward Bundle] Teak provides a set of tags to template the amount of each item or currency that the player will receve into the notification. The format of these tags is `reward['<internal id of item or currency>'].amount`. For example if your game has a currency with an internal id of `coins`, `reward['coins'].amount`. We recommend using the ``@`` icon to insert these tags.
+
+When the Reward Bundle is xref:page$rewards.adoc#randomized[randomized], instead of a single amount tag Teak provides minimum and maximum amount tags. These tags can be used to inform players of the maximum reward they could receive -- "Tap now to win up to X FREE COINS" or their guaranteed win -- "Everyone's a winner, tap now to win at least X FREE COINS". The format of thse tags is `reward['<internal id of item or currency>'].min` or `reward['<internal id of item or currency>'].max`. We recommend using the ``@`` icon to insert these tags.
+
+When the Reward Bundle is xref:page$rewards.adoc#tiered[tiered] any reward tags will automatically use the values for the tier the player is in when the notification or email is sent.
+
 == Providing a Fallback
 
 Sometimes a tag might not be available for a player. For example, not all players will be Facebook connected, so the `{\{first_name}}` tag will not always have content. You can provide fallback content using the xref:ROOT:user-guide:page$custom-tags.adoc#_filter_default[default filter].
