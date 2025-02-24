@@ -42,16 +42,17 @@ For a "Welcome Back - Day 2" Audience, you could look at players who were sent "
 
 == Players who clicked on any of a set of specified Schedules
 
-Start by creating an Audience with a "Campaign Engagement" Rule. The action should be "nlicked on a notification" and add a "schedule" Filter to it.
+Start by creating an Audience with a "Campaign Engagement" Rule. The action should be "clicked on a notification" and add a "schedule" Filter to it.
 
 If you want players who clicked on ANY Schedule, it would look like this
 
-
+image::helpful_audiences/engagement_any.png[]
 
 If you wanted players who clicked on ALL Schedules, it would look like this
 
 image::helpful_audiences/engagement_all.png[]
 
+To get a list of player ids from this audience, save it and then export the audience. Teak will email you a CSV of data about players in the audience including their player ids.
 
 == New Players who run out of currency in the first 12 hours, and don’t purchase
 
