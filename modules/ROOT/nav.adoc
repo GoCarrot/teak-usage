@@ -88,6 +88,7 @@
 * xref::page$developer-quickstart.adoc[[.default-open]#Developer Guides#]
 include::unity::partial$nav-unity.adoc[]
 include::javascript::partial$nav-javascript.adoc[]
+include::ios::partial$nav-ios.adoc[]
 include::server-api::partial$nav-server-api.adoc[]
 
 * SDK & API Reference
