@@ -19,42 +19,41 @@ Each Apple Developer Team may only have two Keys with Apple Push Notification se
 **Do not revoke existing keys** in your account unless you can confirm that they are not in active use.
 ====
 
-== Find or Create an App ID
+// == Find or Create an App ID
 
-NOTE: You will need administrator permissions on your Apple Developer account to complete this section.
+// NOTE: You will need administrator permissions on your Apple Developer account to complete this section.
 
-. Navigate to the https://developer.apple.com/account/resources/identifiers/list/bundleId["Certificates, Identifiers & Profiles", window=_blank] list on your https://developer.apple.com/account/resources/identifiers/list/bundleId[Apple Developer account, window=_blank].
-+
-Make sure **Identifiers** is selected on the left, and **App IDs** is selected in the dropdown in the upper right.
-+
-image:ROOT:integrations:apns-setup/app-ids-landing.png[]
+// . Navigate to the https://developer.apple.com/account/resources/identifiers/list/bundleId["Certificates, Identifiers & Profiles", window=_blank] list on your https://developer.apple.com/account/resources/identifiers/list/bundleId[Apple Developer account, window=_blank].
+// +
+// Make sure **Identifiers** is selected on the left, and **App IDs** is selected in the dropdown in the upper right.
+// +
+// image:ROOT:integrations:apns-setup/app-ids-landing.png[]
 
-. Find the application you need to create or update certificates for.
-+
-The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id.
-+
-If you don't already have a bundle ID you can create one here.
+// . Find the application you need to create or update certificates for.
+// +
+// The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id.
+// +
+// If you don't already have a bundle ID you can create one here.
 
-. **Click on the App ID** to bring up the configuration page.
+// . **Click on the App ID** to bring up the configuration page.
 
-== Enable Push Notifications and Associated Domains
+// == Enable Push Notifications and Associated Domains
 
-On the configuration page for the App ID:
+// On the configuration page for the App ID:
 
-[start=4]
-. Ensure that **Associated Domains** are enabled by checking the box in the left column. This is required to enable Teak Links.
-+
-image:ROOT:integrations:apns-setup/enable-associated-domains.png[Associated Domains, 550, role="related"]
+// [start=4]
+// . Ensure that **Associated Domains** are enabled by checking the box in the left column. This is required to enable Teak Links.
+// +
+// image:ROOT:integrations:apns-setup/enable-associated-domains.png[Associated Domains, 550, role="related"]
 
-. Scroll down to **Push Notifications** and ensure they are **enabled** by checking the box.
-+
-image:ROOT:integrations:apns-setup/push-notif-config.png[]
+// . Scroll down to **Push Notifications** and ensure they are **enabled** by checking the box.
+// +
+// image:ROOT:integrations:apns-setup/push-notif-config.png[]
 
-. If you checked any boxes, click **Save** in the top right corner before proceeding.
+// . If you checked any boxes, click **Save** in the top right corner before proceeding.
 
 == Create the .p8 Key
 
-[start=7]
 . Navigate to the https://developer.apple.com/account/resources/authkeys/list["Keys", window=_blank] list on your https://developer.apple.com/account/resources/authkeys/list[Apple Developer account, window=_blank].
 . Click the plus sign next to "Keys" to bring up new key registration.
 . Give your new Key a name to indicate how it is being used, for example `TeakPushKey`
@@ -94,7 +93,7 @@ This key can be used for other games, so ensure that the key is saved to a locat
 
 Now that the Apple Developer Team key is saved, we just have to add it to Teak!
 
-[start=16]
+[start=10]
 . In the https://app.teak.io[Teak Dashboard, window=_blank], navigate to menu:Settings[iOS] for your game, and click **Setup .p8 Key Authentication**.
 +
 image:ROOT:integrations:apns-setup/new-teak-settings.png[]
