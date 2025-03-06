@@ -121,12 +121,35 @@ In this section you can configure the required xref:ROOT:integrations:page$amazo
 
 The "Email" Tab covers several necessities like Email Footer and CAN-SPAM & GDPR requirements. Filling out these fields will ensure your Emails are compliant with global regulations, while the Footer provides a consistent look and feel with options for your Social Media, as well as game and company logos.
 
+=== Player Subscription Status
+
+This panel allows you to determine a player’s subscription status by player ID or email address. You can find out if a player has unsubscribed, marked an email as spam, or has another subscribed or unsubscribed status. If they have unsubscribed from emails, you can resubscribe them.
+
+=== Email Address Imports
+
+This panel allows you to import and update email addresses for players. To begin, click the "Import Player Email List" button. You will be prompted to upload a CSV or Excel file. THe first column in the file must be the game assigned player id, the second column must be the email address to assign to the player. Note that:
+
+* A player can only have one email address
+* An email address can only be associated with one player
+* Email addresses can only be assigned to players who have played your game
+
+Teak will process your import request and email you when it is complete. The email will include an attachement describing what players had email addresses added or changed.
+
+=== CAN-SPAM & GDPR Compliance
+
+This panel is where you configure required information for legal compliance. You must provide a physical mailing address where you can receive written requests to opt-out of emails and process them, and links to an active privacy policy and terms of service for your game.
+
+=== Footer
+
+This panel is where you configure information for the default footer Teak provides when using our email templates. You can add links to your various social media channels, and logos for your game and company.
+
 NOTE: The optimal size of Footer logos is 300 pixel x 100 pixel, but this is flexible. Generally, you should aim for approximately 3x wider than tall, and no taller than 150 pixels.
 
-=== User Subscription Status
-Is located about halfway down the page and allows you to determine a player’s subscription status by an ID or email address. You can find out if a player has unsubscribed, marked an email as spam, or has another subscribed or unsubscribed status.
+== Opt-out
 
-=== Unsubscribe & Opt-out
+The Opt-out tab is where you can configure different Opt-out Categories to allow players to opt-out of some kinds of messaging without opting out of all of your messaging. Additionally you can customize the messaging shown to players when they view their email subscription management/unsusbscribe page, which every email links to as required by law.
+
+=== Email Unsubscribe & Opt-out Page
 
 The messaging shown to players on the email opt-out page can be customized here. Unsubscribe Text will be seen by players who are currently subscribed and may unsubscribe from the page. Subscribe Text will be seen by players who are currently unsubscribed and may resubscribe from the page.
 
