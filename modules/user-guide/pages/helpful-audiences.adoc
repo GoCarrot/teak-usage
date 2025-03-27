@@ -3,6 +3,14 @@
 
 There are many useful Audiences to get started. As you expand your marketing plan, here are some Audiences to provide some inspiration!
 
+== Daily Players
+
+At Teak we see that 70% of revenue comes from players who play daily, making this a very important audience to track.
+
+image::helpful_audiences/daily.png[]
+
+This Audience seelcts players who were active on seven distinct calendar days out of the last 7 days -- daily players.
+
 == Core Players
 
 At Teak, we define Core players as players who are active 5 or more days a week. Typically, 85% of revenue comes from these players. With the proper messaging strategy, 95% will come back the following week.
