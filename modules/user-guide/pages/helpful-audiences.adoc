@@ -3,6 +3,38 @@
 
 There are many useful Audiences to get started. As you expand your marketing plan, here are some Audiences to provide some inspiration!
 
+== Core Players
+
+At Teak, we define Core players as players who are active 5 or more days a week. Typically, 85% of revenue comes from these players. With the proper messaging strategy, 95% will come back the following week.
+
+image::helpful_audiences/core.png[]
+
+This Audience selects players who were active on at least five distinct calendar days out of the last 7 days.
+
+== Low Risk Players
+
+At Teak, we define Low Risk players as players who were active on three or four distinct calendar days out of the last 7. Typically, 8% of revenue comes from these players, and 80% will come back the following week. The goal of messaging this audience is to increase the number of days they play each week to move them into the Core Playres audience, increasing revenue and retention.
+
+image::helpful_audiences/low_risk.png[]
+
+This Audience selects players who were active on at least three distinct calendar days, but no more than four distinct calendar days, out of the last 7 days.
+
+== Medium Risk Players
+
+At Teak, we define Medium Risk players as players who were active on two distinct calendar days out of the last 7. Typically 3% of revenue comes from these players, and 65% will come back the following week. The goal of messaging this audience is to increase the number of days they play each week to move them into the Low Risk audience, drastically increasing retention.
+
+image::helpful_audiences/medium_risk.png[]
+
+This audience selects players who were active on exactly two distinct calendar days out of the last 7 days.
+
+== High Risk Players
+
+At Teak, we define HIgh Risk players as players who were active on one distinct calendar day out of the last 7. Typically 2% of revenue comes from these players, and 35% will come back the following week. The goal of messaing this audience is to increase the number of days they play each week to move them into the Medium Risk audience, drastically increasing retention.
+
+image::helpful_audiences/high_risk.png[]
+
+This audience selects players who were active on exactly one distinct calendar day out of the last 7 days.
+
 == Tracking Recently Reactivated Players
 
 Players who had been active, but recently had a period of inactivity, but came back via any source
