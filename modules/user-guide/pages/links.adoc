@@ -13,16 +13,65 @@ Links are a straightforward way to bring people into your game. Using Teak Links
 
 . On the left rail select "Links"
 . Click "Create a New Link"
-. Give the Link a name and an optional description
-. If you want to incentivize the link, add a Reward Bundle (xref:ROOT:user-guide:page$rewards.adoc#_bundle_creation[Creating Reward Bundles, window=_blank])
+. Give the Link a name and optional description and tags
+.. Add platform tags for the social site where you will share the link _(Optional)_
+.. Add a date tag for the day the link will be shared _(Optional)_
+. If you want to incentivize the link, add a *Reward Bundle* (xref:ROOT:user-guide:page$rewards.adoc#_bundle_creation[Creating Reward Bundles, window=_blank])
+. Control the behavior of the Link using optional Deep Links or out of game URLs
 
-By default, when a player clicks a link, they will launch your game as if they opened the app. After the normal start-up process, they will be Rewarded, if applicable. If you have Deep Linking routes set up, you can work with your engineering team to create paths that allow you to drop players directly into different areas of the game using the "Advanced Options".
+By default, when a player clicks a link, your game will launch as if they opened the app. After the normal start-up process, they will be Rewarded, if applicable. If you have Deep Linking routes set up, your player will be taken directly to the screen in the game you have linked to.
 
-NOTE: On iOS, new players will be shown the landing page when they first click the link.
+New players on mobile devices who click a link will be routed to the appropriate App Store to install the app. They should be able to go back and collect the Link Reward after successfully loading into the game.
 
-New players who click a link may be able to collect the Reward on desktop, but will be routed to the appropriate App Store to install the app on mobile devices. They should be able to go back and collect the Link Reward after successfully loading into the game.
+NOTE: Teak tries to route new players (who do not have the game installed) directly to the app store. But in some cases, new players will be shown a landing page when they first click the link. The landing page will have a link to the game in the app store.
 
-After creating the Link, you may choose to "Generate Bulk". This option appears in the Links page to the right of the individual link. From here you may generate a specific amount of individual links to be exported. This is most useful for 1:1 communication with Support, or creating a list to be uploaded into a 3rd party system for distribution. Each unique URL is single use and may only be claimed once. This eliminates the ability for players to share high value links.
+== Link Options
+
+Links are useful and flexible, here's a run down of all available options for creating links.
+
+=== Platform & Date Tags
+
+Staying consistent is key to managing all the links you create. It's a good idea to establish a uniform naming convention across your entire team and use these tags to keep everything organized.
+
+Platform Tags::
+For reporting purposes, it's useful to tag your links with the social platform they will be shared on. This makes it easier to group by platform and compare performance by social network.
++
+You can create multiple links simultaneously by selecting multiple platform tags. This will generate a separate link for each selected tag, with the platform name appended at the end of each link.
++
+Note that each link created will only have one tag, and when editing a link, only one platform tag can be applied.
+
+Date Tag::
+Select the date the link will be shared. This is useful for finding the link when you need to share it, as well as for filtering by share date when building your reports.
++
+You can search for dates using the YYYY-MM-DD format (aka: 2025-01-31) in the Link list.
+
+TIP: You can filter your Links by clicking on the tags shown in on the Links list page, or by using the filter dropdown menu.
+
+=== Reward Bundle
+
+Incentivized links get more clicks than non-rewarded links. So, adding a xref:ROOT:user-guide:page$rewards.adoc[Reward Bundle, window=_blank] to your link is highly recommended.
+
+Standard::
+Rewards on Standard Links can be redeemed by any number of players, up to the limit you set (see "Limit Total Claims" below). Each player can only redeem the link once.
++
+This is ideal for posting in community forums and other places where many players will see the link.
+
+Single Use::
+Rewards on Single Use links may only be redeemed by one player. This prevents the sharing of high-value links among multiple users.
++
+These links are ideal for one-on-one interactions like customer support, social media messaging, or creating lists for distribution through third-party systems.
++
+After creating the Link, you'll have an option to "Generate Bulk". From there you may generate a specific number of individual links to be exported to a CSV file. Each unique URL is single-use and may only be claimed once.
+
+NOTE: You do not need links for sending email through Teak, emails use their own single use links automatically.
+
+==== Limits
+
+Offer Expires::
+Choose a date when the reward will expire. Useful when you have time sensitive promotions or you want to make sure that old links don't stick around
+
+Limit Total Claims::
+Set a maximum number of players that can claim the reward. This is ideal for controlling the reach of special promotions or exclusive offers.
 
 === Link Destination
 
@@ -55,7 +104,7 @@ There is an option to skip the game open when opening an Out of Game URL.
 
 When this option is enabled, the game will not be opened when the shared link is tapped or clicked on any platform. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:ROOT:user-guide:page$link-metrics.adoc#_returning_user[Returning User, window=_blank] for the Link.
 
-=== QR Codes
+== QR Codes
 
 All Links created in Teak come with QR codes for you to share. Depending on the configuration of the Link, Teak will provide two or three different QR code variants.
 
