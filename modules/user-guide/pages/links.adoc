@@ -65,7 +65,9 @@ After creating the Link, you'll have an option to "Generate Bulk". From there yo
 
 NOTE: You do not need links for sending email through Teak, emails use their own single use links automatically.
 
-==== Limits
+=== Limits
+
+Sometimes you have a promotion to good to give away forever.
 
 Offer Expires::
 Choose a date when the reward will expire. Useful when you have time sensitive promotions or you want to make sure that old links don't stick around
