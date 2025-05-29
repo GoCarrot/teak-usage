@@ -134,6 +134,15 @@ The **Segment** option is a helpful shortcut to create a new audience based on a
 
 In the Audience list, you can find **Segment** in the dropdown for existing audiences. When creating a new Schedule, the Segment option appears next to the selected audience.
 
+.Create a new segment from the Audiences List
+[screenshot]
+image::audiences/audience-segment.png[]
+
+.Create a new segment from the Audience Selector
+[screenshot]
+image::audiences/audience-segment-shortcut.png[]
+
+
 **Segment** creates a new Rule Based Audience with "Players whose _Audiences_ are any of..." prefilled with the audience you are segmenting. Add additional rules to refine which players you want to reach with your new audience.
 
 A segmented audience will update if the definition of the original audience is updated.
