@@ -54,10 +54,10 @@ If the schedule has messages for both Push and Email, Teak will send to Emails t
 * *Most Recent Play*
 ** Send the message to the device the player has most recently played on.
 +
-If the schedule has messages for both Push and Email, Teak will send to the iOS or Android device most recently played on, and email will only go to users who do not have a push key.
+If the schedule has messages for both Push and Email, Teak will send to the iOS or Android device most recently played on. Emails will only be sent to players who have opted out of push notifications.
 
 * *All Devices and Channels*
-** Send messages to all devices and channels.
+** Send messages to all devices and channels a player has opted into.
 +
 Teak will send messages to every platform with content set up. A single player could get messages on each of their iOS and Android devices, as well as an Email.
 
