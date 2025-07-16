@@ -19,7 +19,7 @@ Date - Message Name - Audience - Send Time - Currency
 === Audiences
 All of your created Audiences will be available to you at the time of Scheduling. If you’re in a situation where you need to create an entirely new Audience, you can also start that process during Scheduling.
 
-=== Who would you like to send the notification to?"
+=== "Who would you like to send the notification to?"
 
 Scroll to find the Audience, begin typing the name, or expand the Audience dropdown and create a new one. You may only send a message to one Audience per Schedule, but you can easily Duplicate the Schedule under the "Schedules" Tab.
 
@@ -33,15 +33,42 @@ After you have selected your Message you will get another chance to review the c
 
 NOTE: You will need to set up messaging A/B testing within the message itself; this is not an option at the time of Scheduling.
 
-== Additional Targeting
+[#_additional_targeting]
+== Targeting By Platform, OS, and Version
 
-Before sending your message, you will be able to choose how you want it delivered. Since a player can play the game on multiple devices and may have a different game version on each device, this is where you can set your delivery preferences.
+Some players can be reached on multiple channels, others are only opted into one channel. Many players have multiple devices, each with different versions of the game. The _Delivery Priority_ dropdown lets you fine tune which platform and device to send to for each user.
 
-=== "Per user, what devices would you like to deliver to?"
-You may choose to deliver to all devices, most recent, or only to specific devices or game versions. If you choose something that will limit device sends, this will not affect Email or App-to-User Notifications as those do not take the device into account.
+By default, Teak sends to the channel or device most recently clicked on. This prioritizes the channel that we know the user interacts with. This way, you can set up a Push and an Email in one schedule, and Teak will figure out the best option to send per user.
 
-For Game or OS versions you can filter minimum (greater than [or equal to]), maximum (less than [or equal to]), specific (equal to) or a range (between).
+In some circumstances, however, you may want to override the default, such as sending a game update notice sent to only devices with old versions of the game. Use the _Specific OS and Game Versions_ option for this use case.
 
+=== Delivery Priority Options
+
+Per user, what device or platform you would like to deliver to.
+
+* *Most Recent Click* (Default)
+** This is the default behavior. Teak will send the message to whichever channel or device the player has most recently interacted with.
++
+If the schedule has messages for both Push and Email, Teak will send to Emails to players that have most recently clicked on an email, and push messages to players who have most recently tapped a push notification.
+
+* *Most Recent Play*
+** Send the message to the device the player has most recently played on.
++
+If the schedule has messages for both Push and Email, Teak will send to the iOS or Android device most recently played on, and email will only go to users who do not have a push key.
+
+* *All Devices and Channels*
+** Send messages to all devices and channels.
++
+Teak will send messages to every platform with content set up. A single player could get messages on each of their iOS and Android devices, as well as an Email.
+
+* *Custom Priority*
+** This allows you to set a ranked list of channels. Messages will be sent to the highest ranked channel for each player.
+
+* *Specific OS and Game Versions*
+** Send to specific devices or game versions. Useful for update and upgrade messages.
++
+For Game and OS versions you can filter minimum (greater than [or equal to]), maximum (less than [or equal to]), specific (equal to) or a range (between).
++
 NOTE: Teak uses the version metadata specified in the game's Info.plist on iOS and AndroidManifest.xml on Android to determine the game's version. You may need to consult with your dev team to determine how these versions correspond to "marketing" versions.
 
 == Sending
