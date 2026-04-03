@@ -63,7 +63,7 @@ Tiered rewarding lets you send one notification to a broad audience while giving
 
 === Setting up tiered rewarding
 
-. Create your audiences — the broader audience you're targeting, plus any tier audiences for reward segmentation
+. Create your audiences — the broader audience you're targeting, plus any tier audiences for reward segmentation. For details on setting up audiences, see xref:page$audiences.adoc[Audiences].
 . Select "Rewards" on the left rail
 . In the "Reward Bundles" tab, click the "New Reward Bundle" button
 . Check the "Use Reward Tiers" checkbox
