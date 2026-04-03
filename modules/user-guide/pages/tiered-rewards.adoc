@@ -1,13 +1,13 @@
 = Tiered Rewards
 :page-aliases: usage:reference:audience-controlled-rewards.adoc
 
-It's common to want to use the same messaging strategy for a large group of players but offer a different reward to different players based on their past activity. For example, you may want to send a push notification to all players who are at risk of churning, but give more free in-game currency to players who have previously purchased than to players who have never purchased.
+It's common to want to use the same messaging strategy for a large group of players but offer a different reward to different players based on their past activity. For example, you may want to send a notification to all players who are at risk of churning, but give more free in-game currency to players who have previously purchased than to players who have never purchased.
 
-Teak provides Tiered Rewards, to support this. With Tiered Rewards you can set up a Reward Bundle which provides different rewards to different players depending on their membership in any Audience, and then reuse this Reward Bundle across any number of notifications, emails, or links.
+Teak provides Tiered Rewards to support this. With Tiered Rewards you can set up a Reward Bundle which provides different rewards to different players depending on their membership in any Audience, and then reuse this Reward Bundle across any number of notifications, emails, or links.
 
 Additionally when a Tiered Reward Bundle is used for a notification, email, or link, Teak will provide all relevant metrics split out by all audiences in the Bundle.
 
-== Creating an Tiered Reward Bundle
+== Creating a Tiered Reward Bundle
 
 All Reward Bundles are automatically tiered. Initially, the bundle only contains a single audience tier, the default "All Other Players" audience which will match all players who did not match any other audience.
 
@@ -22,6 +22,8 @@ image::rewards/payers_get_more.jpg[]
 You may select any Audience, including Audiences created through an uploaded list, to apply the reward tier to.
 
 To add additional tiers, click on "Add Reward Tier" again. There is no limit on the number of reward tiers a single bundle may contain.
+
+NOTE: Order matters. Use the reorder buttons to place your most specific audiences at the top. Teak evaluates tiers from top to bottom and stops at the first match — if a broad audience sits above a narrow one, players who qualify for the narrower tier will match the broader one first.
 
 == How Teak Uses a Tiered Reward
 
@@ -61,7 +63,11 @@ To template the reward into a notification, first select the Tiered Reward as th
 .Inserting the "Coins Amount" template tag will template the number of coins the player will receive based on their selected reward tier from the Tiered Reward bundle.
 image::rewards/notif_template.jpg[]
 
-We recommend templating the reward amount into all notifications which use a Tiered Reward bundle. Testing has shown that informing a player of the specifics of the reward they will receive (e.g. Click me for 50,000 FREE COINS! vs. Click me for tons of FREE COINS!) increases click through rate by 10-15% relative to baseline.
+[TIP]
+.Tell players exactly what they'll receive
+====
+When a player can see the specific reward waiting for them — rather than a vague promise — they're more likely to tap. Use a template tag to show each player their exact reward amount in the notification copy. This is especially valuable with tiered rewards, where VIP players can see the higher amount they'll actually receive.
+====
 
 After a notification with a Tiered Reward has been sent you can view all xref:user-guide:page$notification-metrics.adoc[window=_blank] broken out by the selected reward tier. To do so, in a notification content tab, switch to table view and then select "Show Audience Rewards (Table View Only)" from the filter dropdown.
 
@@ -71,14 +77,14 @@ image::rewards/notif_metrics.gif[]
 == Using With Links
 To use a Tiered Reward with a Link, simply create a Link and select a Tiered Reward as its Reward Bundle.
 
-.A link with an Tiered Reward bundle.
+.A link with a Tiered Reward bundle.
 image::rewards/acr_link.jpg[]
 
-All link features including expiration, claim limitation, and deep linking, are compatible with Tiered Rewards. Expiration and claim limits will apply across all reward tiers combined. For example, if you create a link with an Tiered Reward bundle and Limit Total Claims to 5 players, only 5 players will be able to claim any rewards from the link, regardless of selected reward tier.
+All link features including expiration, claim limitation, and deep linking, are compatible with Tiered Rewards. Expiration and claim limits will apply across all reward tiers combined. For example, if you create a link with a Tiered Reward bundle and Limit Total Claims to 5 players, only 5 players will be able to claim any rewards from the link, regardless of selected reward tier.
 
 After creating a link with a Tiered Reward you can view all link metrics broken out by the selected reward tier. To do so, switch to table view.
 
-.Viewing per-audience metrics for a link using an Tiered Reward bundle.
+.Viewing per-audience metrics for a link using a Tiered Reward bundle.
 image::rewards/link_metrics.gif[]
 
 == Editing Tiered Rewards
@@ -90,4 +96,4 @@ If the modified Tiered Reward bundle is attached to a notification, then it chan
 
 This is done so that if you discover that there was an error in your Tiered Reward bundle configuration after a notification was sent you can still modify the bundle and limit potential damages. For example, if you accidentally gave all remaining claimants 1,000,000 coins instead of 1,000 coins and did not catch this until after sending a notification, you could edit the Tiered Reward and immediately all future clicks on the previously sent notification would issue the corrected reward.
 
-Note that this will mean that any templated notification text is incorrect which may result in player complaints, so we strongly encourage you to double check all Tiered Reward configurations before using them in a notification.
+NOTE: Editing a bundle after sending means any templated notification copy will no longer match the reward players actually receive. Double-check all Tiered Reward configurations before using them in a notification.

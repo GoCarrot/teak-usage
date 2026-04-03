@@ -1,97 +1,121 @@
 = Rewards
 :page-aliases: usage:rewards.adoc
 
-Rewards can be added to Links and Messages as an incentivization or prize. These may be personalized and customized for specific situations and applied using Audience criteria.
+Reward bundles attach to notifications and links to deliver items or currency to players when they click. Bundles are reusable — create one once and attach it to as many notifications and links as you like.
 
 == Items and Currency
 
-Your engineering team can assign Items and Currency within the code. Once they have released the update, you can begin using these Rewards! You must have the exact name used in the code to set it up.
+Your engineering team can assign items and currency within the code. Once they have released the update, you can begin using these rewards. You must have the exact name used in the code to set it up.
 
-=== Setting Up a New Item or Currency
+=== Setting up a new item or currency
 
 . On the left rail, select "Rewards"
-. Navigate to the "Items & Currencies" Tab
-. If you do not see what you’re looking for, add it by clicking the "New Item or Currency" Button
-. You can give it a display name, and fill in the Internal ID from the name used in the code
+. Navigate to the "Items & Currencies" tab
+. If you do not see what you're looking for, add it by clicking the "New Item or Currency" button
+. Give it a display name, and fill in the Internal ID from the name used in the code
 
-Now, when you are creating Reward Bundles, it will be updated with this option!
+NOTE: Display names are for your reference only — they don't appear in notifications or link copy.
 
-NOTE: Display names not inserted into messaging, they are for your reference only.
+== Bundle creation
 
-== Bundle Creation
+Bundles are reusable reward configurations. Once you create a bundle for, say, 1,000,000 coins, you can attach that same bundle to any notification or link. You never have to recreate the same reward twice.
 
-Rewards are applied as Bundles. This means once you create a specific Reward, you never have to create that same reward again. If you have a currency called _Coins_, and you create a bundle for 1,000,000 - you can use that same bundle any time you want to award 1,000,000 Coins. This means across Messages and Links.
+=== Setting up a bundle
 
-=== Setting Up Bundles
+. Select "Rewards" from the left rail
+. Click the "New Reward Bundle" button
+. Give your reward bundle a name
+. Select the reward type and amount
+. Set how many days players have to claim the reward under "Reward expires"
+. Click "Save"
 
-. Select "Rewards" from the left rail.
-. Choose the "New Reward Bundle" Tab
-. Give your Reward Bundle a name
-. Then select the type of Reward and value
-
-You can choose multiple reward types, create a random distribution, segment rewards by audience with Tiered Rewarding, or a combination of these options.
+You can choose multiple reward types, create a random distribution, segment rewards by audience with tiered rewarding, or a combination of these options.
 
 [[randomized]]
-== Randomized Rewards
+== Randomized rewards
 
-You can choose to have a Bundle randomly select from a list of potential rewards. This can be used to offer players a chance at receiving a particularly valuable reward without endangering your game economy. This is also a useful way to add a dynamic element to your messaging, encourging players to continue engaging to see what they've won.
+A bundle can randomly select from a list of potential rewards. This lets you offer players a chance at a particularly valuable reward while keeping your average payout predictable — a drop table that ranges from 1M to 100M coins can have the same average payout as a fixed 5M coin bundle.
 
-To configure a Bundle that randomly selects a reward:
+To configure a bundle with randomized rewards:
 
-. Check the "Randomize Rewards" checkbox
-. Add an entry for each potential reward. For example, to create a Bundle that selects from giving players 10k, 50k, or 100k coins, add three "Coins" entries and enter the respective amounts
-. Assign the odds of winning to each entry. The odds must sum to 100%. For example, the Bundle could have a 60% chance of giving 10k coins, a 30% chance of giving 50k coins, and a 10% chance of giving 100k coins
+. Check the "Use Random Rewards" checkbox
+. Add an entry for each potential reward — for example, to create a bundle that selects from 10k, 50k, or 100k coins, add three "Coins" entries with the respective amounts
+. Assign the odds of winning to each entry. The odds must sum to 100%.
 
 [TIP]
-.Average Claim Amount
+.Average claim amount
 ====
-Teak will calculate the "average" amount each claim is worth. This can be used to guage the impact of the Bundle on your game's economy. In the example above, each claim is worth on averge 31k coins. No player will receive exactly 31k coins, but if 10 players claim the reward from this Bundle you will give out approximately 310k coins total.
+Teak calculates the average amount each claim is worth. This is the number to check for economy balancing — it tells you what you're giving out on average per claim, regardless of how the odds are distributed across options.
 ====
 
 [TIP]
 .Personalization
 ====
-When using a Bundle with randomized rewards you can template the minimum or maximum reward amount into notification or email text with a xref:page$custom-tags.adoc[Custom Tag].
+When using a bundle with randomized rewards you can template the minimum or maximum reward amount into notification or email text with a xref:page$custom-tags.adoc[Custom Tag].
 ====
 
-NOTE: A randomized Bundle can only give a single item or currency when claimed.
+NOTE: When "Use Random Rewards" is on, Teak picks one reward option per claim based on weighted chances. When it's off, players receive every reward in the bundle — all items and all amounts.
 
 [[tiered]]
-== Tiered Rewarding
+== Tiered rewarding
 
-Tiered Rewarding allows you to micro-segment any targeted Audience by adding additional audience tiers. For example, if you intend to send an email to everyone who has played the game in a specific timeframe, but you want to provide more currency to players who have spent in your game, this feature allows you to do that without creating multiple messages.
+Tiered rewarding lets you send one notification to a broad audience while giving different rewards to different player segments — for example, giving more in-game currency to players who have spent than to players who have never purchased, without creating separate notifications for each group.
 
-=== Setting Up Tiered Rewarding
+=== Setting up tiered rewarding
 
-. Create your Audiences. This will include your broader audience, as well as the tiers you wish you use for rewarding segmentation (You can reference the Audience Creation steps here)
+. Create your audiences — the broader audience you're targeting, plus any tier audiences for reward segmentation
 . Select "Rewards" on the left rail
-. In the "Reward Bundles" Tab click the "New Reward Bundle" Button
-. On the right side, choose "Add Reward Tier"
-. This adds a new option where you can Select An Audience
-. The Audiences added should be tiered in your bundle. Some examples include specific timeframes played, in-game levels, monetization tiers, tenure, or other behavior based activities.
-. Ensure you’ve covered all of the tiers you wish to reward, with the final segment covering anyone outside of your tiers
-. You can choose to Randomize Rewards for each tier, and weight those amounts as you normally would for a bundle
+. In the "Reward Bundles" tab, click the "New Reward Bundle" button
+. Check the "Use Reward Tiers" checkbox
+. Click "Add Reward Tier" and select an audience for that tier
+. Add the rewards players in that audience should receive
+. Use the reorder buttons to place your most specific audiences at the top — Teak evaluates tiers in order and stops at the first match
+. Repeat for each additional tier; the default "All remaining claimants" tier catches anyone who doesn't match
 
 [TIP]
-.Tiered Randomized Rewards
+.Combining tiers and randomized rewards
 ====
-You can use Tiered Rewarding with Randomized Rewards. Each tier can be given its own set of rewards to choose from and odds that the player will receive that reward. This can be used to offer your VIPs better minimum and maximum rewards when using randomized rewards, for example.
+You can enable both "Use Reward Tiers" and "Use Random Rewards" on the same bundle. Teak evaluates tiers first to select the reward set for that player, then randomizes within that set. Each tier can have its own reward options and independent odds. This lets you offer your VIPs better minimum and maximum rewards than other players.
 ====
 
-== Verifying Reward Collection
+== Testing a bundle
 
-There are many scenarios where you may want to verify receipt of a Teak Reward. The Audit Log returns successful responses from your server following the message from Teak to apply a Reward.
+Test a bundle to verify the right tier resolves and the reward payload is correct before attaching it to a live notification.
 
-=== Audit Log Exploration
+. Find the bundle on the Rewards page and click *Edit ▾ → Test*
+. Under "Test Reward for Audience", select the tier to simulate
+. Enter the *User ID* — the game-assigned ID of the player who should receive the reward
+. Set *Posting User ID* to `0` for app-to-player notifications, or to the sharing player's ID for social rewards
+. Select any applicable Extra Flags (`is_mobile`, `is_unity_webgl`)
+. Click *Test*
+
+Teak sends a real POST request to your reward endpoint. The dialog shows the full request and your server's response.
+
+== Archiving a bundle
+
+Archiving removes a bundle from the active list without deleting it. Use this to retire seasonal or outdated bundles while keeping them available for reference or reuse.
+
+*To archive:* click *Edit ▾ → Archive*.
+
+*To restore:* open the *Filter* dropdown, enable "Show archived", find the bundle, and click *Restore*.
+
+NOTE: If a bundle is attached to an active notification or link, Teak won't delete it — it will offer to archive it instead.
+
+== Verifying reward collection
+
+The Audit Log shows successful and failed responses from your server after Teak sends a reward request.
+
+=== Audit log
 
 . Select "Rewards" on the left rail
 . Choose the "Audit Log" tab
-. In the "Clicking User ID" Box, enter the unique identifier you use to identify players within Teak
-. Status allows you to select Successes or Failures specifically
-. Set the date timeframe
-. Search!
-. The results will tell you the following
-.. *Time*: When the player initiated receipt of the reward
-.. *Identifier*: The Name of the Message or Link clicked
-.. *Reward*: The Currency and amount
-.. *Server Response*: The scripted success or failure response from the server
+. In the "Clicking User ID" box, enter the unique identifier you use to identify players within Teak
+. Use the Status filter to narrow to Successes or Failures
+. Set the date range and search
+
+Results show:
+
+* *Time:* when the player initiated receipt of the reward
+* *Identifier:* the name of the notification or link clicked
+* *Reward:* the item or currency and amount
+* *Server Response:* the success or failure response from your server
