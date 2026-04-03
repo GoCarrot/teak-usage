@@ -1,93 +1,114 @@
-= Tiered Rewards
+= Tiered rewards
 :page-aliases: usage:reference:audience-controlled-rewards.adoc
 
-It's common to want to use the same messaging strategy for a large group of players but offer a different reward to different players based on their past activity. For example, you may want to send a push notification to all players who are at risk of churning, but give more free in-game currency to players who have previously purchased than to players who have never purchased.
+Tiered rewards let you send one notification to a broad audience while giving different rewards to different player segments. The goal is to meet each player where they are in the game — an offer that's exciting for a casual player might not move a big spender at all.
 
-Teak provides Tiered Rewards, to support this. With Tiered Rewards you can set up a Reward Bundle which provides different rewards to different players depending on their membership in any Audience, and then reuse this Reward Bundle across any number of notifications, emails, or links.
+A bundle can have any number of tiers, each targeting a different audience.
 
-Additionally when a Tiered Reward Bundle is used for a notification, email, or link, Teak will provide all relevant metrics split out by all audiences in the Bundle.
+== How tiered rewards work
 
-== Creating an Tiered Reward Bundle
+When a player claims a reward, Teak checks each tier from top to bottom and applies the first one whose audience includes that player. That player receives only that tier's reward — evaluation stops there. Players who don't match any tier receive the *Default Tier* reward.
 
-All Reward Bundles are automatically tiered. Initially, the bundle only contains a single audience tier, the default "All Other Players" audience which will match all players who did not match any other audience.
+The Default Tier is always present. It acts as a catch-all for any player not covered by a more specific tier above it.
 
-.A Tiered Reward Bundle with one reward tier
-image::rewards/everyone_else.jpg[]
+=== Example
 
-To add another reward tier to the bundle, click "Add Reward Tier". This will add a new section to the Bundle which allows you to select an Audience and modify the reward for claimants in that audience.
+.With this Tiered Reward, players who have spent at least $100 in the past 30 days receive 50,000 coins, players lapsed for at least 7 days receive 20,000 coins, and everyone else receives 1,000 coins.
+image::rewards/three_tier.jpg[]
+
+Four players claiming this reward:
+
+* *Alice* — spent $200 in the past 30 days, plays every day → matches Tier 1 (payers ≥ $100) → 50,000 coins
+* *Bob* — spent $120 in the past 30 days, hasn't played for 10 days → matches Tier 1 first → 50,000 coins. (Bob is also in the lapsed audience, but evaluation stopped at Tier 1.)
+* *Erin* — spent $80, plays every day → doesn't match Tier 1 or Tier 2 → Default Tier → 1,000 coins
+* *Frank* — no spend, hasn't played for 7 days → doesn't match Tier 1, matches Tier 2 (lapsed) → 20,000 coins
+
+== Set up tiers
+
+For basic bundle setup, see xref:page$rewards.adoc[Reward bundles]. To add tiers:
+
+. Open the bundle editor and check *Use Reward Tiers*
+. Click *Insert Tier* to add a custom tier above the Default Tier
+. Select the audience for that tier from the dropdown
+. Add the rewards players in that audience should receive
+. Repeat for each additional tier
+. Use the reorder buttons to set evaluation priority — the topmost tier is evaluated first
+
+[IMPORTANT]
+.Order your tiers from most specific to least specific
+====
+A player who qualifies for a narrower audience (e.g., "Big spenders") should be matched before they can fall into a broader one (e.g., "Spenders"). If "Spenders" sits above "Big spenders," every big spender matches the first tier and never reaches the higher-value reward.
+====
+
+== Choose when tiers are evaluated
+
+Teak determines which tier a player belongs to at a specific point in time. This matters because audience membership can change between when a notification is sent and when a player opens it.
+
+=== Send-time evaluation (notifications and emails)
+
+The tier is locked when the notification is sent. Each player's reward is determined by their audience membership at that moment — before anyone opens the notification.
+
+Use send-time evaluation when the notification copy references the reward amount. The amount in the copy and the amount delivered will always match, even if the player's audience membership changes before they tap.
 
 .With this Tiered Reward Bundle, players who have spent at least $100 in the past 30 days will get 50,000 coins, and all other players will get 1,000 coins.
 image::rewards/payers_get_more.jpg[]
 
-You may select any Audience, including Audiences created through an uploaded list, to apply the reward tier to.
+=== Click-time evaluation (links)
 
-To add additional tiers, click on "Add Reward Tier" again. There is no limit on the number of reward tiers a single bundle may contain.
+The tier is re-evaluated when the player clicks the link. The reward is based on audience membership at the moment of the click.
 
-== How Teak Uses a Tiered Reward
+Use click-time evaluation when the most current audience data should determine the reward — for example, if a player's segment might change between send and click, and you want the reward to reflect their current state.
 
-Teak will determine which reward tier a player should receive at "reward evaluation time" for the type of creative the bundle is attached to. For Facebook App-to-User notifications, iOS and Android push and local notifications, and email, this is at the time the notification is sent. For links, this is at the time the link is clicked.
+=== Editing a bundle after sending
 
-To determine which reward tier a player should receive, Teak will go through the reward tiers in order and select the first tier that the player matches.
+If you modify a bundle after a notification has been sent, the original send-time evaluations are invalidated. Players who haven't clicked yet will have their tier re-evaluated at click time using their current audience membership — the same behavior as a link reward.
 
-=== Example
+NOTE: This means any templated notification copy will no longer match the reward players actually receive. Always double-check your tier configuration before sending.
 
-.With this Tiered Reward, players who have spent at least $100 in the past 30 days will receive 50,000 coins, players who have been lapsed for at least 7 days will receive 20,000 coins, and everyone else will receive 1,000 coins.
-image::rewards/three_tier.jpg[]
+This also provides a safety valve: if you discover a misconfiguration after sending — for example, the default tier accidentally gives 1,000,000 coins instead of 1,000 — you can edit the bundle immediately to limit further damage.
 
+== Use template tags with tiers
 
-Let's imagine 4 players who are claiming this reward
+When a player can see the specific reward waiting for them — rather than a vague promise — they're more likely to tap. Use template tags to show each player their exact reward amount in the notification copy. This is especially valuable with tiers, where VIP players can see the higher amount they'll actually receive.
 
-- Alice, who has spent $200 in the past 30 days, and plays every day
-- Bob, who has spent $120 in the past 30 days, but has not played for 10 days
-- Erin, who has spent $80 in the past 30 days, and plays every day
-- Frank, who has not spent any money in the past 30 days, and has not played for 7 days
+To insert a reward tag:
 
-Alice, who has spent $200 in the past 30 days, is in the "Payers >= $100 in past 30 days" audience, and so will receive the first reward tier for 50,000 coins.
+. In the notification message editor, click the template tag button (the variable icon in the toolbar)
+. Under the *REWARDS* section, select the reward item whose amount you want to display
 
-Bob, who has spent $120 in the past 30 days, is in the "Payers >= $100 in past 30 days" audience, and so will receive the first reward tier for 50,000 coins. Even though Bob is also in the "Lapsed >= 7 days" audience, because he matched the first reward tier, Teak stopped processing him and so he will only receive the first reward tier.
+.The REWARDS section in the template tag dropdown. Each item listed resolves to the quantity that player will receive based on their tier.
+image::rewards/5_template_tag_insertion.jpg[]
 
-Erin, who has spent $80 in the past 30 days, is not in the "Payers >= $100 in past 30 days" audience, so Teak will continue processing. Erin also plays every day, and so is not in the "Lapsed >= 7 days" audience, so Teak will continue processing. As the only tier remaining is the catchall Remaining claimants tier, Erin will receive 1,000 coins.
+After selecting the Tiered Reward as the Reward Bundle for a notification, Teak adds available reward tags to the dropdown automatically.
 
-Frank, who has not spent any money in the past 30 days, is not in the "Payers >= $100 in past 30 days" audience, so Teak will continue processing. Frank has not played for 7 days, so he is in the "Lapsed >= 7 days" audience, and will receive the second reward tier for 20,000 coins.
-
-Remember, this process takes place at reward evaluation time. For a notification or email that will be at send time, while for a link that will be at click time. In this example, if the Tiered Reward was associated with a notification, even if Erin made a $20 purchase and entered the "Payers >= $100 in past 30 days" audience before tapping on the notification, she would still receive only 1,000 coins from the catchall Remaining claimants tier because at the time of send she was not in the "Payers >= $100 in past 30 days" audience. However, if the Tiered Reward was associated with a link, Erin would now receive the first reward tier for 50,000 coins on clicking the link, as the evaluation would take place at the time of the click.
-
-== Using With Notifications
-
-Teak provides the ability to template the reward a player will receive from a Tiered Reward into notification content (Facebook A2U, iOS local or push, Android local or push, or Email). Because the reward is selected at send time the templated content will accurately reflect what reward the player will receive, even if they change audience membership prior to tapping on the notification.
-
-To template the reward into a notification, first select the Tiered Reward as the Reward Bundle for the notification. After doing so, Teak will automatically add available template tags to the templating dropdown for all notification fields.
-
-.Inserting the "Coins Amount" template tag will template the number of coins the player will receive based on their selected reward tier from the Tiered Reward bundle.
+.The "Coins Amount" template tag resolves to the number of coins each player will receive based on their tier.
 image::rewards/notif_template.jpg[]
 
-We recommend templating the reward amount into all notifications which use a Tiered Reward bundle. Testing has shown that informing a player of the specifics of the reward they will receive (e.g. Click me for 50,000 FREE COINS! vs. Click me for tons of FREE COINS!) increases click through rate by 10-15% relative to baseline.
-
-After a notification with a Tiered Reward has been sent you can view all xref:user-guide:page$notification-metrics.adoc[window=_blank] broken out by the selected reward tier. To do so, in a notification content tab, switch to table view and then select "Show Audience Rewards (Table View Only)" from the filter dropdown.
+After a notification with a Tiered Reward has been sent you can view all xref:user-guide:page$notification-metrics.adoc[notification metrics] broken out by the selected reward tier. In the notification content tab, switch to table view and select *Show Audience Rewards (Table View Only)* from the filter dropdown.
 
 .Viewing per-audience metrics for a notification using a Tiered Reward bundle.
 image::rewards/notif_metrics.gif[]
 
-== Using With Links
-To use a Tiered Reward with a Link, simply create a Link and select a Tiered Reward as its Reward Bundle.
+== Use tiered rewards with links
 
-.A link with an Tiered Reward bundle.
+Create a link and select a Tiered Reward as its Reward Bundle.
+
+.A link with a Tiered Reward bundle.
 image::rewards/acr_link.jpg[]
 
-All link features including expiration, claim limitation, and deep linking, are compatible with Tiered Rewards. Expiration and claim limits will apply across all reward tiers combined. For example, if you create a link with an Tiered Reward bundle and Limit Total Claims to 5 players, only 5 players will be able to claim any rewards from the link, regardless of selected reward tier.
+All link features — expiration, claim limits, and deep linking — apply across all tiers combined. If you limit total claims to 5 players, only 5 players can claim any reward from the link, regardless of tier.
 
-After creating a link with a Tiered Reward you can view all link metrics broken out by the selected reward tier. To do so, switch to table view.
+After creating a link with a Tiered Reward, switch to table view to see metrics broken out by reward tier.
 
-.Viewing per-audience metrics for a link using an Tiered Reward bundle.
+.Viewing per-audience metrics for a link using a Tiered Reward bundle.
 image::rewards/link_metrics.gif[]
 
-== Editing Tiered Rewards
-A Tiered Reward bundle may be modified after it has been created, and even after it has been used. You may add, remove, or rearrange reward tiers, change which audiences are associated with tiers, and change the rewards that each tier gives out.
+== Common patterns
 
-If the modified Tiered Reward bundle is attached to a link, all changes take effect immediately and apply to all future clicks on the link.
+*Reward loyalty.* Put your highest-spend or most-engaged audience in the top tier with a premium reward. The Default Tier gives a standard reward to everyone else.
 
-If the modified Tiered Reward bundle is attached to a notification, then it changes the behavior of how that notification assigns rewards. After modifying a Tiered Reward attached to a notification, Teak will invalidate the rewards chosen at notification send time and will instead treat a click on the notification the same way it would a click on a link, and will select a reward tier based on the player's audience membership at notification click time.
+*Re-engage lapsed players.* Add a tier for players inactive for 7+ days with a larger reward to bring them back. Players still active receive a smaller reward from a lower-priority tier or the Default Tier.
 
-This is done so that if you discover that there was an error in your Tiered Reward bundle configuration after a notification was sent you can still modify the bundle and limit potential damages. For example, if you accidentally gave all remaining claimants 1,000,000 coins instead of 1,000 coins and did not catch this until after sending a notification, you could edit the Tiered Reward and immediately all future clicks on the previously sent notification would issue the corrected reward.
+*Seasonal events.* Create a time-limited tier with an event-specific audience and a higher reward. Archive the bundle after the event ends and restore it for the next one.
 
-Note that this will mean that any templated notification text is incorrect which may result in player complaints, so we strongly encourage you to double check all Tiered Reward configurations before using them in a notification.
+*Combine with randomization.* Enable both *Use Reward Tiers* and *Use Random Rewards* on the same bundle. Teak evaluates the tier first, then randomizes within that tier's reward set. Each tier can have independent odds — giving VIPs better minimum and maximum outcomes than casual players. See xref:page$rewards.adoc#randomized[randomized rewards] for setup details.
