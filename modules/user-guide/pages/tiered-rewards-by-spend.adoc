@@ -62,7 +62,7 @@ If you don't tell the player that they get a reward for tapping, and what that r
 
 == A/B Testing the Reward
 
-We can measure what kind of uplift tiering our rewards gets by running an A/B test. To configure this notification as an A/B test, click the "Create A/B Test" button. Teak will automatically copy the current configuration into a new variant for adjustment.
+We can measure what kind of uplift tiering our rewards gets by running an A/B test. To configure this message as an A/B test, click the "Create A/B Test" button. Teak will automatically copy the current configuration into a new variant for adjustment.
 
 In this case, we only want to test if offering spenders a larger reward increases their CTR. To test that, we want to reconfigure the B variant to use a tiered reward bundle with the same tiers, but giving every tier the same reward.
 
@@ -74,16 +74,16 @@ image::tiered-rewards-by-spend/control-bundle.png[]
 [NOTE]
 .Why do we need a tiered reward bundle that gives the same reward for each tier?
 ====
-When a tiered reward bundle is used with a notification, Teak provides metrics for each tier. If we used a Reward Bundle that was not tiered for our B variant, Teak would only show overall performance for the B notification, not performance split out by players who spend >$100, players who spent, and everyone else. By using this control bundle we tell Teak that we want metrics split out by our tiers. This will let us compare the results of this test for the audiences that we are offering larger rewards to.
+When a tiered reward bundle is used with a message, Teak provides metrics for each tier. If we used a Reward Bundle that was not tiered for our B variant, Teak would only show overall performance for the B message, not performance split out by players who spend >$100, players who spent, and everyone else. By using this control bundle we tell Teak that we want metrics split out by our tiers. This will let us compare the results of this test for the audiences that we are offering larger rewards to.
 ====
 
 == Checking Results
 
-After the notification has been sent, you can review the results of the A/B test. To do this, go to the appropriate notification tab, change to Table View, and in the Filter Menu select "Show Audience Rewards (Table View Only)". Teak will now display all metrics for both variants of the notification broken out by the reward tier audience.
+After the message has been sent, you can review the results of the A/B test. To do this, go to the appropriate message tab, change to Table View, and in the Filter Menu select "Show Audience Rewards (Table View Only)". Teak will now display all metrics for both variants of the message broken out by the reward tier audience.
 
 [.newsletter-img]
 image::tiered-rewards-by-spend/ab-test-results.png[]
 
-In our example, increasing the reward for players who spent more than $100 increased their click-through rate by 57%, and increasing the reward for players who spent at all increased their click-through rate by 42%. Our notification is now driving considerably more high-value players back into the game.
+In our example, increasing the reward for players who spent more than $100 increased their click-through rate by 57%, and increasing the reward for players who spent at all increased their click-through rate by 42%. Our message is now driving considerably more high-value players back into the game.
 
-Now that we know this, we can choose the variant using our tiered reward as the winner, and reuse the tiered reward bundle in other notifications to increase how many high-value players we're bringing into the game.
+Now that we know this, we can choose the variant using our tiered reward as the winner, and reuse the tiered reward bundle in other messages to increase how many high-value players we're bringing into the game.

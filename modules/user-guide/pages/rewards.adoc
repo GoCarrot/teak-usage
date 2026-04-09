@@ -1,7 +1,7 @@
 = Rewards
 :page-aliases: usage:rewards.adoc
 
-Reward bundles attach to notifications and links to deliver items or currency to players when they click. Bundles are reusable — create one once and attach it to as many notifications and links as you like.
+Reward bundles attach to notifications, emails, and links as incentives or prizes for players. Bundles are reusable — create one once and attach it to as many messages and links as you like.
 
 == Items and Currency
 
@@ -14,11 +14,11 @@ Your engineering team can assign items and currency within the code. Once they h
 . If you do not see what you're looking for, add it by clicking the "New Item or Currency" button
 . Give it a display name, and fill in the Internal ID from the name used in the code
 
-NOTE: Display names are for your reference only — they don't appear in notifications or link copy.
+NOTE: Display names are for your reference only — they don't appear in messages or link copy.
 
 == Bundle creation
 
-Bundles are reusable reward configurations. Once you create a bundle for, say, 1,000,000 coins, you can attach that same bundle to any notification or link. You never have to recreate the same reward twice.
+Bundles are reusable reward configurations. Once you create a bundle for, say, 1,000,000 coins, you can attach that same bundle to any message or link. You never have to recreate the same reward twice.
 
 === Setting up a bundle
 
@@ -59,7 +59,7 @@ NOTE: When "Use Random Rewards" is on, Teak picks one reward option per claim ba
 [[tiered]]
 == Tiered rewarding
 
-Tiered rewarding lets you send one notification to a broad audience while giving different rewards to different player segments — for example, giving more in-game currency to players who have spent than to players who have never purchased, without creating separate notifications for each group.
+Tiered rewarding lets you send one notification or email to a broad audience while giving different rewards to different player segments — for example, giving more in-game currency to players who have spent than to players who have never purchased, without creating separate messages for each group.
 
 === Setting up tiered rewarding
 
@@ -80,7 +80,7 @@ You can enable both "Use Reward Tiers" and "Use Random Rewards" on the same bund
 
 == Testing a bundle
 
-Test a bundle to verify the right tier resolves and the reward payload is correct before attaching it to a live notification.
+Test a bundle to verify the right tier resolves and the reward payload is correct before attaching it to a live message.
 
 . Find the bundle on the Rewards page and click *Edit ▾ → Test*
 . Under "Test Reward for Audience", select the tier to simulate
@@ -99,7 +99,7 @@ Archiving removes a bundle from the active list without deleting it. Use this to
 
 *To restore:* open the *Filter* dropdown, enable "Show archived", find the bundle, and click *Restore*.
 
-NOTE: If a bundle is attached to an active notification or link, Teak won't delete it — it will offer to archive it instead.
+NOTE: If a bundle is attached to an active message or link, Teak won't delete it — it will offer to archive it instead.
 
 == Verifying reward collection
 
@@ -116,6 +116,6 @@ The Audit Log shows successful and failed responses from your server after Teak 
 Results show:
 
 * *Time:* when the player initiated receipt of the reward
-* *Identifier:* the name of the notification or link clicked
+* *Identifier:* the name of the message or link clicked
 * *Reward:* the item or currency and amount
 * *Server Response:* the success or failure response from your server
