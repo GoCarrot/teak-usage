@@ -78,6 +78,16 @@ Tiered rewarding lets you send one notification or email to a broad audience whi
 You can enable both "Use Reward Tiers" and "Use Random Rewards" on the same bundle. Teak evaluates tiers first to select the reward set for that player, then randomizes within that set. Each tier can have its own reward options and independent odds. This lets you offer your VIPs better minimum and maximum rewards than other players.
 ====
 
+== Archiving a bundle
+
+Archiving removes a bundle from the active list without deleting it. Use this to retire seasonal or outdated bundles while keeping them available for reference or reuse.
+
+*To archive:* click *Edit ▾ → Archive*.
+
+*To restore:* open the *Filter* dropdown, enable "Show archived", find the bundle, and click *Restore*.
+
+NOTE: If a bundle is attached to an active message or link, Teak won't delete it — it will offer to archive it instead.
+
 == Testing a bundle
 
 Test a bundle to verify the right tier resolves and the reward payload is correct before attaching it to a live message.
@@ -90,16 +100,6 @@ Test a bundle to verify the right tier resolves and the reward payload is correc
 . Click *Test*
 
 Teak sends a real POST request to your reward endpoint. The dialog shows the full request and your server's response.
-
-== Archiving a bundle
-
-Archiving removes a bundle from the active list without deleting it. Use this to retire seasonal or outdated bundles while keeping them available for reference or reuse.
-
-*To archive:* click *Edit ▾ → Archive*.
-
-*To restore:* open the *Filter* dropdown, enable "Show archived", find the bundle, and click *Restore*.
-
-NOTE: If a bundle is attached to an active message or link, Teak won't delete it — it will offer to archive it instead.
 
 == Verifying reward collection
 
