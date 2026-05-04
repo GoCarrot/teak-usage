@@ -23,6 +23,14 @@ The date range of metrics in Teak are controlled by the date picker in the top b
 
 Changing the date range will update all metrics in the dashboard to only include data from the selected time period. This is useful for reporting data for a particular month or quarter.
 
+=== Aggregating Metrics
+
+Next to the date picker is an aggregation dropdown with four options: Daily, Weekly, Monthly, and Quarterly. This controls how chart data points are bucketed — totals and averages on the dashboard still cover the whole date range.
+
+Switching to a coarser aggregation extends the date range so it covers complete periods. For example, picking Weekly when the range is Apr 21 – May 4 expands it to Apr 19 – May 9 so each bucket is a full Sunday–Saturday week. Teak shows a confirmation that calls out the adjustment. Switching to a finer aggregation leaves the range as-is.
+
+Weeks run Sunday–Saturday. Months and quarters are calendar-aligned (so quarters start Jan 1, Apr 1, Jul 1, Oct 1).
+
 === Filtering
 
 All data lists in Teak have a filter dropdown. This can be useful for narrowing down the data you are pulling for a report.
