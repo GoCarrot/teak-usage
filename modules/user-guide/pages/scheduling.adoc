@@ -98,3 +98,37 @@ A Local Schedule is a Schedule set to "Local" which will be sent based on calls 
 You will need to set up the Message and Schedule before your dev team can send the notification. Your dev team will need the Name of the Schedule in order to make the appropriate calls on their end, and because the Name will be referenced by code in your game client or server you should avoid changing it after creating a Local Schedule.
 
 You can use the same Message features, like images, formatting, and rewards, with a Local Schedule. Additionally, a Message associated with a Local Schedule can template in custom per send tags provided by the game when it makes the appropriate call to send the notification (See xref:ROOT:user-guide:page$custom-tags.adoc#_local_notification_tags[Local Notification Tags, window=_blank]). You will need to coordinate with your dev team to determine what additional data is available.
+
+[#_drafts]
+== Saving as a Draft
+
+A *Draft* is a fully set-up Schedule that Teak holds back from sending until you activate it. Everything you’ve configured (Audience, Message, timing, and targeting) is saved, but nothing goes out, no matter which send type the Schedule uses.
+
+Drafts are made for sign-off. Say you’ve got a live event planned and you want to lock down the dates with your dev team before committing: set the whole Schedule up, save it as a Draft, and activate it once you have final approval. One person can prepare the Schedule, and a teammate can review the content, audience, and timing before it goes live.
+
+=== Saving a Draft
+
+While creating or editing a Schedule, click *Save Draft* instead of sending or activating. This works for every send type: Later, Now, Triggered, and Local. A *Now* Draft is saved without being sent; it won’t deliver until you activate it.
+
+A Draft still needs all of its required fields (name, Audience, and Message) before it can be saved. If anything required is missing, Teak points out what's left and won't save the Draft until the Schedule is complete.
+
+NOTE: The *Save Draft* option is only available while a Schedule hasn't been sent. Schedules that have already sent can't be turned back into Drafts.
+
+=== Reviewing and Activating a Draft
+
+Open a Draft from the Schedules tab and choose *Review Draft* to open it in the edit view, where every field is visible and editable. A banner reminds you that the Schedule is a Draft and won't send until it's activated.
+
+When the Schedule is ready, activate it:
+
+* *Save & Activate*: activates the Schedule so it sends at its scheduled time (Later), on its trigger (Triggered), or on your dev team's calls (Local).
+* *Send now*: appears for *Now* Drafts and sends the message immediately upon activation.
+
+TIP: Activating a *Later* Draft whose start time has already passed will move the start time forward, so the Schedule still sends rather than silently missing its window. Review the timing before you activate.
+
+=== Converting a Schedule to a Draft
+
+You can also pull an existing Schedule back into Draft state. From a Schedule's actions menu in the Schedules tab, choose *Convert to Draft*. The Schedule stops sending and returns to Draft status, so you can make changes and re-activate it when you're ready. This is available for active, paused, and cancelled one-time Schedules.
+
+=== Finding Your Drafts
+
+Drafts appear in the Schedules tab alongside your other Schedules, marked with a *Draft* badge. To see only Drafts, select the *Draft* option in the filter dropdown. Drafts are excluded from the *Upcoming* and *Paused* filters but still show up under their send-type filters (One Time, Repeating, Triggered, Local).
