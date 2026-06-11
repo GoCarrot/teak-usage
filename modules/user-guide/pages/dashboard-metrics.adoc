@@ -3,6 +3,8 @@
 
 These are the metrics Teak displays in the main Dashboard, with a description of how Teak calculates the metric.
 
+NOTE: These metrics reflect the date range and aggregation period selected in the dashboard. See xref:user-guide:page$reporting.adoc#_aggregating_metrics[Aggregating Metrics, window=_blank] for how the date range and grouping interact.
+
 == General
 average daily active users::
 Each unique game assigned player id or Facebook App Scoped ID Teak sees in a day is counted as a daily active user. For display in the dashboard this value is averaged over the currently selected time frame.

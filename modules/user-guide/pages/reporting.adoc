@@ -25,11 +25,13 @@ Changing the date range will update all metrics in the dashboard to only include
 
 === Aggregating Metrics
 
-Next to the date picker is an aggregation dropdown with four options: Daily, Weekly, Monthly, and Quarterly. This controls how chart data points are bucketed — totals and averages on the dashboard still cover the whole date range.
+Next to the date picker is an aggregation dropdown with four options: Daily, Weekly, Monthly, and Quarterly. This controls how chart data points are *grouped*. The totals and averages on the dashboard still cover the whole date range; only the granularity of the chart points changes.
 
-Switching to a coarser aggregation extends the date range so it covers complete periods. For example, picking Weekly when the range is Apr 21 – May 4 expands it to Apr 19 – May 9 so each bucket is a full Sunday–Saturday week. Teak shows a confirmation that calls out the adjustment. Switching to a finer aggregation leaves the range as-is.
+Pick the grouping that fits the question you're answering. Daily is best for seeing the impact of a specific campaign or event. Weekly smooths out day-of-week swings, like weekends versus weekdays, so a longer trend is easier to read. Monthly and Quarterly suit higher-level reviews and stakeholder reporting, where one point per month or quarter is more useful than daily detail.
 
-Weeks run Sunday–Saturday. Months and quarters are calendar-aligned (so quarters start Jan 1, Apr 1, Jul 1, Oct 1).
+Because every grouping is built from whole periods, switching to a coarser one extends the date range to cover complete periods. For example, picking Weekly when the range is Apr 21 – May 4 expands it to Apr 19 – May 9 so each bucket is a full Sunday–Saturday week. Teak shows a confirmation that calls out the adjustment before applying it. Switching to a finer grouping leaves the range as-is.
+
+Weeks run Sunday–Saturday. Months and quarters are calendar-aligned, so quarters start Jan 1, Apr 1, Jul 1, and Oct 1. Date-range presets such as *Last Month* align to whichever grouping is active.
 
 === Filtering
 
