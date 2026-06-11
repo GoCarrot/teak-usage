@@ -5,6 +5,8 @@ These are the metrics Teak tracks for links with a description of what causes Te
 
 TIP: Not every metric is visible by default. Change to Compact or Table View to see all available metrics.
 
+NOTE: These metrics reflect the date range and aggregation period selected in the dashboard. See xref:user-guide:page$reporting.adoc#_analyzing[Analyzing, window=_blank] for how the date range and grouping interact.
+
 :channel: link
 
 Rewards Claimed::
