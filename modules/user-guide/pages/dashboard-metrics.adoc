@@ -3,7 +3,7 @@
 
 These are the metrics Teak displays in the main Dashboard, with a description of how Teak calculates the metric.
 
-NOTE: These metrics reflect the date range and aggregation period selected in the dashboard. See xref:user-guide:page$reporting.adoc#_aggregating_metrics[Aggregating Metrics, window=_blank] for how the date range and grouping interact.
+NOTE: These metrics reflect the date range and aggregation period selected in the dashboard. See xref:user-guide:page$reporting.adoc#_analyzing[Analyzing, window=_blank] for how the date range and grouping interact.
 
 == General
 average daily active users::
