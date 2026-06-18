@@ -8,21 +8,20 @@ Teak sends targeted push notifications and rewards players to bring them back to
 
 Before you begin integrating Teak into your project, make sure you have:
 
-* A game project (iOS, Android, or Facebook).
+* A game project (iOS, Android, web, or Facebook).
 * The ability to test new builds on devices or simulators/emulators.
 * Access to logs (device console or Unity console) so you can review Teak's debug output.
 
 == How a Teak Integration Works
 
-However your game is built, a Teak integration is the same five steps. Each platform's quickstart walks you through them with the specifics for that platform:
+Every Teak integration is the same six steps. Steps 1 through 5 run on the client, and your platform's quickstart walks you through each one. Step 6 runs on your backend:
 
 . *Create your game in the Teak Dashboard.* You get an app ID and an API key.
 . *Install the SDK* for your engine or platform so your game can talk to Teak.
 . *Identify the player* so Teak knows who's playing and can target and reward them.
 . *Ask for push permission* so you can reach players when they're not in the game.
 . *Send a test notification* to confirm the integration end to end.
-
-Once these are in place, you can send targeted and scheduled push notifications and reward players for coming back.
+. *Set up the Reward Endpoint* so Teak can grant rewards through a server-to-server call when a player comes back.
 
 == Choose Your SDK
 
@@ -37,7 +36,7 @@ a|
 image::unity.svg[Unity Logo,50,xref=unity::page$quickstart/index.adoc]
 
 xref:unity::page$quickstart/index.adoc[*Unity SDK Quickstart*] +
-One SDK for iOS, Android, and WebGL / Facebook Canvas.
+One SDK for iOS, Android, WebGL, and Facebook.
 ====
 
 a|
@@ -47,7 +46,7 @@ a|
 image::javascript.svg[JavaScript Logo,50,xref=javascript::page$quickstart/index.adoc]
 
 xref:javascript::page$quickstart/index.adoc[*JavaScript SDK Quickstart*] +
-For web and Facebook Canvas games.
+For web browser and Facebook games.
 ====
 
 a|
@@ -57,7 +56,7 @@ a|
 image::appstore.svg[iOS Logo,50,xref=ios::page$integration.adoc]
 
 xref:ios::page$integration.adoc[*iOS Native SDK*] +
-For native iOS apps. Building in Unity? Use the Unity SDK instead.
+For native iOS apps.
 ====
 
 a|
@@ -67,16 +66,16 @@ a|
 image::android.svg[Android Logo,50,xref=android::page$integration.adoc]
 
 xref:android::page$integration.adoc[*Android Native SDK*] +
-For native Android apps. Building in Unity? Use the Unity SDK instead.
+For native Android apps.
 ====
 
 |===
 
-[NOTE]
+[TIP]
 ====
-Push setup (Apple APNs, Android FCM) is part of each platform's quickstart — you don't need to gather credentials before you start.
+If your game is built in Unity, use the xref:unity::page$quickstart/index.adoc[Unity SDK], it will set up and install the native SDKs for you.
 ====
 
 == Server-Side: the Reward Endpoint
 
-Most of Teak is client-side, but rewarding runs through your backend. Start with the xref:server-api::page$rewards/endpoint.adoc[*Reward Endpoint*], the highest-impact backend feature since rewards are what bring players back, then explore the xref:server-api::page$index.adoc[*Server API Overview*] for the full set of backend features.
+Most Teak features are handled by the client, but some need a server integration. We recommend starting with the xref:server-api::page$rewards/endpoint.adoc[*Reward Endpoint*] (because players love free coins), then exploring the xref:server-api::page$index.adoc[*Server API Overview*] for a complete look at Teak's backend features.
