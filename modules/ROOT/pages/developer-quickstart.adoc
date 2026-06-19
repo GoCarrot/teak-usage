@@ -15,7 +15,7 @@ Before you begin integrating Teak into your project, make sure you have:
 
 == How a Teak Integration Works
 
-Every Teak integration is the same six steps. Steps 1 through 5 run on the client, and your platform's quickstart walks you through each one. Step 6 runs on your backend:
+Every Teak integration is the same six steps. Steps 1 through 5 run on the client, and your platform's quickstart walks you through each one. Step 6 connects your backend to Teak:
 
 . *Create your game in the Teak Dashboard.* You get an app ID and an API key.
 . *Install the SDK* for your engine or platform so your game can talk to Teak.
@@ -82,7 +82,7 @@ If your game is built in Unity, use the xref:unity::page$quickstart/index.adoc[U
 The xref:server-api::page$index.adoc[*Teak Server API*] connects your game's backend with Teak, server to server:
 
 * *Grant rewards* with the xref:server-api::page$rewards/endpoint.adoc[Reward Endpoint] (because players love free coins).
-* *Send notifications from your server* in response to game events, including xref:server-api::page$notifications/v2_schedule.adoc[scheduled] and bulk sends.
+* *Trigger notifications from your server* in response to game events, including xref:server-api::page$notifications/v2_schedule.adoc[scheduled] and bulk sends.
 * *Keep player data in sync*: xref:server-api::page$other/v2_player_properties.adoc[player properties], xref:server-api::page$other/v2_purchase.adoc[purchases], and xref:server-api::page$other/v2_email.adoc[email].
 * *Manage preferences and privacy*: xref:server-api::page$other/v2_opt_out_categories.adoc[opt-out categories], subscriptions, and xref:server-api::page$other/v2_users.adoc[player removal].
 
