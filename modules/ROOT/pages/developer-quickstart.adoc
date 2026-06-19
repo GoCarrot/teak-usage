@@ -2,7 +2,7 @@
 :page-aliases: /home/developers.adoc
 :!page-pagination:
 
-Teak sends targeted push notifications and rewards players to bring them back to your game. It runs through a platform SDK on the client, plus a server-side Reward Endpoint on your backend. This page walks through what an integration involves and points you to the right guide for your platform.
+Teak brings players back to free-to-play games with rewardable push notifications, emails, and links. You integrate it with a platform SDK on the client, and connect your backend to the Teak Server API. This page walks through what an integration involves and points you to the right guide for your platform.
 
 == Before You Start
 
@@ -11,6 +11,7 @@ Before you begin integrating Teak into your project, make sure you have:
 * A game project (iOS, Android, web, or Facebook).
 * The ability to test new builds on devices or simulators/emulators.
 * Access to logs (device console or Unity console) so you can review Teak's debug output.
+* For push, the credentials your platform needs: the xref:ROOT:integrations:page$apple-apns.adoc[Apple push certificate] for iOS, xref:ROOT:integrations:page$firebase-fcm.adoc[Firebase/FCM config] for Android, or xref:ROOT:integrations:page$amazon-device-messaging.adoc[Amazon ADM] for Fire devices. Lining up access early saves a mid-integration wall.
 
 == How a Teak Integration Works
 
@@ -76,6 +77,13 @@ For native Android apps.
 If your game is built in Unity, use the xref:unity::page$quickstart/index.adoc[Unity SDK], it will set up and install the native SDKs for you.
 ====
 
-== Server-Side: the Reward Endpoint
+== Server API
 
-Most Teak features are handled by the client, but some need a server integration. We recommend starting with the xref:server-api::page$rewards/endpoint.adoc[*Reward Endpoint*] (because players love free coins), then exploring the xref:server-api::page$index.adoc[*Server API Overview*] for a complete look at Teak's backend features.
+The xref:server-api::page$index.adoc[*Teak Server API*] connects your game's backend with Teak, server to server:
+
+* *Grant rewards* with the xref:server-api::page$rewards/endpoint.adoc[Reward Endpoint] (because players love free coins).
+* *Send notifications from your server* in response to game events, including xref:server-api::page$notifications/v2_schedule.adoc[scheduled] and bulk sends.
+* *Keep player data in sync*: xref:server-api::page$other/v2_player_properties.adoc[player properties], xref:server-api::page$other/v2_purchase.adoc[purchases], and xref:server-api::page$other/v2_email.adoc[email].
+* *Manage preferences and privacy*: xref:server-api::page$other/v2_opt_out_categories.adoc[opt-out categories], subscriptions, and xref:server-api::page$other/v2_users.adoc[player removal].
+
+Most games start with the Reward Endpoint, then add the rest as they need it.
