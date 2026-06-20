@@ -4,15 +4,6 @@
 
 Teak brings players back to free-to-play games with rewardable push notifications, emails, and links. You integrate it with a platform SDK on the client, and connect your backend to the Teak Server API. This page walks through what an integration involves and points you to the right guide for your platform.
 
-== Before You Start
-
-Before you begin integrating Teak into your project, make sure you have:
-
-* A game project (iOS, Android, web, or Facebook).
-* The ability to test new builds on devices or simulators/emulators.
-* Access to logs (device console or Unity console) so you can review Teak's debug output.
-* For push, the credentials your platform needs: the xref:ROOT:integrations:page$apple-apns.adoc[Apple push certificate] for iOS, xref:ROOT:integrations:page$firebase-fcm.adoc[Firebase/FCM config] for Android, or xref:ROOT:integrations:page$amazon-device-messaging.adoc[Amazon ADM] for Fire devices. Lining up access early saves a mid-integration wall.
-
 == How a Teak Integration Works
 
 Every Teak integration is the same six steps. Steps 1 through 5 run on the client, and your platform's quickstart walks you through each one. Step 6 connects your backend to Teak:
@@ -23,6 +14,17 @@ Every Teak integration is the same six steps. Steps 1 through 5 run on the clien
 . *Ask for push permission* so you can reach players when they're not in the game.
 . *Send a test notification* to confirm the integration end to end.
 . *Set up the Reward Endpoint* so Teak can grant rewards through a server-to-server call when a player comes back.
+
+After these six steps, the basic integration is complete. Your platform's developer guide covers additional topics, including deep links, player properties, and local notifications.
+
+== Before You Start
+
+Before you begin integrating Teak into your project, make sure you have:
+
+* A game project (iOS, Android, web, or Facebook).
+* The ability to test new builds on devices or simulators/emulators.
+* Access to logs (device console or Unity console) so you can review Teak's debug output.
+* For push, the credentials your platform needs: the xref:ROOT:integrations:page$apple-apns.adoc[Apple push certificate] for iOS, xref:ROOT:integrations:page$firebase-fcm.adoc[Firebase/FCM config] for Android, or xref:ROOT:integrations:page$amazon-device-messaging.adoc[Amazon ADM] for Fire devices. Lining up access early saves a mid-integration wall.
 
 == Choose Your SDK
 
