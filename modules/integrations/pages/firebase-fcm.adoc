@@ -17,7 +17,7 @@ In this guide, we'll download a Service Account Key (in JSON format), and copy t
 +
 [IMPORTANT]
 ====
-If you need to confirm that you have the correct Firebase project: Open the `google-services.json` file from your Unity Project and find the `project_number`. Confirm that the value matches the `Sender ID` value on the menu:Cloud Messaging[] tab.
+If you need to confirm that you have the correct Firebase project: Open the `google-services.json` file from your project and find the `project_number`. Confirm that the value matches the `Sender ID` value on the menu:Cloud Messaging[] tab.
 ====
 
 . Click the **gear icon** in the upper left corner, and click **Project settings**.
