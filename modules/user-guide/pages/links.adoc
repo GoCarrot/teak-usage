@@ -111,11 +111,11 @@ When this option is enabled, the game will not be opened when the shared link is
 
 == Dynamo Protected Links
 
-If you send rewards through Dynamo, a Dynamo Protected Link makes sure only players who come through Dynamo can claim the reward. Dynamo gives each player their own copy of the link, and each copy can be claimed once. Dynamo explains their side in their https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank].
+If you send messages to players through https://dynamo.fyi[Dynamo, window=_blank], a Dynamo Protected Link makes sure only players who come through Dynamo can claim the reward. Dynamo gives each player their own copy of the link, and each copy can be claimed once. Dynamo explains their side of the setup in their https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank].
 
 === Set up Dynamo
 
-Dynamo is a per-game feature. If you don't see a Dynamo panel in your game's settings, contact Teak support and we'll turn it on.
+Dynamo is a per-game feature, and you'll need your Dynamo API key and secret. See Dynamo's https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank] for setup instructions. If you don't see a Dynamo panel in your game's settings, contact Teak support and we'll turn it on.
 
 . Go to *Settings → Server*
 . In the *Dynamo* panel, click *Setup Dynamo Credentials*
