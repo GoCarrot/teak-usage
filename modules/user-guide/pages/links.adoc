@@ -63,6 +63,9 @@ These links are ideal for one-on-one interactions like customer support, social 
 +
 After creating the Link, you'll have an option to "Generate Bulk". From there you may generate a specific number of individual links to be exported to a CSV file. Each unique URL is single-use and may only be claimed once.
 
+Dynamo Protected Link::
+Rewards on Dynamo Protected Links can only be claimed by players who reach the link through Dynamo, and each link can be claimed once. This option only appears if Dynamo is turned on for your game. See <<_dynamo_protected_links,Dynamo Protected Links>> below.
+
 NOTE: You do not need links for sending email through Teak, emails use their own single use links automatically.
 
 === Limits
@@ -106,9 +109,52 @@ There is an option to skip the game open when opening an Out of Game URL.
 
 When this option is enabled, the game will not be opened when the shared link is tapped or clicked on any platform. Instead, the player will be taken directly to the configured URL. Rewards cannot be granted when the game open is skipped. Clicks will be tracked, and if a player opens the game on the same device within an hour of click, they will be tracked as a xref:ROOT:user-guide:page$link-metrics.adoc#_returning_user[Returning User, window=_blank] for the Link.
 
+== Dynamo Protected Links
+
+If you send rewards through Dynamo, a Dynamo Protected Link makes sure only players who come through Dynamo can claim the reward. Dynamo gives each player their own copy of the link, and each copy can be claimed once. Dynamo explains their side in their https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank].
+
+=== Set up Dynamo
+
+Dynamo is a per-game feature. If you don't see a Dynamo panel in your game's settings, contact Teak support and we'll turn it on.
+
+. Go to *Settings → Server*
+. In the *Dynamo* panel, click *Setup Dynamo Credentials*
+. Enter your Dynamo *API Key* and *Secret*, then click *Save*
+
+Teak never shows the Secret again after you save it. To update your credentials later, click *Change Credentials*. Leave the Secret blank to keep the one you already saved, or enter a new one to replace it.
+
+=== Create a Dynamo link
+
+. Create a Link as usual (see <<_setting_up_links,Setting Up Links>>)
+. Choose a *Reward Bundle*
+. Under *Redemption Type*, choose *Dynamo Protected Link*
+. Save the Link
+
+*Dynamo Protected Link* is greyed out until you've saved your Dynamo credentials. You can't change a Link's redemption type after it's created, so make a new Link if you picked the wrong one.
+
+In the Links list, these Links are labeled *Dynamo Link*.
+
+=== Get the URL for Dynamo
+
+Click *View URL* on the Link, then click *Copy Dynamo URL*. Use this URL as the link you protect in Dynamo.
+
+Dynamo Links don't have QR codes. The URL on its own can't be used to claim the reward: only the version Dynamo sends to each player works.
+
+=== Test a Dynamo link
+
+You can make a working test link without going through Dynamo. Select *Generate Test Link* from the dropdown by the Link, or use the *Test the reward* section of the *View URL* window. Teak gives you a one-time link signed the same way Dynamo signs player links. Click *Copy URL* to copy it.
+
+A test link expires after 5 minutes and can only be claimed once. Click *Generate new link* if you need another.
+
+NOTE: *Generate Test Link* only appears on active Dynamo Links, once your Dynamo credentials are saved, and it isn't available on every game. Contact Teak support if you don't see it.
+
+=== If a link is shared outside Dynamo
+
+If a player opens the plain Link URL, or a Dynamo URL Teak can't verify, the game launches as it would for any Link, but no reward is granted. The player doesn't see an error, so if a player says they clicked and got nothing, check that they came through Dynamo.
+
 == QR Codes
 
-All Links created in Teak come with QR codes for you to share. Depending on the configuration of the Link, Teak will provide two or three different QR code variants.
+Links created in Teak come with QR codes for you to share, except for <<_dynamo_protected_links,Dynamo Protected Links>>. Depending on the configuration of the Link, Teak will provide two or three different QR code variants.
 
 [.float-group]
 --
