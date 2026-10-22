@@ -64,7 +64,7 @@ These links are ideal for one-on-one interactions like customer support, social 
 After creating the Link, you'll have an option to "Generate Bulk". From there you may generate a specific number of individual links to be exported to a CSV file. Each unique URL is single-use and may only be claimed once.
 
 Dynamo Protected Link::
-Rewards on Dynamo Protected Links can only be claimed by players who reach the link through Dynamo, and each link can be claimed once. This option only appears if Dynamo is turned on for your game. See <<_dynamo_protected_links,Dynamo Protected Links>> below.
+Dynamo is a third-party service, separate from Teak, that you can use to send messages to players. Rewards on Dynamo Protected Links can only be claimed by players who reach the link through Dynamo, and each link can be claimed once. This option only appears if Dynamo is turned on for your game. See <<_dynamo_protected_links,Dynamo Protected Links>> below.
 
 NOTE: You do not need links for sending email through Teak, emails use their own single use links automatically.
 
@@ -111,7 +111,7 @@ When this option is enabled, the game will not be opened when the shared link is
 
 == Dynamo Protected Links
 
-If you send messages to players through https://dynamo.fyi[Dynamo, window=_blank], a Dynamo Protected Link makes sure only players who come through Dynamo can claim the reward. Dynamo gives each player their own copy of the link, and each copy can be claimed once. Dynamo explains their side of the setup in their https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank].
+https://dynamo.fyi[Dynamo, window=_blank] is a third-party service, separate from Teak, that you can use to send messages to players. If you send rewards through Dynamo, a Dynamo Protected Link makes sure only players who come through Dynamo can claim the reward. Dynamo gives each player their own copy of the link, and each copy can be claimed once. Dynamo explains their side of the setup in their https://docs.dynamo.fyi/docs/link-protection[link protection docs, window=_blank].
 
 === Set up Dynamo
 
