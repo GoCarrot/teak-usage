@@ -50,4 +50,19 @@ Planning your names and descriptions to be search friendly can save you time whe
 
 == Exporting
 
-While in Table view, you may choose to download a .CSV of the visible data. There is a Download button to the left of the first column header. The data can then be aggregated further in your spreadsheet software of choice.
+On lists that support export, use the *Export CSV* icon in the list's toolbar to download a .CSV of that list. Sort order and filters are respected, and you choose the file name and which columns to include. The data can then be aggregated further in your spreadsheet software of choice.
+
+=== One row per day
+
+On lists that show metrics, such as Schedules, the Export CSV dialog has a *One row per day* checkbox. It is checked by default.
+
+When it's checked:
+
+* The CSV starts with a *Date* column (`YYYY-MM-DD`) and has one row per item per day across the date range you've selected.
+* Metric columns hold that day's value. Name, description, and other non-metric columns repeat on each row.
+
+Rows are always per day, even when the dashboard is grouped by week, month, or quarter.
+
+Use per-day rows to chart a specific schedule's sends or clicks over time and spot whether it's trending up or down across a long range.
+
+Uncheck it to get one row per item with totals for the whole date range.
