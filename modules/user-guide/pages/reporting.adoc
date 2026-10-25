@@ -58,13 +58,11 @@ On lists that show metrics, such as Schedules, the Export CSV dialog has a *One 
 
 When it's checked:
 
-* The CSV starts with a *Date* column (`YYYY-MM-DD`, in UTC) and has one row per item per day across the date range you've selected.
+* The CSV starts with a *Date* column (`YYYY-MM-DD`) and has one row per item per day across the date range you've selected.
 * Metric columns hold that day's value. Name, description, and other non-metric columns repeat on each row.
-* Days where every selected metric column is 0 or blank are left out, so an item with no activity in the range has no rows. If you haven't selected any metric columns, every day is kept.
-* The dialog shows _Loading daily data…_ and keeps *Download CSV* disabled until the daily data is ready.
 
 Rows are always per day, even when the dashboard is grouped by week, month, or quarter.
 
-When it's unchecked, you get one row per item with totals for the whole date range.
+Use per-day rows to chart a specific schedule's sends or clicks over time and spot whether it's trending up or down across a long range.
 
-Per-day rows are the way to see whether a specific schedule's sends or clicks are trending up or down over a long range. The dashboard above the list only shows the aggregate.
+Uncheck it to get one row per item with totals for the whole date range.
