@@ -33,29 +33,3 @@ When in doubt, read the page you're editing and the most recent commits touching
 ## Branching
 
 Per global conventions: `docs/`, `feat/`, `fix/`, `maint/` prefixes, single-purpose branches. Most work here is `docs/<topic>`.
-
-## Committing
-
-When making a commit, ensure you include a human/claude interaction log. This is mandatory, and captures the human intent of actions you perform. Make the humans accountable.
-
-```
-## Human-Claude Interaction Log
-
-### Human prompts (VERBATIM - include typos, informal language, COMPLETE text):
-**Include EVERY prompt since last commit - even short ones, corrections, clarifications**
-1. "[Copy-paste ENTIRE first prompt since last commit]"
-   → Claude: [What Claude did in response]
-
-2. "[Copy-paste ENTIRE second prompt - including [Request interrupted] if present]"
-   → Claude: [How Claude adjusted]
-
-[Continue numbering ALL prompts - don't skip any or judge importance]
-
-```
-
-Be sure to end your commit with Claude attribution
-
-```
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>
-```
