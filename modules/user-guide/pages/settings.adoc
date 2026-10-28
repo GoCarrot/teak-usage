@@ -68,6 +68,14 @@ If you have a Facebook application and your game allows players to connect with 
 
 The Desktop Links panel is where you configure a URL you want the browser to open when your links are clicked on desktop computers or when a Web Push is clicked on any platform. An entry is required for Facebook notifications, xref:ROOT:user-guide:page$links.adoc[Links], xref:ROOT:user-guide:page$email.adoc[Email], and Web Push.
 
+==== Native desktop app
+
+Check *Native desktop app* if your game ships a desktop app, such as an Electron app, that registers the `teak<appid>://` URL scheme, where `<appid>` is your Teak App ID. When a player clicks one of your xref:ROOT:user-guide:page$links.adoc[Links] or xref:ROOT:user-guide:page$email.adoc[Email] links on a desktop computer, their browser offers to open your app and, after a few seconds, goes to your Desktop Game URL.
+
+The setting applies to links saved after you turn it on. Contact Teak to update links that already exist.
+
+See xref:javascript::teak-features.adoc#_electron_and_native_desktop_apps[Electron and Native Desktop Apps] for how to register the scheme and handle the links in your app.
+
 === Web Push Configuration
 
 The Web Push Configuration panel is where you configure details specific to Web Push. Here you can upload an image to be used as the xref:ROOT:user-guide:page$notification-content.adoc#android_web_push_style[badge] for Web Push notifications sent to Android devices. An image for a badge should be a single-color PNG with transparency (alpha channel). The recommended size is 96x96 pixels.

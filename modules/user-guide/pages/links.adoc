@@ -87,7 +87,7 @@ Taps and clicks on the shared link will attempt to launch the game, and any asso
 +
 If the game is not installed on mobile devices, the player will be taken to the game listing in the appropriate app store for that device. (The app store link is based on the iTunes Product ID or Android Package Name configured in the game settings.)
 +
-If the shared link is clicked on a desktop device, the player will be taken to the Desktop Game URL set in the game settings.
+If the shared link is clicked on a desktop device, the player will be taken to the Desktop Game URL set in the game settings. If your game has a xref:ROOT:user-guide:page$settings.adoc#_native_desktop_app[native desktop app], the player's browser first offers to open it.
 
 Game Deep Link::
 Direct players to a specific location in your game with a xref:unity::teak-unity-features.adoc#_deep_links[Deep Link, window=_blank] route.
