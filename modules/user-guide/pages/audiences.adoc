@@ -126,7 +126,7 @@ In addition, you can expand the detailed data. Here you can evaluate the overall
 
 Uploading a .CSV or .XLSX file is a great way to ensure a very specific set of players is sent a Message.
 
-. Create a new Audience and choose the upload option, then select your CSV or Excel file.
+. Create a new Audience, open the *Upload List* tab, and select your CSV or Excel file.
 . Teak shows a preview of the file. If your file has column names in its first row, check *First row contains column names*. Otherwise, leave it unchecked and the first row is treated as data.
 . For each column in the file, use the *Import as* menu to say what it contains:
 ** *Player ID* (required): the game assigned player ID used to match each row to a player.
