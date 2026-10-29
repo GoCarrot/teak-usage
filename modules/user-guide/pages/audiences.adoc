@@ -124,9 +124,22 @@ In addition, you can expand the detailed data. Here you can evaluate the overall
 
 == Audience Creation by Upload
 
-Uploading a .CSV or .XLSX file is a great way to ensure a very specific set of players is sent a Message. No headings are necessary, and the only thing that will be uploaded is the first column of player IDs.
+Uploading a .CSV or .XLSX file is a great way to ensure a very specific set of players is sent a Message.
 
-After the upload, save your Audience, and an email will be sent with the details on your list.
+. Create a new Audience, open the *Upload List* tab, and select your CSV or Excel file.
+. Teak shows a preview of the file. If your file has column names in its first row, check *First row contains column names*. Otherwise, leave it unchecked and the first row is treated as data.
+. For each column in the file, use the *Import as* menu to say what it contains:
+** *Player ID* (required): the game assigned player ID used to match each row to a player.
+** *Email* (optional): an email address for the player.
+** Any of your server-set Player Properties (optional).
+** *Don't import*: ignore this column.
+. Save your Audience. An email will be sent with the details on your list.
+
+Teak fills in the menus for you when a column name matches one of the fields. Check them over, since you can change any of them. Each field can be assigned to only one column, and you can't save until a column is set to Player ID.
+
+If a spreadsheet program has converted your Player IDs to scientific notation (for example `1.23E+15`), Teak flags the column and asks you to confirm the IDs before you can save. Fix the IDs in your file if they are wrong.
+
+IMPORTANT: Mapping an Email or Player Property column does more than build the Audience. It sets that value on each player in the file. Blank cells are skipped and never erase an existing value. If a Player ID appears more than once, the last non-blank value for each field is used. If you only want to build a list of players, map just the Player ID column and choose *Don't import* for the rest.
 
 == Audience Creation by Segmenting
 

@@ -135,7 +135,7 @@ This panel allows you to determine a player’s subscription status by player ID
 
 === Email Address Imports
 
-This panel allows you to import and update email addresses for players. To begin, click the "Import Player Email List" button. You will be prompted to upload a CSV or Excel file. THe first column in the file must be the game assigned player id, the second column must be the email address to assign to the player. Note that:
+This panel allows you to import and update email addresses for players. To begin, click the "Import player email list" button. You will be prompted to choose a CSV or Excel file. Teak previews it, and you pick which column is the game assigned player ID and which is the email address to assign to the player. If the first row of your file has column names, check *First row contains column names*. Note that:
 
 * A player can only have one email address
 * An email address can only be associated with one player

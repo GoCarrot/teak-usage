@@ -79,4 +79,4 @@ In Audience builder this refers to a specific message and is used to filter by e
 Located within the wrench icon on the lower right side of the screen.
 
 === Upload
-An option to input information into Teak, generally a .CSV of an audience.
+An option to input information into Teak, generally a .CSV or Excel file. After choosing a file you select which column holds which information, such as the player ID. See xref:user-guide:page$audiences.adoc#_audience_creation_by_upload[Audience Creation by Upload].
