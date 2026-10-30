@@ -1,1 +1,10 @@
-../../../script/worktree
+#!/bin/bash
+# Wrapper around teak-hq's canonical script/worktree. A symlink would be simpler,
+# but Antora walks this repo from its root and dies on a dangling link (CI and
+# docs.teak.io clone it without teak-hq beside it).
+#
+# Sourced, not exec'd, so $0 stays this file: the canonical script finds its
+# helpers (set_worktree_identity, install_git_hooks) via $(dirname "$0"), and
+# they need to be this repo's own.
+# shellcheck source=/dev/null
+. "$(dirname "$0")/../../../script/worktree"
