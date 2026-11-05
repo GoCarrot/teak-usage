@@ -32,6 +32,8 @@ Bundles are reusable reward configurations. Once you create a bundle for, say, 1
 
 You can add multiple reward types, create a random distribution, segment rewards by audience with tiered rewarding, or a combination of these options.
 
+Reward amounts can have up to 3 decimal places (for example, `2.125`) for games that have fractional rewards enabled. Ask Teak to turn this on for your game. We recommend Unity SDK 4.4 or later. The dashboard warns you if an amount is too precise to use safely.
+
 [[randomized]]
 == Randomized rewards
 
