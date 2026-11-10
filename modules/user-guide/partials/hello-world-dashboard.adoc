@@ -1,0 +1,92 @@
+// Shared by the SDK quickstarts' hello-world pages (iOS, Android, Unity, JS).
+// The including page sets these attributes before the include:
+//   hw-push-tab         dashboard tab to click: "iOS Push", "Android Push", "Web Push"
+//   hw-platform-choice  how to describe the platform checkboxes in the New Message form
+//   hw-player-id-field  how the Player ID is named in the recipient search step
+//   hw-identify-call    the identify call whose log line prints the Player ID
+//   hw-images           fully-qualified image dir for the dashboard screenshots, e.g. unity::start
+//   hw-hello-image      fully-qualified image of the notification on a device
+// Optional: set hw-foreground-step to include the "game is not open" step.
+=== Create a Message to Send
+
+In the Teak dashboard for your game, we will create your first notification.
+
+. Click on **Notifications**, select the **{hw-push-tab}** tab, and then click **New Message**.
++
+image::{hw-images}/dashboard.png[Creating a new message, 600]
+
+. **Fill out the form** in the modal. Give your message a **Name**, and {hw-platform-choice}. Click **Next**.
++
+image::{hw-images}/newmessage.png[Naming the message, 600]
+
+. Enter your desired **message** content, and click **Next**.
++
+image::{hw-images}/newmessagecontent.png[Entering message content, 600]
+
+. Review and **save** your message.
++
+image::{hw-images}/savemessage.png[Saving the message, 600]
++
+You'll now see it in the messages list.
+
+Now, we need to send our message to the device. We'll use Preview for that.
+
+=== Add a Preview Recipient
+
+Usually in Teak, we send messages to whole audiences at once using Audiences and Schedules. But, for the purpose of testing, we can use the **Preview** functionality to only send to our test device.
+
+To send a Preview, we need to tell Teak who we want to send to, and which of their devices to target.
+
+[start=5]
+. You should see your message in the messages list on the Teak dashboard. Click **Preview**.
++
+image::{hw-images}/previewbutton.png[The Preview button, 600]
+
+. Then select **Add Recipients**.
++
+image::{hw-images}/previewempty.png[The empty recipients list, 600]
+
+. Enter your {hw-player-id-field} in the **Search by Game User ID** field.
++
+You can get this from your game on the test device (if it displays the player ID) or from the console log (Teak outputs it when {hw-identify-call} is called if trace logging is enabled).
+
+. Click **Search**, and then click **Register** when your device is found.
++
+image::{hw-images}/searchrecipients.png[Searching for the test device, 600]
+
+. **Add a label** so you can keep your test devices straight, and click **Save**.
++
+Other team members you invite to this game will be able to see your test devices, so choose a name that is helpful for the whole team.
++
+image::{hw-images}/registerrecipients.png[Labeling the test device, 600]
+
+Your test device is now saved for this game. The next time you want to preview a message, you can just select your device from the list.
+
+=== Send Preview
+
+Almost there! Let's send the notification to your device.
+
+ifdef::hw-foreground-step[]
+[start=10]
+. First, make sure **your game is not open** on your device. By default, notifications don't show up if the game is already in the foreground.
+
+. Then, from the message preview in the Teak dashboard, click **Send Preview**.
+endif::[]
+ifndef::hw-foreground-step[]
+[start=10]
+. From the message preview in the Teak dashboard, click **Send Preview**.
+endif::[]
++
+image::{hw-images}/sendpreview.png[The Send Preview button, 600]
+
+== Receive the Notification
+
+ifdef::hw-foreground-step[]
+[start=12]
+endif::[]
+ifndef::hw-foreground-step[]
+[start=11]
+endif::[]
+. If everything is set up properly, **the notification will show up** on your device!
++
+image::{hw-hello-image}[The first notification on a device, 600]
